@@ -1,0 +1,10 @@
+/logs
+/P1E
+/P1L
+*.csv
+*.json
+instructions.md
+/groundtruth
+/__pycache__
+.DS_Store
+*.tar.xz
