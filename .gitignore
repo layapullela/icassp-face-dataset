@@ -1,10 +1,15 @@
-/logs
-/P1E
-/P1L
+.DS_Store
+**/__pycache__/
 *.csv
 *.json
-instructions.md
-/groundtruth
-/__pycache__
-.DS_Store
 *.tar.xz
+
+# Surveillance raw sequences are too large for git (same as before).
+surveillance_dataset/P1E/
+surveillance_dataset/P1L/
+surveillance_dataset/logs/
+surveillance_dataset/groundtruth/
+surveillance_dataset/csv/
+surveillance_dataset/instructions.md
+
+ballet_dataset/logs/
