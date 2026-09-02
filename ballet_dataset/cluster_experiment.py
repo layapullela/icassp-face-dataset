@@ -13,7 +13,8 @@ Two experiments:
 1. Clean clustering (no noise)
 2. Heterogeneous noise: each image column draws σ ~ Unif[0, 1]
 
-Methods tested: OSC, TKSS, SSC-TV-L21, and BD-OSC (inference only, fixed params).
+Methods tested: OSC, TKSS, SSC-TV-L21, SSC-TV-L21-col, and BD-OSC
+(inference only, fixed params). SSC-TV-L21-col keeps only column-wise TV.
 """
 
 from pathlib import Path
@@ -33,7 +34,7 @@ SURVEILLANCE_DIR = HERE.parent / "surveillance_dataset"
 sys.path.insert(0, str(SURVEILLANCE_DIR))
 
 from bdosc import bd_qosc
-from l21_ssc_tv import ssc_admm_nuc_tv
+from l21_ssc_tv import ssc_admm_col_tv, ssc_admm_nuc_tv
 from osc import osc_exact, cluster_from_Z
 from ssc_tv import cluster_from_C
 from tkss import tkss
@@ -51,6 +52,7 @@ TKSS_PCA = 150
 SEED = 0
 
 SSC_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_p=0.1, gamma_q=0.1)
+SSC_COL_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
 OSC_DEFAULTS = dict(lambda_1=0.1, lambda_2=0.1)
 BDOSC_DEFAULTS = dict(lambda_1=0.2, lambda_2=1.0, gamma_1=0.01, p=1.1, max_iter=50)
 TKSS_DEFAULTS = dict(d=5, lam=1.0, s=2)
@@ -258,6 +260,13 @@ def run_ssc_tv(Y, k, lambda_e, lambda_z, gamma_p, gamma_q):
     return cluster_from_C(X, k=k)
 
 
+def run_ssc_tv_col(Y, k, lambda_e, lambda_z, gamma_q):
+    X, _, _ = ssc_admm_col_tv(
+        Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q, max_iter=50,
+    )
+    return cluster_from_C(X, k=k)
+
+
 def run_osc(Y, k, lambda_1, lambda_2):
     Z = osc_exact(Y, lambda_1, lambda_2, max_iter=50)
     return cluster_from_Z(Z, k=k)
@@ -281,6 +290,14 @@ def suggest_ssc(trial):
         lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
         lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_p=trial.suggest_float("gamma_p", 1e-3, 10.0, log=True),
+        gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
+    )
+
+
+def suggest_ssc_col(trial):
+    return dict(
+        lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
+        lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
     )
 
@@ -419,6 +436,10 @@ def parse_args():
         help="Methods to run. Default: OSC TKSS SSC-TV-L21 BDOSC",
     )
     p.add_argument(
+        "--append", action="store_true",
+        help="Append eval rows to the existing CSV instead of overwriting",
+    )
+    p.add_argument(
         "--hetero-noise", action="store_true",
         help="Add heterogeneous noise: per-column σ ~ Unif[0, 1]",
     )
@@ -442,7 +463,7 @@ def main():
     
     print(f"=== Ballet Clustering Experiment ===")
     print(f"k={k}  n_frames ~ Unif[{N_FRAMES_LO}, {N_FRAMES_HI}]  seed={SEED}")
-    print(f"hetero_noise={args.hetero_noise}  no_tune={args.no_tune}")
+    print(f"hetero_noise={args.hetero_noise}  append={args.append}  no_tune={args.no_tune}")
     
     # Load data
     rng = np.random.default_rng(SEED)
@@ -470,11 +491,13 @@ def main():
     tune_specs = {
         "OSC": (suggest_osc, run_osc, OSC_DEFAULTS),
         "SSC-TV-L21": (suggest_ssc, run_ssc_tv, SSC_DEFAULTS),
+        "SSC-TV-L21-col": (suggest_ssc_col, run_ssc_tv_col, SSC_COL_DEFAULTS),
         "TKSS": (suggest_tkss, run_tkss, TKSS_DEFAULTS),
     }
     eval_specs = {
         "OSC": (run_osc, Y),
         "SSC-TV-L21": (run_ssc_tv, Y),
+        "SSC-TV-L21-col": (run_ssc_tv_col, Y),
         "BDOSC": (run_bdosc, Y),
         "TKSS": (run_tkss, Y_pca),
     }
@@ -553,10 +576,12 @@ def main():
         "params", "acc", "nmi", "ari", "seconds",
     ]
     
-    mode = "w"
+    csv_exists = csv_path.exists() and csv_path.stat().st_size > 0
+    mode = "a" if args.append and csv_exists else "w"
     with open(csv_path, mode, newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
+        if mode == "w":
+            writer.writeheader()
         
         for name in selected:
             run, Y_eval = eval_specs[name]

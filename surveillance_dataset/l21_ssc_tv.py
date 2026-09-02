@@ -1,7 +1,8 @@
-"""SSC-TV-L21-PQ: L1 on E, L2,1 on both P = DC and Q = CD^T.
+"""SSC-TV-L21: L1 on E, L2,1 on TV auxiliaries of C.
 
-See README.md for the shared ADMM formulation and how this file differs
-from the other SSC-TV variants.
+``ssc_admm_nuc_tv`` uses both P = DC (row-wise) and Q = CD^T (column-wise).
+``ssc_admm_col_tv`` keeps only Q, so adjacent columns of C are smoothed and
+rows are left unregularized.
 """
 
 import warnings
@@ -148,6 +149,79 @@ def ssc_admm_nuc_tv(
     return X, C, E
 
 
+def ssc_admm_col_tv(
+    Y,
+    lambda_e=1.0,
+    lambda_z=0.1,
+    gamma_q=0.1,
+    mu=1.0,
+    sigma=1.0,
+    max_iter=50,
+    tol=1e-4,
+):
+    """SSC-TV-L21 with column-wise TV only: γ_q ||Q||_{2,1}, Q = CD^T.
+
+    Drops the row-wise term γ_p ||DC||_{2,1}. Adjacent columns of C (the
+    self-expressive coefficients of consecutive samples) are encouraged to
+    be similar; rows of C are not.
+
+    The C-update is the right-hand linear system
+        C (μ I + σ D^T D) = μ (X + Λ/μ) + σ Q̃ D
+    rather than the two-sided Sylvester equation used when both TV terms
+    are present.
+    """
+    n, N = Y.shape
+
+    D = finite_diff_matrix(N)
+    K = D.T @ D
+    eigs, V = np.linalg.eigh(K)
+    scale = mu + sigma * eigs
+    A_inv = np.linalg.inv(lambda_z * (Y.T @ Y) + mu * np.eye(N))
+
+    X = np.zeros((N, N))
+    C = np.zeros((N, N))
+    E = np.zeros((n, N))
+    Q = np.zeros((N, N - 1))
+
+    Lambda = np.zeros((N, N))
+    Pi_Q = np.zeros((N, N - 1))
+
+    for it in range(max_iter):
+        X_prev = X
+
+        C_off = C - np.diag(np.diag(C))
+        X = A_inv @ (lambda_z * (Y.T @ (Y - E)) + mu * C_off - Lambda)
+
+        Q_tilde = Q - Pi_Q / sigma
+        RHS_C = mu * (X + Lambda / mu) + sigma * (Q_tilde @ D)
+        C = ((RHS_C @ V) / scale) @ V.T
+        np.fill_diagonal(C, 0.0)
+
+        CDt = C @ D.T
+        Q = block_soft_threshold_cols(CDt + Pi_Q / sigma, gamma_q / sigma)
+
+        E = soft_threshold(Y - Y @ X, lambda_e / lambda_z)
+
+        C_off = C - np.diag(np.diag(C))
+        Lambda += mu * (X - C_off)
+        Pi_Q += sigma * (CDt - Q)
+
+        primal_res = max(
+            np.linalg.norm(X - C_off, "fro"),
+            np.linalg.norm(CDt - Q, "fro"),
+        )
+        dual_res = mu * np.linalg.norm(X - X_prev, "fro")
+        if primal_res < tol and dual_res < tol:
+            break
+
+        mu_max, gamma_0 = 10.0, 1.1
+        gamma_step = gamma_0 if max(primal_res, dual_res) < tol else 1.0
+        mu = min(mu_max, gamma_step * mu)
+        sigma = min(mu_max, gamma_step * sigma)
+
+    return X, C, E
+
+
 # ── Synthetic sanity check ──────────────────────────────────────────────────
 
 if __name__ == '__main__':
@@ -167,5 +241,10 @@ if __name__ == '__main__':
     t0 = time.perf_counter()
     X, C, E = ssc_admm_nuc_tv(Y, lambda_e=1.0, lambda_z=0.1, gamma_p=0.1, gamma_q=0.1)
     pred = cluster_from_C(X, k=len(cluster_sizes))
-    print(f"ARI = {adjusted_rand_score(labels, pred):.4f}   "
+    print(f"PQ  ARI = {adjusted_rand_score(labels, pred):.4f}   "
+          f"time = {time.perf_counter() - t0:.2f}s")
+    t0 = time.perf_counter()
+    X, C, E = ssc_admm_col_tv(Y, lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
+    pred = cluster_from_C(X, k=len(cluster_sizes))
+    print(f"col ARI = {adjusted_rand_score(labels, pred):.4f}   "
           f"time = {time.perf_counter() - t0:.2f}s")

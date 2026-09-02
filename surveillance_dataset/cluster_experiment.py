@@ -4,13 +4,17 @@ Each sequence has 25 people. They are shuffled, then split into 5 groups of
 K=5. The first 4 groups are train matrices; the last group is the held-out
 test matrix. Train and test both cluster with k=5.
 
-Per person, n is drawn uniformly from {10, ..., 60} and the first
-min(n, available frames) images are kept.
+Per person, n is drawn uniformly from {N_FRAMES_LO, ..., N_FRAMES_HI}
+(default 30–60) and the first min(n, available frames) images are kept.
+People with fewer than N_FRAMES_LO frames keep all available frames.
 
-Optuna tunes SSC-TV-L21, OSC, and TKSS once, maximizing mean train ARI
-pooled over all sequences, train groups, and noise levels in SIGMAS. BDOSC
-is not tuned; it uses a fixed parameter set. Those hyperparameters are then
-evaluated on train and test at each noise level.
+Optuna tunes SSC-TV-L21, SSC-TV-L21-col, OSC, and TKSS once, maximizing
+mean train ARI pooled over all sequences, train groups, and noise levels
+in SIGMAS. BDOSC is not tuned; it uses a fixed parameter set. Those
+hyperparameters are then evaluated on train and test at each noise level.
+
+SSC-TV-L21-col is the L2,1 model with only column-wise TV (Q = CD^T);
+the row-wise term γ_p ||DC||_{2,1} is dropped.
 
 With --hetero-noise, each image column draws its own σ ~ Unif[0, 1]
 instead of one σ per matrix. Tuning and eval use that single mixed-noise
@@ -28,28 +32,32 @@ import optuna
 from optuna.samplers import TPESampler
 
 from bdosc import bd_qosc
-from l21_ssc_tv import ssc_admm_nuc_tv
+from l21_ssc_tv import ssc_admm_col_tv, ssc_admm_nuc_tv
 from osc import osc_exact, cluster_from_Z
 from ssc_tv import cluster_from_C
 from tkss import tkss
 
 HERE = Path(__file__).resolve().parent
 DATA_ROOTS = (HERE / "P1E", HERE / "P1L")
-CSV_PATH = HERE / "split_k5_sigmas_trials40.csv"
-PARAMS_PATH = HERE / "split_k5_sigmas_trials40_params.json"
-CLEAN_CSV_PATH = HERE / "split_k5_clean_trials40.csv"
-CLEAN_PARAMS_PATH = HERE / "split_k5_clean_trials40_params.json"
-HETERO_CSV_PATH = HERE / "split_k5_hetero_trials40.csv"
-HETERO_PARAMS_PATH = HERE / "split_k5_hetero_trials40_params.json"
 K = 5
-N_TRIALS = 40
+N_TRIALS = 10
 TKSS_PCA = 150
 SEED = 0
 SIGMAS = (0.0, 0.25, 0.5, 0.75)
-N_FRAMES_LO = 10
+N_FRAMES_LO = 30
 N_FRAMES_HI = 60
 
+
+def _result_paths(n_trials=N_TRIALS):
+    tag = f"min{N_FRAMES_LO}_trials{n_trials}"
+    return {
+        "sigmas": (HERE / f"split_k5_sigmas_{tag}.csv", HERE / f"split_k5_sigmas_{tag}_params.json"),
+        "clean": (HERE / f"split_k5_clean_{tag}.csv", HERE / f"split_k5_clean_{tag}_params.json"),
+        "hetero": (HERE / f"split_k5_hetero_{tag}.csv", HERE / f"split_k5_hetero_{tag}_params.json"),
+    }
+
 SSC_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_p=0.1, gamma_q=0.1)
+SSC_COL_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
 OSC_DEFAULTS = dict(lambda_1=0.1, lambda_2=0.1)
 BDOSC_DEFAULTS = dict(lambda_1=0.2, lambda_2=1.0, gamma_1=0.01, p=1.1, max_iter=50)
 TKSS_DEFAULTS = dict(d=5, lam=1.0, s=2)
@@ -245,6 +253,13 @@ def run_ssc_tv(Y, k, lambda_e, lambda_z, gamma_p, gamma_q):
     return cluster_from_C(X, k=k)
 
 
+def run_ssc_tv_col(Y, k, lambda_e, lambda_z, gamma_q):
+    X, _, _ = ssc_admm_col_tv(
+        Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q, max_iter=50,
+    )
+    return cluster_from_C(X, k=k)
+
+
 def run_osc(Y, k, lambda_1, lambda_2):
     Z = osc_exact(Y, lambda_1, lambda_2, max_iter=50)
     return cluster_from_Z(Z, k=k)
@@ -268,6 +283,14 @@ def suggest_ssc(trial):
         lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
         lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_p=trial.suggest_float("gamma_p", 1e-3, 10.0, log=True),
+        gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
+    )
+
+
+def suggest_ssc_col(trial):
+    return dict(
+        lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
+        lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
     )
 
@@ -414,10 +437,16 @@ def load_all_sequences():
         print(f"Loading {seq.name}")
         Y_raw, labels, person_dirs, paths, n_kept = load_sequence(seq, rng=rng)
         loaded.append((seq.name, Y_raw / 255.0, labels, person_dirs, paths))
+        n_short = sum(n < N_FRAMES_LO for n in n_kept)
         print(
             f"  Y: {Y_raw.shape}  people={len(person_dirs)}  "
-            f"frames/person={n_kept}"
+            f"frames/person={n_kept}  min={min(n_kept)}"
         )
+        if n_short:
+            print(
+                f"  warning: {n_short} people have fewer than "
+                f"{N_FRAMES_LO} available frames (kept all)"
+            )
     return loaded
 
 
@@ -487,7 +516,7 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument(
         "--methods", nargs="+", default=None,
-        help="Methods to run. Default: SSC-TV-L21 BDOSC TKSS "
+        help="Methods to run. Default: SSC-TV-L21 SSC-TV-L21-col BDOSC TKSS "
              "(+ OSC when --hetero-noise)",
     )
     p.add_argument(
@@ -510,11 +539,15 @@ def parse_args():
         "--no-tune", action="store_true",
         help="Skip Optuna; load hyperparameters from the params JSON",
     )
+    p.add_argument(
+        "--n-trials", type=int, default=N_TRIALS,
+        help=f"Optuna trials per tuned method (default: {N_TRIALS})",
+    )
     return p.parse_args()
 
 
-def write_params(tuned, path=None):
-    path = Path(path) if path is not None else PARAMS_PATH
+def write_params(tuned, path):
+    path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     existing = {}
     if path.exists():
@@ -552,25 +585,22 @@ def print_means_from_csv(path):
 def main():
     args = parse_args()
     sigmas = tuple(args.sigmas) if args.sigmas is not None else SIGMAS
+    n_trials = args.n_trials
+    paths = _result_paths(n_trials)
     if args.hetero_noise:
-        csv_path = HETERO_CSV_PATH
-        params_path = HETERO_PARAMS_PATH
+        csv_path, params_path = paths["hetero"]
     elif sigmas == (0.0,):
-        csv_path = CLEAN_CSV_PATH
-        params_path = CLEAN_PARAMS_PATH
+        csv_path, params_path = paths["clean"]
     else:
-        csv_path = CSV_PATH
-        params_path = PARAMS_PATH
+        csv_path, params_path = paths["sigmas"]
     loaded = load_all_sequences()
     people = sorted(p.name for p in loaded[0][3])
     train_groups, test_group = chunk_people(people)
     print(f"sequences={len(loaded)}  people={len(people)}  k={K}")
-    print(f"sigmas={sigmas}  n_trials={N_TRIALS}")
+    print(f"frames/person ~ Unif[{N_FRAMES_LO}, {N_FRAMES_HI}]")
+    print(f"sigmas={sigmas}  n_trials={n_trials}  csv={csv_path.name}")
     if args.hetero_noise:
-        print(
-            f"hetero-noise: per-column σ ~ Unif[0, 1]  "
-            f"csv={csv_path.name}"
-        )
+        print("hetero-noise: per-column σ ~ Unif[0, 1]")
     for i, names in enumerate(train_groups):
         print(f"train {i} k={len(names)}  people={names}")
     print(f"test    k={len(test_group)}  people={test_group}")
@@ -578,11 +608,13 @@ def main():
     tune_specs = {
         "OSC": (suggest_osc, run_osc, OSC_DEFAULTS),
         "SSC-TV-L21": (suggest_ssc, run_ssc_tv, SSC_DEFAULTS),
+        "SSC-TV-L21-col": (suggest_ssc_col, run_ssc_tv_col, SSC_COL_DEFAULTS),
         "TKSS": (suggest_tkss, run_tkss, TKSS_DEFAULTS),
     }
     eval_specs = {
         "OSC": run_osc,
         "SSC-TV-L21": run_ssc_tv,
+        "SSC-TV-L21-col": run_ssc_tv_col,
         "BDOSC": run_bdosc,
         "TKSS": run_tkss,
     }
@@ -590,9 +622,9 @@ def main():
     if args.methods:
         selected = args.methods
     elif args.hetero_noise:
-        selected = ["SSC-TV-L21", "OSC", "BDOSC", "TKSS"]
+        selected = ["SSC-TV-L21", "SSC-TV-L21-col", "OSC", "BDOSC", "TKSS"]
     else:
-        selected = ["SSC-TV-L21", "BDOSC", "TKSS"]
+        selected = ["SSC-TV-L21", "SSC-TV-L21-col", "BDOSC", "TKSS"]
     unknown = [n for n in selected if n not in eval_specs]
     if unknown:
         raise ValueError(f"unknown methods {unknown}; choose from {list(eval_specs)}")
@@ -704,7 +736,7 @@ def main():
             print(f"\n{'=' * 60}")
             print(f"--- tune {name} over {len(tune_mats)} train mats ---")
             result = tune_over(
-                name, suggest, run, tune_mats, enqueue=defaults,
+                name, suggest, run, tune_mats, n_trials=n_trials, enqueue=defaults,
             )
             tuned[name] = result
             print(

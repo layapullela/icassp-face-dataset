@@ -1,16 +1,17 @@
 #!/bin/bash
-#SBATCH --job-name=surv_cluster
-#SBATCH --time=1-12:00:00
+#SBATCH --job-name=surv_min30
+#SBATCH --time=2-00:00:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=4
 #SBATCH --partition=standard
 #SBATCH --account=minjilab99
-#SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_experiment_%j.out
-#SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_experiment_%j.err
+#SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_min30_%j.out
+#SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_min30_%j.err
 #
-# One hyperparameter set pooled over σ ∈ {0, 0.25, 0.5, 0.75}, then
-# train/holdout eval at each σ. Tunes OSC, SSC-TV-L21, TKSS (40 trials);
-# BDOSC uses fixed params. Results: split_k5_sigmas_trials40.csv
+# n ~ Unif{30,...,60} frames/person. One hyperparameter set pooled over
+# σ ∈ {0, 0.25, 0.5, 0.75}, then train/holdout eval at each σ.
+# Tunes OSC, SSC-TV-L21, SSC-TV-L21-col, TKSS (10 trials); BDOSC fixed.
+# Results: split_k5_sigmas_min30_trials10.csv
 #
 # Submit from anywhere:
 #   sbatch /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/submit_cluster_experiment.sh
@@ -36,5 +37,6 @@ cd "$ROOT"
 
 echo "host=$(hostname)  python=$(which python)  start=$(date)"
 python -u "$ROOT/cluster_experiment.py" \
-    --methods OSC SSC-TV-L21 TKSS BDOSC
+    --n-trials 10 \
+    --methods OSC SSC-TV-L21 SSC-TV-L21-col TKSS BDOSC
 echo "end=$(date)"
