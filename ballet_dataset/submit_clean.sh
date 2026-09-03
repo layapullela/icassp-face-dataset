@@ -1,17 +1,18 @@
 #!/bin/bash
-#SBATCH --job-name=ballet_clean
+#SBATCH --job-name=ballet_scale
 #SBATCH --time=1-00:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=standard
 #SBATCH --account=minjilab99
-#SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_clean_%j.out
-#SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_clean_%j.err
+#SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_scale_%j.out
+#SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_scale_%j.err
 #
-# Ballet clustering experiment without noise.
-# Uniformly samples 10-60 frames from each of k=5 sequences.
-# Tunes and evaluates OSC, TKSS, SSC-TV-L21, and BDOSC (inference only).
-# Results: ballet_cluster_results.csv
+# Hold out 15 sequences. Sample 24 train + 18 test k=5 combinations from
+# those pools (overlap OK within a pool). 30x30 downsample, all methods.
+# k inferred by eigengap then DP NCut; includes Gram-NCut baseline.
+# Optuna budget scales with n_params: OSC=50, TKSS/SSC-col=75, SSC-TV-L21=100.
+# Results: ballet_cluster_khat_scaled_results.csv
 #
 # Submit from anywhere:
 #   sbatch /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/submit_clean.sh
@@ -36,5 +37,7 @@ export PYTHONUNBUFFERED=1
 cd "$ROOT"
 
 echo "host=$(hostname)  python=$(which python)  start=$(date)"
-python -u "$ROOT/cluster_experiment.py" --k 5
+python -u "$ROOT/cluster_experiment.py" --k 5 \
+    --n-train-combos 24 --n-test-combos 18 --n-trials 50 \
+    --methods OSC TKSS SSC-TV-L21 SSC-TV-L21-col BDOSC Gram-NCut
 echo "end=$(date)"

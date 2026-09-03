@@ -381,11 +381,12 @@ def cluster_from_C(C, k=None, k_max=None, min_size=1, method='eigengap', min_k=2
 
 def estimate_k_from_data(Y, k_max=None, min_k=2, method='eigengap',
                          min_size=1, penalty=0.0):
-    """Infer k from an observation matrix (TKSS path).
+    """Infer k from an observation matrix (TKSS path) or a square affinity.
 
-    Square ``Y`` (SBM adjacency / contact maps) is treated as an affinity via
-    ``W = |Y| + |Y|^T``.  Rectangular data uses the column Gram ``Y.T @ Y``.
-    ``method`` / ``min_k`` match ``cluster_from_C`` (eigengap or ncut knee).
+    For SSC, pass the self-expression matrix ``C`` (not the data matrix
+    ``Y``): square input is treated as an affinity via ``W = |C| + |C|^T``.
+    Rectangular data uses the column Gram ``Y.T @ Y``.  ``method`` /
+    ``min_k`` match ``cluster_from_C`` (eigengap or ncut knee).
     """
     Y = np.asarray(Y, dtype=float)
     if Y.ndim != 2:

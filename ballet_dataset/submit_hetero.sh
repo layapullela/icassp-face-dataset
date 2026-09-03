@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ballet_hetero
-#SBATCH --time=1-00:00:00
+#SBATCH --time=12:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=standard
@@ -8,10 +8,9 @@
 #SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_hetero_%j.out
 #SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/logs/ballet_hetero_%j.err
 #
-# Ballet clustering experiment with heterogeneous noise.
-# Uniformly samples 10-60 frames from each of k=5 sequences.
-# Each image column draws its own σ ~ Unif[0, 1].
-# Tunes and evaluates OSC, TKSS, SSC-TV-L21, and BDOSC (inference only).
+# Heterogeneous per-column σ ~ Unif[0, 1] on the full ballet set: all
+# sequences concatenated into one matrix (no holdout). 30x30 downsample, 40 trials.
+# Tune and eval in-sample.
 # Results: ballet_cluster_hetero_results.csv
 #
 # Submit from anywhere:
@@ -37,5 +36,6 @@ export PYTHONUNBUFFERED=1
 cd "$ROOT"
 
 echo "host=$(hostname)  python=$(which python)  start=$(date)"
-python -u "$ROOT/cluster_experiment.py" --k 5 --hetero-noise
+python -u "$ROOT/cluster_experiment.py" --hetero-noise --full-data \
+    --n-trials 40
 echo "end=$(date)"

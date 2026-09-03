@@ -8,7 +8,7 @@
 #SBATCH --output=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_min30_%j.out
 #SBATCH --error=/nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/logs/cluster_min30_%j.err
 #
-# n ~ Unif{30,...,60} frames/person. One hyperparameter set pooled over
+# n ~ Unif{30,...,100} frames/person. One hyperparameter set pooled over
 # σ ∈ {0, 0.25, 0.5, 0.75}, then train/holdout eval at each σ.
 # Tunes OSC, SSC-TV-L21, SSC-TV-L21-col, TKSS (10 trials); BDOSC fixed.
 # Results: split_k5_sigmas_min30_trials10.csv
@@ -38,5 +38,5 @@ cd "$ROOT"
 echo "host=$(hostname)  python=$(which python)  start=$(date)"
 python -u "$ROOT/cluster_experiment.py" \
     --n-trials 10 \
-    --methods OSC SSC-TV-L21 SSC-TV-L21-col TKSS BDOSC
+    --methods OSC SSC-TV-L21 SSC-TV-L21-col TKSS BDOSC Gram-NCut
 echo "end=$(date)"

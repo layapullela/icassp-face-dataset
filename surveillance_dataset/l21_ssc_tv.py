@@ -81,15 +81,19 @@ def ssc_admm_nuc_tv(
     X, C, E : ndarrays
     """
     n, N = Y.shape
+    mu_max, gamma_0 = 10.0, 1.1
 
     # ── Precompute static quantities ──────────────────────────────────────────
     D = finite_diff_matrix(N)                 # (N-1, N)
     K = D.T @ D                               # (N, N), symmetric PSD
     eigs, V = np.linalg.eigh(K)               # eigs ascending, V orthogonal
 
+    # Eigendecompose the Gram once so the X-update solve can be rebuilt for any
+    # μ without re-inverting: (λ_z YᵀY + μI)⁻¹ = U diag(1/(λ_z s + μ)) Uᵀ.
+    s_g, U = np.linalg.eigh(Y.T @ Y)
+
     # Sylvester denominator: denom[i,j] = μ + σ(λ_i + λ_j)
     denom = mu + sigma * (eigs[:, None] + eigs[None, :])          # (N, N)
-    A_inv = np.linalg.inv(lambda_z * (Y.T @ Y) + mu * np.eye(N))  # for X-update
 
     # ── Initialise primal and dual variables ──────────────────────────────────
     X = np.zeros((N, N))
@@ -107,7 +111,8 @@ def ssc_admm_nuc_tv(
 
         # 1. X-update
         C_off = C - np.diag(np.diag(C))
-        X = A_inv @ (lambda_z * (Y.T @ (Y - E)) + mu * C_off - Lambda)
+        RHS_X = lambda_z * (Y.T @ (Y - E)) + mu * C_off - Lambda
+        X = U @ ((U.T @ RHS_X) / (lambda_z * s_g + mu)[:, None])
 
         # 2. C-update (Sylvester equation via eigendecomposition of K)
         P_tilde = P - Pi_P / sigma
@@ -141,10 +146,14 @@ def ssc_admm_nuc_tv(
         if primal_res < tol and dual_res < tol:
             break
 
-        mu_max, gamma_0 = 10.0, 1.1
-        gamma_step = gamma_0 if max(primal_res, dual_res) < tol else 1.0
-        mu = min(mu_max, gamma_step * mu)
-        sigma = min(mu_max, gamma_step * sigma)
+        # Inexact-ALM continuation: grow the penalties geometrically until the
+        # cap. This branch was previously guarded by max(primal_res, dual_res)
+        # < tol, which the break above had already ruled out, so mu and sigma
+        # stayed pinned at their initial values for every iteration.
+        if mu < mu_max or sigma < mu_max:
+            mu = min(mu_max, gamma_0 * mu)
+            sigma = min(mu_max, gamma_0 * sigma)
+            denom = mu + sigma * (eigs[:, None] + eigs[None, :])
 
     return X, C, E
 
@@ -171,12 +180,13 @@ def ssc_admm_col_tv(
     are present.
     """
     n, N = Y.shape
+    mu_max, gamma_0 = 10.0, 1.1
 
     D = finite_diff_matrix(N)
     K = D.T @ D
     eigs, V = np.linalg.eigh(K)
     scale = mu + sigma * eigs
-    A_inv = np.linalg.inv(lambda_z * (Y.T @ Y) + mu * np.eye(N))
+    s_g, U = np.linalg.eigh(Y.T @ Y)
 
     X = np.zeros((N, N))
     C = np.zeros((N, N))
@@ -190,7 +200,8 @@ def ssc_admm_col_tv(
         X_prev = X
 
         C_off = C - np.diag(np.diag(C))
-        X = A_inv @ (lambda_z * (Y.T @ (Y - E)) + mu * C_off - Lambda)
+        RHS_X = lambda_z * (Y.T @ (Y - E)) + mu * C_off - Lambda
+        X = U @ ((U.T @ RHS_X) / (lambda_z * s_g + mu)[:, None])
 
         Q_tilde = Q - Pi_Q / sigma
         RHS_C = mu * (X + Lambda / mu) + sigma * (Q_tilde @ D)
@@ -214,10 +225,11 @@ def ssc_admm_col_tv(
         if primal_res < tol and dual_res < tol:
             break
 
-        mu_max, gamma_0 = 10.0, 1.1
-        gamma_step = gamma_0 if max(primal_res, dual_res) < tol else 1.0
-        mu = min(mu_max, gamma_step * mu)
-        sigma = min(mu_max, gamma_step * sigma)
+        # See ssc_admm_nuc_tv: this continuation was previously unreachable.
+        if mu < mu_max or sigma < mu_max:
+            mu = min(mu_max, gamma_0 * mu)
+            sigma = min(mu_max, gamma_0 * sigma)
+            scale = mu + sigma * eigs
 
     return X, C, E
 
