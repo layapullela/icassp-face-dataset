@@ -54,21 +54,23 @@ N_FRAMES_LO = 30
 N_FRAMES_HI = 100
 
 
-def _result_paths(n_trials=N_TRIALS):
+def _result_paths(n_trials=N_TRIALS, k=K):
     tag = f"min{N_FRAMES_LO}_trials{n_trials}"
     return {
-        "sigmas": (HERE / f"split_k5_sigmas_{tag}.csv", HERE / f"split_k5_sigmas_{tag}_params.json"),
-        "clean": (HERE / f"split_k5_clean_{tag}_khat_scaled.csv", HERE / f"split_k5_clean_{tag}_khat_scaled_params.json"),
-        "hetero": (HERE / f"split_k5_hetero_{tag}.csv", HERE / f"split_k5_hetero_{tag}_params.json"),
+        "sigmas": (HERE / f"split_k{k}_sigmas_{tag}.csv", HERE / f"split_k{k}_sigmas_{tag}_params.json"),
+        "clean": (HERE / f"split_k{k}_clean_{tag}_khat_scaled.csv", HERE / f"split_k{k}_clean_{tag}_khat_scaled_params.json"),
+        "hetero": (HERE / f"split_k{k}_hetero_{tag}.csv", HERE / f"split_k{k}_hetero_{tag}_params.json"),
     }
 
 # OSC-like start: no sparse error, no row TV; column TV matches OSC λ₂=0.1.
 # lambda_e and gamma_p cannot be 0 on a log scale, so they sit at the search floor.
 SSC_DEFAULTS = dict(lambda_e=0.01, lambda_z=0.1, gamma_p=0.001, gamma_q=0.1)
 SSC_COL_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
-# Block length k for Db and E's groups; not searched.
-SSC_BLOCK_SIZE_FIXED = 5
-SSC_BLOCK_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
+# Block length is searched in {2, ..., 12} unless --block-size pins it.
+SSC_BLOCK_SIZE_LO = 2
+SSC_BLOCK_SIZE_HI = 12
+SSC_BLOCK_SIZE_FIXED = None
+SSC_BLOCK_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1, block_size=5)
 OSC_DEFAULTS = dict(lambda_1=0.1, lambda_2=0.1)
 BDOSC_DEFAULTS = dict(lambda_1=0.2, lambda_2=1.0, gamma_1=0.01, p=1.1, max_iter=50)
 TKSS_DEFAULTS = dict(d=5, lam=1.0, s=2)
@@ -116,15 +118,18 @@ def sequence_dirs(roots=DATA_ROOTS):
     return seqs
 
 
-def load_sequence(root, rng=None):
+def load_sequence(root, rng=None, n_lo=None):
     """Columns of Y are flattened frames, grouped by person id then frame number.
 
     Each frame is downsampled to DOWN_HW x DOWN_HW before vectorizing.
-    For each person, n ~ Unif{N_FRAMES_LO, ..., N_FRAMES_HI} (capped at the
+    For each person, n ~ Unif{n_lo, ..., N_FRAMES_HI} (capped at the
     folder length) and a start index is drawn so the n frames are consecutive.
+    ``n_lo`` defaults to N_FRAMES_LO.
     """
     if rng is None:
         rng = np.random.default_rng(SEED)
+    lo = N_FRAMES_LO if n_lo is None else max(int(n_lo), 1)
+    hi = max(lo, N_FRAMES_HI)
     person_dirs = sorted(
         (p for p in root.iterdir() if p.is_dir()),
         key=lambda p: p.name,
@@ -133,7 +138,7 @@ def load_sequence(root, rng=None):
     n_kept = []
     for person_idx, person_dir in enumerate(person_dirs):
         frames = sorted(person_dir.glob("*.pgm"), key=lambda p: p.name)
-        n = int(rng.integers(N_FRAMES_LO, N_FRAMES_HI + 1))
+        n = int(rng.integers(lo, hi + 1))
         n = min(n, len(frames))
         start = int(rng.integers(0, len(frames) - n + 1))
         frames = frames[start:start + n]
@@ -282,10 +287,15 @@ def run_ssc_tv_col(Y, lambda_e, lambda_z, gamma_q, k=None):
     return cluster_from_C(C, k=k)
 
 
-def run_ssc_block_tv(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=SSC_BLOCK_SIZE_FIXED):
+def run_ssc_block_tv(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=None):
+    """``block_size`` is the TV/E window (tuned); ``k`` is the cluster count."""
+    if block_size is None:
+        block_size = k
+    if block_size is None:
+        raise ValueError("SSC-Block-TV requires k or block_size")
     _, C, _, _ = ssc_admm_block_tv(
         Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q,
-        block_size=block_size, max_iter=50,
+        block_size=int(block_size), max_iter=50,
     )
     return cluster_from_C(C, k=k)
 
@@ -336,12 +346,25 @@ def suggest_ssc_col(trial):
 
 
 def suggest_ssc_block(trial):
-    return dict(
+    params = dict(
         lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
         lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
-        block_size=SSC_BLOCK_SIZE_FIXED,
     )
+    if SSC_BLOCK_SIZE_FIXED is None:
+        params["block_size"] = trial.suggest_int(
+            "block_size", SSC_BLOCK_SIZE_LO, SSC_BLOCK_SIZE_HI,
+        )
+    return params
+
+
+def _run_kwargs(name, params, k):
+    kwargs = dict(params)
+    if name == "SSC-Block-TV" and "block_size" not in kwargs:
+        kwargs["block_size"] = (
+            SSC_BLOCK_SIZE_FIXED if SSC_BLOCK_SIZE_FIXED is not None else k
+        )
+    return kwargs
 
 
 def suggest_osc(trial):
@@ -441,7 +464,10 @@ def tune_over(name, suggest, run, mats, n_trials=N_TRIALS, enqueue=None, known_k
         aris = []
         for Y, y_true, kk in mats:
             try:
-                pred = run(Y, k=(kk if known_k else None), **params)
+                pred = run(
+                    Y, k=(kk if known_k else None),
+                    **_run_kwargs(name, params, kk),
+                )
             except Exception as exc:
                 print(f"  {name} trial {trial.number} failed: {exc}")
                 return -1.0
@@ -461,9 +487,8 @@ def tune_over(name, suggest, run, mats, n_trials=N_TRIALS, enqueue=None, known_k
     t0 = time.perf_counter()
     study.optimize(objective, n_trials=n_trials)
     params = dict(study.best_params)
-    # Constants injected by suggest() are not in Optuna's best_params.
-    if name == "SSC-Block-TV":
-        params["block_size"] = SSC_BLOCK_SIZE_FIXED
+    if name == "SSC-Block-TV" and SSC_BLOCK_SIZE_FIXED is not None:
+        params["block_size"] = int(SSC_BLOCK_SIZE_FIXED)
     return {
         "params": params,
         "best_ari": float(study.best_value),
@@ -484,14 +509,17 @@ def eval_method(name, pred_fn, y_true):
     return scores, elapsed
 
 
-def load_all_sequences():
+def load_all_sequences(n_lo=None):
     rng = np.random.default_rng(SEED)
     loaded = []
+    lo = N_FRAMES_LO if n_lo is None else n_lo
     for seq in sequence_dirs():
         print(f"Loading {seq.name}")
-        Y_raw, labels, person_dirs, paths, n_kept = load_sequence(seq, rng=rng)
+        Y_raw, labels, person_dirs, paths, n_kept = load_sequence(
+            seq, rng=rng, n_lo=n_lo,
+        )
         loaded.append((seq.name, Y_raw / 255.0, labels, person_dirs, paths))
-        n_short = sum(n < N_FRAMES_LO for n in n_kept)
+        n_short = sum(n < lo for n in n_kept)
         print(
             f"  Y: {Y_raw.shape}  people={len(person_dirs)}  "
             f"frames/person={n_kept}  min={min(n_kept)}"
@@ -499,7 +527,7 @@ def load_all_sequences():
         if n_short:
             print(
                 f"  warning: {n_short} people have fewer than "
-                f"{N_FRAMES_LO} available frames (kept all)"
+                f"{lo} available frames (kept all)"
             )
     return loaded
 
@@ -525,6 +553,31 @@ def build_split_mats(loaded, train_groups, test_group, sigma, rng):
         Ys, labs, nms = subset_people(Y, labels, person_dirs, test_group)
         test_mats.append((ds_name, 0, Ys, labs, nms))
     return train_mats, test_mats
+
+
+def min_class_size(labs):
+    counts = np.bincount(np.asarray(labs, dtype=int))
+    counts = counts[counts > 0]
+    return int(counts.min()) if counts.size else 0
+
+
+def filter_mats_by_min_class(mats, min_class, tag=""):
+    """Drop matrices where any class has <= min_class frames."""
+    kept, skipped = [], 0
+    for row in mats:
+        labs = row[3]
+        nms = row[4]
+        if min_class_size(labs) <= min_class:
+            skipped += 1
+            print(
+                f"  skip {tag} {row[0]}[{row[1]}]: class sizes too small for "
+                f"window {min_class}  people={nms}"
+            )
+            continue
+        kept.append(row)
+    if skipped:
+        print(f"  skipped {skipped} {tag} matrices with a class <= {min_class} frames")
+    return kept
 
 
 def build_split_mats_hetero(
@@ -599,6 +652,10 @@ def parse_args():
              f"n_params/2, so SSC-TV-L21 (4 params) gets 2× (default: {N_TRIALS}).",
     )
     p.add_argument(
+        "--k", type=int, default=K,
+        help="People per clustering group (default: 5)",
+    )
+    p.add_argument(
         "--known-k", action="store_true",
         help="Use the true number of people as k (skip eigengap)",
     )
@@ -606,6 +663,18 @@ def parse_args():
         "--out-tag", default=None,
         help="Append _{tag} to the CSV/JSON stems so this run does not "
              "overwrite the default result files.",
+    )
+    p.add_argument(
+        "--min-class-frames", type=int, default=None,
+        help="Drop matrices where any person has <= this many frames. "
+             "Use the Block-TV window (k) so every class is longer than the "
+             "block. Default: off.",
+    )
+    p.add_argument(
+        "--block-size", type=int, default=None,
+        help="Fix SSC-Block-TV window length (not searched). "
+             "Default: search block_size in "
+             f"{{{SSC_BLOCK_SIZE_LO},...,{SSC_BLOCK_SIZE_HI}}}.",
     )
     return p.parse_args()
 
@@ -647,10 +716,20 @@ def print_means_from_csv(path):
 
 
 def main():
+    global SSC_BLOCK_SIZE_FIXED
     args = parse_args()
+    k = args.k
+    SSC_BLOCK_SIZE_FIXED = args.block_size
+    if SSC_BLOCK_SIZE_FIXED is not None:
+        block_defaults = {
+            key: val for key, val in SSC_BLOCK_DEFAULTS.items()
+            if key != "block_size"
+        }
+    else:
+        block_defaults = dict(SSC_BLOCK_DEFAULTS)
     sigmas = tuple(args.sigmas) if args.sigmas is not None else SIGMAS
     n_trials = args.n_trials
-    paths = _result_paths(n_trials)
+    paths = _result_paths(n_trials, k=k)
     if args.hetero_noise:
         csv_path, params_path = paths["hetero"]
     elif sigmas == (0.0,):
@@ -668,13 +747,27 @@ def main():
         params_path = params_path.with_name(
             f"{params_path.stem}_{args.out_tag}{params_path.suffix}"
         )
-    loaded = load_all_sequences()
+    loaded = load_all_sequences(
+        n_lo=(args.min_class_frames + 1) if args.min_class_frames is not None else None,
+    )
     people = sorted(p.name for p in loaded[0][3])
-    train_groups, test_group = chunk_people(people)
-    print(f"sequences={len(loaded)}  people={len(people)}  k={K}")
+    train_groups, test_group = chunk_people(people, k=k)
+    if not train_groups:
+        raise ValueError(
+            f"k={k} leaves no train groups with {len(people)} people "
+            f"(need at least 2 groups of {k})"
+        )
+    print(f"sequences={len(loaded)}  people={len(people)}  k={k}")
     print(f"frames/person ~ Unif[{N_FRAMES_LO}, {N_FRAMES_HI}]")
     print(f"down_hw={DOWN_HW}  sigmas={sigmas}  n_trials={n_trials}  "
           f"known_k={args.known_k}  csv={csv_path.name}")
+    if SSC_BLOCK_SIZE_FIXED is not None:
+        print(f"SSC-Block-TV block_size={SSC_BLOCK_SIZE_FIXED} (fixed)")
+    else:
+        print(
+            f"SSC-Block-TV block_size searched in "
+            f"[{SSC_BLOCK_SIZE_LO}, {SSC_BLOCK_SIZE_HI}]"
+        )
     if args.hetero_noise:
         print("hetero-noise: per-column σ ~ Unif[0, 1]")
     for i, names in enumerate(train_groups):
@@ -685,7 +778,7 @@ def main():
         "OSC": (suggest_osc, run_osc, OSC_DEFAULTS),
         "SSC-TV-L21": (suggest_ssc, run_ssc_tv, SSC_DEFAULTS),
         "SSC-TV-L21-col": (suggest_ssc_col, run_ssc_tv_col, SSC_COL_DEFAULTS),
-        "SSC-Block-TV": (suggest_ssc_block, run_ssc_block_tv, SSC_BLOCK_DEFAULTS),
+        "SSC-Block-TV": (suggest_ssc_block, run_ssc_block_tv, block_defaults),
         "TKSS": (suggest_tkss, run_tkss, TKSS_DEFAULTS),
     }
     eval_specs = {
@@ -744,6 +837,36 @@ def main():
                 f"σ={sigma}: train mats={len(train_mats)}  "
                 f"test mats={len(test_mats)}"
             )
+    if args.min_class_frames is not None:
+        print(
+            f"min_class_frames={args.min_class_frames}: keep matrices where "
+            f"every person has > {args.min_class_frames} frames"
+        )
+        for sigma in list(by_sigma):
+            train_mats, test_mats = by_sigma[sigma]
+            train_mats = filter_mats_by_min_class(
+                train_mats, args.min_class_frames, tag=f"σ={sigma} train",
+            )
+            test_mats = filter_mats_by_min_class(
+                test_mats, args.min_class_frames, tag=f"σ={sigma} test",
+            )
+            by_sigma[sigma] = (train_mats, test_mats)
+        tune_mats = []
+        for train_mats, _ in by_sigma.values():
+            for _, _, Ys, labs, nms in train_mats:
+                tune_mats.append((Ys, labs, len(nms)))
+        if not tune_mats:
+            raise ValueError(
+                f"no train matrices left after min_class_frames="
+                f"{args.min_class_frames}"
+            )
+        print(
+            f"after min-class filter: "
+            + "  ".join(
+                f"σ={sigma} train={len(tr)} test={len(te)}"
+                for sigma, (tr, te) in by_sigma.items()
+            )
+        )
     print(f"pooled train mats for tuning={len(tune_mats)}")
 
     tuned = {}
@@ -848,8 +971,11 @@ def main():
                         params = tuned[name]["params"]
                         scores, elapsed = eval_method(
                             name,
-                            lambda Ys=Ys, k=k, run=run, params=params:
-                                run(Ys, k=(k if args.known_k else None), **params),
+                            lambda Ys=Ys, k=k, run=run, params=params, name=name:
+                                run(
+                                    Ys, k=(k if args.known_k else None),
+                                    **_run_kwargs(name, params, k),
+                                ),
                             labs,
                         )
                         writer.writerow({

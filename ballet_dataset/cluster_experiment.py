@@ -70,9 +70,11 @@ DOWN_HW = 30
 # lambda_e and gamma_p cannot be 0 on a log scale, so they sit at the search floor.
 SSC_DEFAULTS = dict(lambda_e=0.01, lambda_z=0.1, gamma_p=0.001, gamma_q=0.1)
 SSC_COL_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
-# Block length k for Db and E's groups; not searched.
-SSC_BLOCK_SIZE_FIXED = 5
-SSC_BLOCK_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1)
+# Block length is searched in {2, ..., 12} unless --block-size pins it.
+SSC_BLOCK_SIZE_LO = 2
+SSC_BLOCK_SIZE_HI = 12
+SSC_BLOCK_SIZE_FIXED = None
+SSC_BLOCK_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1, block_size=5)
 OSC_DEFAULTS = dict(lambda_1=0.1, lambda_2=0.1)
 BDOSC_DEFAULTS = dict(lambda_1=0.2, lambda_2=1.0, gamma_1=0.01, p=1.1, max_iter=50)
 TKSS_DEFAULTS = dict(d=5, lam=1.0, s=2)
@@ -115,7 +117,7 @@ def split_pools(seq_dirs, n_test=N_TEST, seed=SEED):
     return train_pool, test_pool
 
 
-def sample_combos(pool, k, n_combos, rng):
+def sample_combos(pool, k, n_combos, rng, valid=None):
     """Sample n_combos distinct unsorted-as-sorted k-subsets from pool."""
     pool = list(pool)
     if len(pool) < k:
@@ -137,18 +139,24 @@ def sample_combos(pool, k, n_combos, rng):
         g = tuple(sorted(pool[i] for i in idx))
         if g in seen:
             continue
+        if valid is not None and not valid(g):
+            seen.add(g)
+            continue
         seen.add(g)
         groups.append(list(g))
     return groups
 
 
-def load_sequence(seq_dir, rng):
+def load_sequence(seq_dir, rng, n_lo=None):
     """Keep n consecutive frames from a random start in one sequence.
 
-    n ~ Unif{N_FRAMES_LO, ..., N_FRAMES_HI}, capped at the folder length.
+    n ~ Unif{n_lo, ..., N_FRAMES_HI}, capped at the folder length.
+    ``n_lo`` defaults to N_FRAMES_LO.
     """
     frames = sorted(seq_dir.glob("*.jpg"))
-    n = int(rng.integers(N_FRAMES_LO, N_FRAMES_HI + 1))
+    lo = N_FRAMES_LO if n_lo is None else max(int(n_lo), 1)
+    hi = max(lo, N_FRAMES_HI)
+    n = int(rng.integers(lo, hi + 1))
     n = min(n, len(frames))
     start = int(rng.integers(0, len(frames) - n + 1))
     frames = frames[start:start + n]
@@ -323,6 +331,19 @@ def run_ssc_tv_col(Y, lambda_e, lambda_z, gamma_q, k=None):
     return cluster_from_C(C, k=k)
 
 
+def run_ssc_block_tv(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=None):
+    """``block_size`` is the TV/E window (tuned); ``k`` is the cluster count."""
+    if block_size is None:
+        block_size = k
+    if block_size is None:
+        raise ValueError("SSC-Block-TV requires k or block_size")
+    _, C, _, _ = ssc_admm_block_tv(
+        Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q,
+        block_size=int(block_size), max_iter=50,
+    )
+    return cluster_from_C(C, k=k)
+
+
 def run_osc(Y, lambda_1, lambda_2, k=None):
     Z = osc_exact(Y, lambda_1, lambda_2, max_iter=50)
     return cluster_from_Z(Z, k=k)
@@ -374,6 +395,28 @@ def suggest_ssc_col(trial):
         lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
         gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
     )
+
+
+def suggest_ssc_block(trial):
+    params = dict(
+        lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
+        lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
+        gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
+    )
+    if SSC_BLOCK_SIZE_FIXED is None:
+        params["block_size"] = trial.suggest_int(
+            "block_size", SSC_BLOCK_SIZE_LO, SSC_BLOCK_SIZE_HI,
+        )
+    return params
+
+
+def _run_kwargs(name, params, k):
+    kwargs = dict(params)
+    if name == "SSC-Block-TV" and "block_size" not in kwargs:
+        kwargs["block_size"] = (
+            SSC_BLOCK_SIZE_FIXED if SSC_BLOCK_SIZE_FIXED is not None else k
+        )
+    return kwargs
 
 
 def suggest_osc(trial):
@@ -438,7 +481,10 @@ def tune_over(name, suggest, run, mats, n_trials=N_TRIALS, enqueue=None, known_k
         last_scores = None
         for Y, y_true, kk in mats:
             try:
-                pred = run(Y, k=(kk if known_k else None), **params)
+                pred = run(
+                    Y, k=(kk if known_k else None),
+                    **_run_kwargs(name, params, kk),
+                )
             except Exception as exc:
                 print(f"  {name} trial {trial.number} failed: {exc}")
                 return -1.0
@@ -466,6 +512,8 @@ def tune_over(name, suggest, run, mats, n_trials=N_TRIALS, enqueue=None, known_k
     t0 = time.perf_counter()
     study.optimize(objective, n_trials=n_trials)
     params = dict(study.best_params)
+    if name == "SSC-Block-TV" and SSC_BLOCK_SIZE_FIXED is not None:
+        params["block_size"] = int(SSC_BLOCK_SIZE_FIXED)
     return {
         "params": params,
         "best_ari": float(study.best_value),
@@ -612,12 +660,33 @@ def parse_args():
         help="Concatenate every sequence into one matrix (no train/test split). "
              "Tune and eval in-sample. --k is ignored.",
     )
+    p.add_argument(
+        "--min-class-frames", type=int, default=None,
+        help="Drop sequences/combos where any class has <= this many frames. "
+             "Use the Block-TV window (k) so every class is longer than the "
+             "block. Default: off.",
+    )
+    p.add_argument(
+        "--block-size", type=int, default=None,
+        help="Fix SSC-Block-TV window length (not searched). "
+             "Default: search block_size in "
+             f"{{{SSC_BLOCK_SIZE_LO},...,{SSC_BLOCK_SIZE_HI}}}.",
+    )
     return p.parse_args()
 
 
 def main():
+    global SSC_BLOCK_SIZE_FIXED
     args = parse_args()
     k = args.k
+    SSC_BLOCK_SIZE_FIXED = args.block_size
+    if SSC_BLOCK_SIZE_FIXED is not None:
+        block_defaults = {
+            key: val for key, val in SSC_BLOCK_DEFAULTS.items()
+            if key != "block_size"
+        }
+    else:
+        block_defaults = dict(SSC_BLOCK_DEFAULTS)
     n_test = args.n_test
     n_train_combos = args.n_train_combos
     n_test_combos = args.n_test_combos
@@ -649,6 +718,11 @@ def main():
         if csv_path == CSV_PATH:
             csv_path = HERE / "ballet_cluster_knownk_scaled_results.csv"
             params_path = HERE / "ballet_cluster_knownk_scaled_params.json"
+        if "knownk" not in csv_path.name:
+            csv_path = csv_path.with_name(csv_path.stem + "_knownk" + csv_path.suffix)
+            params_path = params_path.with_name(
+                params_path.stem + "_knownk" + params_path.suffix
+            )
     if args.out_tag:
         csv_path = csv_path.with_name(f"{csv_path.stem}_{args.out_tag}{csv_path.suffix}")
         params_path = params_path.with_name(
@@ -667,9 +741,18 @@ def main():
         f"append={args.append}  no_tune={args.no_tune}  "
         f"known_k={args.known_k}  csv={csv_path.name}"
     )
+    if SSC_BLOCK_SIZE_FIXED is not None:
+        print(f"SSC-Block-TV block_size={SSC_BLOCK_SIZE_FIXED} (fixed)")
+    else:
+        print(
+            f"SSC-Block-TV block_size searched in "
+            f"[{SSC_BLOCK_SIZE_LO}, {SSC_BLOCK_SIZE_HI}]"
+        )
 
     all_dirs = sequence_dirs()
     name_to_dir = {p.name: p for p in all_dirs}
+    min_class = args.min_class_frames
+    n_lo = (min_class + 1) if min_class is not None else N_FRAMES_LO
     if args.full_data:
         train_groups = [sorted(name_to_dir)]
         test_groups = []
@@ -680,6 +763,37 @@ def main():
         print(f"sequences={train_groups[0]}")
     else:
         train_pool, test_pool = split_pools(all_dirs, n_test=n_test, seed=SEED)
+
+    frame_rng = np.random.default_rng(SEED + 1)
+    if args.full_data:
+        used_names = sorted(name_to_dir)
+    else:
+        used_names = sorted(set(train_pool) | set(test_pool))
+    print(f"\nLoading {len(used_names)} sequences once (reused across combinations)")
+    if min_class is not None:
+        print(
+            f"min_class_frames={min_class}: sample n >= {n_lo}, then drop "
+            f"sequences with n <= {min_class}"
+        )
+    tracks = {}
+    for name in used_names:
+        Y_raw, _ = load_sequence(name_to_dir[name], frame_rng, n_lo=n_lo)
+        tracks[name] = Y_raw / 255.0
+        print(f"  {name}: frames={Y_raw.shape[1]}  dim={Y_raw.shape[0]}")
+
+    if not args.full_data:
+        def long_enough(name):
+            return tracks[name].shape[1] > (min_class if min_class is not None else -1)
+
+        dropped_train = [n for n in train_pool if not long_enough(n)]
+        dropped_test = [n for n in test_pool if not long_enough(n)]
+        train_pool = [n for n in train_pool if long_enough(n)]
+        test_pool = [n for n in test_pool if long_enough(n)]
+        if dropped_train or dropped_test:
+            print(
+                f"dropped sequences with n <= {min_class}:  "
+                f"train={dropped_train}  test={dropped_test}"
+            )
         combo_rng = np.random.default_rng(SEED)
         train_groups = sample_combos(train_pool, k, n_train_combos, combo_rng)
         if test_pool and len(test_pool) >= k and n_test_combos > 0:
@@ -698,24 +812,25 @@ def main():
         for i, names in enumerate(test_groups):
             print(f"test  {i} k={len(names)}  sequences={names}")
 
-    frame_rng = np.random.default_rng(SEED + 1)
-    used_names = sorted({n for g in train_groups + test_groups for n in g})
-    print(f"\nLoading {len(used_names)} sequences once (reused across combinations)")
-    tracks = {}
-    for name in used_names:
-        Y_raw, _ = load_sequence(name_to_dir[name], frame_rng)
-        tracks[name] = Y_raw / 255.0
-        print(f"  {name}: frames={Y_raw.shape[1]}  dim={Y_raw.shape[0]}")
-
     def build_loaded(groups, tag):
         loaded = []
+        skipped = 0
         for i, names in enumerate(groups):
             Y01, labels, n_kept = concat_group(tracks, names)
+            if min_class is not None and min(n_kept) <= min_class:
+                print(
+                    f"  skip {tag} combo {names}: n_kept={n_kept}  "
+                    f"(need every class > {min_class})"
+                )
+                skipped += 1
+                continue
             print(
-                f"  {tag}[{i}]: frames={Y01.shape[1]}  dim={Y01.shape[0]}  "
+                f"  {tag}[{len(loaded)}]: frames={Y01.shape[1]}  dim={Y01.shape[0]}  "
                 f"n_kept={n_kept}  seqs={names}"
             )
-            loaded.append((i, Y01, labels, names, n_kept))
+            loaded.append((len(loaded), Y01, labels, names, n_kept))
+        if skipped:
+            print(f"  skipped {skipped} {tag} combos with a class <= {min_class} frames")
         return loaded
 
     print("\nBuilding train combinations")
@@ -764,6 +879,7 @@ def main():
         "OSC": run_osc,
         "SSC-TV-L21": run_ssc_tv,
         "SSC-TV-L21-col": run_ssc_tv_col,
+        "SSC-Block-TV": run_ssc_block_tv,
         "BDOSC": run_bdosc,
         "TKSS": run_tkss,
         "Gram-NCut": run_gram_ncut,
@@ -772,6 +888,7 @@ def main():
         "OSC": (suggest_osc, run_osc, OSC_DEFAULTS),
         "SSC-TV-L21": (suggest_ssc, run_ssc_tv, SSC_DEFAULTS),
         "SSC-TV-L21-col": (suggest_ssc_col, run_ssc_tv_col, SSC_COL_DEFAULTS),
+        "SSC-Block-TV": (suggest_ssc_block, run_ssc_block_tv, block_defaults),
         "TKSS": (suggest_tkss, run_tkss, TKSS_DEFAULTS),
     }
     fixed_defaults = {"BDOSC": BDOSC_DEFAULTS, "Gram-NCut": GRAM_NCUT_DEFAULTS}
@@ -947,8 +1064,11 @@ def main():
                             params = tuned[name]["params"]
                         scores, elapsed = eval_method(
                             name,
-                            lambda run=run, Y=Y, params=params, kk=len(names):
-                                run(Y, k=(kk if args.known_k else None), **params),
+                            lambda run=run, Y=Y, params=params, kk=len(names), name=name:
+                                run(
+                                    Y, k=(kk if args.known_k else None),
+                                    **_run_kwargs(name, params, kk),
+                                ),
                             labels,
                         )
                         writer.writerow({
