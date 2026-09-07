@@ -1,0 +1,319 @@
+========================================
+Job: cvb_gram_ncut_k5_s0p25
+Method: Gram-NCut  k: 5  sigma: 0.25  tune_pool_groups: 20
+========================================
+host=gl3078.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sun Sep  6 19:01:39 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=20  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=(0.25,)  append=False  no_tune=False  known_k=True  csv=ballet_cluster_sigmas_0.25_results_knownk_cv_gram_ncut_k5_sigma0p25.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+
+Methods: ['Gram-NCut']
+CV mode: 8 folds of size 5, each rotated as test
+  4 sequences unused (remainder dropped)
+  fold 0: ['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']
+  fold 1: ['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']
+  fold 2: ['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']
+  fold 3: ['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']
+  fold 4: ['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']
+  fold 5: ['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']
+  fold 6: ['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']
+  fold 7: ['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=0  test=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold0.json
+
+=== train[1] k=5  dim=900  frames=322  σ=0.25  fold=0  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  0.2s
+
+=== train[2] k=5  dim=900  frames=361  σ=0.25  fold=0  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9003  NMI=0.8758  ARI=0.8459  0.2s
+
+=== train[3] k=5  dim=900  frames=322  σ=0.25  fold=0  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5994  NMI=0.7402  ARI=0.5355  0.1s
+
+=== train[4] k=5  dim=900  frames=274  σ=0.25  fold=0  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.1s
+
+=== train[5] k=5  dim=900  frames=226  σ=0.25  fold=0  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7699  NMI=0.7645  ARI=0.6436  0.1s
+
+=== train[6] k=5  dim=900  frames=225  σ=0.25  fold=0  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8667  NMI=0.9018  ARI=0.8443  0.1s
+
+=== train[7] k=5  dim=900  frames=310  σ=0.25  fold=0  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9000  NMI=0.8948  ARI=0.8627  0.1s
+
+=== test[0] k=5  dim=900  frames=200  σ=0.25  fold=0  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.0s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=1  test=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold1.json
+
+=== train[29] k=5  dim=900  frames=200  σ=0.25  fold=1  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8500  NMI=0.8997  ARI=0.8960  0.0s
+
+=== train[30] k=5  dim=900  frames=361  σ=0.25  fold=1  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9141  NMI=0.9019  ARI=0.8803  0.2s
+
+=== train[31] k=5  dim=900  frames=322  σ=0.25  fold=1  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.6025  NMI=0.7407  ARI=0.5372  0.1s
+
+=== train[32] k=5  dim=900  frames=274  σ=0.25  fold=1  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6715  NMI=0.8324  ARI=0.6263  0.1s
+
+=== train[33] k=5  dim=900  frames=226  σ=0.25  fold=1  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7788  NMI=0.7661  ARI=0.6480  0.1s
+
+=== train[34] k=5  dim=900  frames=225  σ=0.25  fold=1  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8622  NMI=0.8872  ARI=0.8319  0.1s
+
+=== train[35] k=5  dim=900  frames=310  σ=0.25  fold=1  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9097  NMI=0.8987  ARI=0.8711  0.1s
+
+=== test[28] k=5  dim=900  frames=322  σ=0.25  fold=1  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7764  NMI=0.8100  ARI=0.6341  0.1s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=2  test=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold2.json
+
+=== train[57] k=5  dim=900  frames=200  σ=0.25  fold=2  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.1s
+
+=== train[58] k=5  dim=900  frames=322  σ=0.25  fold=2  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  0.1s
+
+=== train[59] k=5  dim=900  frames=322  σ=0.25  fold=2  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5932  NMI=0.7394  ARI=0.5325  0.1s
+
+=== train[60] k=5  dim=900  frames=274  σ=0.25  fold=2  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6715  NMI=0.8324  ARI=0.6263  0.1s
+
+=== train[61] k=5  dim=900  frames=226  σ=0.25  fold=2  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7832  NMI=0.7736  ARI=0.6604  0.1s
+
+=== train[62] k=5  dim=900  frames=225  σ=0.25  fold=2  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8622  NMI=0.8998  ARI=0.8384  0.1s
+
+=== train[63] k=5  dim=900  frames=310  σ=0.25  fold=2  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9032  NMI=0.8960  ARI=0.8654  0.1s
+
+=== test[56] k=5  dim=900  frames=361  σ=0.25  fold=2  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9169  NMI=0.9086  ARI=0.8875  0.2s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=3  test=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold3.json
+
+=== train[85] k=5  dim=900  frames=200  σ=0.25  fold=3  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.1s
+
+=== train[86] k=5  dim=900  frames=322  σ=0.25  fold=3  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  0.1s
+
+=== train[87] k=5  dim=900  frames=361  σ=0.25  fold=3  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9224  NMI=0.9263  ARI=0.9022  0.2s
+
+=== train[88] k=5  dim=900  frames=274  σ=0.25  fold=3  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.1s
+
+=== train[89] k=5  dim=900  frames=226  σ=0.25  fold=3  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7655  NMI=0.7607  ARI=0.6367  0.1s
+
+=== train[90] k=5  dim=900  frames=225  σ=0.25  fold=3  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8667  NMI=0.8893  ARI=0.8379  0.1s
+
+=== train[91] k=5  dim=900  frames=310  σ=0.25  fold=3  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9129  NMI=0.9001  ARI=0.8741  0.1s
+
+=== test[84] k=5  dim=900  frames=322  σ=0.25  fold=3  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5901  NMI=0.7391  ARI=0.5312  0.1s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=4  test=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold4.json
+
+=== train[113] k=5  dim=900  frames=200  σ=0.25  fold=4  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8500  NMI=0.8997  ARI=0.8960  0.0s
+
+=== train[114] k=5  dim=900  frames=322  σ=0.25  fold=4  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  0.1s
+
+=== train[115] k=5  dim=900  frames=361  σ=0.25  fold=4  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9141  NMI=0.9019  ARI=0.8803  0.2s
+
+=== train[116] k=5  dim=900  frames=322  σ=0.25  fold=4  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.6025  NMI=0.7406  ARI=0.5369  0.1s
+
+=== train[117] k=5  dim=900  frames=226  σ=0.25  fold=4  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7876  NMI=0.7711  ARI=0.6577  0.1s
+
+=== train[118] k=5  dim=900  frames=225  σ=0.25  fold=4  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8622  NMI=0.8998  ARI=0.8384  0.1s
+
+=== train[119] k=5  dim=900  frames=310  σ=0.25  fold=4  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9129  NMI=0.9001  ARI=0.8741  0.1s
+
+=== test[112] k=5  dim=900  frames=274  σ=0.25  fold=4  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.1s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=5  test=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold5.json
+
+=== train[141] k=5  dim=900  frames=200  σ=0.25  fold=5  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.0s
+
+=== train[142] k=5  dim=900  frames=322  σ=0.25  fold=5  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  0.1s
+
+=== train[143] k=5  dim=900  frames=361  σ=0.25  fold=5  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9252  NMI=0.9278  ARI=0.9046  0.2s
+
+=== train[144] k=5  dim=900  frames=322  σ=0.25  fold=5  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5963  NMI=0.7398  ARI=0.5340  0.1s
+
+=== train[145] k=5  dim=900  frames=274  σ=0.25  fold=5  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.1s
+
+=== train[146] k=5  dim=900  frames=225  σ=0.25  fold=5  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8667  NMI=0.8893  ARI=0.8379  0.1s
+
+=== train[147] k=5  dim=900  frames=310  σ=0.25  fold=5  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9129  NMI=0.9094  ARI=0.8779  0.1s
+
+=== test[140] k=5  dim=900  frames=226  σ=0.25  fold=5  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7743  NMI=0.8002  ARI=0.7344  0.1s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=6  test=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold6.json
+
+=== train[169] k=5  dim=900  frames=200  σ=0.25  fold=6  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8400  NMI=0.8986  ARI=0.8943  0.1s
+
+=== train[170] k=5  dim=900  frames=322  σ=0.25  fold=6  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  0.1s
+
+=== train[171] k=5  dim=900  frames=361  σ=0.25  fold=6  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.9197  NMI=0.9100  ARI=0.8899  0.2s
+
+=== train[172] k=5  dim=900  frames=322  σ=0.25  fold=6  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5839  NMI=0.7384  ARI=0.5287  0.1s
+
+=== train[173] k=5  dim=900  frames=274  σ=0.25  fold=6  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6788  NMI=0.8328  ARI=0.6277  0.1s
+
+=== train[174] k=5  dim=900  frames=226  σ=0.25  fold=6  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7655  NMI=0.7607  ARI=0.6367  0.1s
+
+=== train[175] k=5  dim=900  frames=310  σ=0.25  fold=6  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9065  NMI=0.8909  ARI=0.8643  0.1s
+
+=== test[168] k=5  dim=900  frames=225  σ=0.25  fold=6  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8622  NMI=0.8872  ARI=0.8319  0.1s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=7  test=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']  train mats=7  test mats=1  tune mats=20
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_gram_ncut_k5_sigma0p25_sigma0.25_fold7.json
+
+=== train[197] k=5  dim=900  frames=200  σ=0.25  fold=7  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  Gram-NCut: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.0s
+
+=== train[198] k=5  dim=900  frames=322  σ=0.25  fold=7  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  Gram-NCut: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  0.1s
+
+=== train[199] k=5  dim=900  frames=361  σ=0.25  fold=7  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  Gram-NCut: k_hat=5  ACC=0.8920  NMI=0.8634  ARI=0.8266  0.2s
+
+=== train[200] k=5  dim=900  frames=322  σ=0.25  fold=7  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  Gram-NCut: k_hat=5  ACC=0.5963  NMI=0.7399  ARI=0.5341  0.1s
+
+=== train[201] k=5  dim=900  frames=274  σ=0.25  fold=7  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  Gram-NCut: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.1s
+
+=== train[202] k=5  dim=900  frames=226  σ=0.25  fold=7  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  Gram-NCut: k_hat=5  ACC=0.7788  NMI=0.7693  ARI=0.6529  0.1s
+
+=== train[203] k=5  dim=900  frames=225  σ=0.25  fold=7  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  Gram-NCut: k_hat=5  ACC=0.8667  NMI=0.8893  ARI=0.8379  0.1s
+
+=== test[196] k=5  dim=900  frames=310  σ=0.25  fold=7  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  Gram-NCut: k_hat=5  ACC=0.9065  NMI=0.8909  ARI=0.8643  0.1s
+
+=== inference time per method ===
+  Gram-NCut: mean=0.1006s  std=0.0378s  total=6.4s  n=64
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_gram_ncut_k5_sigma0p25_timing.json
+
+=== mean over matrices ===
+  Gram-NCut train σ=0.25: ACC=0.7941  NMI=0.8422  ARI=0.7397  n=56
+  Gram-NCut test σ=0.25: ACC=0.7933  NMI=0.8459  ARI=0.7507  n=8
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_gram_ncut_k5_sigma0p25.csv
+end=Sun Sep  6 19:01:52 EDT 2026
+Experiment completed!

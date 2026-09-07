@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 553, in <module>
+    main()
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 416, in main
+    loaded = load_all_sequences()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 381, in load_all_sequences
+    Y_raw, labels, person_dirs, paths, n_kept = load_sequence(seq, rng=rng)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 99, in load_sequence
+    Y = np.stack(images, axis=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lpullela/miniconda3/envs/ssc_559/lib/python3.11/site-packages/numpy/_core/shape_base.py", line 454, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack

@@ -1,0 +1,487 @@
+========================================
+Job: cvb_osc_k5_s0p25
+Method: OSC  k: 5  sigma: 0.25  tune_pool_groups: 20
+========================================
+host=gl3082.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sun Sep  6 19:01:09 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=20  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=(0.25,)  append=False  no_tune=False  known_k=True  csv=ballet_cluster_sigmas_0.25_results_knownk_cv_osc_k5_sigma0p25.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+
+Methods: ['OSC']
+CV mode: 8 folds of size 5, each rotated as test
+  4 sequences unused (remainder dropped)
+  fold 0: ['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']
+  fold 1: ['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']
+  fold 2: ['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']
+  fold 3: ['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']
+  fold 4: ['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']
+  fold 5: ['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']
+  fold 6: ['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']
+  fold 7: ['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=0  test=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7345  n=20  27.0s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7083  n=20  27.4s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.6885  n=20  25.8s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7357  n=20  25.0s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7357  n=20  27.3s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0015  n=20  26.3s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0015  n=20  25.8s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7060  n=20  24.9s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7378  n=20  28.3s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7449  n=20  26.0s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7378  n=20  27.5s  lambda_1=0.001206, lambda_2=0.001659
+  OSC trial 11: mean ARI=0.7378  n=20  26.5s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7338  n=20  28.2s  lambda_1=0.007272, lambda_2=0.01293
+  OSC trial 13: mean ARI=0.7383  n=20  26.5s  lambda_1=0.00784, lambda_2=0.01192
+  OSC trial 14: mean ARI=0.7383  n=20  26.9s  lambda_1=0.009944, lambda_2=0.008746
+  OSC trial 15: mean ARI=0.7350  n=20  26.4s  lambda_1=0.007346, lambda_2=1.106
+  OSC trial 16: mean ARI=0.7471  n=20  27.5s  lambda_1=0.0217, lambda_2=8.19
+  OSC trial 17: mean ARI=0.7475  n=20  25.8s  lambda_1=0.02284, lambda_2=9.574
+  OSC trial 18: mean ARI=0.7664  n=20  25.4s  lambda_1=0.02557, lambda_2=7.898
+  OSC trial 19: mean ARI=0.5071  n=20  27.0s  lambda_1=0.5975, lambda_2=9.262
+    best mean ARI=0.7664  tune 531.6s  lambda_1=0.02557, lambda_2=7.898
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold0.json
+
+=== train[1] k=5  dim=900  frames=322  σ=0.25  fold=0  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  1.6s
+
+=== train[2] k=5  dim=900  frames=361  σ=0.25  fold=0  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  1.9s
+
+=== train[3] k=5  dim=900  frames=322  σ=0.25  fold=0  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8478  NMI=0.8809  ARI=0.8197  1.6s
+
+=== train[4] k=5  dim=900  frames=274  σ=0.25  fold=0  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  1.3s
+
+=== train[5] k=5  dim=900  frames=226  σ=0.25  fold=0  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7699  NMI=0.7645  ARI=0.6436  0.9s
+
+=== train[6] k=5  dim=900  frames=225  σ=0.25  fold=0  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7111  NMI=0.7563  ARI=0.5715  0.9s
+
+=== train[7] k=5  dim=900  frames=310  σ=0.25  fold=0  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.8194  NMI=0.8715  ARI=0.7983  1.5s
+
+=== test[0] k=5  dim=900  frames=200  σ=0.25  fold=0  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.7s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=1  test=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.6907  n=20  22.9s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.6898  n=20  23.4s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.7000  n=20  22.6s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.6797  n=20  24.3s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.6794  n=20  23.7s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0053  n=20  22.3s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0053  n=20  22.4s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7060  n=20  23.6s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.6786  n=20  25.1s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.6810  n=20  22.5s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.6793  n=20  24.1s  lambda_1=0.01013, lambda_2=0.00165
+  OSC trial 11: mean ARI=0.5076  n=20  22.7s  lambda_1=0.6176, lambda_2=6.948
+  OSC trial 12: mean ARI=0.5671  n=20  24.7s  lambda_1=0.4906, lambda_2=0.007503
+  OSC trial 13: mean ARI=0.6795  n=20  22.5s  lambda_1=0.01198, lambda_2=0.9535
+  OSC trial 14: mean ARI=0.0053  n=20  23.0s  lambda_1=5.964, lambda_2=0.02995
+  OSC trial 15: mean ARI=0.5922  n=20  22.6s  lambda_1=0.4364, lambda_2=8.24
+  OSC trial 16: mean ARI=0.0053  n=20  23.8s  lambda_1=1.662, lambda_2=0.2049
+  OSC trial 17: mean ARI=0.6771  n=20  23.8s  lambda_1=0.01375, lambda_2=0.03831
+  OSC trial 18: mean ARI=0.7051  n=20  23.4s  lambda_1=0.205, lambda_2=0.005487
+  OSC trial 19: mean ARI=0.0053  n=20  22.4s  lambda_1=1.821, lambda_2=0.006157
+    best mean ARI=0.7060  tune 465.9s  lambda_1=0.1871, lambda_2=5.039
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold1.json
+
+=== train[29] k=5  dim=900  frames=200  σ=0.25  fold=1  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7450  NMI=0.8487  ARI=0.6748  0.6s
+
+=== train[30] k=5  dim=900  frames=361  σ=0.25  fold=1  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8504  NMI=0.8954  ARI=0.8464  1.7s
+
+=== train[31] k=5  dim=900  frames=322  σ=0.25  fold=1  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.6025  NMI=0.7407  ARI=0.5372  1.6s
+
+=== train[32] k=5  dim=900  frames=274  σ=0.25  fold=1  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6095  NMI=0.7589  ARI=0.5665  1.2s
+
+=== train[33] k=5  dim=900  frames=226  σ=0.25  fold=1  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7743  NMI=0.7653  ARI=0.6457  0.9s
+
+=== train[34] k=5  dim=900  frames=225  σ=0.25  fold=1  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.8756  NMI=0.8537  ARI=0.7053  0.9s
+
+=== train[35] k=5  dim=900  frames=310  σ=0.25  fold=1  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.8194  NMI=0.8819  ARI=0.8028  1.5s
+
+=== test[28] k=5  dim=900  frames=322  σ=0.25  fold=1  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7671  NMI=0.7881  ARI=0.6192  1.6s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=2  test=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7498  n=20  22.2s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7321  n=20  21.2s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.7281  n=20  20.4s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7614  n=20  21.4s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7611  n=20  20.9s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0079  n=20  21.6s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0079  n=20  20.1s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7198  n=20  20.9s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7929  n=20  21.4s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7830  n=20  21.6s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7932  n=20  22.7s  lambda_1=0.001206, lambda_2=0.001369
+  OSC trial 11: mean ARI=0.7932  n=20  20.6s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7893  n=20  22.3s  lambda_1=0.007272, lambda_2=0.001044
+  OSC trial 13: mean ARI=0.7893  n=20  21.0s  lambda_1=0.006333, lambda_2=0.005996
+  OSC trial 14: mean ARI=0.7893  n=20  22.6s  lambda_1=0.008941, lambda_2=0.0121
+  OSC trial 15: mean ARI=0.7932  n=20  21.9s  lambda_1=0.001025, lambda_2=0.003846
+  OSC trial 16: mean ARI=0.7945  n=20  20.9s  lambda_1=0.003519, lambda_2=0.001207
+  OSC trial 17: mean ARI=0.7854  n=20  21.8s  lambda_1=0.004329, lambda_2=0.01694
+  OSC trial 18: mean ARI=0.7806  n=20  21.7s  lambda_1=0.02261, lambda_2=0.004778
+  OSC trial 19: mean ARI=0.7945  n=20  22.7s  lambda_1=0.00357, lambda_2=0.00202
+    best mean ARI=0.7945  tune 429.9s  lambda_1=0.003519, lambda_2=0.001207
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold2.json
+
+=== train[57] k=5  dim=900  frames=200  σ=0.25  fold=2  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7550  NMI=0.8498  ARI=0.6802  0.8s
+
+=== train[58] k=5  dim=900  frames=322  σ=0.25  fold=2  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  1.7s
+
+=== train[59] k=5  dim=900  frames=322  σ=0.25  fold=2  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8416  NMI=0.8875  ARI=0.8226  1.7s
+
+=== train[60] k=5  dim=900  frames=274  σ=0.25  fold=2  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6715  NMI=0.8324  ARI=0.6263  1.3s
+
+=== train[61] k=5  dim=900  frames=226  σ=0.25  fold=2  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7743  NMI=0.7653  ARI=0.6457  1.0s
+
+=== train[62] k=5  dim=900  frames=225  σ=0.25  fold=2  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7067  NMI=0.7523  ARI=0.5603  0.9s
+
+=== train[63] k=5  dim=900  frames=310  σ=0.25  fold=2  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.8387  NMI=0.8848  ARI=0.8111  1.5s
+
+=== test[56] k=5  dim=900  frames=361  σ=0.25  fold=2  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  1.7s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=3  test=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7380  n=20  23.3s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7192  n=20  24.1s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.7111  n=20  24.8s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7498  n=20  25.4s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7409  n=20  22.8s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=-0.0006  n=20  24.1s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=-0.0006  n=20  23.9s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7273  n=20  25.3s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7451  n=20  23.6s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7383  n=20  24.9s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7470  n=20  24.9s  lambda_1=0.01165, lambda_2=0.001662
+  OSC trial 11: mean ARI=0.7470  n=20  26.1s  lambda_1=0.01233, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7470  n=20  23.5s  lambda_1=0.01113, lambda_2=0.006992
+  OSC trial 13: mean ARI=0.7469  n=20  25.4s  lambda_1=0.01483, lambda_2=0.009314
+  OSC trial 14: mean ARI=0.7383  n=20  24.2s  lambda_1=0.00474, lambda_2=0.6899
+  OSC trial 15: mean ARI=0.7277  n=20  25.8s  lambda_1=0.04502, lambda_2=0.02731
+  OSC trial 16: mean ARI=0.7382  n=20  22.9s  lambda_1=0.02642, lambda_2=0.4592
+  OSC trial 17: mean ARI=-0.0006  n=20  24.5s  lambda_1=1.154, lambda_2=9.254
+  OSC trial 18: mean ARI=0.7369  n=20  24.7s  lambda_1=0.00314, lambda_2=0.005487
+  OSC trial 19: mean ARI=0.7365  n=20  25.9s  lambda_1=0.005404, lambda_2=0.02513
+    best mean ARI=0.7498  tune 490.1s  lambda_1=0.0495, lambda_2=0.3833
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold3.json
+
+=== train[85] k=5  dim=900  frames=200  σ=0.25  fold=3  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.7s
+
+=== train[86] k=5  dim=900  frames=322  σ=0.25  fold=3  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  1.6s
+
+=== train[87] k=5  dim=900  frames=361  σ=0.25  fold=3  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  1.9s
+
+=== train[88] k=5  dim=900  frames=274  σ=0.25  fold=3  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  1.2s
+
+=== train[89] k=5  dim=900  frames=226  σ=0.25  fold=3  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7655  NMI=0.7607  ARI=0.6367  0.9s
+
+=== train[90] k=5  dim=900  frames=225  σ=0.25  fold=3  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7200  NMI=0.7593  ARI=0.5800  0.9s
+
+=== train[91] k=5  dim=900  frames=310  σ=0.25  fold=3  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.9000  NMI=0.8948  ARI=0.8627  1.5s
+
+=== test[84] k=5  dim=900  frames=322  σ=0.25  fold=3  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.5901  NMI=0.7391  ARI=0.5312  1.6s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=4  test=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7113  n=20  21.5s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.6876  n=20  22.8s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.6553  n=20  23.4s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7201  n=20  24.0s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7199  n=20  21.6s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0061  n=20  23.2s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0061  n=20  21.9s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.6667  n=20  24.0s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7407  n=20  24.3s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7405  n=20  21.9s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7407  n=20  23.1s  lambda_1=0.001206, lambda_2=0.001369
+  OSC trial 11: mean ARI=0.7407  n=20  24.7s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7425  n=20  24.7s  lambda_1=0.007272, lambda_2=0.001053
+  OSC trial 13: mean ARI=0.7425  n=20  22.2s  lambda_1=0.00784, lambda_2=0.005676
+  OSC trial 14: mean ARI=0.7295  n=20  23.0s  lambda_1=0.009138, lambda_2=0.0106
+  OSC trial 15: mean ARI=0.7295  n=20  24.6s  lambda_1=0.01038, lambda_2=0.006619
+  OSC trial 16: mean ARI=0.7425  n=20  24.7s  lambda_1=0.00789, lambda_2=0.005427
+  OSC trial 17: mean ARI=0.7257  n=20  22.1s  lambda_1=0.01799, lambda_2=0.01989
+  OSC trial 18: mean ARI=0.7412  n=20  23.5s  lambda_1=0.003807, lambda_2=0.003512
+  OSC trial 19: mean ARI=0.7211  n=20  23.8s  lambda_1=0.02426, lambda_2=0.03402
+    best mean ARI=0.7425  tune 465.2s  lambda_1=0.007272, lambda_2=0.001053
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold4.json
+
+=== train[113] k=5  dim=900  frames=200  σ=0.25  fold=4  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.8s
+
+=== train[114] k=5  dim=900  frames=322  σ=0.25  fold=4  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7733  NMI=0.8057  ARI=0.6295  1.7s
+
+=== train[115] k=5  dim=900  frames=361  σ=0.25  fold=4  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  2.0s
+
+=== train[116] k=5  dim=900  frames=322  σ=0.25  fold=4  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8478  NMI=0.8809  ARI=0.8197  1.7s
+
+=== train[117] k=5  dim=900  frames=226  σ=0.25  fold=4  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7699  NMI=0.7645  ARI=0.6436  1.0s
+
+=== train[118] k=5  dim=900  frames=225  σ=0.25  fold=4  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7022  NMI=0.7536  ARI=0.5636  1.0s
+
+=== train[119] k=5  dim=900  frames=310  σ=0.25  fold=4  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.8258  NMI=0.8723  ARI=0.8004  1.6s
+
+=== test[112] k=5  dim=900  frames=274  σ=0.25  fold=4  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  1.3s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=5  test=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7366  n=20  26.8s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7193  n=20  24.0s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.6854  n=20  24.8s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7248  n=20  26.5s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7254  n=20  26.6s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0055  n=20  23.2s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0055  n=20  24.2s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7140  n=20  26.5s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7444  n=20  27.3s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7452  n=20  23.9s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7449  n=20  25.7s  lambda_1=0.001206, lambda_2=0.001659
+  OSC trial 11: mean ARI=0.7449  n=20  27.4s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7459  n=20  27.4s  lambda_1=0.007272, lambda_2=0.009069
+  OSC trial 13: mean ARI=0.7459  n=20  24.5s  lambda_1=0.00633, lambda_2=0.01055
+  OSC trial 14: mean ARI=0.7494  n=20  25.8s  lambda_1=0.009138, lambda_2=0.0117
+  OSC trial 15: mean ARI=0.7486  n=20  27.4s  lambda_1=0.01144, lambda_2=0.009584
+  OSC trial 16: mean ARI=0.7483  n=20  27.1s  lambda_1=0.01551, lambda_2=0.011
+  OSC trial 17: mean ARI=0.7502  n=20  24.0s  lambda_1=0.01998, lambda_2=0.004467
+  OSC trial 18: mean ARI=0.7357  n=20  26.7s  lambda_1=0.02689, lambda_2=0.003894
+  OSC trial 19: mean ARI=0.7455  n=20  27.1s  lambda_1=0.003483, lambda_2=0.03043
+    best mean ARI=0.7502  tune 516.9s  lambda_1=0.01998, lambda_2=0.004467
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold5.json
+
+=== train[141] k=5  dim=900  frames=200  σ=0.25  fold=5  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7400  NMI=0.8482  ARI=0.6726  0.8s
+
+=== train[142] k=5  dim=900  frames=322  σ=0.25  fold=5  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7702  NMI=0.8058  ARI=0.6293  1.7s
+
+=== train[143] k=5  dim=900  frames=361  σ=0.25  fold=5  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8615  NMI=0.9064  ARI=0.8567  2.0s
+
+=== train[144] k=5  dim=900  frames=322  σ=0.25  fold=5  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8385  NMI=0.8871  ARI=0.8214  1.7s
+
+=== train[145] k=5  dim=900  frames=274  σ=0.25  fold=5  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  1.3s
+
+=== train[146] k=5  dim=900  frames=225  σ=0.25  fold=5  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7067  NMI=0.7540  ARI=0.5649  0.9s
+
+=== train[147] k=5  dim=900  frames=310  σ=0.25  fold=5  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.9129  NMI=0.9094  ARI=0.8779  1.6s
+
+=== test[140] k=5  dim=900  frames=226  σ=0.25  fold=5  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7699  NMI=0.7614  ARI=0.6388  0.9s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=6  test=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7817  n=20  24.0s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7627  n=20  24.8s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.6894  n=20  26.5s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7851  n=20  26.6s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7847  n=20  23.7s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0051  n=20  24.2s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0051  n=20  26.0s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7506  n=20  26.6s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7656  n=20  24.5s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7719  n=20  25.0s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7654  n=20  27.4s  lambda_1=0.01165, lambda_2=0.001662
+  OSC trial 11: mean ARI=0.7785  n=20  26.5s  lambda_1=0.01856, lambda_2=0.9349
+  OSC trial 12: mean ARI=0.7784  n=20  23.3s  lambda_1=0.02004, lambda_2=9.099
+  OSC trial 13: mean ARI=0.7851  n=20  25.3s  lambda_1=0.0495, lambda_2=0.8617
+  OSC trial 14: mean ARI=0.7656  n=20  27.1s  lambda_1=0.005443, lambda_2=0.0202
+  OSC trial 15: mean ARI=0.2947  n=20  26.3s  lambda_1=0.7028, lambda_2=0.5971
+  OSC trial 16: mean ARI=0.7851  n=20  22.9s  lambda_1=0.04314, lambda_2=0.4031
+  OSC trial 17: mean ARI=0.7656  n=20  26.1s  lambda_1=0.004777, lambda_2=0.01694
+  OSC trial 18: mean ARI=0.4553  n=20  26.5s  lambda_1=0.6682, lambda_2=1.833
+  OSC trial 19: mean ARI=0.7851  n=20  26.5s  lambda_1=0.0397, lambda_2=0.2788
+    best mean ARI=0.7851  tune 509.7s  lambda_1=0.0495, lambda_2=0.3833
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold6.json
+
+=== train[169] k=5  dim=900  frames=200  σ=0.25  fold=6  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.8s
+
+=== train[170] k=5  dim=900  frames=322  σ=0.25  fold=6  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7702  NMI=0.7955  ARI=0.6243  1.6s
+
+=== train[171] k=5  dim=900  frames=361  σ=0.25  fold=6  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8587  NMI=0.9061  ARI=0.8559  1.9s
+
+=== train[172] k=5  dim=900  frames=322  σ=0.25  fold=6  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8354  NMI=0.8868  ARI=0.8204  1.5s
+
+=== train[173] k=5  dim=900  frames=274  σ=0.25  fold=6  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6788  NMI=0.8328  ARI=0.6277  1.2s
+
+=== train[174] k=5  dim=900  frames=226  σ=0.25  fold=6  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7655  NMI=0.7607  ARI=0.6367  0.9s
+
+=== train[175] k=5  dim=900  frames=310  σ=0.25  fold=6  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.8968  NMI=0.8937  ARI=0.8602  1.4s
+
+=== test[168] k=5  dim=900  frames=225  σ=0.25  fold=6  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7067  NMI=0.7523  ARI=0.5603  0.8s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=7  test=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']  train mats=7  test mats=1  tune mats=20
+  --- tune OSC over 20 train mats  n_trials=20 (2 params) ---
+  OSC trial 0: mean ARI=0.7719  n=20  21.8s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7526  n=20  25.6s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.7252  n=20  25.6s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7712  n=20  25.2s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7713  n=20  21.6s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0042  n=20  25.0s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0042  n=20  25.1s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7627  n=20  25.4s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7583  n=20  22.8s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7536  n=20  25.1s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7558  n=20  26.3s  lambda_1=0.009211, lambda_2=0.003908
+  OSC trial 11: mean ARI=0.7522  n=20  25.7s  lambda_1=0.01856, lambda_2=0.01879
+  OSC trial 12: mean ARI=0.0042  n=20  21.9s  lambda_1=1.151, lambda_2=8.818
+  OSC trial 13: mean ARI=0.7712  n=20  24.8s  lambda_1=0.0495, lambda_2=1.736
+  OSC trial 14: mean ARI=0.7536  n=20  26.1s  lambda_1=0.007719, lambda_2=0.02347
+  OSC trial 15: mean ARI=0.0042  n=20  24.6s  lambda_1=0.8514, lambda_2=0.102
+  OSC trial 16: mean ARI=0.7724  n=20  23.6s  lambda_1=0.05396, lambda_2=0.007449
+  OSC trial 17: mean ARI=0.4981  n=20  24.7s  lambda_1=0.5302, lambda_2=0.007892
+  OSC trial 18: mean ARI=0.7535  n=20  26.4s  lambda_1=0.01778, lambda_2=0.001053
+  OSC trial 19: mean ARI=0.0042  n=20  24.5s  lambda_1=3.759, lambda_2=0.0546
+    best mean ARI=0.7724  tune 491.8s  lambda_1=0.05396, lambda_2=0.007449
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_osc_k5_sigma0p25_sigma0.25_fold7.json
+
+=== train[197] k=5  dim=900  frames=200  σ=0.25  fold=7  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  OSC: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.7s
+
+=== train[198] k=5  dim=900  frames=322  σ=0.25  fold=7  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  OSC: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  1.6s
+
+=== train[199] k=5  dim=900  frames=361  σ=0.25  fold=7  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  OSC: k_hat=5  ACC=0.8560  NMI=0.9058  ARI=0.8552  1.9s
+
+=== train[200] k=5  dim=900  frames=322  σ=0.25  fold=7  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=5  ACC=0.8354  NMI=0.8728  ARI=0.8088  1.7s
+
+=== train[201] k=5  dim=900  frames=274  σ=0.25  fold=7  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  1.3s
+
+=== train[202] k=5  dim=900  frames=226  σ=0.25  fold=7  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  OSC: k_hat=5  ACC=0.7743  NMI=0.7686  ARI=0.6509  1.0s
+
+=== train[203] k=5  dim=900  frames=225  σ=0.25  fold=7  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  OSC: k_hat=5  ACC=0.7111  NMI=0.7545  ARI=0.5666  0.9s
+
+=== test[196] k=5  dim=900  frames=310  σ=0.25  fold=7  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  OSC: k_hat=5  ACC=0.9032  NMI=0.9056  ARI=0.8696  1.6s
+
+=== inference time per method ===
+  OSC: mean=1.3110s  std=0.3886s  total=83.9s  n=64
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_osc_k5_sigma0p25_timing.json
+
+=== mean over matrices ===
+  OSC train σ=0.25: ACC=0.7765  NMI=0.8328  ARI=0.7022  n=56
+  OSC test σ=0.25: ACC=0.7519  NMI=0.8167  ARI=0.6722  n=8
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_osc_k5_sigma0p25.csv
+end=Sun Sep  6 20:07:43 EDT 2026
+Experiment completed!

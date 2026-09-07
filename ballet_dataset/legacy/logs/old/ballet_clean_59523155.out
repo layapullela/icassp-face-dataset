@@ -1,0 +1,150 @@
+host=gl3112.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Tue Sep  1 22:36:49 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=10  n_frames ~ Unif[10, 60]  seed=0
+hetero_noise=False  sigmas=None  append=False  no_tune=False  csv=ballet_cluster_results.csv
+sequences=44  train_pool=29  test_pool=15  train_combos=24  test_combos=18
+train pool: ['seq_000003', 'seq_000035', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000033', 'seq_000012', 'seq_000002', 'seq_000023', 'seq_000020', 'seq_000022', 'seq_000028', 'seq_000042', 'seq_000011', 'seq_000004', 'seq_000039', 'seq_000017', 'seq_000031', 'seq_000021', 'seq_000029', 'seq_000009', 'seq_000036', 'seq_000043', 'seq_000018', 'seq_000001', 'seq_000025', 'seq_000026', 'seq_000041', 'seq_000027']
+test  pool: ['seq_000040', 'seq_000010', 'seq_000007', 'seq_000037', 'seq_000038', 'seq_000014', 'seq_000013', 'seq_000008', 'seq_000044', 'seq_000006', 'seq_000015', 'seq_000030', 'seq_000034', 'seq_000016', 'seq_000032']
+train 0 k=5  sequences=['seq_000002', 'seq_000011', 'seq_000017', 'seq_000023', 'seq_000036']
+train 1 k=5  sequences=['seq_000001', 'seq_000004', 'seq_000009', 'seq_000017', 'seq_000031']
+train 2 k=5  sequences=['seq_000001', 'seq_000002', 'seq_000011', 'seq_000029', 'seq_000043']
+train 3 k=5  sequences=['seq_000003', 'seq_000018', 'seq_000026', 'seq_000029', 'seq_000033']
+train 4 k=5  sequences=['seq_000002', 'seq_000005', 'seq_000027', 'seq_000028', 'seq_000042']
+train 5 k=5  sequences=['seq_000002', 'seq_000011', 'seq_000017', 'seq_000027', 'seq_000031']
+train 6 k=5  sequences=['seq_000009', 'seq_000022', 'seq_000025', 'seq_000029', 'seq_000041']
+train 7 k=5  sequences=['seq_000009', 'seq_000017', 'seq_000019', 'seq_000020', 'seq_000043']
+train 8 k=5  sequences=['seq_000001', 'seq_000005', 'seq_000022', 'seq_000029', 'seq_000042']
+train 9 k=5  sequences=['seq_000004', 'seq_000009', 'seq_000012', 'seq_000023', 'seq_000031']
+train 10 k=5  sequences=['seq_000002', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000023']
+train 11 k=5  sequences=['seq_000009', 'seq_000012', 'seq_000022', 'seq_000023', 'seq_000036']
+train 12 k=5  sequences=['seq_000001', 'seq_000017', 'seq_000023', 'seq_000024', 'seq_000039']
+train 13 k=5  sequences=['seq_000028', 'seq_000029', 'seq_000033', 'seq_000035', 'seq_000039']
+train 14 k=5  sequences=['seq_000001', 'seq_000023', 'seq_000025', 'seq_000026', 'seq_000039']
+train 15 k=5  sequences=['seq_000018', 'seq_000019', 'seq_000020', 'seq_000031', 'seq_000035']
+train 16 k=5  sequences=['seq_000022', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000042']
+train 17 k=5  sequences=['seq_000017', 'seq_000020', 'seq_000026', 'seq_000039', 'seq_000041']
+train 18 k=5  sequences=['seq_000004', 'seq_000012', 'seq_000022', 'seq_000028', 'seq_000042']
+train 19 k=5  sequences=['seq_000021', 'seq_000025', 'seq_000026', 'seq_000029', 'seq_000041']
+train 20 k=5  sequences=['seq_000001', 'seq_000021', 'seq_000025', 'seq_000027', 'seq_000041']
+train 21 k=5  sequences=['seq_000001', 'seq_000022', 'seq_000024', 'seq_000025', 'seq_000036']
+train 22 k=5  sequences=['seq_000011', 'seq_000012', 'seq_000020', 'seq_000027', 'seq_000036']
+train 23 k=5  sequences=['seq_000002', 'seq_000018', 'seq_000025', 'seq_000028', 'seq_000039']
+test  0 k=5  sequences=['seq_000007', 'seq_000008', 'seq_000015', 'seq_000016', 'seq_000040']
+test  1 k=5  sequences=['seq_000008', 'seq_000010', 'seq_000030', 'seq_000037', 'seq_000040']
+test  2 k=5  sequences=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000030', 'seq_000040']
+test  3 k=5  sequences=['seq_000010', 'seq_000015', 'seq_000034', 'seq_000038', 'seq_000044']
+test  4 k=5  sequences=['seq_000007', 'seq_000010', 'seq_000015', 'seq_000034', 'seq_000037']
+test  5 k=5  sequences=['seq_000008', 'seq_000013', 'seq_000015', 'seq_000016', 'seq_000034']
+test  6 k=5  sequences=['seq_000013', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000038']
+test  7 k=5  sequences=['seq_000008', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  8 k=5  sequences=['seq_000006', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040']
+test  9 k=5  sequences=['seq_000010', 'seq_000015', 'seq_000034', 'seq_000038', 'seq_000040']
+test  10 k=5  sequences=['seq_000007', 'seq_000008', 'seq_000013', 'seq_000032', 'seq_000037']
+test  11 k=5  sequences=['seq_000010', 'seq_000014', 'seq_000030', 'seq_000032', 'seq_000040']
+test  12 k=5  sequences=['seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000037']
+test  13 k=5  sequences=['seq_000007', 'seq_000013', 'seq_000016', 'seq_000030', 'seq_000044']
+test  14 k=5  sequences=['seq_000006', 'seq_000013', 'seq_000030', 'seq_000038', 'seq_000040']
+test  15 k=5  sequences=['seq_000008', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000044']
+test  16 k=5  sequences=['seq_000013', 'seq_000015', 'seq_000034', 'seq_000037', 'seq_000044']
+test  17 k=5  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000014', 'seq_000016']
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=34  dim=90601
+  seq_000002: frames=28  dim=90601
+  seq_000003: frames=52  dim=90601
+  seq_000004: frames=18  dim=90601
+  seq_000005: frames=17  dim=90601
+  seq_000006: frames=56  dim=90601
+  seq_000007: frames=19  dim=90601
+  seq_000008: frames=47  dim=90601
+  seq_000009: frames=16  dim=90601
+  seq_000010: frames=33  dim=90601
+  seq_000011: frames=54  dim=90601
+  seq_000012: frames=58  dim=90601
+  seq_000013: frames=11  dim=90601
+  seq_000014: frames=37  dim=90601
+  seq_000015: frames=28  dim=90601
+  seq_000016: frames=41  dim=90601
+  seq_000017: frames=45  dim=90601
+  seq_000018: frames=58  dim=90601
+  seq_000019: frames=22  dim=90601
+  seq_000020: frames=51  dim=90601
+  seq_000021: frames=43  dim=90601
+  seq_000022: frames=57  dim=90601
+  seq_000023: frames=22  dim=90601
+  seq_000024: frames=20  dim=90601
+  seq_000025: frames=48  dim=90601
+  seq_000026: frames=58  dim=90601
+  seq_000027: frames=28  dim=90601
+  seq_000028: frames=29  dim=90601
+  seq_000029: frames=33  dim=90601
+  seq_000030: frames=22  dim=90601
+  seq_000031: frames=44  dim=90601
+  seq_000032: frames=38  dim=90601
+  seq_000033: frames=32  dim=90601
+  seq_000034: frames=37  dim=90601
+  seq_000035: frames=47  dim=90601
+  seq_000036: frames=59  dim=90601
+  seq_000037: frames=35  dim=90601
+  seq_000038: frames=47  dim=90601
+  seq_000039: frames=38  dim=90601
+  seq_000040: frames=58  dim=90601
+  seq_000041: frames=21  dim=90601
+  seq_000042: frames=22  dim=90601
+  seq_000043: frames=20  dim=90601
+  seq_000044: frames=31  dim=90601
+
+Building train combinations
+  train[0]: frames=208  dim=90601  n_kept=[28, 54, 45, 22, 59]  seqs=['seq_000002', 'seq_000011', 'seq_000017', 'seq_000023', 'seq_000036']
+  train[1]: frames=157  dim=90601  n_kept=[34, 18, 16, 45, 44]  seqs=['seq_000001', 'seq_000004', 'seq_000009', 'seq_000017', 'seq_000031']
+  train[2]: frames=169  dim=90601  n_kept=[34, 28, 54, 33, 20]  seqs=['seq_000001', 'seq_000002', 'seq_000011', 'seq_000029', 'seq_000043']
+  train[3]: frames=233  dim=90601  n_kept=[52, 58, 58, 33, 32]  seqs=['seq_000003', 'seq_000018', 'seq_000026', 'seq_000029', 'seq_000033']
+  train[4]: frames=124  dim=90601  n_kept=[28, 17, 28, 29, 22]  seqs=['seq_000002', 'seq_000005', 'seq_000027', 'seq_000028', 'seq_000042']
+  train[5]: frames=199  dim=90601  n_kept=[28, 54, 45, 28, 44]  seqs=['seq_000002', 'seq_000011', 'seq_000017', 'seq_000027', 'seq_000031']
+  train[6]: frames=175  dim=90601  n_kept=[16, 57, 48, 33, 21]  seqs=['seq_000009', 'seq_000022', 'seq_000025', 'seq_000029', 'seq_000041']
+  train[7]: frames=154  dim=90601  n_kept=[16, 45, 22, 51, 20]  seqs=['seq_000009', 'seq_000017', 'seq_000019', 'seq_000020', 'seq_000043']
+  train[8]: frames=163  dim=90601  n_kept=[34, 17, 57, 33, 22]  seqs=['seq_000001', 'seq_000005', 'seq_000022', 'seq_000029', 'seq_000042']
+  train[9]: frames=158  dim=90601  n_kept=[18, 16, 58, 22, 44]  seqs=['seq_000004', 'seq_000009', 'seq_000012', 'seq_000023', 'seq_000031']
+  train[10]: frames=182  dim=90601  n_kept=[28, 16, 58, 58, 22]  seqs=['seq_000002', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000023']
+  train[11]: frames=212  dim=90601  n_kept=[16, 58, 57, 22, 59]  seqs=['seq_000009', 'seq_000012', 'seq_000022', 'seq_000023', 'seq_000036']
+  train[12]: frames=159  dim=90601  n_kept=[34, 45, 22, 20, 38]  seqs=['seq_000001', 'seq_000017', 'seq_000023', 'seq_000024', 'seq_000039']
+  train[13]: frames=179  dim=90601  n_kept=[29, 33, 32, 47, 38]  seqs=['seq_000028', 'seq_000029', 'seq_000033', 'seq_000035', 'seq_000039']
+  train[14]: frames=200  dim=90601  n_kept=[34, 22, 48, 58, 38]  seqs=['seq_000001', 'seq_000023', 'seq_000025', 'seq_000026', 'seq_000039']
+  train[15]: frames=222  dim=90601  n_kept=[58, 22, 51, 44, 47]  seqs=['seq_000018', 'seq_000019', 'seq_000020', 'seq_000031', 'seq_000035']
+  train[16]: frames=198  dim=90601  n_kept=[57, 58, 29, 32, 22]  seqs=['seq_000022', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000042']
+  train[17]: frames=213  dim=90601  n_kept=[45, 51, 58, 38, 21]  seqs=['seq_000017', 'seq_000020', 'seq_000026', 'seq_000039', 'seq_000041']
+  train[18]: frames=184  dim=90601  n_kept=[18, 58, 57, 29, 22]  seqs=['seq_000004', 'seq_000012', 'seq_000022', 'seq_000028', 'seq_000042']
+  train[19]: frames=203  dim=90601  n_kept=[43, 48, 58, 33, 21]  seqs=['seq_000021', 'seq_000025', 'seq_000026', 'seq_000029', 'seq_000041']
+  train[20]: frames=174  dim=90601  n_kept=[34, 43, 48, 28, 21]  seqs=['seq_000001', 'seq_000021', 'seq_000025', 'seq_000027', 'seq_000041']
+  train[21]: frames=218  dim=90601  n_kept=[34, 57, 20, 48, 59]  seqs=['seq_000001', 'seq_000022', 'seq_000024', 'seq_000025', 'seq_000036']
+  train[22]: frames=250  dim=90601  n_kept=[54, 58, 51, 28, 59]  seqs=['seq_000011', 'seq_000012', 'seq_000020', 'seq_000027', 'seq_000036']
+  train[23]: frames=201  dim=90601  n_kept=[28, 58, 48, 29, 38]  seqs=['seq_000002', 'seq_000018', 'seq_000025', 'seq_000028', 'seq_000039']
+Building test combinations
+  test[0]: frames=193  dim=90601  n_kept=[19, 47, 28, 41, 58]  seqs=['seq_000007', 'seq_000008', 'seq_000015', 'seq_000016', 'seq_000040']
+  test[1]: frames=195  dim=90601  n_kept=[47, 33, 22, 35, 58]  seqs=['seq_000008', 'seq_000010', 'seq_000030', 'seq_000037', 'seq_000040']
+  test[2]: frames=166  dim=90601  n_kept=[56, 19, 11, 22, 58]  seqs=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000030', 'seq_000040']
+  test[3]: frames=176  dim=90601  n_kept=[33, 28, 37, 47, 31]  seqs=['seq_000010', 'seq_000015', 'seq_000034', 'seq_000038', 'seq_000044']
+  test[4]: frames=152  dim=90601  n_kept=[19, 33, 28, 37, 35]  seqs=['seq_000007', 'seq_000010', 'seq_000015', 'seq_000034', 'seq_000037']
+  test[5]: frames=164  dim=90601  n_kept=[47, 11, 28, 41, 37]  seqs=['seq_000008', 'seq_000013', 'seq_000015', 'seq_000016', 'seq_000034']
+  test[6]: frames=158  dim=90601  n_kept=[11, 41, 22, 37, 47]  seqs=['seq_000013', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000038']
+  test[7]: frames=218  dim=90601  n_kept=[47, 35, 47, 58, 31]  seqs=['seq_000008', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[8]: frames=236  dim=90601  n_kept=[56, 38, 37, 47, 58]  seqs=['seq_000006', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040']
+  test[9]: frames=203  dim=90601  n_kept=[33, 28, 37, 47, 58]  seqs=['seq_000010', 'seq_000015', 'seq_000034', 'seq_000038', 'seq_000040']
+  test[10]: frames=150  dim=90601  n_kept=[19, 47, 11, 38, 35]  seqs=['seq_000007', 'seq_000008', 'seq_000013', 'seq_000032', 'seq_000037']
+  test[11]: frames=188  dim=90601  n_kept=[33, 37, 22, 38, 58]  seqs=['seq_000010', 'seq_000014', 'seq_000030', 'seq_000032', 'seq_000040']
+  test[12]: frames=152  dim=90601  n_kept=[11, 37, 28, 41, 35]  seqs=['seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000037']
+  test[13]: frames=124  dim=90601  n_kept=[19, 11, 41, 22, 31]  seqs=['seq_000007', 'seq_000013', 'seq_000016', 'seq_000030', 'seq_000044']
+  test[14]: frames=194  dim=90601  n_kept=[56, 11, 22, 47, 58]  seqs=['seq_000006', 'seq_000013', 'seq_000030', 'seq_000038', 'seq_000040']
+  test[15]: frames=188  dim=90601  n_kept=[47, 38, 37, 35, 31]  seqs=['seq_000008', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000044']
+  test[16]: frames=142  dim=90601  n_kept=[11, 28, 37, 35, 31]  seqs=['seq_000013', 'seq_000015', 'seq_000034', 'seq_000037', 'seq_000044']
+  test[17]: frames=200  dim=90601  n_kept=[56, 19, 47, 37, 41]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000014', 'seq_000016']
+
+Methods: ['OSC', 'TKSS', 'SSC-TV-L21', 'BDOSC']
+pooled train mats for tuning=24
+
+BDOSC: fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+
+============================================================
+--- Tuning OSC over 24 train mats ---
+  OSC trial 0: mean ARI=0.6319  n=24  1353.6s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.6144  n=24  1356.5s  lambda_1=0.1568, lambda_2=0.7257

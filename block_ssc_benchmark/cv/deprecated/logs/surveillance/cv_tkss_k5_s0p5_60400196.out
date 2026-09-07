@@ -1,0 +1,2066 @@
+========================================
+Job: cv_tkss_k5_s0p5
+Method: TKSS  k: 5  sigma: 0.5
+========================================
+host=gl3264.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sat Sep  5 19:18:09 EDT 2026
+Loading P1E_S1_C1
+  Y: (576, 1236)  people=25  frames/person=[60, 61, 50, 48, 51, 35, 41, 56, 55, 49, 65, 50, 63, 38, 61, 48, 50, 49, 50, 30, 42, 60, 32, 39, 53]  min=30
+Loading P1E_S1_C2
+  Y: (576, 1031)  people=25  frames/person=[42, 48, 31, 35, 50, 45, 30, 32, 38, 40, 61, 41, 47, 33, 46, 36, 41, 45, 42, 36, 33, 50, 53, 33, 43]  min=30
+Loading P1E_S1_C3
+  Y: (576, 453)  people=25  frames/person=[15, 22, 16, 16, 17, 13, 14, 19, 14, 25, 26, 12, 21, 18, 22, 19, 13, 19, 16, 15, 8, 15, 30, 20, 28]  min=8
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C1
+  Y: (576, 1256)  people=25  frames/person=[65, 50, 50, 51, 53, 48, 49, 60, 33, 48, 61, 58, 52, 32, 55, 35, 45, 53, 40, 53, 51, 65, 64, 42, 43]  min=32
+Loading P1E_S2_C2
+  Y: (576, 1042)  people=25  frames/person=[33, 48, 38, 41, 53, 36, 39, 47, 51, 36, 55, 44, 43, 25, 42, 41, 37, 45, 41, 38, 40, 54, 49, 33, 33]  min=25
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C3
+  Y: (576, 816)  people=25  frames/person=[36, 33, 28, 32, 42, 37, 31, 36, 31, 23, 42, 36, 35, 20, 33, 33, 32, 32, 32, 29, 32, 42, 38, 27, 24]  min=20
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C1
+  Y: (576, 1255)  people=25  frames/person=[43, 39, 47, 52, 58, 96, 42, 31, 79, 33, 67, 55, 44, 34, 40, 48, 54, 77, 45, 41, 46, 53, 56, 38, 37]  min=31
+Loading P1E_S3_C2
+  Y: (576, 1126)  people=25  frames/person=[57, 56, 35, 40, 49, 75, 34, 40, 70, 26, 65, 54, 43, 28, 32, 43, 48, 31, 36, 33, 42, 71, 57, 30, 31]  min=26
+  warning: 2 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C3
+  Y: (576, 866)  people=25  frames/person=[43, 36, 24, 33, 37, 47, 29, 37, 55, 18, 40, 40, 31, 22, 30, 39, 35, 45, 30, 28, 30, 50, 42, 20, 25]  min=18
+  warning: 7 people have fewer than 30 available frames (kept all)
+Loading P1E_S4_C1
+  Y: (576, 1247)  people=25  frames/person=[58, 54, 34, 56, 50, 59, 50, 56, 74, 38, 75, 35, 46, 31, 53, 40, 57, 32, 56, 33, 48, 67, 59, 48, 38]  min=31
+Loading P1E_S4_C2
+  Y: (576, 1051)  people=25  frames/person=[37, 37, 41, 46, 41, 49, 38, 45, 65, 30, 39, 48, 50, 34, 43, 36, 47, 52, 45, 37, 38, 50, 30, 37, 36]  min=30
+Loading P1E_S4_C3
+  Y: (576, 719)  people=25  frames/person=[28, 29, 22, 29, 24, 36, 31, 29, 33, 25, 37, 19, 28, 21, 25, 27, 25, 41, 27, 29, 26, 31, 45, 29, 23]  min=19
+  warning: 18 people have fewer than 30 available frames (kept all)
+Loading P1L_S1_C1
+  Y: (576, 1391)  people=25  frames/person=[65, 68, 43, 64, 47, 40, 58, 33, 75, 41, 58, 72, 58, 49, 66, 67, 65, 43, 59, 57, 58, 51, 67, 32, 55]  min=32
+Loading P1L_S1_C2
+  Y: (576, 1309)  people=25  frames/person=[30, 65, 37, 63, 66, 54, 52, 52, 43, 49, 71, 49, 58, 48, 54, 66, 56, 36, 48, 49, 55, 66, 52, 39, 51]  min=30
+Loading P1L_S1_C3
+  Y: (576, 565)  people=25  frames/person=[27, 29, 20, 26, 19, 25, 22, 12, 28, 25, 20, 25, 23, 18, 21, 23, 25, 26, 23, 21, 18, 18, 30, 18, 23]  min=12
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1L_S2_C1
+  Y: (576, 1470)  people=25  frames/person=[73, 68, 53, 64, 65, 41, 73, 55, 37, 31, 82, 75, 63, 45, 34, 48, 74, 84, 71, 64, 62, 65, 48, 33, 62]  min=31
+Loading P1L_S2_C2
+  Y: (576, 1393)  people=25  frames/person=[64, 65, 49, 62, 69, 69, 63, 61, 80, 34, 89, 57, 53, 52, 55, 38, 30, 30, 66, 36, 57, 51, 73, 41, 49]  min=30
+Loading P1L_S2_C3
+  Y: (576, 897)  people=25  frames/person=[40, 36, 29, 28, 35, 37, 36, 36, 50, 28, 55, 46, 34, 31, 35, 32, 30, 48, 37, 29, 36, 39, 45, 19, 26]  min=19
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1L_S3_C1
+  Y: (576, 1329)  people=25  frames/person=[31, 33, 30, 51, 74, 75, 59, 65, 66, 43, 47, 39, 65, 50, 58, 71, 67, 36, 57, 35, 62, 31, 74, 59, 51]  min=30
+Loading P1L_S3_C2
+  Y: (576, 1472)  people=25  frames/person=[78, 38, 48, 51, 54, 71, 61, 71, 32, 50, 75, 38, 72, 63, 48, 67, 49, 87, 52, 56, 58, 85, 73, 56, 39]  min=32
+Loading P1L_S3_C3
+  Y: (576, 1105)  people=25  frames/person=[48, 44, 38, 38, 39, 45, 35, 55, 52, 26, 81, 39, 36, 36, 44, 54, 42, 61, 38, 31, 34, 53, 51, 44, 41]  min=26
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1L_S4_C1
+  Y: (576, 1443)  people=25  frames/person=[50, 69, 44, 41, 78, 43, 32, 71, 45, 65, 59, 39, 56, 57, 68, 69, 70, 73, 51, 63, 47, 70, 57, 52, 74]  min=32
+Loading P1L_S4_C2
+  Y: (576, 1327)  people=25  frames/person=[71, 34, 39, 54, 63, 67, 52, 39, 52, 56, 59, 50, 51, 53, 63, 50, 71, 63, 48, 35, 31, 71, 43, 52, 60]  min=31
+Loading P1L_S4_C3
+  Y: (576, 880)  people=25  frames/person=[37, 41, 23, 26, 32, 34, 22, 32, 50, 29, 38, 44, 31, 34, 37, 39, 39, 39, 38, 26, 25, 50, 41, 33, 40]  min=22
+  warning: 6 people have fewer than 30 available frames (kept all)
+sequences=24  people=25  k=5
+frames/person ~ Unif[30, 100]
+down_hw=24  sigmas=(0.5,)  n_trials=20  known_k=True  csv=split_k5_sigmas_min30_trials20_knownk_cv_tkss_k5_sigma0p5.csv
+SSC-Block-TV block_size searched in [2, 12]
+CV mode: 5 folds of size 5, each rotated as test
+  group 0: ['0006', '0013', '0014', '0022', '0027']
+  group 1: ['0004', '0009', '0019', '0025', '0026']
+  group 2: ['0001', '0005', '0011', '0023', '0024']
+  group 3: ['0007', '0010', '0015', '0016', '0021']
+  group 4: ['0003', '0012', '0017', '0018', '0020']
+methods=['TKSS']  append=False  hetero_noise=False  no_tune=False
+
+============================================================
+σ=0.5 fold=0  test=['0006', '0013', '0014', '0022', '0027']  train mats=96  test mats=24
+  --- tune TKSS over 96 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.7155  n=96  15.9s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.7090  n=96  19.7s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.7087  n=96  11.0s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.7011  n=96  26.3s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.7104  n=96  17.3s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.7093  n=96  6.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.7092  n=96  12.0s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6981  n=96  24.1s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.7051  n=96  11.7s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7180  n=96  16.2s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.7085  n=96  5.6s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7481  n=96  38.0s  d=1, lam=0.5626, s=2
+  TKSS trial 12: mean ARI=0.7066  n=96  30.7s  d=1, lam=0.3474, s=1
+  TKSS trial 13: mean ARI=0.7114  n=96  8.2s  d=3, lam=0.06667, s=2
+  TKSS trial 14: mean ARI=0.7179  n=96  16.0s  d=4, lam=0.5416, s=3
+  TKSS trial 15: mean ARI=0.6924  n=96  26.1s  d=1, lam=0.07126, s=1
+  TKSS trial 16: mean ARI=0.7235  n=96  19.9s  d=3, lam=0.781, s=3
+  TKSS trial 17: mean ARI=0.7112  n=96  8.0s  d=4, lam=0.06413, s=3
+  TKSS trial 18: mean ARI=0.7097  n=96  7.1s  d=7, lam=0.1262, s=3
+  TKSS trial 19: mean ARI=0.7232  n=96  18.2s  d=3, lam=2.159, s=2
+  TKSS trial 20: mean ARI=0.7543  n=96  38.8s  d=1, lam=0.4994, s=3
+  TKSS trial 21: mean ARI=0.7577  n=96  37.1s  d=1, lam=0.4708, s=3
+  TKSS trial 22: mean ARI=0.7577  n=96  37.4s  d=1, lam=0.4685, s=3
+  TKSS trial 23: mean ARI=0.7572  n=96  40.4s  d=1, lam=0.3912, s=4
+  TKSS trial 24: mean ARI=0.7223  n=96  16.9s  d=2, lam=0.135, s=4
+  TKSS trial 25: mean ARI=0.7163  n=96  19.1s  d=4, lam=0.285, s=5
+  TKSS trial 26: mean ARI=0.7106  n=96  11.5s  d=2, lam=0.02455, s=4
+  TKSS trial 27: mean ARI=0.7160  n=96  16.1s  d=5, lam=1.646, s=3
+  TKSS trial 28: mean ARI=0.7650  n=96  42.1s  d=1, lam=0.3986, s=5
+  TKSS trial 29: mean ARI=0.7143  n=96  25.4s  d=3, lam=9.072, s=5
+    best mean ARI=0.7650  tune 623.8s  d=1, lam=0.3986, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_sigmas_min30_trials20_params_knownk_cv_tkss_k5_sigma0p5_sigma0.5_fold0.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=212  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8679  NMI=0.8110  ARI=0.7224  0.5s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8075  NMI=0.8053  ARI=0.7015  1.3s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9174  NMI=0.8728  ARI=0.8252  0.4s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8501  ARI=0.8251  0.7s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=188  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9840  NMI=0.9623  ARI=0.9524  0.3s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=198  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9141  NMI=0.8388  ARI=0.8054  0.1s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9397  NMI=0.8789  ARI=0.8596  0.4s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9674  NMI=0.9216  ARI=0.9225  0.3s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=93  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7957  NMI=0.7901  ARI=0.6658  0.1s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=68  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8235  NMI=0.7526  ARI=0.6530  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9080  NMI=0.8306  ARI=0.7874  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8972  NMI=0.8523  ARI=0.7805  0.1s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=250  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9360  NMI=0.8677  ARI=0.8512  0.5s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6340  NMI=0.5537  ARI=0.4010  1.0s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7328  NMI=0.7766  ARI=0.6907  0.8s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9253  NMI=0.8545  ARI=0.8304  0.2s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=196  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8756  ARI=0.8623  0.3s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=219  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8584  NMI=0.7901  ARI=0.7043  0.3s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9375  NMI=0.8685  ARI=0.8517  0.2s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9070  ARI=0.9100  0.3s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=156  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9808  NMI=0.9513  ARI=0.9484  0.1s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=173  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9133  NMI=0.8413  ARI=0.8036  0.1s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9625  NMI=0.9130  ARI=0.9139  0.2s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9416  NMI=0.8725  ARI=0.8632  0.1s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=237  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9367  NMI=0.8782  ARI=0.8475  0.4s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=273  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7509  NMI=0.6259  ARI=0.4953  0.9s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6160  NMI=0.6577  ARI=0.5145  0.7s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6456  NMI=0.6909  ARI=0.5315  0.4s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=204  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8440  ARI=0.8282  0.3s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=280  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8036  NMI=0.7182  ARI=0.6183  1.0s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6622  NMI=0.7279  ARI=0.5731  0.7s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8830  NMI=0.8466  ARI=0.7549  0.2s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=150  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9533  NMI=0.8952  ARI=0.8876  0.2s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=211  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9194  NMI=0.8443  ARI=0.8152  0.1s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6826  NMI=0.7588  ARI=0.6189  0.6s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8631  NMI=0.7870  ARI=0.7012  0.3s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=248  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8952  NMI=0.8155  ARI=0.7778  0.7s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=303  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8709  ARI=0.8665  0.9s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9234  NMI=0.8816  ARI=0.8513  0.4s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7742  NMI=0.7473  ARI=0.6517  0.4s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=193  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9119  NMI=0.8519  ARI=0.8011  0.2s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=236  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8729  NMI=0.7834  ARI=0.7176  0.1s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9372  NMI=0.8933  ARI=0.8607  0.5s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8889  NMI=0.8271  ARI=0.7600  0.2s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=152  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9408  NMI=0.8650  ARI=0.8538  0.3s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=147  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9456  NMI=0.8811  ARI=0.8673  0.1s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9220  NMI=0.8734  ARI=0.8142  0.2s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7991  ARI=0.7247  0.1s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=265  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9170  NMI=0.8963  ARI=0.8470  0.4s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=313  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9297  NMI=0.8753  ARI=0.8385  0.5s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9179  ARI=0.9216  0.8s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9404  NMI=0.8823  ARI=0.8655  0.6s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=236  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9746  NMI=0.9392  ARI=0.9344  0.3s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=257  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6187  NMI=0.5937  ARI=0.4161  1.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9308  NMI=0.8750  ARI=0.8395  0.6s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7963  NMI=0.7501  ARI=0.6115  1.0s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=115  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9233  ARI=0.9068  0.1s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=117  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7436  NMI=0.6960  ARI=0.5564  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8713  NMI=0.7941  ARI=0.7232  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9839  NMI=0.9577  ARI=0.9597  0.1s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=281  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7794  NMI=0.7755  ARI=0.6880  0.4s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=301  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8671  NMI=0.8093  ARI=0.7575  0.7s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8327  NMI=0.7587  ARI=0.6681  0.8s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7208  NMI=0.7044  ARI=0.5564  0.3s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=256  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9062  NMI=0.8486  ARI=0.7963  0.2s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=314  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9554  NMI=0.9068  ARI=0.8892  0.6s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9701  NMI=0.9328  ARI=0.9258  0.5s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8604  NMI=0.8138  ARI=0.7597  0.7s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=159  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8931  NMI=0.8441  ARI=0.7748  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=193  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9275  NMI=0.8685  ARI=0.8320  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9257  NMI=0.8817  ARI=0.8307  0.2s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9777  NMI=0.9414  ARI=0.9480  0.3s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=289  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7647  NMI=0.8043  ARI=0.7136  1.4s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=241  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7842  NMI=0.7098  ARI=0.5823  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8109  NMI=0.7361  ARI=0.6082  0.9s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7925  NMI=0.7085  ARI=0.5925  0.3s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=287  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9895  NMI=0.9699  ARI=0.9738  1.0s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=304  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6743  NMI=0.6211  ARI=0.4615  0.9s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7143  NMI=0.6087  ARI=0.4404  1.3s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6483  NMI=0.5437  ARI=0.4101  1.5s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=210  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9429  NMI=0.9061  ARI=0.8597  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=225  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9244  NMI=0.8871  ARI=0.8445  0.3s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8381  NMI=0.7597  ARI=0.6765  0.7s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7991  NMI=0.7222  ARI=0.5959  0.3s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=255  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9804  NMI=0.9453  ARI=0.9458  0.8s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=253  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8221  NMI=0.7555  ARI=0.6595  0.2s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9245  NMI=0.8540  ARI=0.8216  0.3s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9942  NMI=0.9837  ARI=0.9859  0.5s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=257  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9922  NMI=0.9796  ARI=0.9827  0.5s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=279  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7885  NMI=0.7171  ARI=0.5932  0.8s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9225  NMI=0.8673  ARI=0.8472  0.8s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8421  NMI=0.7805  ARI=0.7024  0.4s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=158  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9873  NMI=0.9628  ARI=0.9630  0.2s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=188  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8670  NMI=0.8252  ARI=0.7246  0.1s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9231  NMI=0.8569  ARI=0.8230  0.2s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9676  NMI=0.9208  ARI=0.9204  0.2s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=249  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8514  NMI=0.7560  ARI=0.6777  0.5s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=231  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8961  NMI=0.8158  ARI=0.7569  0.6s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=98  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8673  NMI=0.7754  ARI=0.7162  0.1s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=268  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7425  NMI=0.5889  ARI=0.4868  1.4s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=223  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.6547  NMI=0.6398  ARI=0.4907  0.6s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=173  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7110  NMI=0.6749  ARI=0.5241  0.1s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=258  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7481  NMI=0.7193  ARI=0.6032  0.4s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=232  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8621  NMI=0.8327  ARI=0.6923  1.1s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=170  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9294  NMI=0.8721  ARI=0.8219  0.2s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=231  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8312  NMI=0.8058  ARI=0.6670  0.6s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=201  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9129  ARI=0.9153  0.2s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=132  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9015  NMI=0.8442  ARI=0.7760  0.1s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=289  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8547  NMI=0.8301  ARI=0.7215  1.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=286  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8217  NMI=0.7938  ARI=0.7140  0.5s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=108  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9352  NMI=0.8769  ARI=0.8489  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=348  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9339  NMI=0.8658  ARI=0.8443  0.5s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=300  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7700  NMI=0.7462  ARI=0.6407  0.7s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=191  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8901  NMI=0.8561  ARI=0.7271  0.4s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=246  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.7154  NMI=0.6561  ARI=0.5044  0.4s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=262  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9313  NMI=0.8930  ARI=0.8410  0.7s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=231  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7583  ARI=0.6487  0.5s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=313  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.8083  NMI=0.7897  ARI=0.6717  2.0s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=267  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9064  NMI=0.8387  ARI=0.8033  0.5s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=180  σ=0.5  fold=0 ===
+  TKSS: k_hat=5  ACC=0.9667  NMI=0.9283  ARI=0.9196  0.2s
+
+============================================================
+σ=0.5 fold=1  test=['0004', '0009', '0019', '0025', '0026']  train mats=96  test mats=24
+  --- tune TKSS over 96 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.7018  n=96  11.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.6973  n=96  16.4s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.6967  n=96  9.4s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.6908  n=96  22.5s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.6988  n=96  17.4s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.6970  n=96  6.5s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6955  n=96  12.4s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6881  n=96  22.8s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6929  n=96  11.0s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7040  n=96  16.8s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.6968  n=96  5.6s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7172  n=96  40.3s  d=1, lam=0.5626, s=2
+  TKSS trial 12: mean ARI=0.6788  n=96  35.4s  d=1, lam=0.3474, s=1
+  TKSS trial 13: mean ARI=0.6996  n=96  8.4s  d=3, lam=0.06667, s=2
+  TKSS trial 14: mean ARI=0.7040  n=96  15.9s  d=4, lam=0.5416, s=3
+  TKSS trial 15: mean ARI=0.6722  n=96  29.8s  d=1, lam=0.07126, s=1
+  TKSS trial 16: mean ARI=0.7087  n=96  20.3s  d=3, lam=0.781, s=3
+  TKSS trial 17: mean ARI=0.6990  n=96  8.0s  d=4, lam=0.06413, s=3
+  TKSS trial 18: mean ARI=0.6974  n=96  7.3s  d=7, lam=0.1262, s=3
+  TKSS trial 19: mean ARI=0.7085  n=96  17.0s  d=3, lam=2.159, s=2
+  TKSS trial 20: mean ARI=0.7212  n=96  40.0s  d=1, lam=0.4994, s=3
+  TKSS trial 21: mean ARI=0.7233  n=96  38.3s  d=1, lam=0.4708, s=3
+  TKSS trial 22: mean ARI=0.7233  n=96  38.3s  d=1, lam=0.4685, s=3
+  TKSS trial 23: mean ARI=0.7243  n=96  42.7s  d=1, lam=0.3912, s=4
+  TKSS trial 24: mean ARI=0.7090  n=96  17.8s  d=2, lam=0.135, s=4
+  TKSS trial 25: mean ARI=0.7020  n=96  19.2s  d=4, lam=0.285, s=5
+  TKSS trial 26: mean ARI=0.6979  n=96  12.2s  d=2, lam=0.02455, s=4
+  TKSS trial 27: mean ARI=0.7031  n=96  15.9s  d=5, lam=1.646, s=3
+  TKSS trial 28: mean ARI=0.7299  n=96  45.4s  d=1, lam=0.3986, s=5
+  TKSS trial 29: mean ARI=0.7032  n=96  28.6s  d=3, lam=9.072, s=5
+    best mean ARI=0.7299  tune 632.9s  d=1, lam=0.3986, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_sigmas_min30_trials20_params_knownk_cv_tkss_k5_sigma0p5_sigma0.5_fold1.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8514  NMI=0.7560  ARI=0.6777  0.5s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8075  NMI=0.8053  ARI=0.7015  1.3s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9174  NMI=0.8728  ARI=0.8252  0.4s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8501  ARI=0.8251  0.7s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8961  NMI=0.8158  ARI=0.7569  0.6s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=198  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9141  NMI=0.8388  ARI=0.8054  0.1s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9397  NMI=0.8789  ARI=0.8596  0.4s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9674  NMI=0.9216  ARI=0.9225  0.4s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8673  NMI=0.7754  ARI=0.7162  0.1s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=68  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8235  NMI=0.7526  ARI=0.6530  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9080  NMI=0.8306  ARI=0.7874  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8972  NMI=0.8523  ARI=0.7805  0.1s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7425  NMI=0.5889  ARI=0.4868  1.4s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6340  NMI=0.5537  ARI=0.4010  1.0s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7328  NMI=0.7766  ARI=0.6907  0.8s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9253  NMI=0.8545  ARI=0.8304  0.2s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6547  NMI=0.6398  ARI=0.4907  0.6s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=219  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8584  NMI=0.7901  ARI=0.7043  0.3s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9375  NMI=0.8685  ARI=0.8517  0.2s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9070  ARI=0.9100  0.3s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7110  NMI=0.6749  ARI=0.5241  0.1s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=173  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9133  NMI=0.8413  ARI=0.8036  0.1s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9625  NMI=0.9130  ARI=0.9139  0.3s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9416  NMI=0.8725  ARI=0.8632  0.1s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7481  NMI=0.7193  ARI=0.6032  0.4s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=273  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7509  NMI=0.6259  ARI=0.4953  0.9s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6160  NMI=0.6577  ARI=0.5145  0.6s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6456  NMI=0.6909  ARI=0.5315  0.4s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8621  NMI=0.8327  ARI=0.6923  1.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=280  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8036  NMI=0.7182  ARI=0.6183  1.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6622  NMI=0.7279  ARI=0.5731  0.7s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8830  NMI=0.8466  ARI=0.7549  0.2s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9294  NMI=0.8721  ARI=0.8219  0.2s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=211  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9194  NMI=0.8443  ARI=0.8152  0.1s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6826  NMI=0.7588  ARI=0.6189  0.6s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8631  NMI=0.7870  ARI=0.7012  0.3s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8312  NMI=0.8058  ARI=0.6670  0.6s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=303  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8709  ARI=0.8665  0.9s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9234  NMI=0.8816  ARI=0.8513  0.4s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7742  NMI=0.7473  ARI=0.6517  0.4s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9129  ARI=0.9153  0.2s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=236  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8729  NMI=0.7834  ARI=0.7176  0.1s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9372  NMI=0.8933  ARI=0.8607  0.5s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8889  NMI=0.8271  ARI=0.7600  0.2s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9015  NMI=0.8442  ARI=0.7760  0.1s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=147  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9456  NMI=0.8811  ARI=0.8673  0.1s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9220  NMI=0.8734  ARI=0.8142  0.2s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7991  ARI=0.7247  0.1s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8547  NMI=0.8301  ARI=0.7215  1.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=313  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9297  NMI=0.8753  ARI=0.8385  0.5s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9179  ARI=0.9216  0.8s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9404  NMI=0.8823  ARI=0.8655  0.6s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8217  NMI=0.7938  ARI=0.7140  0.5s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=257  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6187  NMI=0.5937  ARI=0.4161  1.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9308  NMI=0.8750  ARI=0.8395  0.6s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7963  NMI=0.7501  ARI=0.6115  1.0s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9352  NMI=0.8769  ARI=0.8489  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=117  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7436  NMI=0.6960  ARI=0.5564  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8713  NMI=0.7941  ARI=0.7232  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9839  NMI=0.9577  ARI=0.9597  0.1s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9339  NMI=0.8658  ARI=0.8443  0.5s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=301  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8671  NMI=0.8093  ARI=0.7575  0.6s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8327  NMI=0.7587  ARI=0.6681  0.8s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7208  NMI=0.7044  ARI=0.5564  0.3s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7700  NMI=0.7462  ARI=0.6407  0.7s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=314  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9554  NMI=0.9068  ARI=0.8892  0.6s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9701  NMI=0.9328  ARI=0.9258  0.5s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8604  NMI=0.8138  ARI=0.7597  0.7s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8901  NMI=0.8561  ARI=0.7271  0.4s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=193  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9275  NMI=0.8685  ARI=0.8320  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9257  NMI=0.8817  ARI=0.8307  0.2s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9777  NMI=0.9414  ARI=0.9480  0.3s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7154  NMI=0.6561  ARI=0.5044  0.4s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=241  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7842  NMI=0.7098  ARI=0.5823  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8109  NMI=0.7361  ARI=0.6082  0.8s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7925  NMI=0.7085  ARI=0.5925  0.3s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9313  NMI=0.8930  ARI=0.8410  0.7s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=304  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6743  NMI=0.6211  ARI=0.4615  0.9s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7143  NMI=0.6087  ARI=0.4404  1.3s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.6483  NMI=0.5437  ARI=0.4101  1.5s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7583  ARI=0.6487  0.5s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=225  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9244  NMI=0.8871  ARI=0.8445  0.3s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8381  NMI=0.7597  ARI=0.6765  0.7s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7991  NMI=0.7222  ARI=0.5959  0.3s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8083  NMI=0.7897  ARI=0.6717  1.8s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=253  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8221  NMI=0.7555  ARI=0.6595  0.2s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9245  NMI=0.8540  ARI=0.8216  0.3s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9942  NMI=0.9837  ARI=0.9859  0.5s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9064  NMI=0.8387  ARI=0.8033  0.5s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=279  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7885  NMI=0.7171  ARI=0.5932  0.8s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9225  NMI=0.8673  ARI=0.8472  0.8s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8421  NMI=0.7805  ARI=0.7024  0.4s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9667  NMI=0.9283  ARI=0.9196  0.2s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=188  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8670  NMI=0.8252  ARI=0.7246  0.1s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9231  NMI=0.8569  ARI=0.8230  0.2s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9676  NMI=0.9208  ARI=0.9204  0.2s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=212  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8679  NMI=0.8110  ARI=0.7224  0.5s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=188  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9840  NMI=0.9623  ARI=0.9524  0.3s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=93  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7957  NMI=0.7901  ARI=0.6658  0.1s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=250  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9360  NMI=0.8677  ARI=0.8512  0.5s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=196  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8756  ARI=0.8623  0.3s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=156  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9808  NMI=0.9513  ARI=0.9484  0.1s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=237  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9367  NMI=0.8782  ARI=0.8475  0.4s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=204  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8440  ARI=0.8282  0.4s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=150  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9533  NMI=0.8952  ARI=0.8876  0.2s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=248  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8952  NMI=0.8155  ARI=0.7778  0.6s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=193  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9119  NMI=0.8519  ARI=0.8011  0.2s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=152  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9408  NMI=0.8650  ARI=0.8538  0.3s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=265  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9170  NMI=0.8963  ARI=0.8470  0.4s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=236  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9746  NMI=0.9392  ARI=0.9344  0.3s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=115  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9233  ARI=0.9068  0.1s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=281  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7794  NMI=0.7755  ARI=0.6880  0.4s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=256  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9062  NMI=0.8486  ARI=0.7963  0.2s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=159  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.8931  NMI=0.8441  ARI=0.7748  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=289  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.7647  NMI=0.8043  ARI=0.7136  1.4s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=287  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9895  NMI=0.9699  ARI=0.9738  0.9s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=210  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9429  NMI=0.9061  ARI=0.8597  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=255  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9804  NMI=0.9453  ARI=0.9458  0.7s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=257  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9922  NMI=0.9796  ARI=0.9827  0.5s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=158  σ=0.5  fold=1 ===
+  TKSS: k_hat=5  ACC=0.9873  NMI=0.9628  ARI=0.9630  0.2s
+
+============================================================
+σ=0.5 fold=2  test=['0001', '0005', '0011', '0023', '0024']  train mats=96  test mats=24
+  --- tune TKSS over 96 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.7021  n=96  11.5s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.6939  n=96  14.5s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.6951  n=96  8.7s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.6906  n=96  21.7s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.6966  n=96  16.0s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.6952  n=96  6.4s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6977  n=96  11.9s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6855  n=96  22.2s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6924  n=96  10.8s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7065  n=96  16.1s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.6941  n=96  5.4s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7469  n=96  38.5s  d=1, lam=0.5626, s=2
+  TKSS trial 12: mean ARI=0.7046  n=96  31.4s  d=1, lam=0.3474, s=1
+  TKSS trial 13: mean ARI=0.6985  n=96  8.5s  d=3, lam=0.06667, s=2
+  TKSS trial 14: mean ARI=0.7036  n=96  15.1s  d=4, lam=0.5416, s=3
+  TKSS trial 15: mean ARI=0.6931  n=96  25.7s  d=1, lam=0.07126, s=1
+  TKSS trial 16: mean ARI=0.7120  n=96  20.2s  d=3, lam=0.781, s=3
+  TKSS trial 17: mean ARI=0.6981  n=96  7.9s  d=4, lam=0.06413, s=3
+  TKSS trial 18: mean ARI=0.6957  n=96  7.2s  d=7, lam=0.1262, s=3
+  TKSS trial 19: mean ARI=0.7103  n=96  17.1s  d=3, lam=2.159, s=2
+  TKSS trial 20: mean ARI=0.7569  n=96  38.0s  d=1, lam=0.4994, s=3
+  TKSS trial 21: mean ARI=0.7582  n=96  37.2s  d=1, lam=0.4708, s=3
+  TKSS trial 22: mean ARI=0.7583  n=96  37.4s  d=1, lam=0.4685, s=3
+  TKSS trial 23: mean ARI=0.7622  n=96  41.4s  d=1, lam=0.3912, s=4
+  TKSS trial 24: mean ARI=0.7142  n=96  18.1s  d=2, lam=0.135, s=4
+  TKSS trial 25: mean ARI=0.7021  n=96  17.9s  d=4, lam=0.285, s=5
+  TKSS trial 26: mean ARI=0.7000  n=96  15.2s  d=2, lam=0.02455, s=4
+  TKSS trial 27: mean ARI=0.7013  n=96  34.1s  d=5, lam=1.646, s=3
+  TKSS trial 28: mean ARI=0.7693  n=96  54.7s  d=1, lam=0.3986, s=5
+  TKSS trial 29: mean ARI=0.7036  n=96  32.6s  d=3, lam=9.072, s=5
+    best mean ARI=0.7693  tune 643.6s  d=1, lam=0.3986, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_sigmas_min30_trials20_params_knownk_cv_tkss_k5_sigma0p5_sigma0.5_fold2.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8514  NMI=0.7560  ARI=0.6777  0.7s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8679  NMI=0.8110  ARI=0.7224  0.8s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9174  NMI=0.8728  ARI=0.8252  0.5s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8501  ARI=0.8251  1.2s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8961  NMI=0.8158  ARI=0.7569  1.0s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9840  NMI=0.9623  ARI=0.9524  0.5s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9397  NMI=0.8789  ARI=0.8596  0.6s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9674  NMI=0.9216  ARI=0.9225  0.5s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8673  NMI=0.7754  ARI=0.7162  0.1s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7957  NMI=0.7901  ARI=0.6658  0.1s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9080  NMI=0.8306  ARI=0.7874  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8972  NMI=0.8523  ARI=0.7805  0.1s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7425  NMI=0.5889  ARI=0.4868  2.6s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9360  NMI=0.8677  ARI=0.8512  0.8s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7328  NMI=0.7766  ARI=0.6907  1.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9253  NMI=0.8545  ARI=0.8304  0.4s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6547  NMI=0.6398  ARI=0.4907  0.9s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8756  ARI=0.8623  0.5s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9375  NMI=0.8685  ARI=0.8517  0.4s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9070  ARI=0.9100  0.5s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7110  NMI=0.6749  ARI=0.5241  0.1s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9808  NMI=0.9513  ARI=0.9484  0.2s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9625  NMI=0.9130  ARI=0.9139  0.4s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9416  NMI=0.8725  ARI=0.8632  0.2s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7481  NMI=0.7193  ARI=0.6032  0.7s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9367  NMI=0.8782  ARI=0.8475  0.5s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6160  NMI=0.6577  ARI=0.5145  1.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6456  NMI=0.6909  ARI=0.5315  0.6s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8621  NMI=0.8327  ARI=0.6923  1.6s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8440  ARI=0.8282  0.5s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6622  NMI=0.7279  ARI=0.5731  1.0s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8830  NMI=0.8466  ARI=0.7549  0.3s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9294  NMI=0.8721  ARI=0.8219  0.4s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9533  NMI=0.8952  ARI=0.8876  0.3s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6826  NMI=0.7588  ARI=0.6189  0.9s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8631  NMI=0.7870  ARI=0.7012  0.4s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8312  NMI=0.8058  ARI=0.6670  1.0s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8952  NMI=0.8155  ARI=0.7778  1.0s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9234  NMI=0.8816  ARI=0.8513  0.5s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7742  NMI=0.7473  ARI=0.6517  0.6s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9129  ARI=0.9153  0.3s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9119  NMI=0.8519  ARI=0.8011  0.3s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9372  NMI=0.8933  ARI=0.8607  0.7s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8889  NMI=0.8271  ARI=0.7600  0.3s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9015  NMI=0.8442  ARI=0.7760  0.2s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9408  NMI=0.8650  ARI=0.8538  0.4s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9220  NMI=0.8734  ARI=0.8142  0.3s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7991  ARI=0.7247  0.1s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8547  NMI=0.8301  ARI=0.7215  2.2s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9170  NMI=0.8963  ARI=0.8470  0.6s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9179  ARI=0.9216  1.2s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9404  NMI=0.8823  ARI=0.8655  1.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8217  NMI=0.7938  ARI=0.7140  1.0s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9746  NMI=0.9392  ARI=0.9344  0.4s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9308  NMI=0.8750  ARI=0.8395  0.9s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7963  NMI=0.7501  ARI=0.6115  1.8s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9352  NMI=0.8769  ARI=0.8489  0.1s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9652  NMI=0.9233  ARI=0.9068  0.1s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8713  NMI=0.7941  ARI=0.7232  0.1s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9839  NMI=0.9577  ARI=0.9597  0.2s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9339  NMI=0.8658  ARI=0.8443  1.1s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7794  NMI=0.7755  ARI=0.6880  0.7s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8327  NMI=0.7587  ARI=0.6681  1.5s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7208  NMI=0.7044  ARI=0.5564  0.5s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7700  NMI=0.7462  ARI=0.6407  1.5s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9062  NMI=0.8486  ARI=0.7963  0.4s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9701  NMI=0.9328  ARI=0.9258  1.0s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8604  NMI=0.8138  ARI=0.7597  1.0s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8901  NMI=0.8561  ARI=0.7271  0.6s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8931  NMI=0.8441  ARI=0.7748  0.1s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9257  NMI=0.8817  ARI=0.8307  0.3s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9777  NMI=0.9414  ARI=0.9480  0.5s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7154  NMI=0.6561  ARI=0.5044  0.6s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7647  NMI=0.8043  ARI=0.7136  2.8s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8109  NMI=0.7361  ARI=0.6082  1.2s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7925  NMI=0.7085  ARI=0.5925  0.3s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9313  NMI=0.8930  ARI=0.8410  0.8s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9895  NMI=0.9699  ARI=0.9738  2.9s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7143  NMI=0.6087  ARI=0.4404  1.3s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6483  NMI=0.5437  ARI=0.4101  1.5s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7583  ARI=0.6487  0.5s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9429  NMI=0.9061  ARI=0.8597  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8381  NMI=0.7597  ARI=0.6765  0.7s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7991  NMI=0.7222  ARI=0.5959  0.3s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8083  NMI=0.7897  ARI=0.6717  1.9s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9804  NMI=0.9453  ARI=0.9458  0.8s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9245  NMI=0.8540  ARI=0.8216  0.3s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9942  NMI=0.9837  ARI=0.9859  0.4s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9064  NMI=0.8387  ARI=0.8033  0.5s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9922  NMI=0.9796  ARI=0.9827  0.5s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9225  NMI=0.8673  ARI=0.8472  0.8s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8421  NMI=0.7805  ARI=0.7024  0.4s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9667  NMI=0.9283  ARI=0.9196  0.2s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9873  NMI=0.9628  ARI=0.9630  0.2s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9231  NMI=0.8569  ARI=0.8230  0.2s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9676  NMI=0.9208  ARI=0.9204  0.2s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=265  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8075  NMI=0.8053  ARI=0.7015  1.3s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=198  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9141  NMI=0.8388  ARI=0.8054  0.1s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=68  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8235  NMI=0.7526  ARI=0.6530  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=265  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6340  NMI=0.5537  ARI=0.4010  1.0s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=219  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8584  NMI=0.7901  ARI=0.7043  0.3s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=173  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9133  NMI=0.8413  ARI=0.8036  0.1s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=273  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7509  NMI=0.6259  ARI=0.4953  0.8s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=280  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8036  NMI=0.7182  ARI=0.6183  1.0s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=211  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9194  NMI=0.8443  ARI=0.8152  0.1s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=303  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8709  ARI=0.8665  0.8s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=236  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8729  NMI=0.7834  ARI=0.7176  0.1s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=147  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9456  NMI=0.8811  ARI=0.8673  0.1s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=313  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9297  NMI=0.8753  ARI=0.8385  0.5s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=257  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6187  NMI=0.5937  ARI=0.4161  1.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=117  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7436  NMI=0.6960  ARI=0.5564  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=301  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8671  NMI=0.8093  ARI=0.7575  0.6s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=314  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9554  NMI=0.9068  ARI=0.8892  0.6s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=193  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9275  NMI=0.8685  ARI=0.8320  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=241  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7842  NMI=0.7098  ARI=0.5823  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=304  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.6743  NMI=0.6211  ARI=0.4615  0.9s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=225  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.9244  NMI=0.8871  ARI=0.8445  0.3s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=253  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8221  NMI=0.7555  ARI=0.6595  0.2s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=279  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.7885  NMI=0.7171  ARI=0.5932  0.8s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=188  σ=0.5  fold=2 ===
+  TKSS: k_hat=5  ACC=0.8670  NMI=0.8252  ARI=0.7246  0.1s
+
+============================================================
+σ=0.5 fold=3  test=['0007', '0010', '0015', '0016', '0021']  train mats=96  test mats=24
+  --- tune TKSS over 96 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.7029  n=96  11.7s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.6968  n=96  15.6s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.6961  n=96  8.7s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.6920  n=96  23.1s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.6980  n=96  16.9s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.6966  n=96  6.5s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6985  n=96  11.8s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6848  n=96  23.9s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6922  n=96  11.8s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7068  n=96  16.4s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.6958  n=96  5.4s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7351  n=96  38.7s  d=1, lam=0.5626, s=2
+  TKSS trial 12: mean ARI=0.6975  n=96  31.5s  d=1, lam=0.3474, s=1
+  TKSS trial 13: mean ARI=0.7002  n=96  8.3s  d=3, lam=0.06667, s=2
+  TKSS trial 14: mean ARI=0.7072  n=96  16.5s  d=4, lam=0.5416, s=3
+  TKSS trial 15: mean ARI=0.6993  n=96  7.8s  d=4, lam=0.06907, s=3
+  TKSS trial 16: mean ARI=0.7443  n=96  38.4s  d=1, lam=0.4776, s=3
+  TKSS trial 17: mean ARI=0.7078  n=96  31.3s  d=1, lam=0.06413, s=3
+  TKSS trial 18: mean ARI=0.7023  n=96  31.3s  d=1, lam=0.1227, s=2
+  TKSS trial 19: mean ARI=0.7139  n=96  22.0s  d=3, lam=2.27, s=3
+  TKSS trial 20: mean ARI=0.7005  n=96  10.0s  d=6, lam=0.4994, s=2
+  TKSS trial 21: mean ARI=0.7140  n=96  21.9s  d=3, lam=2.104, s=3
+  TKSS trial 22: mean ARI=0.7138  n=96  22.3s  d=3, lam=9.215, s=3
+  TKSS trial 23: mean ARI=0.7154  n=96  29.8s  d=2, lam=1.971, s=4
+  TKSS trial 24: mean ARI=0.7457  n=96  42.1s  d=1, lam=0.6672, s=4
+  TKSS trial 25: mean ARI=0.7601  n=96  48.5s  d=1, lam=0.6227, s=5
+  TKSS trial 26: mean ARI=0.7051  n=96  13.8s  d=4, lam=0.1389, s=5
+  TKSS trial 27: mean ARI=0.7209  n=96  26.3s  d=2, lam=0.3107, s=5
+  TKSS trial 28: mean ARI=0.7509  n=96  47.1s  d=1, lam=0.9283, s=4
+  TKSS trial 29: mean ARI=0.7054  n=96  21.3s  d=4, lam=0.8554, s=4
+    best mean ARI=0.7601  tune 660.7s  d=1, lam=0.6227, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_sigmas_min30_trials20_params_knownk_cv_tkss_k5_sigma0p5_sigma0.5_fold3.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8434  NMI=0.7464  ARI=0.6623  0.6s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9127  ARI=0.9085  0.6s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=265  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8075  NMI=0.7952  ARI=0.6961  1.3s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9254  NMI=0.8532  ARI=0.8249  0.5s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9004  NMI=0.8230  ARI=0.7671  0.6s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9787  NMI=0.9465  ARI=0.9383  0.3s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=198  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9141  NMI=0.8388  ARI=0.8054  0.1s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9674  NMI=0.9216  ARI=0.9225  0.4s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8673  NMI=0.7754  ARI=0.7162  0.1s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7957  NMI=0.7901  ARI=0.6658  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=68  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8235  NMI=0.7526  ARI=0.6530  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8972  NMI=0.8523  ARI=0.7805  0.1s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7799  NMI=0.6422  ARI=0.5368  1.3s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9320  NMI=0.8608  ARI=0.8437  0.5s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=265  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6340  NMI=0.5596  ARI=0.4061  1.2s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9253  NMI=0.8545  ARI=0.8304  0.2s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6592  NMI=0.6350  ARI=0.4907  0.5s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8756  ARI=0.8623  0.3s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=219  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8584  NMI=0.7901  ARI=0.7043  0.3s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9481  NMI=0.8847  ARI=0.8776  0.3s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8671  NMI=0.7956  ARI=0.6971  0.5s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9808  NMI=0.9513  ARI=0.9484  0.1s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=173  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9191  NMI=0.8469  ARI=0.8152  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9416  NMI=0.8725  ARI=0.8632  0.1s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7481  NMI=0.7193  ARI=0.6032  0.4s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9283  NMI=0.8559  ARI=0.8262  0.5s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=273  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7875  NMI=0.6680  ARI=0.5414  0.9s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6582  NMI=0.7412  ARI=0.5864  0.8s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8534  NMI=0.8292  ARI=0.6822  1.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9216  NMI=0.8440  ARI=0.8282  0.3s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=280  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8036  NMI=0.7182  ARI=0.6183  1.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8617  NMI=0.8121  ARI=0.7076  0.3s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9294  NMI=0.8721  ARI=0.8219  0.2s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9533  NMI=0.8952  ARI=0.8876  0.2s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=211  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9194  NMI=0.8443  ARI=0.8152  0.1s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8631  NMI=0.7870  ARI=0.7012  0.3s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8312  NMI=0.8058  ARI=0.6670  0.6s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8952  NMI=0.8155  ARI=0.7778  0.7s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=303  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9439  NMI=0.8709  ARI=0.8665  0.8s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7327  NMI=0.7355  ARI=0.6344  0.7s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9602  NMI=0.9026  ARI=0.9027  0.2s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9067  NMI=0.8449  ARI=0.7898  0.2s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=236  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9449  NMI=0.8802  ARI=0.8649  1.0s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8838  NMI=0.8132  ARI=0.7497  0.2s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9015  NMI=0.8442  ARI=0.7760  0.1s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9408  NMI=0.8650  ARI=0.8538  0.3s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=147  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9456  NMI=0.8811  ARI=0.8673  0.1s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8571  NMI=0.7991  ARI=0.7247  0.1s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8547  NMI=0.8301  ARI=0.7215  1.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9132  NMI=0.8846  ARI=0.8383  0.4s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=313  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9265  NMI=0.8680  ARI=0.8310  0.6s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9404  NMI=0.8823  ARI=0.8655  0.7s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8217  NMI=0.7942  ARI=0.7150  0.5s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9746  NMI=0.9392  ARI=0.9344  0.3s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=257  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6148  NMI=0.5829  ARI=0.4108  1.0s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8000  NMI=0.7515  ARI=0.6148  0.9s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9352  NMI=0.8769  ARI=0.8489  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9478  NMI=0.8850  ARI=0.8622  0.1s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=117  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7863  NMI=0.7416  ARI=0.6270  0.1s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9839  NMI=0.9577  ARI=0.9597  0.1s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9684  NMI=0.9179  ARI=0.9197  1.3s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7829  NMI=0.7859  ARI=0.6937  0.4s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=301  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8937  NMI=0.8402  ARI=0.8138  0.8s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7849  NMI=0.7983  ARI=0.6784  0.8s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7800  NMI=0.7462  ARI=0.6416  0.8s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8867  NMI=0.8349  ARI=0.7669  0.6s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=314  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9522  NMI=0.9005  ARI=0.8822  0.7s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9414  NMI=0.8893  ARI=0.8936  0.8s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8848  NMI=0.8415  ARI=0.7174  0.4s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8931  NMI=0.8441  ARI=0.7748  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=193  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9326  NMI=0.8774  ARI=0.8442  0.1s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9609  NMI=0.9037  ARI=0.9100  0.3s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7236  NMI=0.6590  ARI=0.5086  0.5s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7647  NMI=0.8043  ARI=0.7136  1.5s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=241  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7842  NMI=0.7098  ARI=0.5823  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7759  NMI=0.7007  ARI=0.5752  0.3s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9275  NMI=0.8855  ARI=0.8313  0.7s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9861  NMI=0.9586  ARI=0.9641  1.0s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=304  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7632  NMI=0.7277  ARI=0.6164  0.6s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.5897  NMI=0.5876  ARI=0.3483  1.3s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8701  NMI=0.7718  ARI=0.6818  0.7s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9381  NMI=0.8918  ARI=0.8476  0.2s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=225  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9156  NMI=0.8709  ARI=0.8275  0.3s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7773  NMI=0.7062  ARI=0.5578  0.4s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7955  NMI=0.7792  ARI=0.6640  2.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9804  NMI=0.9453  ARI=0.9458  0.8s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=253  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8577  NMI=0.8091  ARI=0.7169  0.6s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9913  NMI=0.9743  ARI=0.9790  0.5s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9064  NMI=0.8320  ARI=0.8029  0.5s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9844  NMI=0.9580  ARI=0.9601  0.3s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=279  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7957  NMI=0.7256  ARI=0.6110  0.8s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8496  NMI=0.7999  ARI=0.7184  0.4s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9667  NMI=0.9205  ARI=0.9190  0.2s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9873  NMI=0.9628  ARI=0.9630  0.3s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=188  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7979  NMI=0.7946  ARI=0.6473  0.4s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9622  NMI=0.9056  ARI=0.9086  0.2s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=242  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9174  NMI=0.8728  ARI=0.8252  0.4s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=199  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9397  NMI=0.8789  ARI=0.8596  0.4s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=87  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9080  NMI=0.8306  ARI=0.7874  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=232  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7241  NMI=0.7583  ARI=0.6637  0.7s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=192  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9375  NMI=0.8685  ARI=0.8517  0.2s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=160  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9563  NMI=0.8953  ARI=0.8976  0.2s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=250  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6360  NMI=0.6532  ARI=0.5208  0.7s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=222  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.6712  NMI=0.7330  ARI=0.5818  0.6s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=167  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7126  NMI=0.7918  ARI=0.6742  0.7s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=248  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9194  NMI=0.8700  ARI=0.8441  0.3s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=223  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9372  NMI=0.8933  ARI=0.8607  0.4s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=141  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9149  NMI=0.8552  ARI=0.7997  0.2s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=239  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9038  NMI=0.8546  ARI=0.8306  0.7s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=260  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9269  NMI=0.8633  ARI=0.8310  0.6s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=101  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8911  NMI=0.8236  ARI=0.7692  0.1s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=275  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8327  NMI=0.7508  ARI=0.6670  0.5s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=301  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9668  NMI=0.9223  ARI=0.9177  0.5s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=175  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9257  NMI=0.8817  ARI=0.8307  0.2s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=312  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7308  NMI=0.6304  ARI=0.4877  1.5s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=329  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.7112  NMI=0.5997  ARI=0.4346  1.4s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=210  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8286  NMI=0.7516  ARI=0.6621  0.7s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=278  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9353  NMI=0.8823  ARI=0.8496  0.2s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=258  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.9225  NMI=0.8673  ARI=0.8472  0.8s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=169  σ=0.5  fold=3 ===
+  TKSS: k_hat=5  ACC=0.8994  NMI=0.8388  ARI=0.7837  0.4s
+
+============================================================
+σ=0.5 fold=4  test=['0003', '0012', '0017', '0018', '0020']  train mats=96  test mats=24
+  --- tune TKSS over 96 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.7084  n=96  10.9s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.7029  n=96  15.7s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.7025  n=96  8.4s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.6976  n=96  23.2s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.7039  n=96  16.8s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.7028  n=96  6.2s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.7037  n=96  12.9s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6930  n=96  23.8s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6992  n=96  10.9s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7135  n=96  17.0s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.7024  n=96  5.6s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7348  n=96  39.7s  d=1, lam=0.5626, s=2
+  TKSS trial 12: mean ARI=0.6979  n=96  34.1s  d=1, lam=0.3474, s=1
+  TKSS trial 13: mean ARI=0.7063  n=96  8.8s  d=3, lam=0.06667, s=2
+  TKSS trial 14: mean ARI=0.7102  n=96  14.9s  d=4, lam=0.5416, s=3
+  TKSS trial 15: mean ARI=0.6877  n=96  28.5s  d=1, lam=0.07126, s=1
+  TKSS trial 16: mean ARI=0.7146  n=96  18.8s  d=3, lam=0.781, s=3
+  TKSS trial 17: mean ARI=0.7053  n=96  7.9s  d=4, lam=0.06413, s=3
+  TKSS trial 18: mean ARI=0.7034  n=96  6.9s  d=7, lam=0.1262, s=3
+  TKSS trial 19: mean ARI=0.7151  n=96  16.6s  d=3, lam=2.159, s=2
+  TKSS trial 20: mean ARI=0.7380  n=96  41.5s  d=1, lam=9.15, s=2
+  TKSS trial 21: mean ARI=0.7390  n=96  41.8s  d=1, lam=1.828, s=2
+  TKSS trial 22: mean ARI=0.7380  n=96  41.1s  d=1, lam=9.215, s=2
+  TKSS trial 23: mean ARI=0.7380  n=96  41.0s  d=1, lam=9.866, s=2
+  TKSS trial 24: mean ARI=0.7181  n=96  29.4s  d=2, lam=9.418, s=3
+  TKSS trial 25: mean ARI=0.7077  n=96  8.9s  d=4, lam=2.96, s=1
+  TKSS trial 26: mean ARI=0.7222  n=96  23.8s  d=2, lam=6.768, s=2
+  TKSS trial 27: mean ARI=0.7082  n=96  15.1s  d=5, lam=1.568, s=3
+  TKSS trial 28: mean ARI=0.7407  n=96  41.3s  d=1, lam=3.389, s=2
+  TKSS trial 29: mean ARI=0.7148  n=96  16.7s  d=3, lam=3.221, s=2
+    best mean ARI=0.7407  tune 628.3s  d=1, lam=3.389, s=2
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_sigmas_min30_trials20_params_knownk_cv_tkss_k5_sigma0p5_sigma0.5_fold4.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8675  NMI=0.7861  ARI=0.7106  0.3s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8915  NMI=0.8360  ARI=0.7628  0.2s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=265  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8792  NMI=0.8413  ARI=0.7673  0.9s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=242  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9215  NMI=0.8785  ARI=0.8348  0.2s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8615  NMI=0.8050  ARI=0.7276  0.3s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9734  NMI=0.9356  ARI=0.9256  0.4s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=198  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9091  NMI=0.8343  ARI=0.7955  0.0s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=199  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9347  NMI=0.8731  ARI=0.8473  0.1s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9082  NMI=0.8253  ARI=0.7938  0.1s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7634  NMI=0.7521  ARI=0.6334  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=68  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8235  NMI=0.7526  ARI=0.6530  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=87  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8966  NMI=0.8132  ARI=0.7617  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7873  NMI=0.7020  ARI=0.6146  0.9s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9800  NMI=0.9419  ARI=0.9499  0.3s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=265  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7434  NMI=0.5873  ARI=0.4764  0.6s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=232  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7457  NMI=0.7895  ARI=0.7044  0.5s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6816  NMI=0.6743  ARI=0.5289  0.5s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9388  NMI=0.8602  ARI=0.8455  0.3s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=219  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8539  NMI=0.7867  ARI=0.6987  0.3s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=192  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9271  NMI=0.8568  ARI=0.8376  0.4s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7225  NMI=0.6796  ARI=0.5353  0.1s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9679  NMI=0.9214  ARI=0.9172  0.1s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=173  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9191  NMI=0.8469  ARI=0.8152  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=160  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9500  NMI=0.8870  ARI=0.8781  0.3s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7326  NMI=0.7025  ARI=0.5719  0.3s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9451  NMI=0.8888  ARI=0.8642  0.5s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=273  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7582  NMI=0.6702  ARI=0.5253  0.8s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=250  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6200  NMI=0.6362  ARI=0.5092  0.5s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6853  NMI=0.7106  ARI=0.5597  0.4s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8824  NMI=0.7945  ARI=0.7354  0.3s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=280  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8000  NMI=0.7092  ARI=0.5948  1.0s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=222  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.5856  NMI=0.6619  ARI=0.4915  0.3s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9353  NMI=0.8841  ARI=0.8369  0.2s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9533  NMI=0.8866  ARI=0.8845  0.2s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=211  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8957  NMI=0.8247  ARI=0.7698  0.3s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=167  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6048  NMI=0.6745  ARI=0.4965  0.3s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7792  NMI=0.7848  ARI=0.6578  0.4s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8710  NMI=0.8066  ARI=0.7488  0.3s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=303  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8779  NMI=0.7774  ARI=0.6977  1.5s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=248  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9153  NMI=0.8673  ARI=0.8393  0.3s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9801  NMI=0.9461  ARI=0.9508  0.3s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9016  NMI=0.8483  ARI=0.7857  0.2s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=236  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8729  NMI=0.7873  ARI=0.7195  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=223  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9283  NMI=0.8829  ARI=0.8416  0.2s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8788  NMI=0.8028  ARI=0.7288  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8816  NMI=0.8145  ARI=0.7206  0.3s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=147  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9524  NMI=0.8882  ARI=0.8832  0.1s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=141  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8652  NMI=0.8052  ARI=0.7196  0.2s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8789  NMI=0.8415  ARI=0.7516  0.8s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9132  NMI=0.8877  ARI=0.8374  0.4s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=313  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9361  NMI=0.8898  ARI=0.8523  0.8s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=239  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8619  NMI=0.8106  ARI=0.7459  0.5s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7168  NMI=0.6683  ARI=0.5273  1.2s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9619  NMI=0.9072  ARI=0.9004  0.3s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=257  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6187  NMI=0.5672  ARI=0.3947  0.8s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=260  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9538  NMI=0.9059  ARI=0.8927  0.4s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9352  NMI=0.8769  ARI=0.8489  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9565  NMI=0.9140  ARI=0.8817  0.1s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=117  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7863  NMI=0.7554  ARI=0.6391  0.1s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=101  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8911  NMI=0.8236  ARI=0.7692  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9023  NMI=0.8192  ARI=0.7767  1.0s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7794  NMI=0.7858  ARI=0.6975  0.6s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=301  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8771  NMI=0.8242  ARI=0.7735  0.7s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=275  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7782  NMI=0.6624  ARI=0.5694  1.0s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6900  NMI=0.6511  ARI=0.5321  1.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9023  NMI=0.8356  ARI=0.7849  0.2s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=314  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9522  NMI=0.9001  ARI=0.8810  0.7s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=301  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9601  NMI=0.9173  ARI=0.9010  0.5s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8796  NMI=0.8020  ARI=0.7034  0.5s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8931  NMI=0.8384  ARI=0.7739  0.1s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=193  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9275  NMI=0.8685  ARI=0.8320  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=175  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9314  NMI=0.8865  ARI=0.8415  0.2s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7033  NMI=0.6515  ARI=0.4959  0.5s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6713  NMI=0.7230  ARI=0.5725  0.8s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=241  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7925  NMI=0.7127  ARI=0.5869  0.2s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=312  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7147  NMI=0.6046  ARI=0.4900  0.8s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8969  NMI=0.8365  ARI=0.7747  0.6s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9617  NMI=0.9240  ARI=0.9050  0.4s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=304  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6480  NMI=0.5515  ARI=0.4118  1.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=329  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6900  NMI=0.5712  ARI=0.4247  1.2s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9091  NMI=0.8487  ARI=0.7659  0.5s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9286  NMI=0.8587  ARI=0.8255  0.2s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=225  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9200  NMI=0.8642  ARI=0.8322  0.3s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=210  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9000  NMI=0.8079  ARI=0.7624  0.4s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8786  NMI=0.8233  ARI=0.7484  1.0s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9843  NMI=0.9533  ARI=0.9572  1.0s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=253  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8261  NMI=0.7732  ARI=0.6735  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=278  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9245  NMI=0.8667  ARI=0.8232  0.3s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8876  NMI=0.8210  ARI=0.7721  0.5s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9883  NMI=0.9638  ARI=0.9715  0.5s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=279  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8423  NMI=0.7498  ARI=0.6974  0.9s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=258  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9419  NMI=0.8874  ARI=0.8825  0.9s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9667  NMI=0.9283  ARI=0.9196  0.1s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9684  NMI=0.9128  ARI=0.9097  0.3s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=188  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8723  NMI=0.8290  ARI=0.7334  0.1s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=169  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9645  NMI=0.9108  ARI=0.9135  0.2s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=268  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9366  NMI=0.8728  ARI=0.8470  0.4s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=215  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9581  NMI=0.9078  ARI=0.9008  0.3s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=107  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8879  NMI=0.8200  ARI=0.7500  0.1s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=241  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9461  NMI=0.8962  ARI=0.8808  0.3s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=212  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9623  NMI=0.9070  ARI=0.9100  0.4s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=154  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9805  NMI=0.9469  ARI=0.9538  0.1s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=237  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6160  NMI=0.6174  ARI=0.4371  0.6s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=188  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8723  NMI=0.8523  ARI=0.7518  0.2s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=168  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8631  NMI=0.7921  ARI=0.7010  0.3s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=217  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7512  NMI=0.7136  ARI=0.5813  0.5s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=198  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8889  NMI=0.8271  ARI=0.7600  0.2s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=147  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8707  NMI=0.8110  ARI=0.7517  0.2s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=285  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9158  NMI=0.8405  ARI=0.8106  0.7s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=270  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7000  NMI=0.6621  ARI=0.5096  1.3s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=124  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.1s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=265  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7132  NMI=0.6942  ARI=0.5500  0.5s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=222  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8468  NMI=0.8115  ARI=0.7514  0.9s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=179  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9330  NMI=0.8650  ARI=0.8414  0.3s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=241  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7925  NMI=0.7066  ARI=0.5891  0.4s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=290  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.6414  NMI=0.5189  ARI=0.4080  1.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=229  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.7729  NMI=0.7063  ARI=0.5631  0.2s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=344  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9971  NMI=0.9906  ARI=0.9929  0.6s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=266  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.8985  NMI=0.8364  ARI=0.7961  1.0s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=185  σ=0.5  fold=4 ===
+  TKSS: k_hat=5  ACC=0.9730  NMI=0.9317  ARI=0.9335  0.2s
+
+=== inference time per method ===
+  TKSS: mean=0.5021s  std=0.4160s  total=301.3s  n=600
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k5_sigmas_min30_trials20_knownk_cv_tkss_k5_sigma0p5_timing.json
+
+=== mean over matrices ===
+  TKSS train σ=0.5: ACC=0.8678  NMI=0.8180  ARI=0.7530  n=480
+  TKSS test σ=0.5: ACC=0.8663  NMI=0.8160  ARI=0.7502  n=120
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k5_sigmas_min30_trials20_knownk_cv_tkss_k5_sigma0p5.csv
+end=Sat Sep  5 20:17:01 EDT 2026
+Experiment completed!

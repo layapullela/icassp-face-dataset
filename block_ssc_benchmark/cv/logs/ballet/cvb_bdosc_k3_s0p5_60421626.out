@@ -1,0 +1,757 @@
+========================================
+Job: cvb_bdosc_k3_s0p5
+Method: BDOSC  k: 3  sigma: 0.5  tune_pool_groups: 20
+========================================
+host=gl3134.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sun Sep  6 19:01:09 EDT 2026
+=== Ballet Clustering Experiment ===
+k=3  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=20  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=(0.5,)  append=False  no_tune=False  known_k=True  csv=ballet_cluster_sigmas_0.5_results_knownk_cv_bdosc_k3_sigma0p5.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+
+Methods: ['BDOSC']
+CV mode: 14 folds of size 3, each rotated as test
+  2 sequences unused (remainder dropped)
+  fold 0: ['seq_000003', 'seq_000005', 'seq_000035']
+  fold 1: ['seq_000019', 'seq_000024', 'seq_000033']
+  fold 2: ['seq_000002', 'seq_000012', 'seq_000023']
+  fold 3: ['seq_000020', 'seq_000022', 'seq_000028']
+  fold 4: ['seq_000004', 'seq_000011', 'seq_000042']
+  fold 5: ['seq_000017', 'seq_000031', 'seq_000039']
+  fold 6: ['seq_000009', 'seq_000021', 'seq_000029']
+  fold 7: ['seq_000018', 'seq_000036', 'seq_000043']
+  fold 8: ['seq_000001', 'seq_000025', 'seq_000026']
+  fold 9: ['seq_000027', 'seq_000040', 'seq_000041']
+  fold 10: ['seq_000007', 'seq_000010', 'seq_000037']
+  fold 11: ['seq_000013', 'seq_000014', 'seq_000038']
+  fold 12: ['seq_000006', 'seq_000008', 'seq_000044']
+  fold 13: ['seq_000015', 'seq_000030', 'seq_000034']
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=0  test=['seq_000003', 'seq_000005', 'seq_000035']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold0.json
+
+=== train[1] k=3  dim=900  frames=160  σ=0.5  fold=0  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.4875  NMI=0.2790  ARI=0.0424  3.5s
+
+=== train[2] k=3  dim=900  frames=219  σ=0.5  fold=0  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.9132  NMI=0.7781  ARI=0.7776  3.5s
+
+=== train[3] k=3  dim=900  frames=164  σ=0.5  fold=0  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7012  NMI=0.3556  ARI=0.2435  1.9s
+
+=== train[4] k=3  dim=900  frames=252  σ=0.5  fold=0  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.7500  NMI=0.5715  ARI=0.4814  4.2s
+
+=== train[5] k=3  dim=900  frames=235  σ=0.5  fold=0  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.5617  NMI=0.4127  ARI=0.2320  3.7s
+
+=== train[6] k=3  dim=900  frames=155  σ=0.5  fold=0  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5419  NMI=0.2197  ARI=0.0446  1.7s
+
+=== train[7] k=3  dim=900  frames=153  σ=0.5  fold=0  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6993  NMI=0.3391  ARI=0.2351  1.7s
+
+=== train[8] k=3  dim=900  frames=149  σ=0.5  fold=0  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.7047  NMI=0.6978  ARI=0.5655  1.6s
+
+=== train[9] k=3  dim=900  frames=130  σ=0.5  fold=0  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.6462  NMI=0.3868  ARI=0.1886  1.2s
+
+=== train[10] k=3  dim=900  frames=99  σ=0.5  fold=0  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4343  NMI=0.2623  ARI=0.0156  0.8s
+
+=== train[11] k=3  dim=900  frames=210  σ=0.5  fold=0  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8905  NMI=0.7592  ARI=0.7574  3.1s
+
+=== train[12] k=3  dim=900  frames=205  σ=0.5  fold=0  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.8927  NMI=0.7523  ARI=0.7754  3.0s
+
+=== train[13] k=3  dim=900  frames=111  σ=0.5  fold=0  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.7928  NMI=0.6279  ARI=0.4941  1.0s
+
+=== test[0] k=3  dim=900  frames=88  σ=0.5  fold=0  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.6250  NMI=0.4587  ARI=0.2362  0.7s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=1  test=['seq_000019', 'seq_000024', 'seq_000033']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold1.json
+
+=== train[35] k=3  dim=900  frames=88  σ=0.5  fold=1  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5682  NMI=0.3444  ARI=0.1438  0.7s
+
+=== train[36] k=3  dim=900  frames=219  σ=0.5  fold=1  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.6027  NMI=0.3198  ARI=0.1453  3.4s
+
+=== train[37] k=3  dim=900  frames=164  σ=0.5  fold=1  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.4756  NMI=0.3125  ARI=0.0873  1.9s
+
+=== train[38] k=3  dim=900  frames=252  σ=0.5  fold=1  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.7183  NMI=0.5408  ARI=0.4351  4.2s
+
+=== train[39] k=3  dim=900  frames=235  σ=0.5  fold=1  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.5149  NMI=0.3394  ARI=0.1423  3.7s
+
+=== train[40] k=3  dim=900  frames=155  σ=0.5  fold=1  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5161  NMI=0.2293  ARI=0.0258  1.7s
+
+=== train[41] k=3  dim=900  frames=153  σ=0.5  fold=1  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.7255  NMI=0.3783  ARI=0.2813  1.7s
+
+=== train[42] k=3  dim=900  frames=149  σ=0.5  fold=1  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.6040  NMI=0.4769  ARI=0.3619  1.6s
+
+=== train[43] k=3  dim=900  frames=130  σ=0.5  fold=1  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.7000  NMI=0.4627  ARI=0.3071  1.2s
+
+=== train[44] k=3  dim=900  frames=99  σ=0.5  fold=1  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4848  NMI=0.2070  ARI=0.0023  0.8s
+
+=== train[45] k=3  dim=900  frames=210  σ=0.5  fold=1  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.4238  NMI=0.1876  ARI=0.0059  3.0s
+
+=== train[46] k=3  dim=900  frames=205  σ=0.5  fold=1  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.6976  NMI=0.5370  ARI=0.4104  3.0s
+
+=== train[47] k=3  dim=900  frames=111  σ=0.5  fold=1  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5315  NMI=0.2775  ARI=0.0903  1.0s
+
+=== test[34] k=3  dim=900  frames=160  σ=0.5  fold=1  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.6937  NMI=0.4778  ARI=0.4344  1.9s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=2  test=['seq_000002', 'seq_000012', 'seq_000023']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold2.json
+
+=== train[69] k=3  dim=900  frames=88  σ=0.5  fold=2  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5227  NMI=0.4230  ARI=0.2557  0.7s
+
+=== train[70] k=3  dim=900  frames=160  σ=0.5  fold=2  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5875  NMI=0.2153  ARI=0.0483  1.9s
+
+=== train[71] k=3  dim=900  frames=164  σ=0.5  fold=2  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7134  NMI=0.5272  ARI=0.4291  1.9s
+
+=== train[72] k=3  dim=900  frames=252  σ=0.5  fold=2  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.5079  NMI=0.4188  ARI=0.2461  4.1s
+
+=== train[73] k=3  dim=900  frames=235  σ=0.5  fold=2  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.7021  NMI=0.6610  ARI=0.5490  3.7s
+
+=== train[74] k=3  dim=900  frames=155  σ=0.5  fold=2  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.4710  NMI=0.1494  ARI=-0.0100  1.7s
+
+=== train[75] k=3  dim=900  frames=153  σ=0.5  fold=2  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6405  NMI=0.5260  ARI=0.3694  1.7s
+
+=== train[76] k=3  dim=900  frames=149  σ=0.5  fold=2  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.7584  NMI=0.4533  ARI=0.3461  1.6s
+
+=== train[77] k=3  dim=900  frames=130  σ=0.5  fold=2  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.5692  NMI=0.5556  ARI=0.4064  1.2s
+
+=== train[78] k=3  dim=900  frames=99  σ=0.5  fold=2  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.6566  NMI=0.4775  ARI=0.3320  0.8s
+
+=== train[79] k=3  dim=900  frames=210  σ=0.5  fold=2  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.7143  NMI=0.6930  ARI=0.5797  3.0s
+
+=== train[80] k=3  dim=900  frames=205  σ=0.5  fold=2  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4488  NMI=0.1142  ARI=-0.0107  3.0s
+
+=== train[81] k=3  dim=900  frames=111  σ=0.5  fold=2  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.7027  NMI=0.5090  ARI=0.4025  1.0s
+
+=== test[68] k=3  dim=900  frames=219  σ=0.5  fold=2  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5160  NMI=0.1955  ARI=0.0503  3.4s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=3  test=['seq_000020', 'seq_000022', 'seq_000028']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold3.json
+
+=== train[103] k=3  dim=900  frames=88  σ=0.5  fold=3  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.6250  NMI=0.5570  ARI=0.3000  0.7s
+
+=== train[104] k=3  dim=900  frames=160  σ=0.5  fold=3  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.6000  NMI=0.2111  ARI=0.0574  1.9s
+
+=== train[105] k=3  dim=900  frames=219  σ=0.5  fold=3  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5616  NMI=0.5661  ARI=0.4016  3.4s
+
+=== train[106] k=3  dim=900  frames=252  σ=0.5  fold=3  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.7183  NMI=0.5901  ARI=0.4718  4.1s
+
+=== train[107] k=3  dim=900  frames=235  σ=0.5  fold=3  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.8723  NMI=0.7124  ARI=0.7210  3.7s
+
+=== train[108] k=3  dim=900  frames=155  σ=0.5  fold=3  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.6452  NMI=0.3165  ARI=0.1962  1.7s
+
+=== train[109] k=3  dim=900  frames=153  σ=0.5  fold=3  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.5752  NMI=0.1945  ARI=0.1006  1.7s
+
+=== train[110] k=3  dim=900  frames=149  σ=0.5  fold=3  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.5705  NMI=0.3773  ARI=0.1908  1.6s
+
+=== train[111] k=3  dim=900  frames=130  σ=0.5  fold=3  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.5692  NMI=0.3298  ARI=0.1284  1.2s
+
+=== train[112] k=3  dim=900  frames=99  σ=0.5  fold=3  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4343  NMI=0.2643  ARI=0.0177  0.8s
+
+=== train[113] k=3  dim=900  frames=210  σ=0.5  fold=3  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.4476  NMI=0.2064  ARI=0.0186  3.0s
+
+=== train[114] k=3  dim=900  frames=205  σ=0.5  fold=3  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.7220  NMI=0.5799  ARI=0.4932  3.1s
+
+=== train[115] k=3  dim=900  frames=111  σ=0.5  fold=3  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.6486  NMI=0.5651  ARI=0.4645  0.9s
+
+=== test[102] k=3  dim=900  frames=164  σ=0.5  fold=3  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.5610  NMI=0.3729  ARI=0.1947  1.9s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=4  test=['seq_000004', 'seq_000011', 'seq_000042']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold4.json
+
+=== train[137] k=3  dim=900  frames=88  σ=0.5  fold=4  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5682  NMI=0.3719  ARI=0.1716  0.7s
+
+=== train[138] k=3  dim=900  frames=160  σ=0.5  fold=4  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5375  NMI=0.2457  ARI=0.0325  1.8s
+
+=== train[139] k=3  dim=900  frames=219  σ=0.5  fold=4  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.6849  NMI=0.5005  ARI=0.3764  3.4s
+
+=== train[140] k=3  dim=900  frames=164  σ=0.5  fold=4  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.6646  NMI=0.2732  ARI=0.2044  1.9s
+
+=== train[141] k=3  dim=900  frames=235  σ=0.5  fold=4  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.4426  NMI=0.1539  ARI=-0.0025  3.7s
+
+=== train[142] k=3  dim=900  frames=155  σ=0.5  fold=4  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5097  NMI=0.2236  ARI=0.0211  1.7s
+
+=== train[143] k=3  dim=900  frames=153  σ=0.5  fold=4  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.5294  NMI=0.4366  ARI=0.2716  1.7s
+
+=== train[144] k=3  dim=900  frames=149  σ=0.5  fold=4  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.6913  NMI=0.5181  ARI=0.4559  1.6s
+
+=== train[145] k=3  dim=900  frames=130  σ=0.5  fold=4  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.5923  NMI=0.5374  ARI=0.4060  1.2s
+
+=== train[146] k=3  dim=900  frames=99  σ=0.5  fold=4  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4242  NMI=0.2303  ARI=-0.0035  0.8s
+
+=== train[147] k=3  dim=900  frames=210  σ=0.5  fold=4  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8000  NMI=0.6312  ARI=0.5940  3.0s
+
+=== train[148] k=3  dim=900  frames=205  σ=0.5  fold=4  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4195  NMI=0.2304  ARI=0.0052  3.1s
+
+=== train[149] k=3  dim=900  frames=111  σ=0.5  fold=4  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.6036  NMI=0.4306  ARI=0.2310  1.0s
+
+=== test[136] k=3  dim=900  frames=252  σ=0.5  fold=4  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.6548  NMI=0.5268  ARI=0.4231  4.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=5  test=['seq_000017', 'seq_000031', 'seq_000039']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold5.json
+
+=== train[171] k=3  dim=900  frames=88  σ=0.5  fold=5  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.9545  NMI=0.8800  ARI=0.9106  0.7s
+
+=== train[172] k=3  dim=900  frames=160  σ=0.5  fold=5  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5250  NMI=0.2294  ARI=0.0149  1.8s
+
+=== train[173] k=3  dim=900  frames=219  σ=0.5  fold=5  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.7991  NMI=0.6187  ARI=0.5470  3.4s
+
+=== train[174] k=3  dim=900  frames=164  σ=0.5  fold=5  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7988  NMI=0.6132  ARI=0.5922  1.9s
+
+=== train[175] k=3  dim=900  frames=252  σ=0.5  fold=5  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.5675  NMI=0.5597  ARI=0.3941  4.2s
+
+=== train[176] k=3  dim=900  frames=155  σ=0.5  fold=5  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5097  NMI=0.1550  ARI=0.0015  1.8s
+
+=== train[177] k=3  dim=900  frames=153  σ=0.5  fold=5  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.7451  NMI=0.4181  ARI=0.3240  1.7s
+
+=== train[178] k=3  dim=900  frames=149  σ=0.5  fold=5  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.6711  NMI=0.4055  ARI=0.3222  1.6s
+
+=== train[179] k=3  dim=900  frames=130  σ=0.5  fold=5  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.6231  NMI=0.3644  ARI=0.1536  1.2s
+
+=== train[180] k=3  dim=900  frames=99  σ=0.5  fold=5  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4040  NMI=0.1215  ARI=-0.0443  0.8s
+
+=== train[181] k=3  dim=900  frames=210  σ=0.5  fold=5  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.5048  NMI=0.2873  ARI=0.0903  3.0s
+
+=== train[182] k=3  dim=900  frames=205  σ=0.5  fold=5  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4976  NMI=0.1666  ARI=0.0237  3.0s
+
+=== train[183] k=3  dim=900  frames=111  σ=0.5  fold=5  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5225  NMI=0.4749  ARI=0.3149  0.9s
+
+=== test[170] k=3  dim=900  frames=235  σ=0.5  fold=5  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.7149  NMI=0.6044  ARI=0.5250  3.7s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=6  test=['seq_000009', 'seq_000021', 'seq_000029']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold6.json
+
+=== train[205] k=3  dim=900  frames=88  σ=0.5  fold=6  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.6477  NMI=0.3927  ARI=0.1818  0.7s
+
+=== train[206] k=3  dim=900  frames=160  σ=0.5  fold=6  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.7500  NMI=0.5450  ARI=0.4503  1.9s
+
+=== train[207] k=3  dim=900  frames=219  σ=0.5  fold=6  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.6986  NMI=0.5176  ARI=0.4215  3.4s
+
+=== train[208] k=3  dim=900  frames=164  σ=0.5  fold=6  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.5305  NMI=0.3004  ARI=0.0823  1.9s
+
+=== train[209] k=3  dim=900  frames=252  σ=0.5  fold=6  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.8452  NMI=0.6559  ARI=0.5848  4.2s
+
+=== train[210] k=3  dim=900  frames=235  σ=0.5  fold=6  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.5234  NMI=0.3266  ARI=0.0823  3.7s
+
+=== train[211] k=3  dim=900  frames=153  σ=0.5  fold=6  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.8235  NMI=0.5462  ARI=0.5000  1.7s
+
+=== train[212] k=3  dim=900  frames=149  σ=0.5  fold=6  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.5839  NMI=0.3772  ARI=0.2014  1.6s
+
+=== train[213] k=3  dim=900  frames=130  σ=0.5  fold=6  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.6231  NMI=0.3623  ARI=0.1519  1.2s
+
+=== train[214] k=3  dim=900  frames=99  σ=0.5  fold=6  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4949  NMI=0.2366  ARI=0.0190  0.8s
+
+=== train[215] k=3  dim=900  frames=210  σ=0.5  fold=6  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.4095  NMI=0.2023  ARI=0.0043  3.0s
+
+=== train[216] k=3  dim=900  frames=205  σ=0.5  fold=6  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.5707  NMI=0.3631  ARI=0.1626  3.0s
+
+=== train[217] k=3  dim=900  frames=111  σ=0.5  fold=6  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5315  NMI=0.2775  ARI=0.0903  1.0s
+
+=== test[204] k=3  dim=900  frames=155  σ=0.5  fold=6  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.6774  NMI=0.4250  ARI=0.3052  1.8s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=7  test=['seq_000018', 'seq_000036', 'seq_000043']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold7.json
+
+=== train[239] k=3  dim=900  frames=88  σ=0.5  fold=7  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5795  NMI=0.3768  ARI=0.1719  0.7s
+
+=== train[240] k=3  dim=900  frames=160  σ=0.5  fold=7  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.7500  NMI=0.6630  ARI=0.6391  1.8s
+
+=== train[241] k=3  dim=900  frames=219  σ=0.5  fold=7  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.7808  NMI=0.6123  ARI=0.5568  3.4s
+
+=== train[242] k=3  dim=900  frames=164  σ=0.5  fold=7  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7256  NMI=0.5672  ARI=0.4793  1.9s
+
+=== train[243] k=3  dim=900  frames=252  σ=0.5  fold=7  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.8452  NMI=0.6579  ARI=0.6121  4.2s
+
+=== train[244] k=3  dim=900  frames=235  σ=0.5  fold=7  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.7234  NMI=0.5804  ARI=0.5444  3.7s
+
+=== train[245] k=3  dim=900  frames=155  σ=0.5  fold=7  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.6452  NMI=0.3351  ARI=0.1743  1.8s
+
+=== train[246] k=3  dim=900  frames=149  σ=0.5  fold=7  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.7248  NMI=0.5737  ARI=0.5187  1.6s
+
+=== train[247] k=3  dim=900  frames=130  σ=0.5  fold=7  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.5692  NMI=0.6032  ARI=0.4223  1.2s
+
+=== train[248] k=3  dim=900  frames=99  σ=0.5  fold=7  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4545  NMI=0.2811  ARI=0.0308  0.8s
+
+=== train[249] k=3  dim=900  frames=210  σ=0.5  fold=7  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8286  NMI=0.6581  ARI=0.6313  3.1s
+
+=== train[250] k=3  dim=900  frames=205  σ=0.5  fold=7  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4878  NMI=0.1304  ARI=0.0091  3.0s
+
+=== train[251] k=3  dim=900  frames=111  σ=0.5  fold=7  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5045  NMI=0.2803  ARI=0.0529  1.0s
+
+=== test[238] k=3  dim=900  frames=153  σ=0.5  fold=7  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.7320  NMI=0.3925  ARI=0.2956  1.7s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=8  test=['seq_000001', 'seq_000025', 'seq_000026']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold8.json
+
+=== train[273] k=3  dim=900  frames=88  σ=0.5  fold=8  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5909  NMI=0.5537  ARI=0.3049  0.7s
+
+=== train[274] k=3  dim=900  frames=160  σ=0.5  fold=8  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.6937  NMI=0.4061  ARI=0.3529  1.9s
+
+=== train[275] k=3  dim=900  frames=219  σ=0.5  fold=8  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.6164  NMI=0.3226  ARI=0.1440  3.4s
+
+=== train[276] k=3  dim=900  frames=164  σ=0.5  fold=8  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.8659  NMI=0.7225  ARI=0.7816  1.9s
+
+=== train[277] k=3  dim=900  frames=252  σ=0.5  fold=8  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.5833  NMI=0.3187  ARI=0.1243  4.1s
+
+=== train[278] k=3  dim=900  frames=235  σ=0.5  fold=8  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.4383  NMI=0.1439  ARI=-0.0055  3.8s
+
+=== train[279] k=3  dim=900  frames=155  σ=0.5  fold=8  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.7484  NMI=0.4967  ARI=0.4484  1.7s
+
+=== train[280] k=3  dim=900  frames=153  σ=0.5  fold=8  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6863  NMI=0.3527  ARI=0.2433  1.7s
+
+=== train[281] k=3  dim=900  frames=130  σ=0.5  fold=8  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.5154  NMI=0.2653  ARI=0.0771  1.2s
+
+=== train[282] k=3  dim=900  frames=99  σ=0.5  fold=8  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.5758  NMI=0.3237  ARI=0.1224  0.8s
+
+=== train[283] k=3  dim=900  frames=210  σ=0.5  fold=8  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8429  NMI=0.7133  ARI=0.6716  3.0s
+
+=== train[284] k=3  dim=900  frames=205  σ=0.5  fold=8  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.6195  NMI=0.5155  ARI=0.3767  3.0s
+
+=== train[285] k=3  dim=900  frames=111  σ=0.5  fold=8  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.4595  NMI=0.2291  ARI=0.0061  1.0s
+
+=== test[272] k=3  dim=900  frames=149  σ=0.5  fold=8  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.5436  NMI=0.3875  ARI=0.2127  1.6s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=9  test=['seq_000027', 'seq_000040', 'seq_000041']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold9.json
+
+=== train[307] k=3  dim=900  frames=88  σ=0.5  fold=9  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.4773  NMI=0.2229  ARI=-0.0054  0.7s
+
+=== train[308] k=3  dim=900  frames=160  σ=0.5  fold=9  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5750  NMI=0.2082  ARI=0.0347  1.9s
+
+=== train[309] k=3  dim=900  frames=219  σ=0.5  fold=9  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.7306  NMI=0.5537  ARI=0.4273  3.4s
+
+=== train[310] k=3  dim=900  frames=164  σ=0.5  fold=9  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.8902  NMI=0.7863  ARI=0.8435  1.9s
+
+=== train[311] k=3  dim=900  frames=252  σ=0.5  fold=9  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.9286  NMI=0.7939  ARI=0.8011  4.1s
+
+=== train[312] k=3  dim=900  frames=235  σ=0.5  fold=9  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.6723  NMI=0.6164  ARI=0.5065  3.7s
+
+=== train[313] k=3  dim=900  frames=155  σ=0.5  fold=9  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5677  NMI=0.2773  ARI=0.0778  1.7s
+
+=== train[314] k=3  dim=900  frames=153  σ=0.5  fold=9  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6993  NMI=0.3427  ARI=0.2379  1.7s
+
+=== train[315] k=3  dim=900  frames=149  σ=0.5  fold=9  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.6174  NMI=0.3893  ARI=0.2224  1.6s
+
+=== train[316] k=3  dim=900  frames=99  σ=0.5  fold=9  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.5253  NMI=0.2559  ARI=0.0445  0.8s
+
+=== train[317] k=3  dim=900  frames=210  σ=0.5  fold=9  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8143  NMI=0.6568  ARI=0.6180  3.0s
+
+=== train[318] k=3  dim=900  frames=205  σ=0.5  fold=9  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.6878  NMI=0.5596  ARI=0.4475  3.0s
+
+=== train[319] k=3  dim=900  frames=111  σ=0.5  fold=9  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5225  NMI=0.2860  ARI=0.1078  1.0s
+
+=== test[306] k=3  dim=900  frames=130  σ=0.5  fold=9  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.4615  NMI=0.2506  ARI=0.1108  1.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=10  test=['seq_000007', 'seq_000010', 'seq_000037']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold10.json
+
+=== train[341] k=3  dim=900  frames=88  σ=0.5  fold=10  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5795  NMI=0.3503  ARI=0.1455  0.7s
+
+=== train[342] k=3  dim=900  frames=160  σ=0.5  fold=10  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.6062  NMI=0.2667  ARI=0.0935  1.9s
+
+=== train[343] k=3  dim=900  frames=219  σ=0.5  fold=10  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5479  NMI=0.3605  ARI=0.1890  3.4s
+
+=== train[344] k=3  dim=900  frames=164  σ=0.5  fold=10  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.8780  NMI=0.7145  ARI=0.7723  1.9s
+
+=== train[345] k=3  dim=900  frames=252  σ=0.5  fold=10  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.6071  NMI=0.5059  ARI=0.3669  4.1s
+
+=== train[346] k=3  dim=900  frames=235  σ=0.5  fold=10  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.5574  NMI=0.3825  ARI=0.1816  3.7s
+
+=== train[347] k=3  dim=900  frames=155  σ=0.5  fold=10  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.5484  NMI=0.3238  ARI=0.1163  1.7s
+
+=== train[348] k=3  dim=900  frames=153  σ=0.5  fold=10  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.5882  NMI=0.5108  ARI=0.3115  1.7s
+
+=== train[349] k=3  dim=900  frames=149  σ=0.5  fold=10  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.5570  NMI=0.4441  ARI=0.2962  1.6s
+
+=== train[350] k=3  dim=900  frames=130  σ=0.5  fold=10  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.7462  NMI=0.5770  ARI=0.5191  1.2s
+
+=== train[351] k=3  dim=900  frames=210  σ=0.5  fold=10  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.4762  NMI=0.2485  ARI=0.0541  3.0s
+
+=== train[352] k=3  dim=900  frames=205  σ=0.5  fold=10  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.8439  NMI=0.6584  ARI=0.6339  3.1s
+
+=== train[353] k=3  dim=900  frames=111  σ=0.5  fold=10  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.5225  NMI=0.3020  ARI=0.1274  1.0s
+
+=== test[340] k=3  dim=900  frames=99  σ=0.5  fold=10  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4747  NMI=0.2310  ARI=0.0082  0.8s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=11  test=['seq_000013', 'seq_000014', 'seq_000038']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold11.json
+
+=== train[375] k=3  dim=900  frames=88  σ=0.5  fold=11  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5568  NMI=0.4799  ARI=0.2977  0.7s
+
+=== train[376] k=3  dim=900  frames=160  σ=0.5  fold=11  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.6687  NMI=0.3725  ARI=0.2288  1.9s
+
+=== train[377] k=3  dim=900  frames=219  σ=0.5  fold=11  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5388  NMI=0.5511  ARI=0.4009  3.4s
+
+=== train[378] k=3  dim=900  frames=164  σ=0.5  fold=11  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.4695  NMI=0.0950  ARI=-0.0655  2.0s
+
+=== train[379] k=3  dim=900  frames=252  σ=0.5  fold=11  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.7024  NMI=0.5754  ARI=0.4533  4.1s
+
+=== train[380] k=3  dim=900  frames=235  σ=0.5  fold=11  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.6043  NMI=0.4185  ARI=0.2512  3.7s
+
+=== train[381] k=3  dim=900  frames=155  σ=0.5  fold=11  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.4903  NMI=0.1774  ARI=-0.0013  1.8s
+
+=== train[382] k=3  dim=900  frames=153  σ=0.5  fold=11  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6536  NMI=0.4301  ARI=0.2897  1.7s
+
+=== train[383] k=3  dim=900  frames=149  σ=0.5  fold=11  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.7181  NMI=0.4622  ARI=0.3296  1.6s
+
+=== train[384] k=3  dim=900  frames=130  σ=0.5  fold=11  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.6000  NMI=0.3378  ARI=0.1250  1.2s
+
+=== train[385] k=3  dim=900  frames=99  σ=0.5  fold=11  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.4848  NMI=0.2070  ARI=0.0023  0.8s
+
+=== train[386] k=3  dim=900  frames=205  σ=0.5  fold=11  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4341  NMI=0.2101  ARI=-0.0029  3.0s
+
+=== train[387] k=3  dim=900  frames=111  σ=0.5  fold=11  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.6937  NMI=0.5010  ARI=0.3972  1.0s
+
+=== test[374] k=3  dim=900  frames=210  σ=0.5  fold=11  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.9381  NMI=0.8122  ARI=0.8308  3.0s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=12  test=['seq_000006', 'seq_000008', 'seq_000044']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold12.json
+
+=== train[409] k=3  dim=900  frames=88  σ=0.5  fold=12  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.6136  NMI=0.4543  ARI=0.2339  0.7s
+
+=== train[410] k=3  dim=900  frames=160  σ=0.5  fold=12  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5563  NMI=0.1927  ARI=0.0133  1.9s
+
+=== train[411] k=3  dim=900  frames=219  σ=0.5  fold=12  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5525  NMI=0.2537  ARI=0.0919  3.4s
+
+=== train[412] k=3  dim=900  frames=164  σ=0.5  fold=12  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7134  NMI=0.4094  ARI=0.3019  1.9s
+
+=== train[413] k=3  dim=900  frames=252  σ=0.5  fold=12  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.6429  NMI=0.5077  ARI=0.3928  4.2s
+
+=== train[414] k=3  dim=900  frames=235  σ=0.5  fold=12  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.4255  NMI=0.1189  ARI=-0.0106  3.7s
+
+=== train[415] k=3  dim=900  frames=155  σ=0.5  fold=12  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.6581  NMI=0.3790  ARI=0.2452  1.7s
+
+=== train[416] k=3  dim=900  frames=153  σ=0.5  fold=12  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.7190  NMI=0.4057  ARI=0.2992  1.7s
+
+=== train[417] k=3  dim=900  frames=149  σ=0.5  fold=12  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.5638  NMI=0.4414  ARI=0.2937  1.6s
+
+=== train[418] k=3  dim=900  frames=130  σ=0.5  fold=12  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.4923  NMI=0.3566  ARI=0.1999  1.2s
+
+=== train[419] k=3  dim=900  frames=99  σ=0.5  fold=12  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.5657  NMI=0.3094  ARI=0.1045  0.8s
+
+=== train[420] k=3  dim=900  frames=210  σ=0.5  fold=12  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8000  NMI=0.6576  ARI=0.6171  3.0s
+
+=== train[421] k=3  dim=900  frames=111  σ=0.5  fold=12  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.7838  NMI=0.5701  ARI=0.5495  1.0s
+
+=== test[408] k=3  dim=900  frames=205  σ=0.5  fold=12  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.4537  NMI=0.2272  ARI=0.0062  3.1s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.5 fold=13  test=['seq_000015', 'seq_000030', 'seq_000034']  train mats=13  test mats=1  tune mats=20
+  BDOSC: skip tuning, fixed lambda_1=1.5, lambda_2=30, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.5_params_knownk_cv_bdosc_k3_sigma0p5_sigma0.5_fold13.json
+
+=== train[443] k=3  dim=900  frames=88  σ=0.5  fold=13  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  BDOSC: k_hat=3  ACC=0.5682  NMI=0.5506  ARI=0.3308  0.7s
+
+=== train[444] k=3  dim=900  frames=160  σ=0.5  fold=13  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  BDOSC: k_hat=3  ACC=0.5437  NMI=0.2431  ARI=0.0340  1.9s
+
+=== train[445] k=3  dim=900  frames=219  σ=0.5  fold=13  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  BDOSC: k_hat=3  ACC=0.5388  NMI=0.4788  ARI=0.3449  3.4s
+
+=== train[446] k=3  dim=900  frames=164  σ=0.5  fold=13  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  BDOSC: k_hat=3  ACC=0.7866  NMI=0.6629  ARI=0.6472  1.9s
+
+=== train[447] k=3  dim=900  frames=252  σ=0.5  fold=13  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  BDOSC: k_hat=3  ACC=0.7302  NMI=0.6303  ARI=0.5095  4.1s
+
+=== train[448] k=3  dim=900  frames=235  σ=0.5  fold=13  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  BDOSC: k_hat=3  ACC=0.6979  NMI=0.5926  ARI=0.5247  3.7s
+
+=== train[449] k=3  dim=900  frames=155  σ=0.5  fold=13  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  BDOSC: k_hat=3  ACC=0.4774  NMI=0.1764  ARI=-0.0033  1.8s
+
+=== train[450] k=3  dim=900  frames=153  σ=0.5  fold=13  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  BDOSC: k_hat=3  ACC=0.6405  NMI=0.2601  ARI=0.1574  1.7s
+
+=== train[451] k=3  dim=900  frames=149  σ=0.5  fold=13  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  BDOSC: k_hat=3  ACC=0.7248  NMI=0.5909  ARI=0.5199  1.6s
+
+=== train[452] k=3  dim=900  frames=130  σ=0.5  fold=13  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  BDOSC: k_hat=3  ACC=0.6000  NMI=0.3402  ARI=0.1274  1.2s
+
+=== train[453] k=3  dim=900  frames=99  σ=0.5  fold=13  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  BDOSC: k_hat=3  ACC=0.5556  NMI=0.3130  ARI=0.1009  0.8s
+
+=== train[454] k=3  dim=900  frames=210  σ=0.5  fold=13  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  BDOSC: k_hat=3  ACC=0.8238  NMI=0.6564  ARI=0.6261  3.0s
+
+=== train[455] k=3  dim=900  frames=205  σ=0.5  fold=13  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  BDOSC: k_hat=3  ACC=0.8195  NMI=0.6241  ARI=0.5754  3.1s
+
+=== test[442] k=3  dim=900  frames=111  σ=0.5  fold=13  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  BDOSC: k_hat=3  ACC=0.4685  NMI=0.2389  ARI=0.0137  1.0s
+
+=== inference time per method ===
+  BDOSC: mean=2.1449s  std=1.0962s  total=420.4s  n=196
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.5_results_knownk_cv_bdosc_k3_sigma0p5_timing.json
+
+=== mean over matrices ===
+  BDOSC train σ=0.5: ACC=0.6265  NMI=0.4214  ARI=0.2820  n=182
+  BDOSC test σ=0.5: ACC=0.6082  NMI=0.4001  ARI=0.2605  n=14
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.5_results_knownk_cv_bdosc_k3_sigma0p5.csv
+end=Sun Sep  6 19:08:17 EDT 2026
+Experiment completed!

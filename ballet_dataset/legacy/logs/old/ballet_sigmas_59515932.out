@@ -1,0 +1,24 @@
+host=gl3431.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Tue Sep  1 21:29:33 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_frames ~ Unif[10, 60]  seed=0
+hetero_noise=False  sigmas=(0.0, 0.25, 0.5, 0.75)  append=False  no_tune=False  csv=ballet_cluster_sigmas_results.csv
+
+Loaded 5 sequences:
+  seq_000001: 53 frames
+  seq_000002: 14 frames
+  seq_000003: 48 frames
+  seq_000004: 17 frames
+  seq_000005: 48 frames
+Total frames: 180
+Image dimension: 90601
+σ=0.0: frames=180  dim=90601
+σ=0.25: frames=180  dim=90601
+σ=0.5: frames=180  dim=90601
+σ=0.75: frames=180  dim=90601
+
+Methods: ['OSC', 'TKSS', 'SSC-TV-L21', 'SSC-TV-L21-col', 'BDOSC']
+
+BDOSC: fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+
+============================================================
+--- Tuning OSC over 4 matrices ---

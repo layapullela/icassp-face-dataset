@@ -1,0 +1,748 @@
+========================================
+Job: cv_bdosc_k8_s0p25
+Method: BDOSC  k: 8  sigma: 0.25
+========================================
+host=gl3143.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sat Sep  5 19:18:23 EDT 2026
+Loading P1E_S1_C1
+  Y: (576, 1236)  people=25  frames/person=[60, 61, 50, 48, 51, 35, 41, 56, 55, 49, 65, 50, 63, 38, 61, 48, 50, 49, 50, 30, 42, 60, 32, 39, 53]  min=30
+Loading P1E_S1_C2
+  Y: (576, 1031)  people=25  frames/person=[42, 48, 31, 35, 50, 45, 30, 32, 38, 40, 61, 41, 47, 33, 46, 36, 41, 45, 42, 36, 33, 50, 53, 33, 43]  min=30
+Loading P1E_S1_C3
+  Y: (576, 453)  people=25  frames/person=[15, 22, 16, 16, 17, 13, 14, 19, 14, 25, 26, 12, 21, 18, 22, 19, 13, 19, 16, 15, 8, 15, 30, 20, 28]  min=8
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C1
+  Y: (576, 1256)  people=25  frames/person=[65, 50, 50, 51, 53, 48, 49, 60, 33, 48, 61, 58, 52, 32, 55, 35, 45, 53, 40, 53, 51, 65, 64, 42, 43]  min=32
+Loading P1E_S2_C2
+  Y: (576, 1042)  people=25  frames/person=[33, 48, 38, 41, 53, 36, 39, 47, 51, 36, 55, 44, 43, 25, 42, 41, 37, 45, 41, 38, 40, 54, 49, 33, 33]  min=25
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C3
+  Y: (576, 816)  people=25  frames/person=[36, 33, 28, 32, 42, 37, 31, 36, 31, 23, 42, 36, 35, 20, 33, 33, 32, 32, 32, 29, 32, 42, 38, 27, 24]  min=20
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C1
+  Y: (576, 1255)  people=25  frames/person=[43, 39, 47, 52, 58, 96, 42, 31, 79, 33, 67, 55, 44, 34, 40, 48, 54, 77, 45, 41, 46, 53, 56, 38, 37]  min=31
+Loading P1E_S3_C2
+  Y: (576, 1126)  people=25  frames/person=[57, 56, 35, 40, 49, 75, 34, 40, 70, 26, 65, 54, 43, 28, 32, 43, 48, 31, 36, 33, 42, 71, 57, 30, 31]  min=26
+  warning: 2 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C3
+  Y: (576, 866)  people=25  frames/person=[43, 36, 24, 33, 37, 47, 29, 37, 55, 18, 40, 40, 31, 22, 30, 39, 35, 45, 30, 28, 30, 50, 42, 20, 25]  min=18
+  warning: 7 people have fewer than 30 available frames (kept all)
+Loading P1E_S4_C1
+  Y: (576, 1247)  people=25  frames/person=[58, 54, 34, 56, 50, 59, 50, 56, 74, 38, 75, 35, 46, 31, 53, 40, 57, 32, 56, 33, 48, 67, 59, 48, 38]  min=31
+Loading P1E_S4_C2
+  Y: (576, 1051)  people=25  frames/person=[37, 37, 41, 46, 41, 49, 38, 45, 65, 30, 39, 48, 50, 34, 43, 36, 47, 52, 45, 37, 38, 50, 30, 37, 36]  min=30
+Loading P1E_S4_C3
+  Y: (576, 719)  people=25  frames/person=[28, 29, 22, 29, 24, 36, 31, 29, 33, 25, 37, 19, 28, 21, 25, 27, 25, 41, 27, 29, 26, 31, 45, 29, 23]  min=19
+  warning: 18 people have fewer than 30 available frames (kept all)
+Loading P1L_S1_C1
+  Y: (576, 1391)  people=25  frames/person=[65, 68, 43, 64, 47, 40, 58, 33, 75, 41, 58, 72, 58, 49, 66, 67, 65, 43, 59, 57, 58, 51, 67, 32, 55]  min=32
+Loading P1L_S1_C2
+  Y: (576, 1309)  people=25  frames/person=[30, 65, 37, 63, 66, 54, 52, 52, 43, 49, 71, 49, 58, 48, 54, 66, 56, 36, 48, 49, 55, 66, 52, 39, 51]  min=30
+Loading P1L_S1_C3
+  Y: (576, 565)  people=25  frames/person=[27, 29, 20, 26, 19, 25, 22, 12, 28, 25, 20, 25, 23, 18, 21, 23, 25, 26, 23, 21, 18, 18, 30, 18, 23]  min=12
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1L_S2_C1
+  Y: (576, 1470)  people=25  frames/person=[73, 68, 53, 64, 65, 41, 73, 55, 37, 31, 82, 75, 63, 45, 34, 48, 74, 84, 71, 64, 62, 65, 48, 33, 62]  min=31
+Loading P1L_S2_C2
+  Y: (576, 1393)  people=25  frames/person=[64, 65, 49, 62, 69, 69, 63, 61, 80, 34, 89, 57, 53, 52, 55, 38, 30, 30, 66, 36, 57, 51, 73, 41, 49]  min=30
+Loading P1L_S2_C3
+  Y: (576, 897)  people=25  frames/person=[40, 36, 29, 28, 35, 37, 36, 36, 50, 28, 55, 46, 34, 31, 35, 32, 30, 48, 37, 29, 36, 39, 45, 19, 26]  min=19
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1L_S3_C1
+  Y: (576, 1329)  people=25  frames/person=[31, 33, 30, 51, 74, 75, 59, 65, 66, 43, 47, 39, 65, 50, 58, 71, 67, 36, 57, 35, 62, 31, 74, 59, 51]  min=30
+Loading P1L_S3_C2
+  Y: (576, 1472)  people=25  frames/person=[78, 38, 48, 51, 54, 71, 61, 71, 32, 50, 75, 38, 72, 63, 48, 67, 49, 87, 52, 56, 58, 85, 73, 56, 39]  min=32
+Loading P1L_S3_C3
+  Y: (576, 1105)  people=25  frames/person=[48, 44, 38, 38, 39, 45, 35, 55, 52, 26, 81, 39, 36, 36, 44, 54, 42, 61, 38, 31, 34, 53, 51, 44, 41]  min=26
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1L_S4_C1
+  Y: (576, 1443)  people=25  frames/person=[50, 69, 44, 41, 78, 43, 32, 71, 45, 65, 59, 39, 56, 57, 68, 69, 70, 73, 51, 63, 47, 70, 57, 52, 74]  min=32
+Loading P1L_S4_C2
+  Y: (576, 1327)  people=25  frames/person=[71, 34, 39, 54, 63, 67, 52, 39, 52, 56, 59, 50, 51, 53, 63, 50, 71, 63, 48, 35, 31, 71, 43, 52, 60]  min=31
+Loading P1L_S4_C3
+  Y: (576, 880)  people=25  frames/person=[37, 41, 23, 26, 32, 34, 22, 32, 50, 29, 38, 44, 31, 34, 37, 39, 39, 39, 38, 26, 25, 50, 41, 33, 40]  min=22
+  warning: 6 people have fewer than 30 available frames (kept all)
+sequences=24  people=25  k=8
+frames/person ~ Unif[30, 100]
+down_hw=24  sigmas=(0.25,)  n_trials=20  known_k=True  csv=split_k8_sigmas_min30_trials20_knownk_cv_bdosc_k8_sigma0p25.csv
+SSC-Block-TV block_size searched in [2, 12]
+CV mode: 3 folds of size 8, each rotated as test
+  1 people unused (remainder dropped)
+  group 0: ['0004', '0006', '0009', '0013', '0014', '0022', '0026', '0027']
+  group 1: ['0001', '0005', '0011', '0015', '0019', '0023', '0024', '0025']
+  group 2: ['0003', '0007', '0010', '0012', '0016', '0017', '0020', '0021']
+methods=['BDOSC']  append=False  hetero_noise=False  no_tune=False
+
+============================================================
+σ=0.25 fold=0  test=['0004', '0006', '0009', '0013', '0014', '0022', '0026', '0027']  train mats=48  test mats=24
+  BDOSC: skip tuning, fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k8_sigmas_min30_trials20_params_knownk_cv_bdosc_k8_sigma0p25_sigma0.25_fold0.json
+
+=== P1E_S1_C1 train[0] k=8  dim=576  frames=410  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7390  NMI=0.8081  ARI=0.6248  19.6s
+
+=== P1E_S1_C1 train[1] k=8  dim=576  frames=399  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6216  NMI=0.7576  ARI=0.5277  14.9s
+
+=== P1E_S1_C2 train[0] k=8  dim=576  frames=339  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7021  NMI=0.8091  ARI=0.6445  10.5s
+
+=== P1E_S1_C2 train[1] k=8  dim=576  frames=331  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6133  NMI=0.7309  ARI=0.5240  9.8s
+
+=== P1E_S1_C3 train[0] k=8  dim=576  frames=132  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8182  NMI=0.8759  ARI=0.7586  1.3s
+
+=== P1E_S1_C3 train[1] k=8  dim=576  frames=154  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8766  NMI=0.8570  ARI=0.7588  1.9s
+
+=== P1E_S2_C1 train[0] k=8  dim=576  frames=426  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7535  NMI=0.8217  ARI=0.6749  17.1s
+
+=== P1E_S2_C1 train[1] k=8  dim=576  frames=386  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6477  NMI=0.7236  ARI=0.5056  13.2s
+
+=== P1E_S2_C2 train[0] k=8  dim=576  frames=348  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6609  NMI=0.7605  ARI=0.5485  10.9s
+
+=== P1E_S2_C2 train[1] k=8  dim=576  frames=320  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5719  NMI=0.6806  ARI=0.4072  9.1s
+
+=== P1E_S2_C3 train[0] k=8  dim=576  frames=278  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8453  NMI=0.8135  ARI=0.6958  6.7s
+
+=== P1E_S2_C3 train[1] k=8  dim=576  frames=246  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7724  NMI=0.8286  ARI=0.7128  5.4s
+
+=== P1E_S3_C1 train[0] k=8  dim=576  frames=427  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5129  NMI=0.6913  ARI=0.3574  17.2s
+
+=== P1E_S3_C1 train[1] k=8  dim=576  frames=395  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7114  NMI=0.7715  ARI=0.6349  14.2s
+
+=== P1E_S3_C2 train[0] k=8  dim=576  frames=428  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7220  NMI=0.7691  ARI=0.5562  17.4s
+
+=== P1E_S3_C2 train[1] k=8  dim=576  frames=324  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7654  NMI=0.8161  ARI=0.7014  9.4s
+
+=== P1E_S3_C3 train[0] k=8  dim=576  frames=319  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7586  NMI=0.7816  ARI=0.6012  9.0s
+
+=== P1E_S3_C3 train[1] k=8  dim=576  frames=265  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6981  NMI=0.7830  ARI=0.6064  6.1s
+
+=== P1E_S4_C1 train[0] k=8  dim=576  frames=465  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5656  NMI=0.6991  ARI=0.3881  21.0s
+
+=== P1E_S4_C1 train[1] k=8  dim=576  frames=379  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6807  NMI=0.7929  ARI=0.6249  13.1s
+
+=== P1E_S4_C2 train[0] k=8  dim=576  frames=363  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7383  NMI=0.7796  ARI=0.6147  11.9s
+
+=== P1E_S4_C2 train[1] k=8  dim=576  frames=335  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7433  NMI=0.7954  ARI=0.6520  9.8s
+
+=== P1E_S4_C3 train[0] k=8  dim=576  frames=245  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6816  NMI=0.7653  ARI=0.5876  5.4s
+
+=== P1E_S4_C3 train[1] k=8  dim=576  frames=233  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7725  NMI=0.8105  ARI=0.6558  4.8s
+
+=== P1L_S1_C1 train[0] k=8  dim=576  frames=503  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6680  NMI=0.7464  ARI=0.4924  32.8s
+
+=== P1L_S1_C1 train[1] k=8  dim=576  frames=399  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7794  NMI=0.7738  ARI=0.6259  14.8s
+
+=== P1L_S1_C2 train[0] k=8  dim=576  frames=423  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7707  NMI=0.7800  ARI=0.6222  17.4s
+
+=== P1L_S1_C2 train[1] k=8  dim=576  frames=406  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7478  ARI=0.5182  15.4s
+
+=== P1L_S1_C3 train[0] k=8  dim=576  frames=195  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7590  NMI=0.7972  ARI=0.6772  3.4s
+
+=== P1L_S1_C3 train[1] k=8  dim=576  frames=179  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7151  NMI=0.7805  ARI=0.6301  2.8s
+
+=== P1L_S2_C1 train[0] k=8  dim=576  frames=486  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5761  NMI=0.7284  ARI=0.4957  25.1s
+
+=== P1L_S2_C1 train[1] k=8  dim=576  frames=429  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6364  NMI=0.7760  ARI=0.5918  17.4s
+
+=== P1L_S2_C2 train[0] k=8  dim=576  frames=470  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.4809  NMI=0.7188  ARI=0.3993  21.9s
+
+=== P1L_S2_C2 train[1] k=8  dim=576  frames=432  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5509  NMI=0.7280  ARI=0.4680  18.4s
+
+=== P1L_S2_C3 train[0] k=8  dim=576  frames=302  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7483  NMI=0.8263  ARI=0.6719  8.0s
+
+=== P1L_S2_C3 train[1] k=8  dim=576  frames=288  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7500  NMI=0.8382  ARI=0.6845  7.3s
+
+=== P1L_S3_C1 train[0] k=8  dim=576  frames=447  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6264  NMI=0.7489  ARI=0.4917  19.6s
+
+=== P1L_S3_C1 train[1] k=8  dim=576  frames=417  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5348  NMI=0.6574  ARI=0.3370  16.3s
+
+=== P1L_S3_C2 train[0] k=8  dim=576  frames=498  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5040  NMI=0.6633  ARI=0.3589  27.3s
+
+=== P1L_S3_C2 train[1] k=8  dim=576  frames=480  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6937  NMI=0.7673  ARI=0.5514  23.7s
+
+=== P1L_S3_C3 train[0] k=8  dim=576  frames=354  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7175  NMI=0.7716  ARI=0.6276  11.2s
+
+=== P1L_S3_C3 train[1] k=8  dim=576  frames=349  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5845  NMI=0.7241  ARI=0.4736  11.1s
+
+=== P1L_S4_C1 train[0] k=8  dim=576  frames=436  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5046  NMI=0.6700  ARI=0.3731  18.4s
+
+=== P1L_S4_C1 train[1] k=8  dim=576  frames=497  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7384  NMI=0.8014  ARI=0.6170  30.1s
+
+=== P1L_S4_C2 train[0] k=8  dim=576  frames=444  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7297  NMI=0.7634  ARI=0.5593  19.6s
+
+=== P1L_S4_C2 train[1] k=8  dim=576  frames=423  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7281  NMI=0.8035  ARI=0.6556  17.4s
+
+=== P1L_S4_C3 train[0] k=8  dim=576  frames=299  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7090  NMI=0.8108  ARI=0.6283  7.8s
+
+=== P1L_S4_C3 train[1] k=8  dim=576  frames=284  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8099  NMI=0.8290  ARI=0.6936  6.8s
+
+=== P1E_S1_C1 test[0] k=8  dim=576  frames=379  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7230  NMI=0.8115  ARI=0.6287  13.2s
+
+=== P1E_S1_C2 test[0] k=8  dim=576  frames=325  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6954  NMI=0.7673  ARI=0.6004  9.4s
+
+=== P1E_S1_C3 test[0] k=8  dim=576  frames=148  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7095  NMI=0.7981  ARI=0.6328  1.7s
+
+=== P1E_S2_C1 test[0] k=8  dim=576  frames=409  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6699  NMI=0.7109  ARI=0.4810  15.7s
+
+=== P1E_S2_C2 test[0] k=8  dim=576  frames=333  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8138  NMI=0.7897  ARI=0.6563  9.8s
+
+=== P1E_S2_C3 test[0] k=8  dim=576  frames=259  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8301  NMI=0.8124  ARI=0.6480  6.1s
+
+=== P1E_S3_C1 test[0] k=8  dim=576  frames=385  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7351  NMI=0.8072  ARI=0.6441  13.8s
+
+=== P1E_S3_C2 test[0] k=8  dim=576  frames=331  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6647  NMI=0.7221  ARI=0.5049  9.8s
+
+=== P1E_S3_C3 test[0] k=8  dim=576  frames=243  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.9342  NMI=0.9101  ARI=0.8475  5.2s
+
+=== P1E_S4_C1 test[0] k=8  dim=576  frames=363  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6749  NMI=0.7681  ARI=0.5662  12.1s
+
+=== P1E_S4_C2 test[0] k=8  dim=576  frames=317  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6688  NMI=0.7611  ARI=0.5506  9.0s
+
+=== P1E_S4_C3 test[0] k=8  dim=576  frames=214  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8131  NMI=0.8217  ARI=0.6826  4.0s
+
+=== P1L_S1_C1 test[0] k=8  dim=576  frames=422  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6090  NMI=0.7411  ARI=0.5095  17.2s
+
+=== P1L_S1_C2 test[0] k=8  dim=576  frames=414  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6908  NMI=0.7505  ARI=0.5695  15.9s
+
+=== P1L_S1_C3 test[0] k=8  dim=576  frames=168  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7143  NMI=0.7853  ARI=0.6270  2.4s
+
+=== P1L_S2_C1 test[0] k=8  dim=576  frames=507  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6548  NMI=0.7565  ARI=0.5808  32.1s
+
+=== P1L_S2_C2 test[0] k=8  dim=576  frames=453  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.4194  NMI=0.6480  ARI=0.3387  20.3s
+
+=== P1L_S2_C3 test[0] k=8  dim=576  frames=275  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.7782  NMI=0.8485  ARI=0.7444  6.7s
+
+=== P1L_S3_C1 test[0] k=8  dim=576  frames=394  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7463  ARI=0.4933  13.9s
+
+=== P1L_S3_C2 test[0] k=8  dim=576  frames=427  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6862  NMI=0.7464  ARI=0.5476  17.4s
+
+=== P1L_S3_C3 test[0] k=8  dim=576  frames=348  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.6552  NMI=0.7366  ARI=0.4876  10.8s
+
+=== P1L_S4_C1 test[0] k=8  dim=576  frames=441  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5283  NMI=0.7055  ARI=0.3691  18.7s
+
+=== P1L_S4_C2 test[0] k=8  dim=576  frames=410  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.5780  NMI=0.7388  ARI=0.5116  15.8s
+
+=== P1L_S4_C3 test[0] k=8  dim=576  frames=258  σ=0.25  fold=0 ===
+  BDOSC: k_hat=8  ACC=0.8527  NMI=0.8241  ARI=0.7114  6.0s
+
+============================================================
+σ=0.25 fold=1  test=['0001', '0005', '0011', '0015', '0019', '0023', '0024', '0025']  train mats=48  test mats=24
+  BDOSC: skip tuning, fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k8_sigmas_min30_trials20_params_knownk_cv_bdosc_k8_sigma0p25_sigma0.25_fold1.json
+
+=== P1E_S1_C1 train[0] k=8  dim=576  frames=379  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7230  NMI=0.8115  ARI=0.6287  13.1s
+
+=== P1E_S1_C1 train[1] k=8  dim=576  frames=399  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6216  NMI=0.7576  ARI=0.5277  14.9s
+
+=== P1E_S1_C2 train[0] k=8  dim=576  frames=325  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6954  NMI=0.7673  ARI=0.6004  9.5s
+
+=== P1E_S1_C2 train[1] k=8  dim=576  frames=331  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6133  NMI=0.7309  ARI=0.5240  9.8s
+
+=== P1E_S1_C3 train[0] k=8  dim=576  frames=148  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7095  NMI=0.7981  ARI=0.6328  1.7s
+
+=== P1E_S1_C3 train[1] k=8  dim=576  frames=154  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8766  NMI=0.8570  ARI=0.7588  1.9s
+
+=== P1E_S2_C1 train[0] k=8  dim=576  frames=409  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6699  NMI=0.7109  ARI=0.4810  15.7s
+
+=== P1E_S2_C1 train[1] k=8  dim=576  frames=386  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6477  NMI=0.7236  ARI=0.5056  13.3s
+
+=== P1E_S2_C2 train[0] k=8  dim=576  frames=333  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8138  NMI=0.7897  ARI=0.6563  9.8s
+
+=== P1E_S2_C2 train[1] k=8  dim=576  frames=320  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5719  NMI=0.6806  ARI=0.4072  9.2s
+
+=== P1E_S2_C3 train[0] k=8  dim=576  frames=259  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8301  NMI=0.8124  ARI=0.6480  6.1s
+
+=== P1E_S2_C3 train[1] k=8  dim=576  frames=246  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7724  NMI=0.8286  ARI=0.7128  5.4s
+
+=== P1E_S3_C1 train[0] k=8  dim=576  frames=385  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7351  NMI=0.8072  ARI=0.6441  13.8s
+
+=== P1E_S3_C1 train[1] k=8  dim=576  frames=395  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7114  NMI=0.7715  ARI=0.6349  14.3s
+
+=== P1E_S3_C2 train[0] k=8  dim=576  frames=331  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6647  NMI=0.7221  ARI=0.5049  9.7s
+
+=== P1E_S3_C2 train[1] k=8  dim=576  frames=324  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7654  NMI=0.8161  ARI=0.7014  9.5s
+
+=== P1E_S3_C3 train[0] k=8  dim=576  frames=243  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.9342  NMI=0.9101  ARI=0.8475  5.2s
+
+=== P1E_S3_C3 train[1] k=8  dim=576  frames=265  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6981  NMI=0.7830  ARI=0.6064  6.1s
+
+=== P1E_S4_C1 train[0] k=8  dim=576  frames=363  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6749  NMI=0.7681  ARI=0.5662  12.0s
+
+=== P1E_S4_C1 train[1] k=8  dim=576  frames=379  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6807  NMI=0.7929  ARI=0.6249  13.1s
+
+=== P1E_S4_C2 train[0] k=8  dim=576  frames=317  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6688  NMI=0.7611  ARI=0.5506  8.9s
+
+=== P1E_S4_C2 train[1] k=8  dim=576  frames=335  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7433  NMI=0.7954  ARI=0.6520  9.9s
+
+=== P1E_S4_C3 train[0] k=8  dim=576  frames=214  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8131  NMI=0.8217  ARI=0.6826  4.0s
+
+=== P1E_S4_C3 train[1] k=8  dim=576  frames=233  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7725  NMI=0.8105  ARI=0.6558  4.9s
+
+=== P1L_S1_C1 train[0] k=8  dim=576  frames=422  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6090  NMI=0.7411  ARI=0.5095  17.1s
+
+=== P1L_S1_C1 train[1] k=8  dim=576  frames=399  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7794  NMI=0.7738  ARI=0.6259  14.8s
+
+=== P1L_S1_C2 train[0] k=8  dim=576  frames=414  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6908  NMI=0.7505  ARI=0.5695  18.4s
+
+=== P1L_S1_C2 train[1] k=8  dim=576  frames=406  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7478  ARI=0.5182  15.7s
+
+=== P1L_S1_C3 train[0] k=8  dim=576  frames=168  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7143  NMI=0.7853  ARI=0.6270  2.5s
+
+=== P1L_S1_C3 train[1] k=8  dim=576  frames=179  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7151  NMI=0.7805  ARI=0.6301  2.9s
+
+=== P1L_S2_C1 train[0] k=8  dim=576  frames=507  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6548  NMI=0.7565  ARI=0.5808  37.1s
+
+=== P1L_S2_C1 train[1] k=8  dim=576  frames=429  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6364  NMI=0.7760  ARI=0.5918  17.7s
+
+=== P1L_S2_C2 train[0] k=8  dim=576  frames=453  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.4194  NMI=0.6480  ARI=0.3387  20.6s
+
+=== P1L_S2_C2 train[1] k=8  dim=576  frames=432  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5509  NMI=0.7280  ARI=0.4680  18.6s
+
+=== P1L_S2_C3 train[0] k=8  dim=576  frames=275  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7782  NMI=0.8485  ARI=0.7444  6.9s
+
+=== P1L_S2_C3 train[1] k=8  dim=576  frames=288  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7500  NMI=0.8382  ARI=0.6845  7.8s
+
+=== P1L_S3_C1 train[0] k=8  dim=576  frames=394  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7463  ARI=0.4933  14.2s
+
+=== P1L_S3_C1 train[1] k=8  dim=576  frames=417  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5348  NMI=0.6574  ARI=0.3370  16.5s
+
+=== P1L_S3_C2 train[0] k=8  dim=576  frames=427  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6862  NMI=0.7464  ARI=0.5476  17.8s
+
+=== P1L_S3_C2 train[1] k=8  dim=576  frames=480  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6937  NMI=0.7673  ARI=0.5514  23.8s
+
+=== P1L_S3_C3 train[0] k=8  dim=576  frames=348  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6552  NMI=0.7366  ARI=0.4876  11.3s
+
+=== P1L_S3_C3 train[1] k=8  dim=576  frames=349  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5845  NMI=0.7241  ARI=0.4736  11.5s
+
+=== P1L_S4_C1 train[0] k=8  dim=576  frames=441  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5283  NMI=0.7055  ARI=0.3691  19.1s
+
+=== P1L_S4_C1 train[1] k=8  dim=576  frames=497  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7384  NMI=0.8014  ARI=0.6170  29.6s
+
+=== P1L_S4_C2 train[0] k=8  dim=576  frames=410  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5780  NMI=0.7388  ARI=0.5116  16.2s
+
+=== P1L_S4_C2 train[1] k=8  dim=576  frames=423  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7281  NMI=0.8035  ARI=0.6556  17.7s
+
+=== P1L_S4_C3 train[0] k=8  dim=576  frames=258  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8527  NMI=0.8241  ARI=0.7114  6.2s
+
+=== P1L_S4_C3 train[1] k=8  dim=576  frames=284  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8099  NMI=0.8290  ARI=0.6936  7.2s
+
+=== P1E_S1_C1 test[0] k=8  dim=576  frames=410  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7390  NMI=0.8081  ARI=0.6248  16.1s
+
+=== P1E_S1_C2 test[0] k=8  dim=576  frames=339  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7021  NMI=0.8091  ARI=0.6445  10.9s
+
+=== P1E_S1_C3 test[0] k=8  dim=576  frames=132  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8182  NMI=0.8759  ARI=0.7586  1.3s
+
+=== P1E_S2_C1 test[0] k=8  dim=576  frames=426  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7535  NMI=0.8217  ARI=0.6749  17.7s
+
+=== P1E_S2_C2 test[0] k=8  dim=576  frames=348  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6609  NMI=0.7605  ARI=0.5485  11.3s
+
+=== P1E_S2_C3 test[0] k=8  dim=576  frames=278  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.8453  NMI=0.8135  ARI=0.6958  7.4s
+
+=== P1E_S3_C1 test[0] k=8  dim=576  frames=427  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5129  NMI=0.6913  ARI=0.3574  17.8s
+
+=== P1E_S3_C2 test[0] k=8  dim=576  frames=428  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7220  NMI=0.7691  ARI=0.5562  17.7s
+
+=== P1E_S3_C3 test[0] k=8  dim=576  frames=319  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7586  NMI=0.7816  ARI=0.6012  9.6s
+
+=== P1E_S4_C1 test[0] k=8  dim=576  frames=465  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5656  NMI=0.6991  ARI=0.3881  22.1s
+
+=== P1E_S4_C2 test[0] k=8  dim=576  frames=363  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7383  NMI=0.7796  ARI=0.6147  12.3s
+
+=== P1E_S4_C3 test[0] k=8  dim=576  frames=245  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6816  NMI=0.7653  ARI=0.5876  5.5s
+
+=== P1L_S1_C1 test[0] k=8  dim=576  frames=503  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6680  NMI=0.7464  ARI=0.4924  31.5s
+
+=== P1L_S1_C2 test[0] k=8  dim=576  frames=423  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7707  NMI=0.7800  ARI=0.6222  17.7s
+
+=== P1L_S1_C3 test[0] k=8  dim=576  frames=195  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7590  NMI=0.7972  ARI=0.6772  3.5s
+
+=== P1L_S2_C1 test[0] k=8  dim=576  frames=486  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5761  NMI=0.7284  ARI=0.4957  27.1s
+
+=== P1L_S2_C2 test[0] k=8  dim=576  frames=470  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.4809  NMI=0.7188  ARI=0.3993  23.1s
+
+=== P1L_S2_C3 test[0] k=8  dim=576  frames=302  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7483  NMI=0.8263  ARI=0.6719  8.5s
+
+=== P1L_S3_C1 test[0] k=8  dim=576  frames=447  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.6264  NMI=0.7489  ARI=0.4917  19.7s
+
+=== P1L_S3_C2 test[0] k=8  dim=576  frames=498  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5040  NMI=0.6633  ARI=0.3589  27.2s
+
+=== P1L_S3_C3 test[0] k=8  dim=576  frames=354  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7175  NMI=0.7716  ARI=0.6276  11.5s
+
+=== P1L_S4_C1 test[0] k=8  dim=576  frames=436  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.5046  NMI=0.6700  ARI=0.3731  18.5s
+
+=== P1L_S4_C2 test[0] k=8  dim=576  frames=444  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7297  NMI=0.7634  ARI=0.5593  19.8s
+
+=== P1L_S4_C3 test[0] k=8  dim=576  frames=299  σ=0.25  fold=1 ===
+  BDOSC: k_hat=8  ACC=0.7090  NMI=0.8108  ARI=0.6283  8.2s
+
+============================================================
+σ=0.25 fold=2  test=['0003', '0007', '0010', '0012', '0016', '0017', '0020', '0021']  train mats=48  test mats=24
+  BDOSC: skip tuning, fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k8_sigmas_min30_trials20_params_knownk_cv_bdosc_k8_sigma0p25_sigma0.25_fold2.json
+
+=== P1E_S1_C1 train[0] k=8  dim=576  frames=379  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7230  NMI=0.8115  ARI=0.6287  13.4s
+
+=== P1E_S1_C1 train[1] k=8  dim=576  frames=410  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7390  NMI=0.8081  ARI=0.6248  16.2s
+
+=== P1E_S1_C2 train[0] k=8  dim=576  frames=325  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6954  NMI=0.7673  ARI=0.6004  9.9s
+
+=== P1E_S1_C2 train[1] k=8  dim=576  frames=339  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7021  NMI=0.8091  ARI=0.6445  10.9s
+
+=== P1E_S1_C3 train[0] k=8  dim=576  frames=148  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7095  NMI=0.7981  ARI=0.6328  1.7s
+
+=== P1E_S1_C3 train[1] k=8  dim=576  frames=132  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8182  NMI=0.8759  ARI=0.7586  1.3s
+
+=== P1E_S2_C1 train[0] k=8  dim=576  frames=409  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6699  NMI=0.7109  ARI=0.4810  16.0s
+
+=== P1E_S2_C1 train[1] k=8  dim=576  frames=426  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7535  NMI=0.8217  ARI=0.6749  17.8s
+
+=== P1E_S2_C2 train[0] k=8  dim=576  frames=333  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8138  NMI=0.7897  ARI=0.6563  10.3s
+
+=== P1E_S2_C2 train[1] k=8  dim=576  frames=348  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6609  NMI=0.7605  ARI=0.5485  11.3s
+
+=== P1E_S2_C3 train[0] k=8  dim=576  frames=259  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8301  NMI=0.8124  ARI=0.6480  6.3s
+
+=== P1E_S2_C3 train[1] k=8  dim=576  frames=278  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8453  NMI=0.8135  ARI=0.6958  7.3s
+
+=== P1E_S3_C1 train[0] k=8  dim=576  frames=385  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7351  NMI=0.8072  ARI=0.6441  14.0s
+
+=== P1E_S3_C1 train[1] k=8  dim=576  frames=427  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5129  NMI=0.6913  ARI=0.3574  17.6s
+
+=== P1E_S3_C2 train[0] k=8  dim=576  frames=331  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6647  NMI=0.7221  ARI=0.5049  10.1s
+
+=== P1E_S3_C2 train[1] k=8  dim=576  frames=428  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7220  NMI=0.7691  ARI=0.5562  17.6s
+
+=== P1E_S3_C3 train[0] k=8  dim=576  frames=243  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.9342  NMI=0.9101  ARI=0.8475  5.3s
+
+=== P1E_S3_C3 train[1] k=8  dim=576  frames=319  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7586  NMI=0.7816  ARI=0.6012  9.5s
+
+=== P1E_S4_C1 train[0] k=8  dim=576  frames=363  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6749  NMI=0.7681  ARI=0.5662  12.2s
+
+=== P1E_S4_C1 train[1] k=8  dim=576  frames=465  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5656  NMI=0.6991  ARI=0.3881  21.1s
+
+=== P1E_S4_C2 train[0] k=8  dim=576  frames=317  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6688  NMI=0.7611  ARI=0.5506  9.3s
+
+=== P1E_S4_C2 train[1] k=8  dim=576  frames=363  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7383  NMI=0.7796  ARI=0.6147  12.2s
+
+=== P1E_S4_C3 train[0] k=8  dim=576  frames=214  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8131  NMI=0.8217  ARI=0.6826  4.2s
+
+=== P1E_S4_C3 train[1] k=8  dim=576  frames=245  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6816  NMI=0.7653  ARI=0.5876  5.5s
+
+=== P1L_S1_C1 train[0] k=8  dim=576  frames=422  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6090  NMI=0.7411  ARI=0.5095  17.3s
+
+=== P1L_S1_C1 train[1] k=8  dim=576  frames=503  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6680  NMI=0.7464  ARI=0.4924  30.4s
+
+=== P1L_S1_C2 train[0] k=8  dim=576  frames=414  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6908  NMI=0.7505  ARI=0.5695  16.0s
+
+=== P1L_S1_C2 train[1] k=8  dim=576  frames=423  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7707  NMI=0.7800  ARI=0.6222  17.5s
+
+=== P1L_S1_C3 train[0] k=8  dim=576  frames=168  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7143  NMI=0.7853  ARI=0.6270  2.5s
+
+=== P1L_S1_C3 train[1] k=8  dim=576  frames=195  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7590  NMI=0.7972  ARI=0.6772  3.5s
+
+=== P1L_S2_C1 train[0] k=8  dim=576  frames=507  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6548  NMI=0.7565  ARI=0.5808  32.8s
+
+=== P1L_S2_C1 train[1] k=8  dim=576  frames=486  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5761  NMI=0.7284  ARI=0.4957  25.4s
+
+=== P1L_S2_C2 train[0] k=8  dim=576  frames=453  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.4194  NMI=0.6480  ARI=0.3387  20.3s
+
+=== P1L_S2_C2 train[1] k=8  dim=576  frames=470  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.4809  NMI=0.7188  ARI=0.3993  21.9s
+
+=== P1L_S2_C3 train[0] k=8  dim=576  frames=275  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7782  NMI=0.8485  ARI=0.7444  6.9s
+
+=== P1L_S2_C3 train[1] k=8  dim=576  frames=302  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7483  NMI=0.8263  ARI=0.6719  8.4s
+
+=== P1L_S3_C1 train[0] k=8  dim=576  frames=394  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7463  ARI=0.4933  14.1s
+
+=== P1L_S3_C1 train[1] k=8  dim=576  frames=447  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6264  NMI=0.7489  ARI=0.4917  19.5s
+
+=== P1L_S3_C2 train[0] k=8  dim=576  frames=427  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6862  NMI=0.7464  ARI=0.5476  17.6s
+
+=== P1L_S3_C2 train[1] k=8  dim=576  frames=498  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5040  NMI=0.6633  ARI=0.3589  26.1s
+
+=== P1L_S3_C3 train[0] k=8  dim=576  frames=348  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6552  NMI=0.7366  ARI=0.4876  11.1s
+
+=== P1L_S3_C3 train[1] k=8  dim=576  frames=354  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7175  NMI=0.7716  ARI=0.6276  11.5s
+
+=== P1L_S4_C1 train[0] k=8  dim=576  frames=441  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5283  NMI=0.7055  ARI=0.3691  18.9s
+
+=== P1L_S4_C1 train[1] k=8  dim=576  frames=436  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5046  NMI=0.6700  ARI=0.3731  18.5s
+
+=== P1L_S4_C2 train[0] k=8  dim=576  frames=410  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5780  NMI=0.7388  ARI=0.5116  16.1s
+
+=== P1L_S4_C2 train[1] k=8  dim=576  frames=444  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7297  NMI=0.7634  ARI=0.5593  19.7s
+
+=== P1L_S4_C3 train[0] k=8  dim=576  frames=258  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8527  NMI=0.8241  ARI=0.7114  6.2s
+
+=== P1L_S4_C3 train[1] k=8  dim=576  frames=299  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7090  NMI=0.8108  ARI=0.6283  8.1s
+
+=== P1E_S1_C1 test[0] k=8  dim=576  frames=399  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6216  NMI=0.7576  ARI=0.5277  15.2s
+
+=== P1E_S1_C2 test[0] k=8  dim=576  frames=331  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6133  NMI=0.7309  ARI=0.5240  10.2s
+
+=== P1E_S1_C3 test[0] k=8  dim=576  frames=154  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8766  NMI=0.8570  ARI=0.7588  2.2s
+
+=== P1E_S2_C1 test[0] k=8  dim=576  frames=386  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6477  NMI=0.7236  ARI=0.5056  13.6s
+
+=== P1E_S2_C2 test[0] k=8  dim=576  frames=320  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5719  NMI=0.6806  ARI=0.4072  9.6s
+
+=== P1E_S2_C3 test[0] k=8  dim=576  frames=246  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7724  NMI=0.8286  ARI=0.7128  5.5s
+
+=== P1E_S3_C1 test[0] k=8  dim=576  frames=395  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7114  NMI=0.7715  ARI=0.6349  14.5s
+
+=== P1E_S3_C2 test[0] k=8  dim=576  frames=324  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7654  NMI=0.8161  ARI=0.7014  9.8s
+
+=== P1E_S3_C3 test[0] k=8  dim=576  frames=265  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6981  NMI=0.7830  ARI=0.6064  6.4s
+
+=== P1E_S4_C1 test[0] k=8  dim=576  frames=379  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6807  NMI=0.7929  ARI=0.6249  13.3s
+
+=== P1E_S4_C2 test[0] k=8  dim=576  frames=335  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7433  NMI=0.7954  ARI=0.6520  10.2s
+
+=== P1E_S4_C3 test[0] k=8  dim=576  frames=233  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7725  NMI=0.8105  ARI=0.6558  5.1s
+
+=== P1L_S1_C1 test[0] k=8  dim=576  frames=399  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7794  NMI=0.7738  ARI=0.6259  15.0s
+
+=== P1L_S1_C2 test[0] k=8  dim=576  frames=406  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6675  NMI=0.7478  ARI=0.5182  15.5s
+
+=== P1L_S1_C3 test[0] k=8  dim=576  frames=179  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7151  NMI=0.7805  ARI=0.6301  2.9s
+
+=== P1L_S2_C1 test[0] k=8  dim=576  frames=429  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6364  NMI=0.7760  ARI=0.5918  17.4s
+
+=== P1L_S2_C2 test[0] k=8  dim=576  frames=432  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5509  NMI=0.7280  ARI=0.4680  18.5s
+
+=== P1L_S2_C3 test[0] k=8  dim=576  frames=288  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7500  NMI=0.8382  ARI=0.6845  7.7s
+
+=== P1L_S3_C1 test[0] k=8  dim=576  frames=417  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5348  NMI=0.6574  ARI=0.3370  16.3s
+
+=== P1L_S3_C2 test[0] k=8  dim=576  frames=480  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.6937  NMI=0.7673  ARI=0.5514  23.7s
+
+=== P1L_S3_C3 test[0] k=8  dim=576  frames=349  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.5845  NMI=0.7241  ARI=0.4736  11.3s
+
+=== P1L_S4_C1 test[0] k=8  dim=576  frames=497  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7384  NMI=0.8014  ARI=0.6170  29.9s
+
+=== P1L_S4_C2 test[0] k=8  dim=576  frames=423  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.7281  NMI=0.8035  ARI=0.6556  17.5s
+
+=== P1L_S4_C3 test[0] k=8  dim=576  frames=284  σ=0.25  fold=2 ===
+  BDOSC: k_hat=8  ACC=0.8099  NMI=0.8290  ARI=0.6936  7.1s
+
+=== inference time per method ===
+  BDOSC: mean=13.1948s  std=7.1148s  total=2850.1s  n=216
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k8_sigmas_min30_trials20_knownk_cv_bdosc_k8_sigma0p25_timing.json
+
+=== mean over matrices ===
+  BDOSC train σ=0.25: ACC=0.6906  NMI=0.7706  ARI=0.5770  n=144
+  BDOSC test σ=0.25: ACC=0.6906  NMI=0.7706  ARI=0.5770  n=72
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k8_sigmas_min30_trials20_knownk_cv_bdosc_k8_sigma0p25.csv
+end=Sat Sep  5 20:06:20 EDT 2026
+Experiment completed!

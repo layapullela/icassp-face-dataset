@@ -27,6 +27,7 @@ vectorized. All methods see the same Y.
 
 from pathlib import Path
 from collections import defaultdict
+from math import comb
 import argparse
 import csv
 import json
@@ -40,6 +41,8 @@ from bdosc import bd_qosc
 from l21_ssc_tv import ssc_admm_col_tv, ssc_admm_nuc_tv
 from osc import osc_exact, cluster_from_Z
 from ssc_block_tv import ssc_admm_block_tv
+from ssc_block_tv_col21 import ssc_admm_block_tv_col21
+from ssc_block_tv_l1 import ssc_admm_block_tv_l1
 from ssc_tv import cluster_from_C, estimate_k_from_data
 from tkss import tkss_cluster
 
@@ -72,6 +75,7 @@ SSC_BLOCK_SIZE_HI = 12
 SSC_BLOCK_SIZE_FIXED = None
 SSC_BLOCK_DEFAULTS = dict(lambda_e=1.0, lambda_z=0.1, gamma_q=0.1, block_size=5)
 OSC_DEFAULTS = dict(lambda_1=0.1, lambda_2=0.1)
+# BD-OSC face clustering defaults: λ₁=0.2, λ₂=1
 BDOSC_DEFAULTS = dict(lambda_1=0.2, lambda_2=1.0, gamma_1=0.01, p=1.1, max_iter=50)
 TKSS_DEFAULTS = dict(d=5, lam=1.0, s=2)
 GRAM_NCUT_DEFAULTS = dict()
@@ -300,6 +304,32 @@ def run_ssc_block_tv(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=None):
     return cluster_from_C(C, k=k)
 
 
+def run_ssc_block_tv_col21(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=None):
+    """SSC-Block-TV with column-wise ||E||_{2,1}. ``block_size`` for Db only."""
+    if block_size is None:
+        block_size = k
+    if block_size is None:
+        raise ValueError("SSC-Block-TV-Col21 requires k or block_size")
+    _, C, _, _ = ssc_admm_block_tv_col21(
+        Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q,
+        block_size=int(block_size), max_iter=50,
+    )
+    return cluster_from_C(C, k=k)
+
+
+def run_ssc_block_tv_l1(Y, lambda_e, lambda_z, gamma_q, k=None, block_size=None):
+    """SSC-Block-TV with element-wise ||E||_1. ``block_size`` for Db only."""
+    if block_size is None:
+        block_size = k
+    if block_size is None:
+        raise ValueError("SSC-Block-TV-L1 requires k or block_size")
+    _, C, _, _ = ssc_admm_block_tv_l1(
+        Y, lambda_e=lambda_e, lambda_z=lambda_z, gamma_q=gamma_q,
+        block_size=int(block_size), max_iter=50,
+    )
+    return cluster_from_C(C, k=k)
+
+
 def run_osc(Y, lambda_1, lambda_2, k=None):
     Z = osc_exact(Y, lambda_1, lambda_2, max_iter=50)
     return cluster_from_Z(Z, k=k)
@@ -358,9 +388,35 @@ def suggest_ssc_block(trial):
     return params
 
 
+def suggest_ssc_block_col21(trial):
+    params = dict(
+        lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
+        lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
+        gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
+    )
+    if SSC_BLOCK_SIZE_FIXED is None:
+        params["block_size"] = trial.suggest_int(
+            "block_size", SSC_BLOCK_SIZE_LO, SSC_BLOCK_SIZE_HI,
+        )
+    return params
+
+
+def suggest_ssc_block_l1(trial):
+    params = dict(
+        lambda_e=trial.suggest_float("lambda_e", 1e-2, 10.0, log=True),
+        lambda_z=trial.suggest_float("lambda_z", 1e-3, 10.0, log=True),
+        gamma_q=trial.suggest_float("gamma_q", 1e-3, 10.0, log=True),
+    )
+    if SSC_BLOCK_SIZE_FIXED is None:
+        params["block_size"] = trial.suggest_int(
+            "block_size", SSC_BLOCK_SIZE_LO, SSC_BLOCK_SIZE_HI,
+        )
+    return params
+
+
 def _run_kwargs(name, params, k):
     kwargs = dict(params)
-    if name == "SSC-Block-TV" and "block_size" not in kwargs:
+    if name in ("SSC-Block-TV", "SSC-Block-TV-Col21", "SSC-Block-TV-L1") and "block_size" not in kwargs:
         kwargs["block_size"] = (
             SSC_BLOCK_SIZE_FIXED if SSC_BLOCK_SIZE_FIXED is not None else k
         )
@@ -400,6 +456,21 @@ def chunk_people(names, k=K, seed=SEED):
     names = names[: n_groups * k]
     groups = [sorted(g.tolist()) for g in names.reshape(n_groups, k)]
     return groups[:-1], groups[-1]
+
+
+def chunk_folds(names, k=K, seed=SEED):
+    """Shuffle identities, split into equal groups of k (remainder dropped).
+
+    Uses the same permutation as ``chunk_people`` so group membership is
+    identical; unlike ``chunk_people``, every group is returned so each can
+    be rotated through as the held-out test set.
+    """
+    names = np.asarray(sorted(names))
+    rng = np.random.default_rng(seed)
+    names = names[rng.permutation(len(names))]
+    n_groups = len(names) // k
+    names = names[: n_groups * k]
+    return [sorted(g.tolist()) for g in names.reshape(n_groups, k)]
 
 
 def subset_people(Y, labels, person_dirs, keep_names):
@@ -487,13 +558,98 @@ def tune_over(name, suggest, run, mats, n_trials=N_TRIALS, enqueue=None, known_k
     t0 = time.perf_counter()
     study.optimize(objective, n_trials=n_trials)
     params = dict(study.best_params)
-    if name == "SSC-Block-TV" and SSC_BLOCK_SIZE_FIXED is not None:
+    if name in ("SSC-Block-TV", "SSC-Block-TV-Col21", "SSC-Block-TV-L1") and SSC_BLOCK_SIZE_FIXED is not None:
         params["block_size"] = int(SSC_BLOCK_SIZE_FIXED)
     return {
         "params": params,
         "best_ari": float(study.best_value),
         "tune_s": time.perf_counter() - t0,
     }
+
+
+def tune_selected(
+    selected, tune_specs, fixed_defaults, tune_mats, n_trials, known_k,
+    skip_tune, no_tune, saved, params_path,
+):
+    """Tune (or load) hyperparameters for each selected method on ``tune_mats``.
+
+    Mirrors the tuning block in ``main`` so CV folds can retune independently
+    without leaking the held-out fold into the tuning pool.
+    """
+    tuned = {}
+    if no_tune:
+        for name in selected:
+            if name in saved and saved[name].get("params"):
+                tuned[name] = {
+                    "params": dict(saved[name]["params"]),
+                    "best_ari": saved[name].get("best_ari"),
+                    "tune_s": saved[name].get("tune_s") or 0.0,
+                }
+                print(f"  {name}: skip tuning, loaded {_fmt_params(tuned[name]['params'])}")
+            elif name in fixed_defaults:
+                tuned[name] = {"params": dict(fixed_defaults[name]), "best_ari": None, "tune_s": 0.0}
+                print(f"  {name}: skip tuning, fixed {_fmt_params(tuned[name]['params'])}")
+            else:
+                raise ValueError(f"--no-tune requires saved params for {name} in {params_path}")
+        return tuned
+
+    for name in selected:
+        if name in fixed_defaults:
+            tuned[name] = {"params": dict(fixed_defaults[name]), "best_ari": None, "tune_s": 0.0}
+            print(f"  {name}: skip tuning, fixed {_fmt_params(tuned[name]['params'])}")
+            write_params(tuned, params_path)
+
+    for name in selected:
+        if name not in tune_specs:
+            continue
+        if name in skip_tune:
+            tuned[name] = {
+                "params": dict(saved[name]["params"]),
+                "best_ari": saved[name].get("best_ari"),
+                "tune_s": saved[name].get("tune_s") or 0.0,
+            }
+            print(f"  {name}: skip tuning, loaded {_fmt_params(tuned[name]['params'])}")
+            continue
+        suggest, run, defaults = tune_specs[name]
+        n_method = n_tune_trials(defaults, n_trials)
+        print(
+            f"  --- tune {name} over {len(tune_mats)} train mats  "
+            f"n_trials={n_method} ({len(defaults)} params) ---"
+        )
+        result = tune_over(
+            name, suggest, run, tune_mats, n_trials=n_method, enqueue=defaults,
+            known_k=known_k,
+        )
+        tuned[name] = result
+        print(
+            f"    best mean ARI={result['best_ari']:.4f}  "
+            f"tune {result['tune_s']:.1f}s  {_fmt_params(result['params'])}"
+        )
+        write_params(tuned, params_path)
+    return tuned
+
+
+def write_timing_summary(timing, path):
+    """Aggregate per-call inference seconds (from eval_method) per method."""
+    summary = {}
+    for name, secs in timing.items():
+        arr = np.asarray(secs, dtype=float)
+        summary[name] = {
+            "n_calls": int(arr.size),
+            "mean_s": float(arr.mean()) if arr.size else None,
+            "std_s": float(arr.std()) if arr.size else None,
+            "total_s": float(arr.sum()) if arr.size else None,
+        }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(summary, indent=2))
+    print(f"\n=== inference time per method ===")
+    for name, s in summary.items():
+        if s["n_calls"]:
+            print(
+                f"  {name}: mean={s['mean_s']:.4f}s  std={s['std_s']:.4f}s  "
+                f"total={s['total_s']:.1f}s  n={s['n_calls']}"
+            )
+    print(f"wrote {path}")
 
 
 def eval_method(name, pred_fn, y_true):
@@ -553,6 +709,67 @@ def build_split_mats(loaded, train_groups, test_group, sigma, rng):
         Ys, labs, nms = subset_people(Y, labels, person_dirs, test_group)
         test_mats.append((ds_name, 0, Ys, labs, nms))
     return train_mats, test_mats
+
+
+def apply_noise_to_sequences(loaded, sigma, rng):
+    """Draw one noisy Y per sequence for this sigma, shared across all CV folds."""
+    out = []
+    for ds_name, Y01, labels, person_dirs, paths in loaded:
+        Y = apply_noise(Y01, sigma, rng)
+        out.append((ds_name, Y, labels, person_dirs))
+    return out
+
+
+def build_fold_mats(noisy, train_groups, test_group):
+    """Same as ``build_split_mats`` but reuses an already-noised Y per sequence."""
+    train_mats, test_mats = [], []
+    for ds_name, Y, labels, person_dirs in noisy:
+        for i, names in enumerate(train_groups):
+            Ys, labs, nms = subset_people(Y, labels, person_dirs, names)
+            train_mats.append((ds_name, i, Ys, labs, nms))
+        Ys, labs, nms = subset_people(Y, labels, person_dirs, test_group)
+        test_mats.append((ds_name, 0, Ys, labs, nms))
+    return train_mats, test_mats
+
+
+def sample_overlapping_groups(pool, k, n_groups, seed):
+    """Draw n_groups DISTINCT random k-sized subsets of pool people.
+
+    Groups may still overlap in membership (that's the point -- more
+    variety than a fixed disjoint partition); they just aren't allowed to
+    be the exact same set of people as each other. Raises if the pool
+    can't combinatorially support n_groups distinct k-sized subsets (e.g.
+    a 13-person pool has only C(13,12)=13 distinct size-12 subsets).
+    """
+    if len(pool) < k:
+        raise ValueError(f"pool has {len(pool)} people, need >= {k}")
+    max_distinct = comb(len(pool), k)
+    if max_distinct < n_groups:
+        raise ValueError(
+            f"only {max_distinct} distinct {k}-sized group(s) possible from a "
+            f"{len(pool)}-person pool; cannot draw {n_groups} distinct groups"
+        )
+    rng = np.random.default_rng(seed)
+    pool = np.asarray(sorted(pool))
+    seen = set()
+    groups = []
+    while len(groups) < n_groups:
+        idx = tuple(sorted(rng.choice(len(pool), size=k, replace=False).tolist()))
+        if idx in seen:
+            continue
+        seen.add(idx)
+        groups.append(sorted(pool[list(idx)].tolist()))
+    return groups
+
+
+def build_group_mats(noisy, groups):
+    """Subset people for each group (no held-out test group involved)."""
+    mats = []
+    for ds_name, Y, labels, person_dirs in noisy:
+        for i, names in enumerate(groups):
+            Ys, labs, nms = subset_people(Y, labels, person_dirs, names)
+            mats.append((ds_name, i, Ys, labs, nms))
+    return mats
 
 
 def min_class_size(labs):
@@ -676,6 +893,28 @@ def parse_args():
              "Default: search block_size in "
              f"{{{SSC_BLOCK_SIZE_LO},...,{SSC_BLOCK_SIZE_HI}}}.",
     )
+    p.add_argument(
+        "--cv", action="store_true",
+        help="Rotate every group of k people through as the held-out test "
+             "set (k-fold hold-out CV) instead of a single fixed split. "
+             "Hyperparameters are retuned per fold on that fold's train "
+             "groups only.",
+    )
+    p.add_argument(
+        "--tune-pool-groups", type=int, default=None,
+        help="--cv only. Instead of tuning on the fold's fixed partition "
+             "train groups (few and non-overlapping for large k), tune on "
+             "this many k-sized subsets drawn randomly (with possible "
+             "overlap) from the fold's held-in people. Does not change the "
+             "reported train/test eval rows, only what Optuna optimizes "
+             "against.",
+    )
+    p.add_argument(
+        "--out-dir", type=Path, default=None,
+        help="Benchmark root. Writes CSV to <out-dir>/results/surveillance "
+             "and params JSON to <out-dir>/params/surveillance instead of "
+             "this script's directory.",
+    )
     return p.parse_args()
 
 
@@ -747,16 +986,32 @@ def main():
         params_path = params_path.with_name(
             f"{params_path.stem}_{args.out_tag}{params_path.suffix}"
         )
+    if args.out_dir is not None:
+        results_dir = args.out_dir / "results" / "surveillance"
+        params_dir = args.out_dir / "params" / "surveillance"
+        results_dir.mkdir(parents=True, exist_ok=True)
+        params_dir.mkdir(parents=True, exist_ok=True)
+        csv_path = results_dir / csv_path.name
+        params_path = params_dir / params_path.name
     loaded = load_all_sequences(
         n_lo=(args.min_class_frames + 1) if args.min_class_frames is not None else None,
     )
     people = sorted(p.name for p in loaded[0][3])
-    train_groups, test_group = chunk_people(people, k=k)
-    if not train_groups:
-        raise ValueError(
-            f"k={k} leaves no train groups with {len(people)} people "
-            f"(need at least 2 groups of {k})"
-        )
+    groups = None
+    if args.cv:
+        groups = chunk_folds(people, k=k)
+        if len(groups) < 2:
+            raise ValueError(
+                f"k={k} leaves fewer than 2 groups with {len(people)} people "
+                "(need at least 2 groups to rotate CV)"
+            )
+    else:
+        train_groups, test_group = chunk_people(people, k=k)
+        if not train_groups:
+            raise ValueError(
+                f"k={k} leaves no train groups with {len(people)} people "
+                f"(need at least 2 groups of {k})"
+            )
     print(f"sequences={len(loaded)}  people={len(people)}  k={k}")
     print(f"frames/person ~ Unif[{N_FRAMES_LO}, {N_FRAMES_HI}]")
     print(f"down_hw={DOWN_HW}  sigmas={sigmas}  n_trials={n_trials}  "
@@ -770,15 +1025,25 @@ def main():
         )
     if args.hetero_noise:
         print("hetero-noise: per-column σ ~ Unif[0, 1]")
-    for i, names in enumerate(train_groups):
-        print(f"train {i} k={len(names)}  people={names}")
-    print(f"test    k={len(test_group)}  people={test_group}")
+    if args.cv:
+        n_unused = len(people) - len(groups) * k
+        print(f"CV mode: {len(groups)} folds of size {k}, each rotated as test")
+        if n_unused:
+            print(f"  {n_unused} people unused (remainder dropped)")
+        for i, g in enumerate(groups):
+            print(f"  group {i}: {g}")
+    else:
+        for i, names in enumerate(train_groups):
+            print(f"train {i} k={len(names)}  people={names}")
+        print(f"test    k={len(test_group)}  people={test_group}")
 
     tune_specs = {
         "OSC": (suggest_osc, run_osc, OSC_DEFAULTS),
         "SSC-TV-L21": (suggest_ssc, run_ssc_tv, SSC_DEFAULTS),
         "SSC-TV-L21-col": (suggest_ssc_col, run_ssc_tv_col, SSC_COL_DEFAULTS),
         "SSC-Block-TV": (suggest_ssc_block, run_ssc_block_tv, block_defaults),
+        "SSC-Block-TV-Col21": (suggest_ssc_block_col21, run_ssc_block_tv_col21, block_defaults),
+        "SSC-Block-TV-L1": (suggest_ssc_block_l1, run_ssc_block_tv_l1, block_defaults),
         "TKSS": (suggest_tkss, run_tkss, TKSS_DEFAULTS),
     }
     eval_specs = {
@@ -786,6 +1051,8 @@ def main():
         "SSC-TV-L21": run_ssc_tv,
         "SSC-TV-L21-col": run_ssc_tv_col,
         "SSC-Block-TV": run_ssc_block_tv,
+        "SSC-Block-TV-Col21": run_ssc_block_tv_col21,
+        "SSC-Block-TV-L1": run_ssc_block_tv_l1,
         "BDOSC": run_bdosc,
         "TKSS": run_tkss,
         "Gram-NCut": run_gram_ncut,
@@ -804,6 +1071,138 @@ def main():
         f"methods={selected}  append={args.append}  "
         f"hetero_noise={args.hetero_noise}  no_tune={args.no_tune}"
     )
+    skip_tune = set(args.skip_tune or ())
+    if skip_tune:
+        print(f"skip_tune={sorted(skip_tune)}")
+
+    if args.cv:
+        if args.hetero_noise:
+            raise NotImplementedError("--cv with --hetero-noise is not supported")
+        fieldnames = [
+            "method", "dataset", "split", "example", "sigma", "fold", "k", "k_pred",
+            "n_people", "n_frames", "people", "params", "acc", "nmi", "ari", "seconds",
+        ]
+        timing = defaultdict(list)
+        csv_exists = csv_path.exists() and csv_path.stat().st_size > 0
+        mode = "a" if args.append and csv_exists else "w"
+        with open(csv_path, mode, newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            if mode == "w":
+                writer.writeheader()
+            f.flush()
+
+            for sigma in sigmas:
+                rng = np.random.default_rng(SEED)
+                noisy = apply_noise_to_sequences(loaded, sigma, rng)
+                for fold_idx in range(len(groups)):
+                    test_group = groups[fold_idx]
+                    fold_train_groups = [g for j, g in enumerate(groups) if j != fold_idx]
+                    train_mats, test_mats = build_fold_mats(noisy, fold_train_groups, test_group)
+                    if args.min_class_frames is not None:
+                        train_mats = filter_mats_by_min_class(
+                            train_mats, args.min_class_frames,
+                            tag=f"σ={sigma} fold{fold_idx} train",
+                        )
+                        test_mats = filter_mats_by_min_class(
+                            test_mats, args.min_class_frames,
+                            tag=f"σ={sigma} fold{fold_idx} test",
+                        )
+                    if args.tune_pool_groups:
+                        held_in = sorted(set(people) - set(test_group))
+                        tune_groups = sample_overlapping_groups(
+                            held_in, k, args.tune_pool_groups, seed=SEED + fold_idx,
+                        )
+                        tune_mats = [
+                            (Ys, labs, len(nms))
+                            for _, _, Ys, labs, nms in build_group_mats(noisy, tune_groups)
+                        ]
+                        print(
+                            f"  tune_pool_groups={args.tune_pool_groups}: sampling from "
+                            f"{len(held_in)} held-in people (overlap allowed) instead of "
+                            f"the {len(fold_train_groups)} fixed partition group(s)"
+                        )
+                    else:
+                        tune_mats = [(Ys, labs, len(nms)) for _, _, Ys, labs, nms in train_mats]
+                    if not tune_mats:
+                        raise ValueError(
+                            f"no train matrices left for σ={sigma} fold={fold_idx} "
+                            f"after min_class_frames={args.min_class_frames}"
+                        )
+                    print(
+                        f"\n{'=' * 60}\n"
+                        f"σ={sigma} fold={fold_idx}  test={test_group}  "
+                        f"train mats={len(train_mats)}  test mats={len(test_mats)}  "
+                        f"tune mats={len(tune_mats)}"
+                    )
+
+                    fold_params_path = params_path.with_name(
+                        f"{params_path.stem}_sigma{sigma:g}_fold{fold_idx}{params_path.suffix}"
+                    )
+                    saved = (
+                        json.loads(fold_params_path.read_text())
+                        if fold_params_path.exists() else {}
+                    )
+                    if skip_tune:
+                        missing = [
+                            n for n in skip_tune
+                            if n not in saved or not saved[n].get("params")
+                        ]
+                        if missing:
+                            raise ValueError(
+                                f"--skip-tune requires saved params for {missing} "
+                                f"in {fold_params_path}"
+                            )
+                    tuned = tune_selected(
+                        selected, tune_specs, fixed_defaults, tune_mats, n_trials,
+                        args.known_k, skip_tune, args.no_tune, saved, fold_params_path,
+                    )
+
+                    for split_name, mats in (("train", train_mats), ("test", test_mats)):
+                        for ds_name, ex_idx, Ys, labs, nms in mats:
+                            kk = len(nms)
+                            print(
+                                f"\n=== {ds_name} {split_name}[{ex_idx}] k={kk}  "
+                                f"dim={Ys.shape[0]}  frames={Ys.shape[1]}  "
+                                f"σ={sigma}  fold={fold_idx} ==="
+                            )
+                            for name in selected:
+                                run = eval_specs[name]
+                                params = tuned[name]["params"]
+                                scores, elapsed = eval_method(
+                                    name,
+                                    lambda Ys=Ys, kk=kk, run=run, params=params, name=name:
+                                        run(
+                                            Ys, k=(kk if args.known_k else None),
+                                            **_run_kwargs(name, params, kk),
+                                        ),
+                                    labs,
+                                )
+                                timing[name].append(elapsed)
+                                writer.writerow({
+                                    "method": name,
+                                    "dataset": ds_name,
+                                    "split": split_name,
+                                    "example": ex_idx,
+                                    "sigma": sigma,
+                                    "fold": fold_idx,
+                                    "k": kk,
+                                    "k_pred": scores["k_pred"],
+                                    "n_people": len(nms),
+                                    "n_frames": Ys.shape[1],
+                                    "people": " ".join(nms),
+                                    "params": _fmt_params(params),
+                                    "acc": f"{scores['acc']:.6f}",
+                                    "nmi": f"{scores['nmi']:.6f}",
+                                    "ari": f"{scores['ari']:.6f}",
+                                    "seconds": f"{elapsed:.2f}",
+                                })
+                                f.flush()
+
+        timing_path = csv_path.with_name(f"{csv_path.stem}_timing.json")
+        write_timing_summary(timing, timing_path)
+        print_means_from_csv(csv_path)
+        print(f"\nwrote {csv_path}")
+        return
 
     fieldnames = [
         "method", "dataset", "split", "example", "sigma", "k", "k_pred", "n_people",
@@ -871,14 +1270,12 @@ def main():
 
     tuned = {}
     saved = json.loads(params_path.read_text()) if params_path.exists() else {}
-    skip_tune = set(args.skip_tune or ())
     if skip_tune:
         missing = [n for n in skip_tune if n not in saved or not saved[n].get("params")]
         if missing:
             raise ValueError(
                 f"--skip-tune requires saved params for {missing} in {params_path}"
             )
-        print(f"skip_tune={sorted(skip_tune)}")
     if args.no_tune:
         for name in selected:
             if name in saved and saved[name].get("params"):

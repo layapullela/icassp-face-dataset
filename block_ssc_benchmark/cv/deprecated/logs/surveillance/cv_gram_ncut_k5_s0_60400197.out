@@ -1,0 +1,1911 @@
+========================================
+Job: cv_gram_ncut_k5_s0
+Method: Gram-NCut  k: 5  sigma: 0.0
+========================================
+host=gl3284.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sat Sep  5 19:18:08 EDT 2026
+Loading P1E_S1_C1
+  Y: (576, 1236)  people=25  frames/person=[60, 61, 50, 48, 51, 35, 41, 56, 55, 49, 65, 50, 63, 38, 61, 48, 50, 49, 50, 30, 42, 60, 32, 39, 53]  min=30
+Loading P1E_S1_C2
+  Y: (576, 1031)  people=25  frames/person=[42, 48, 31, 35, 50, 45, 30, 32, 38, 40, 61, 41, 47, 33, 46, 36, 41, 45, 42, 36, 33, 50, 53, 33, 43]  min=30
+Loading P1E_S1_C3
+  Y: (576, 453)  people=25  frames/person=[15, 22, 16, 16, 17, 13, 14, 19, 14, 25, 26, 12, 21, 18, 22, 19, 13, 19, 16, 15, 8, 15, 30, 20, 28]  min=8
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C1
+  Y: (576, 1256)  people=25  frames/person=[65, 50, 50, 51, 53, 48, 49, 60, 33, 48, 61, 58, 52, 32, 55, 35, 45, 53, 40, 53, 51, 65, 64, 42, 43]  min=32
+Loading P1E_S2_C2
+  Y: (576, 1042)  people=25  frames/person=[33, 48, 38, 41, 53, 36, 39, 47, 51, 36, 55, 44, 43, 25, 42, 41, 37, 45, 41, 38, 40, 54, 49, 33, 33]  min=25
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1E_S2_C3
+  Y: (576, 816)  people=25  frames/person=[36, 33, 28, 32, 42, 37, 31, 36, 31, 23, 42, 36, 35, 20, 33, 33, 32, 32, 32, 29, 32, 42, 38, 27, 24]  min=20
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C1
+  Y: (576, 1255)  people=25  frames/person=[43, 39, 47, 52, 58, 96, 42, 31, 79, 33, 67, 55, 44, 34, 40, 48, 54, 77, 45, 41, 46, 53, 56, 38, 37]  min=31
+Loading P1E_S3_C2
+  Y: (576, 1126)  people=25  frames/person=[57, 56, 35, 40, 49, 75, 34, 40, 70, 26, 65, 54, 43, 28, 32, 43, 48, 31, 36, 33, 42, 71, 57, 30, 31]  min=26
+  warning: 2 people have fewer than 30 available frames (kept all)
+Loading P1E_S3_C3
+  Y: (576, 866)  people=25  frames/person=[43, 36, 24, 33, 37, 47, 29, 37, 55, 18, 40, 40, 31, 22, 30, 39, 35, 45, 30, 28, 30, 50, 42, 20, 25]  min=18
+  warning: 7 people have fewer than 30 available frames (kept all)
+Loading P1E_S4_C1
+  Y: (576, 1247)  people=25  frames/person=[58, 54, 34, 56, 50, 59, 50, 56, 74, 38, 75, 35, 46, 31, 53, 40, 57, 32, 56, 33, 48, 67, 59, 48, 38]  min=31
+Loading P1E_S4_C2
+  Y: (576, 1051)  people=25  frames/person=[37, 37, 41, 46, 41, 49, 38, 45, 65, 30, 39, 48, 50, 34, 43, 36, 47, 52, 45, 37, 38, 50, 30, 37, 36]  min=30
+Loading P1E_S4_C3
+  Y: (576, 719)  people=25  frames/person=[28, 29, 22, 29, 24, 36, 31, 29, 33, 25, 37, 19, 28, 21, 25, 27, 25, 41, 27, 29, 26, 31, 45, 29, 23]  min=19
+  warning: 18 people have fewer than 30 available frames (kept all)
+Loading P1L_S1_C1
+  Y: (576, 1391)  people=25  frames/person=[65, 68, 43, 64, 47, 40, 58, 33, 75, 41, 58, 72, 58, 49, 66, 67, 65, 43, 59, 57, 58, 51, 67, 32, 55]  min=32
+Loading P1L_S1_C2
+  Y: (576, 1309)  people=25  frames/person=[30, 65, 37, 63, 66, 54, 52, 52, 43, 49, 71, 49, 58, 48, 54, 66, 56, 36, 48, 49, 55, 66, 52, 39, 51]  min=30
+Loading P1L_S1_C3
+  Y: (576, 565)  people=25  frames/person=[27, 29, 20, 26, 19, 25, 22, 12, 28, 25, 20, 25, 23, 18, 21, 23, 25, 26, 23, 21, 18, 18, 30, 18, 23]  min=12
+  warning: 24 people have fewer than 30 available frames (kept all)
+Loading P1L_S2_C1
+  Y: (576, 1470)  people=25  frames/person=[73, 68, 53, 64, 65, 41, 73, 55, 37, 31, 82, 75, 63, 45, 34, 48, 74, 84, 71, 64, 62, 65, 48, 33, 62]  min=31
+Loading P1L_S2_C2
+  Y: (576, 1393)  people=25  frames/person=[64, 65, 49, 62, 69, 69, 63, 61, 80, 34, 89, 57, 53, 52, 55, 38, 30, 30, 66, 36, 57, 51, 73, 41, 49]  min=30
+Loading P1L_S2_C3
+  Y: (576, 897)  people=25  frames/person=[40, 36, 29, 28, 35, 37, 36, 36, 50, 28, 55, 46, 34, 31, 35, 32, 30, 48, 37, 29, 36, 39, 45, 19, 26]  min=19
+  warning: 6 people have fewer than 30 available frames (kept all)
+Loading P1L_S3_C1
+  Y: (576, 1329)  people=25  frames/person=[31, 33, 30, 51, 74, 75, 59, 65, 66, 43, 47, 39, 65, 50, 58, 71, 67, 36, 57, 35, 62, 31, 74, 59, 51]  min=30
+Loading P1L_S3_C2
+  Y: (576, 1472)  people=25  frames/person=[78, 38, 48, 51, 54, 71, 61, 71, 32, 50, 75, 38, 72, 63, 48, 67, 49, 87, 52, 56, 58, 85, 73, 56, 39]  min=32
+Loading P1L_S3_C3
+  Y: (576, 1105)  people=25  frames/person=[48, 44, 38, 38, 39, 45, 35, 55, 52, 26, 81, 39, 36, 36, 44, 54, 42, 61, 38, 31, 34, 53, 51, 44, 41]  min=26
+  warning: 1 people have fewer than 30 available frames (kept all)
+Loading P1L_S4_C1
+  Y: (576, 1443)  people=25  frames/person=[50, 69, 44, 41, 78, 43, 32, 71, 45, 65, 59, 39, 56, 57, 68, 69, 70, 73, 51, 63, 47, 70, 57, 52, 74]  min=32
+Loading P1L_S4_C2
+  Y: (576, 1327)  people=25  frames/person=[71, 34, 39, 54, 63, 67, 52, 39, 52, 56, 59, 50, 51, 53, 63, 50, 71, 63, 48, 35, 31, 71, 43, 52, 60]  min=31
+Loading P1L_S4_C3
+  Y: (576, 880)  people=25  frames/person=[37, 41, 23, 26, 32, 34, 22, 32, 50, 29, 38, 44, 31, 34, 37, 39, 39, 39, 38, 26, 25, 50, 41, 33, 40]  min=22
+  warning: 6 people have fewer than 30 available frames (kept all)
+sequences=24  people=25  k=5
+frames/person ~ Unif[30, 100]
+down_hw=24  sigmas=(0.0,)  n_trials=20  known_k=True  csv=split_k5_clean_min30_trials20_knownk_scaled_cv_gram_ncut_k5_sigma0.csv
+SSC-Block-TV block_size searched in [2, 12]
+CV mode: 5 folds of size 5, each rotated as test
+  group 0: ['0006', '0013', '0014', '0022', '0027']
+  group 1: ['0004', '0009', '0019', '0025', '0026']
+  group 2: ['0001', '0005', '0011', '0023', '0024']
+  group 3: ['0007', '0010', '0015', '0016', '0021']
+  group 4: ['0003', '0012', '0017', '0018', '0020']
+methods=['Gram-NCut']  append=False  hetero_noise=False  no_tune=False
+
+============================================================
+σ=0.0 fold=0  test=['0006', '0013', '0014', '0022', '0027']  train mats=96  test mats=24
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_clean_min30_trials20_knownk_scaled_params_cv_gram_ncut_k5_sigma0_sigma0_fold0.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=212  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.4943  NMI=0.6914  ARI=0.3997  0.1s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6818  NMI=0.7637  ARI=0.5923  0.1s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5821  NMI=0.7085  ARI=0.4369  0.1s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=188  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=198  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.4848  NMI=0.5817  ARI=0.2964  0.0s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6884  NMI=0.8021  ARI=0.6488  0.0s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9860  NMI=0.9680  ARI=0.9652  0.1s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=93  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9785  NMI=0.9546  ARI=0.9423  0.0s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=68  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8529  NMI=0.8631  ARI=0.7887  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9655  NMI=0.9425  ARI=0.9258  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9720  NMI=0.9357  ARI=0.9246  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=250  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9800  NMI=0.9595  ARI=0.9557  0.1s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5208  NMI=0.6936  ARI=0.4313  0.1s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5259  NMI=0.7312  ARI=0.5274  0.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8506  NMI=0.8881  ARI=0.7982  0.1s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=196  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9694  NMI=0.9325  ARI=0.9249  0.0s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=219  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7671  NMI=0.8444  ARI=0.7017  0.1s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7552  NMI=0.7905  ARI=0.6459  0.0s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8396  NMI=0.8633  ARI=0.7674  0.1s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=156  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=173  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8960  NMI=0.8801  ARI=0.8064  0.0s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7750  NMI=0.8515  ARI=0.7507  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9805  NMI=0.9524  ARI=0.9542  0.0s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=237  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8903  NMI=0.8546  ARI=0.7624  0.1s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=273  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5275  NMI=0.6632  ARI=0.3723  0.1s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5360  NMI=0.6497  ARI=0.4244  0.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6751  NMI=0.7552  ARI=0.6084  0.1s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=204  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9853  NMI=0.9595  ARI=0.9598  0.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=280  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5857  NMI=0.6800  ARI=0.4490  0.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5766  NMI=0.7242  ARI=0.4941  0.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9468  NMI=0.9103  ARI=0.8853  0.0s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=150  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9867  NMI=0.9634  ARI=0.9694  0.0s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=211  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7393  NMI=0.8374  ARI=0.6914  0.1s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7425  NMI=0.8708  ARI=0.7394  0.0s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9881  NMI=0.9667  ARI=0.9741  0.0s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=248  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9758  NMI=0.9516  ARI=0.9389  0.1s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=303  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5380  NMI=0.6859  ARI=0.3997  0.1s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6250  NMI=0.7400  ARI=0.5455  0.1s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7512  NMI=0.7969  ARI=0.6991  0.1s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=193  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9896  NMI=0.9703  ARI=0.9757  0.0s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=236  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7085  NMI=0.8554  ARI=0.6839  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8485  NMI=0.8584  ARI=0.7665  0.0s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=152  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9539  NMI=0.9254  ARI=0.8868  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=147  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9864  NMI=0.9683  ARI=0.9645  0.0s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7589  NMI=0.8719  ARI=0.7392  0.0s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7891  NMI=0.8661  ARI=0.7590  0.0s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=265  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=313  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8307  NMI=0.8741  ARI=0.7477  0.1s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8912  NMI=0.9108  ARI=0.8725  0.1s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8526  NMI=0.8674  ARI=0.7332  0.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=236  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8729  NMI=0.8746  ARI=0.7511  0.1s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=257  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7665  NMI=0.7584  ARI=0.5819  0.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5885  NMI=0.7513  ARI=0.5527  0.1s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6407  NMI=0.7270  ARI=0.4855  0.1s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=115  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7304  NMI=0.8548  ARI=0.6715  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=117  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6581  NMI=0.7236  ARI=0.4649  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7822  NMI=0.7848  ARI=0.6289  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=281  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9288  NMI=0.9046  ARI=0.8443  0.1s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=301  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6512  NMI=0.7316  ARI=0.5138  0.1s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9018  NMI=0.9077  ARI=0.8561  0.1s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8000  NMI=0.8749  ARI=0.7701  0.1s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=256  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=314  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8248  NMI=0.8143  ARI=0.7062  0.1s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7176  NMI=0.8377  ARI=0.6912  0.1s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=159  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9874  NMI=0.9706  ARI=0.9704  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=193  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6218  NMI=0.7152  ARI=0.4459  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6743  NMI=0.7838  ARI=0.6161  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9832  NMI=0.9647  ARI=0.9646  0.0s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=289  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9377  NMI=0.8872  ARI=0.8422  0.1s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=241  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7925  NMI=0.7535  ARI=0.6041  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7532  NMI=0.7802  ARI=0.6118  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8216  NMI=0.8176  ARI=0.6793  0.1s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=287  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7596  NMI=0.8637  ARI=0.7125  0.1s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=304  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.4967  NMI=0.6271  ARI=0.3680  0.1s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6869  NMI=0.7773  ARI=0.6325  0.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6931  NMI=0.8328  ARI=0.6482  0.1s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=210  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7190  NMI=0.8418  ARI=0.6760  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=225  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8044  NMI=0.7808  ARI=0.6162  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7952  NMI=0.7803  ARI=0.6291  0.1s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9913  NMI=0.9788  ARI=0.9843  0.1s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=255  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=253  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7698  NMI=0.8699  ARI=0.7347  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.2s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=257  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=279  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8925  NMI=0.8597  ARI=0.8100  0.1s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7016  NMI=0.8551  ARI=0.6854  0.1s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7180  NMI=0.8328  ARI=0.6680  0.1s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=158  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=188  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6596  NMI=0.7569  ARI=0.5614  0.0s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5740  NMI=0.7366  ARI=0.5280  0.0s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9892  NMI=0.9741  ARI=0.9749  0.0s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=249  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7149  NMI=0.7969  ARI=0.6310  0.1s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=231  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9524  NMI=0.9114  ARI=0.8828  0.1s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=98  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8571  NMI=0.8155  ARI=0.7372  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=268  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7351  NMI=0.7386  ARI=0.6123  0.1s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=223  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9417  NMI=0.8904  ARI=0.8563  0.1s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=173  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=258  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6550  NMI=0.7605  ARI=0.5778  0.1s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=232  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9095  NMI=0.8578  ARI=0.7779  0.1s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=170  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=231  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7619  NMI=0.8525  ARI=0.6836  0.1s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=201  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9900  NMI=0.9749  ARI=0.9741  0.1s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=132  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9773  NMI=0.9447  ARI=0.9411  0.0s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=289  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.7543  NMI=0.8686  ARI=0.7291  0.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=286  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8986  NMI=0.8906  ARI=0.8014  0.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=108  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.6296  NMI=0.7382  ARI=0.4995  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=348  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.5977  NMI=0.7088  ARI=0.4460  0.2s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=300  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8067  NMI=0.7533  ARI=0.5532  0.1s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=191  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8377  NMI=0.8511  ARI=0.6797  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=246  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8415  NMI=0.8388  ARI=0.6872  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=262  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9466  NMI=0.9202  ARI=0.8759  0.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=231  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.9394  NMI=0.9057  ARI=0.8366  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=313  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8243  NMI=0.8685  ARI=0.7377  0.1s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=267  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8240  NMI=0.7924  ARI=0.6321  0.1s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=180  σ=0.0  fold=0 ===
+  Gram-NCut: k_hat=5  ACC=0.8333  NMI=0.8662  ARI=0.7223  0.0s
+
+============================================================
+σ=0.0 fold=1  test=['0004', '0009', '0019', '0025', '0026']  train mats=96  test mats=24
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_clean_min30_trials20_knownk_scaled_params_cv_gram_ncut_k5_sigma0_sigma0_fold1.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7149  NMI=0.7969  ARI=0.6310  0.1s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.4943  NMI=0.6914  ARI=0.3997  0.1s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6818  NMI=0.7637  ARI=0.5923  0.1s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5821  NMI=0.7085  ARI=0.4369  0.1s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9524  NMI=0.9114  ARI=0.8828  0.1s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=198  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.4848  NMI=0.5817  ARI=0.2964  0.1s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6884  NMI=0.8021  ARI=0.6488  0.1s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9860  NMI=0.9680  ARI=0.9652  0.1s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8571  NMI=0.8155  ARI=0.7372  0.0s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=68  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8529  NMI=0.8631  ARI=0.7887  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9655  NMI=0.9425  ARI=0.9258  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9720  NMI=0.9357  ARI=0.9246  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7351  NMI=0.7386  ARI=0.6123  0.1s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5208  NMI=0.6936  ARI=0.4313  0.1s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5259  NMI=0.7312  ARI=0.5274  0.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8506  NMI=0.8881  ARI=0.7982  0.1s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9417  NMI=0.8904  ARI=0.8563  0.1s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=219  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7671  NMI=0.8444  ARI=0.7017  0.1s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7552  NMI=0.7905  ARI=0.6459  0.0s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8396  NMI=0.8633  ARI=0.7674  0.1s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=173  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8960  NMI=0.8801  ARI=0.8064  0.0s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7750  NMI=0.8515  ARI=0.7507  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9805  NMI=0.9524  ARI=0.9542  0.0s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6550  NMI=0.7605  ARI=0.5778  0.1s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=273  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5275  NMI=0.6632  ARI=0.3723  0.1s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5360  NMI=0.6497  ARI=0.4244  0.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6751  NMI=0.7552  ARI=0.6084  0.1s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9095  NMI=0.8578  ARI=0.7779  0.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=280  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5857  NMI=0.6800  ARI=0.4490  0.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5766  NMI=0.7242  ARI=0.4941  0.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9468  NMI=0.9103  ARI=0.8853  0.0s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=211  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7393  NMI=0.8374  ARI=0.6914  0.1s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7425  NMI=0.8708  ARI=0.7394  0.0s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9881  NMI=0.9667  ARI=0.9741  0.0s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7619  NMI=0.8525  ARI=0.6836  0.1s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=303  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5380  NMI=0.6859  ARI=0.3997  0.1s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6250  NMI=0.7400  ARI=0.5455  0.1s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7512  NMI=0.7969  ARI=0.6991  0.1s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9900  NMI=0.9749  ARI=0.9741  0.1s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=236  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7085  NMI=0.8554  ARI=0.6839  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8485  NMI=0.8584  ARI=0.7665  0.0s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9773  NMI=0.9447  ARI=0.9411  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=147  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9864  NMI=0.9683  ARI=0.9645  0.0s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7589  NMI=0.8719  ARI=0.7392  0.0s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7891  NMI=0.8661  ARI=0.7590  0.0s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7543  NMI=0.8686  ARI=0.7291  0.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=313  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8307  NMI=0.8741  ARI=0.7477  0.1s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8912  NMI=0.9108  ARI=0.8725  0.1s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8526  NMI=0.8674  ARI=0.7332  0.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8986  NMI=0.8906  ARI=0.8014  0.1s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=257  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7665  NMI=0.7584  ARI=0.5819  0.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5885  NMI=0.7513  ARI=0.5527  0.1s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6407  NMI=0.7270  ARI=0.4855  0.1s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6296  NMI=0.7382  ARI=0.4995  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=117  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6581  NMI=0.7236  ARI=0.4649  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7822  NMI=0.7848  ARI=0.6289  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5977  NMI=0.7088  ARI=0.4460  0.2s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=301  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6512  NMI=0.7316  ARI=0.5138  0.1s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9018  NMI=0.9077  ARI=0.8561  0.1s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8000  NMI=0.8749  ARI=0.7701  0.1s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8067  NMI=0.7533  ARI=0.5532  0.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=314  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8248  NMI=0.8143  ARI=0.7062  0.1s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7176  NMI=0.8377  ARI=0.6912  0.1s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8377  NMI=0.8511  ARI=0.6797  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=193  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6218  NMI=0.7152  ARI=0.4459  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6743  NMI=0.7838  ARI=0.6161  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9832  NMI=0.9647  ARI=0.9646  0.0s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8415  NMI=0.8388  ARI=0.6872  0.1s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=241  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7925  NMI=0.7535  ARI=0.6041  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7532  NMI=0.7802  ARI=0.6118  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8216  NMI=0.8176  ARI=0.6793  0.1s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9466  NMI=0.9202  ARI=0.8759  0.1s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=304  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.4967  NMI=0.6271  ARI=0.3680  0.1s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6869  NMI=0.7773  ARI=0.6325  0.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6931  NMI=0.8328  ARI=0.6482  0.1s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9394  NMI=0.9057  ARI=0.8366  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=225  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8044  NMI=0.7808  ARI=0.6162  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7952  NMI=0.7803  ARI=0.6291  0.1s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9913  NMI=0.9788  ARI=0.9843  0.1s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8243  NMI=0.8685  ARI=0.7377  0.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=253  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7698  NMI=0.8699  ARI=0.7347  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.2s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8240  NMI=0.7924  ARI=0.6321  0.1s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=279  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8925  NMI=0.8597  ARI=0.8100  0.1s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7016  NMI=0.8551  ARI=0.6854  0.1s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7180  NMI=0.8328  ARI=0.6680  0.1s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8333  NMI=0.8662  ARI=0.7223  0.0s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=188  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.6596  NMI=0.7569  ARI=0.5614  0.0s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.5740  NMI=0.7366  ARI=0.5280  0.0s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9892  NMI=0.9741  ARI=0.9749  0.0s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=212  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=188  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=93  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9785  NMI=0.9546  ARI=0.9423  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=250  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9800  NMI=0.9595  ARI=0.9557  0.1s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=196  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9694  NMI=0.9325  ARI=0.9249  0.0s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=156  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=237  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8903  NMI=0.8546  ARI=0.7624  0.1s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=204  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9853  NMI=0.9595  ARI=0.9598  0.1s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=150  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9867  NMI=0.9634  ARI=0.9694  0.0s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=248  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9758  NMI=0.9516  ARI=0.9389  0.1s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=193  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9896  NMI=0.9703  ARI=0.9757  0.0s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=152  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9539  NMI=0.9254  ARI=0.8868  0.0s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=265  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=236  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.8729  NMI=0.8746  ARI=0.7511  0.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=115  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7304  NMI=0.8548  ARI=0.6715  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=281  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9288  NMI=0.9046  ARI=0.8443  0.1s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=256  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=159  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9874  NMI=0.9706  ARI=0.9704  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=289  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.9377  NMI=0.8872  ARI=0.8422  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=287  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7596  NMI=0.8637  ARI=0.7125  0.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=210  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=0.7190  NMI=0.8418  ARI=0.6760  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=255  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=257  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=158  σ=0.0  fold=1 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+============================================================
+σ=0.0 fold=2  test=['0001', '0005', '0011', '0023', '0024']  train mats=96  test mats=24
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_clean_min30_trials20_knownk_scaled_params_cv_gram_ncut_k5_sigma0_sigma0_fold2.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7149  NMI=0.7969  ARI=0.6310  0.1s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=242  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6818  NMI=0.7637  ARI=0.5923  0.1s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5821  NMI=0.7085  ARI=0.4369  0.1s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9524  NMI=0.9114  ARI=0.8828  0.1s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=199  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6884  NMI=0.8021  ARI=0.6488  0.0s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9860  NMI=0.9680  ARI=0.9652  0.1s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8571  NMI=0.8155  ARI=0.7372  0.0s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9785  NMI=0.9546  ARI=0.9423  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=87  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9655  NMI=0.9425  ARI=0.9258  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9720  NMI=0.9357  ARI=0.9246  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7351  NMI=0.7386  ARI=0.6123  0.1s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9800  NMI=0.9595  ARI=0.9557  0.1s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=232  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5259  NMI=0.7312  ARI=0.5274  0.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8506  NMI=0.8881  ARI=0.7982  0.1s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9417  NMI=0.8904  ARI=0.8563  0.1s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9694  NMI=0.9325  ARI=0.9249  0.0s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=192  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7552  NMI=0.7905  ARI=0.6459  0.0s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8396  NMI=0.8633  ARI=0.7674  0.1s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=160  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7750  NMI=0.8515  ARI=0.7507  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9805  NMI=0.9524  ARI=0.9542  0.0s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6550  NMI=0.7605  ARI=0.5778  0.1s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8903  NMI=0.8546  ARI=0.7624  0.1s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=250  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5360  NMI=0.6497  ARI=0.4244  0.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6751  NMI=0.7552  ARI=0.6084  0.1s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9095  NMI=0.8578  ARI=0.7779  0.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9853  NMI=0.9595  ARI=0.9598  0.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=222  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5766  NMI=0.7242  ARI=0.4941  0.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9468  NMI=0.9103  ARI=0.8853  0.0s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9867  NMI=0.9634  ARI=0.9694  0.0s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=167  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7425  NMI=0.8708  ARI=0.7394  0.0s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9881  NMI=0.9667  ARI=0.9741  0.0s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7619  NMI=0.8525  ARI=0.6836  0.1s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9758  NMI=0.9516  ARI=0.9389  0.1s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=248  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6250  NMI=0.7400  ARI=0.5455  0.1s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7512  NMI=0.7969  ARI=0.6991  0.1s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9900  NMI=0.9749  ARI=0.9741  0.1s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9896  NMI=0.9703  ARI=0.9757  0.0s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=223  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7085  NMI=0.8554  ARI=0.6839  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8485  NMI=0.8584  ARI=0.7665  0.0s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9773  NMI=0.9447  ARI=0.9411  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9539  NMI=0.9254  ARI=0.8868  0.0s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=141  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7589  NMI=0.8719  ARI=0.7392  0.0s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7891  NMI=0.8661  ARI=0.7590  0.0s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7543  NMI=0.8686  ARI=0.7291  0.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=239  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8912  NMI=0.9108  ARI=0.8725  0.1s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8526  NMI=0.8674  ARI=0.7332  0.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8986  NMI=0.8906  ARI=0.8014  0.1s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8729  NMI=0.8746  ARI=0.7511  0.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=260  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5885  NMI=0.7513  ARI=0.5527  0.1s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6407  NMI=0.7270  ARI=0.4855  0.1s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6296  NMI=0.7382  ARI=0.4995  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7304  NMI=0.8548  ARI=0.6715  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=101  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7822  NMI=0.7848  ARI=0.6289  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5977  NMI=0.7088  ARI=0.4460  0.2s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9288  NMI=0.9046  ARI=0.8443  0.1s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=275  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9018  NMI=0.9077  ARI=0.8561  0.1s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8000  NMI=0.8749  ARI=0.7701  0.1s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8067  NMI=0.7533  ARI=0.5532  0.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=301  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7176  NMI=0.8377  ARI=0.6912  0.1s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8377  NMI=0.8511  ARI=0.6797  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9874  NMI=0.9706  ARI=0.9704  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=175  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6743  NMI=0.7838  ARI=0.6161  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9832  NMI=0.9647  ARI=0.9646  0.0s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8415  NMI=0.8388  ARI=0.6872  0.1s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9377  NMI=0.8872  ARI=0.8422  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=312  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7532  NMI=0.7802  ARI=0.6118  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8216  NMI=0.8176  ARI=0.6793  0.1s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9466  NMI=0.9202  ARI=0.8759  0.1s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7596  NMI=0.8637  ARI=0.7125  0.1s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=329  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6869  NMI=0.7773  ARI=0.6325  0.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6931  NMI=0.8328  ARI=0.6482  0.1s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9394  NMI=0.9057  ARI=0.8366  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7190  NMI=0.8418  ARI=0.6760  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=210  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7952  NMI=0.7803  ARI=0.6291  0.1s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9913  NMI=0.9788  ARI=0.9843  0.1s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8243  NMI=0.8685  ARI=0.7377  0.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=278  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7698  NMI=0.8699  ARI=0.7347  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8240  NMI=0.7924  ARI=0.6321  0.1s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=258  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7016  NMI=0.8551  ARI=0.6854  0.1s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7180  NMI=0.8328  ARI=0.6680  0.1s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8333  NMI=0.8662  ARI=0.7223  0.0s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=169  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5740  NMI=0.7366  ARI=0.5280  0.0s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9892  NMI=0.9741  ARI=0.9749  0.0s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=265  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.4943  NMI=0.6914  ARI=0.3997  0.1s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=198  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.4848  NMI=0.5817  ARI=0.2964  0.0s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=68  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8529  NMI=0.8631  ARI=0.7887  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=265  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5208  NMI=0.6936  ARI=0.4313  0.1s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=219  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7671  NMI=0.8444  ARI=0.7017  0.1s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=173  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8960  NMI=0.8801  ARI=0.8064  0.0s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=273  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5275  NMI=0.6632  ARI=0.3723  0.1s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=280  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5857  NMI=0.6800  ARI=0.4490  0.1s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=211  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7393  NMI=0.8374  ARI=0.6914  0.1s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=303  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.5380  NMI=0.6859  ARI=0.3997  0.1s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=236  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=147  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.9864  NMI=0.9683  ARI=0.9645  0.0s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=313  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8307  NMI=0.8741  ARI=0.7477  0.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=257  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7665  NMI=0.7584  ARI=0.5819  0.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=117  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6581  NMI=0.7236  ARI=0.4649  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=301  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6512  NMI=0.7316  ARI=0.5138  0.1s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=314  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8248  NMI=0.8143  ARI=0.7062  0.1s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=193  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6218  NMI=0.7152  ARI=0.4459  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=241  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.7925  NMI=0.7535  ARI=0.6041  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=304  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.4967  NMI=0.6271  ARI=0.3680  0.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=225  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8044  NMI=0.7808  ARI=0.6162  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=253  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=279  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.8925  NMI=0.8597  ARI=0.8100  0.1s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=188  σ=0.0  fold=2 ===
+  Gram-NCut: k_hat=5  ACC=0.6596  NMI=0.7569  ARI=0.5614  0.0s
+
+============================================================
+σ=0.0 fold=3  test=['0007', '0010', '0015', '0016', '0021']  train mats=96  test mats=24
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_clean_min30_trials20_knownk_scaled_params_cv_gram_ncut_k5_sigma0_sigma0_fold3.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7149  NMI=0.7969  ARI=0.6310  0.1s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=265  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.4943  NMI=0.6914  ARI=0.3997  0.1s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=268  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5821  NMI=0.7085  ARI=0.4369  0.1s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9524  NMI=0.9114  ARI=0.8828  0.1s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=198  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.4848  NMI=0.5817  ARI=0.2964  0.1s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=215  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9860  NMI=0.9680  ARI=0.9652  0.1s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8571  NMI=0.8155  ARI=0.7372  0.0s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9785  NMI=0.9546  ARI=0.9423  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=68  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8529  NMI=0.8631  ARI=0.7887  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=107  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9720  NMI=0.9357  ARI=0.9246  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7351  NMI=0.7386  ARI=0.6123  0.1s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9800  NMI=0.9595  ARI=0.9557  0.1s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=265  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5208  NMI=0.6936  ARI=0.4313  0.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8506  NMI=0.8881  ARI=0.7982  0.1s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9417  NMI=0.8904  ARI=0.8563  0.1s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9694  NMI=0.9325  ARI=0.9249  0.0s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=219  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7671  NMI=0.8444  ARI=0.7017  0.1s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=212  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8396  NMI=0.8633  ARI=0.7674  0.1s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=173  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8960  NMI=0.8801  ARI=0.8064  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=154  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9805  NMI=0.9524  ARI=0.9542  0.0s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6550  NMI=0.7605  ARI=0.5778  0.1s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8903  NMI=0.8546  ARI=0.7624  0.1s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=273  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5275  NMI=0.6632  ARI=0.3723  0.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=237  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6751  NMI=0.7552  ARI=0.6084  0.1s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9095  NMI=0.8578  ARI=0.7779  0.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9853  NMI=0.9595  ARI=0.9598  0.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=280  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5857  NMI=0.6800  ARI=0.4490  0.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=188  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9468  NMI=0.9103  ARI=0.8853  0.0s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9867  NMI=0.9634  ARI=0.9694  0.0s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=211  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7393  NMI=0.8374  ARI=0.6914  0.1s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=168  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9881  NMI=0.9667  ARI=0.9741  0.0s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7619  NMI=0.8525  ARI=0.6836  0.1s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9758  NMI=0.9516  ARI=0.9389  0.1s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=303  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5380  NMI=0.6859  ARI=0.3997  0.1s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=217  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7512  NMI=0.7969  ARI=0.6991  0.1s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9900  NMI=0.9749  ARI=0.9741  0.1s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9896  NMI=0.9703  ARI=0.9757  0.0s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=236  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=198  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8485  NMI=0.8584  ARI=0.7665  0.0s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9773  NMI=0.9447  ARI=0.9411  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9539  NMI=0.9254  ARI=0.8868  0.0s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=147  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9864  NMI=0.9683  ARI=0.9645  0.0s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=147  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7891  NMI=0.8661  ARI=0.7590  0.0s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7543  NMI=0.8686  ARI=0.7291  0.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=313  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8307  NMI=0.8741  ARI=0.7477  0.1s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=285  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8526  NMI=0.8674  ARI=0.7332  0.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8986  NMI=0.8906  ARI=0.8014  0.1s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8729  NMI=0.8746  ARI=0.7511  0.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=257  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7665  NMI=0.7584  ARI=0.5819  0.1s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=270  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6407  NMI=0.7270  ARI=0.4855  0.1s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6296  NMI=0.7382  ARI=0.4995  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7304  NMI=0.8548  ARI=0.6715  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=117  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6581  NMI=0.7236  ARI=0.4649  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=124  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5977  NMI=0.7088  ARI=0.4460  0.2s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9288  NMI=0.9046  ARI=0.8443  0.1s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=301  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6512  NMI=0.7316  ARI=0.5138  0.1s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=265  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8000  NMI=0.8749  ARI=0.7701  0.1s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8067  NMI=0.7533  ARI=0.5532  0.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=314  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8248  NMI=0.8143  ARI=0.7062  0.1s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=222  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8377  NMI=0.8511  ARI=0.6797  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9874  NMI=0.9706  ARI=0.9704  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=193  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6218  NMI=0.7152  ARI=0.4459  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=179  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9832  NMI=0.9647  ARI=0.9646  0.0s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8415  NMI=0.8388  ARI=0.6872  0.1s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9377  NMI=0.8872  ARI=0.8422  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=241  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7925  NMI=0.7535  ARI=0.6041  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=241  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8216  NMI=0.8176  ARI=0.6793  0.1s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9466  NMI=0.9202  ARI=0.8759  0.1s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7596  NMI=0.8637  ARI=0.7125  0.1s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=304  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.4967  NMI=0.6271  ARI=0.3680  0.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=290  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6931  NMI=0.8328  ARI=0.6482  0.1s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9394  NMI=0.9057  ARI=0.8366  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7190  NMI=0.8418  ARI=0.6760  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=225  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8044  NMI=0.7808  ARI=0.6162  0.1s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=229  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9913  NMI=0.9788  ARI=0.9843  0.1s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8243  NMI=0.8685  ARI=0.7377  0.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=253  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=344  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.2s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8240  NMI=0.7924  ARI=0.6321  0.1s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=279  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8925  NMI=0.8597  ARI=0.8100  0.1s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=266  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7180  NMI=0.8328  ARI=0.6680  0.1s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8333  NMI=0.8662  ARI=0.7223  0.0s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=188  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6596  NMI=0.7569  ARI=0.5614  0.0s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=185  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9892  NMI=0.9741  ARI=0.9749  0.0s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=242  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6818  NMI=0.7637  ARI=0.5923  0.1s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=199  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6884  NMI=0.8021  ARI=0.6488  0.0s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=87  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9655  NMI=0.9425  ARI=0.9258  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=232  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5259  NMI=0.7312  ARI=0.5274  0.1s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=192  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7552  NMI=0.7905  ARI=0.6459  0.0s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=160  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7750  NMI=0.8515  ARI=0.7507  0.0s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=250  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5360  NMI=0.6497  ARI=0.4244  0.1s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=222  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5766  NMI=0.7242  ARI=0.4941  0.1s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=167  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7425  NMI=0.8708  ARI=0.7394  0.0s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=248  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6250  NMI=0.7400  ARI=0.5455  0.1s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=223  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7085  NMI=0.8554  ARI=0.6839  0.1s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=141  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7589  NMI=0.8719  ARI=0.7392  0.0s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=239  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.8912  NMI=0.9108  ARI=0.8725  0.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=260  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5885  NMI=0.7513  ARI=0.5527  0.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=101  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7822  NMI=0.7848  ARI=0.6289  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=275  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.9018  NMI=0.9077  ARI=0.8561  0.1s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=301  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7176  NMI=0.8377  ARI=0.6912  0.1s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=175  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6743  NMI=0.7838  ARI=0.6161  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=312  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7532  NMI=0.7802  ARI=0.6118  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=329  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.6869  NMI=0.7773  ARI=0.6325  0.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=210  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7952  NMI=0.7803  ARI=0.6291  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=278  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7698  NMI=0.8699  ARI=0.7347  0.1s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=258  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.7016  NMI=0.8551  ARI=0.6854  0.1s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=169  σ=0.0  fold=3 ===
+  Gram-NCut: k_hat=5  ACC=0.5740  NMI=0.7366  ARI=0.5280  0.0s
+
+============================================================
+σ=0.0 fold=4  test=['0003', '0012', '0017', '0018', '0020']  train mats=96  test mats=24
+  Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/surveillance/split_k5_clean_min30_trials20_knownk_scaled_params_cv_gram_ncut_k5_sigma0_sigma0_fold4.json
+
+=== P1E_S1_C1 train[0] k=5  dim=576  frames=249  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7149  NMI=0.7969  ARI=0.6310  0.1s
+
+=== P1E_S1_C1 train[1] k=5  dim=576  frames=212  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S1_C1 train[2] k=5  dim=576  frames=265  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.4943  NMI=0.6914  ARI=0.3997  0.1s
+
+=== P1E_S1_C1 train[3] k=5  dim=576  frames=242  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6818  NMI=0.7637  ARI=0.5923  0.1s
+
+=== P1E_S1_C2 train[0] k=5  dim=576  frames=231  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9524  NMI=0.9114  ARI=0.8828  0.1s
+
+=== P1E_S1_C2 train[1] k=5  dim=576  frames=188  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S1_C2 train[2] k=5  dim=576  frames=198  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.4848  NMI=0.5817  ARI=0.2964  0.0s
+
+=== P1E_S1_C2 train[3] k=5  dim=576  frames=199  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6884  NMI=0.8021  ARI=0.6488  0.0s
+
+=== P1E_S1_C3 train[0] k=5  dim=576  frames=98  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8571  NMI=0.8155  ARI=0.7372  0.0s
+
+=== P1E_S1_C3 train[1] k=5  dim=576  frames=93  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9785  NMI=0.9546  ARI=0.9423  0.0s
+
+=== P1E_S1_C3 train[2] k=5  dim=576  frames=68  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8529  NMI=0.8631  ARI=0.7887  0.0s
+
+=== P1E_S1_C3 train[3] k=5  dim=576  frames=87  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9655  NMI=0.9425  ARI=0.9258  0.0s
+
+=== P1E_S2_C1 train[0] k=5  dim=576  frames=268  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7351  NMI=0.7386  ARI=0.6123  0.1s
+
+=== P1E_S2_C1 train[1] k=5  dim=576  frames=250  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9800  NMI=0.9595  ARI=0.9557  0.1s
+
+=== P1E_S2_C1 train[2] k=5  dim=576  frames=265  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5208  NMI=0.6936  ARI=0.4313  0.1s
+
+=== P1E_S2_C1 train[3] k=5  dim=576  frames=232  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5259  NMI=0.7312  ARI=0.5274  0.1s
+
+=== P1E_S2_C2 train[0] k=5  dim=576  frames=223  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9417  NMI=0.8904  ARI=0.8563  0.1s
+
+=== P1E_S2_C2 train[1] k=5  dim=576  frames=196  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9694  NMI=0.9325  ARI=0.9249  0.0s
+
+=== P1E_S2_C2 train[2] k=5  dim=576  frames=219  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7671  NMI=0.8444  ARI=0.7017  0.1s
+
+=== P1E_S2_C2 train[3] k=5  dim=576  frames=192  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7552  NMI=0.7905  ARI=0.6459  0.0s
+
+=== P1E_S2_C3 train[0] k=5  dim=576  frames=173  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[1] k=5  dim=576  frames=156  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S2_C3 train[2] k=5  dim=576  frames=173  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8960  NMI=0.8801  ARI=0.8064  0.0s
+
+=== P1E_S2_C3 train[3] k=5  dim=576  frames=160  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7750  NMI=0.8515  ARI=0.7507  0.0s
+
+=== P1E_S3_C1 train[0] k=5  dim=576  frames=258  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6550  NMI=0.7605  ARI=0.5778  0.1s
+
+=== P1E_S3_C1 train[1] k=5  dim=576  frames=237  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8903  NMI=0.8546  ARI=0.7624  0.1s
+
+=== P1E_S3_C1 train[2] k=5  dim=576  frames=273  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5275  NMI=0.6632  ARI=0.3723  0.1s
+
+=== P1E_S3_C1 train[3] k=5  dim=576  frames=250  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5360  NMI=0.6497  ARI=0.4244  0.1s
+
+=== P1E_S3_C2 train[0] k=5  dim=576  frames=232  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9095  NMI=0.8578  ARI=0.7779  0.1s
+
+=== P1E_S3_C2 train[1] k=5  dim=576  frames=204  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9853  NMI=0.9595  ARI=0.9598  0.1s
+
+=== P1E_S3_C2 train[2] k=5  dim=576  frames=280  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5857  NMI=0.6800  ARI=0.4490  0.1s
+
+=== P1E_S3_C2 train[3] k=5  dim=576  frames=222  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5766  NMI=0.7242  ARI=0.4941  0.1s
+
+=== P1E_S3_C3 train[0] k=5  dim=576  frames=170  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1E_S3_C3 train[1] k=5  dim=576  frames=150  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9867  NMI=0.9634  ARI=0.9694  0.0s
+
+=== P1E_S3_C3 train[2] k=5  dim=576  frames=211  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7393  NMI=0.8374  ARI=0.6914  0.1s
+
+=== P1E_S3_C3 train[3] k=5  dim=576  frames=167  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7425  NMI=0.8708  ARI=0.7394  0.0s
+
+=== P1E_S4_C1 train[0] k=5  dim=576  frames=231  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7619  NMI=0.8525  ARI=0.6836  0.1s
+
+=== P1E_S4_C1 train[1] k=5  dim=576  frames=248  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9758  NMI=0.9516  ARI=0.9389  0.1s
+
+=== P1E_S4_C1 train[2] k=5  dim=576  frames=303  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5380  NMI=0.6859  ARI=0.3997  0.1s
+
+=== P1E_S4_C1 train[3] k=5  dim=576  frames=248  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6250  NMI=0.7400  ARI=0.5455  0.1s
+
+=== P1E_S4_C2 train[0] k=5  dim=576  frames=201  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9900  NMI=0.9749  ARI=0.9741  0.1s
+
+=== P1E_S4_C2 train[1] k=5  dim=576  frames=193  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9896  NMI=0.9703  ARI=0.9757  0.1s
+
+=== P1E_S4_C2 train[2] k=5  dim=576  frames=236  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1E_S4_C2 train[3] k=5  dim=576  frames=223  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7085  NMI=0.8554  ARI=0.6839  0.1s
+
+=== P1E_S4_C3 train[0] k=5  dim=576  frames=132  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9773  NMI=0.9447  ARI=0.9411  0.0s
+
+=== P1E_S4_C3 train[1] k=5  dim=576  frames=152  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9539  NMI=0.9254  ARI=0.8868  0.0s
+
+=== P1E_S4_C3 train[2] k=5  dim=576  frames=147  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9864  NMI=0.9683  ARI=0.9645  0.0s
+
+=== P1E_S4_C3 train[3] k=5  dim=576  frames=141  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7589  NMI=0.8719  ARI=0.7392  0.0s
+
+=== P1L_S1_C1 train[0] k=5  dim=576  frames=289  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7543  NMI=0.8686  ARI=0.7291  0.1s
+
+=== P1L_S1_C1 train[1] k=5  dim=576  frames=265  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S1_C1 train[2] k=5  dim=576  frames=313  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8307  NMI=0.8741  ARI=0.7477  0.1s
+
+=== P1L_S1_C1 train[3] k=5  dim=576  frames=239  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8912  NMI=0.9108  ARI=0.8725  0.1s
+
+=== P1L_S1_C2 train[0] k=5  dim=576  frames=286  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8986  NMI=0.8906  ARI=0.8014  0.1s
+
+=== P1L_S1_C2 train[1] k=5  dim=576  frames=236  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8729  NMI=0.8746  ARI=0.7511  0.1s
+
+=== P1L_S1_C2 train[2] k=5  dim=576  frames=257  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7665  NMI=0.7584  ARI=0.5819  0.1s
+
+=== P1L_S1_C2 train[3] k=5  dim=576  frames=260  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5885  NMI=0.7513  ARI=0.5527  0.1s
+
+=== P1L_S1_C3 train[0] k=5  dim=576  frames=108  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6296  NMI=0.7382  ARI=0.4995  0.0s
+
+=== P1L_S1_C3 train[1] k=5  dim=576  frames=115  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7304  NMI=0.8548  ARI=0.6715  0.0s
+
+=== P1L_S1_C3 train[2] k=5  dim=576  frames=117  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6581  NMI=0.7236  ARI=0.4649  0.0s
+
+=== P1L_S1_C3 train[3] k=5  dim=576  frames=101  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7822  NMI=0.7848  ARI=0.6289  0.0s
+
+=== P1L_S2_C1 train[0] k=5  dim=576  frames=348  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5977  NMI=0.7088  ARI=0.4460  0.2s
+
+=== P1L_S2_C1 train[1] k=5  dim=576  frames=281  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9288  NMI=0.9046  ARI=0.8443  0.1s
+
+=== P1L_S2_C1 train[2] k=5  dim=576  frames=301  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6512  NMI=0.7316  ARI=0.5138  0.1s
+
+=== P1L_S2_C1 train[3] k=5  dim=576  frames=275  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9018  NMI=0.9077  ARI=0.8561  0.1s
+
+=== P1L_S2_C2 train[0] k=5  dim=576  frames=300  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8067  NMI=0.7533  ARI=0.5532  0.1s
+
+=== P1L_S2_C2 train[1] k=5  dim=576  frames=256  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C2 train[2] k=5  dim=576  frames=314  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8248  NMI=0.8143  ARI=0.7062  0.1s
+
+=== P1L_S2_C2 train[3] k=5  dim=576  frames=301  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7176  NMI=0.8377  ARI=0.6912  0.1s
+
+=== P1L_S2_C3 train[0] k=5  dim=576  frames=191  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8377  NMI=0.8511  ARI=0.6797  0.0s
+
+=== P1L_S2_C3 train[1] k=5  dim=576  frames=159  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9874  NMI=0.9706  ARI=0.9704  0.0s
+
+=== P1L_S2_C3 train[2] k=5  dim=576  frames=193  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6218  NMI=0.7152  ARI=0.4459  0.0s
+
+=== P1L_S2_C3 train[3] k=5  dim=576  frames=175  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6743  NMI=0.7838  ARI=0.6161  0.0s
+
+=== P1L_S3_C1 train[0] k=5  dim=576  frames=246  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8415  NMI=0.8388  ARI=0.6872  0.1s
+
+=== P1L_S3_C1 train[1] k=5  dim=576  frames=289  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9377  NMI=0.8872  ARI=0.8422  0.1s
+
+=== P1L_S3_C1 train[2] k=5  dim=576  frames=241  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7925  NMI=0.7535  ARI=0.6041  0.1s
+
+=== P1L_S3_C1 train[3] k=5  dim=576  frames=312  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7532  NMI=0.7802  ARI=0.6118  0.1s
+
+=== P1L_S3_C2 train[0] k=5  dim=576  frames=262  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9466  NMI=0.9202  ARI=0.8759  0.1s
+
+=== P1L_S3_C2 train[1] k=5  dim=576  frames=287  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7596  NMI=0.8637  ARI=0.7125  0.1s
+
+=== P1L_S3_C2 train[2] k=5  dim=576  frames=304  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.4967  NMI=0.6271  ARI=0.3680  0.1s
+
+=== P1L_S3_C2 train[3] k=5  dim=576  frames=329  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6869  NMI=0.7773  ARI=0.6325  0.1s
+
+=== P1L_S3_C3 train[0] k=5  dim=576  frames=231  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9394  NMI=0.9057  ARI=0.8366  0.1s
+
+=== P1L_S3_C3 train[1] k=5  dim=576  frames=210  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7190  NMI=0.8418  ARI=0.6760  0.1s
+
+=== P1L_S3_C3 train[2] k=5  dim=576  frames=225  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8044  NMI=0.7808  ARI=0.6162  0.1s
+
+=== P1L_S3_C3 train[3] k=5  dim=576  frames=210  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7952  NMI=0.7803  ARI=0.6291  0.1s
+
+=== P1L_S4_C1 train[0] k=5  dim=576  frames=313  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8243  NMI=0.8685  ARI=0.7377  0.1s
+
+=== P1L_S4_C1 train[1] k=5  dim=576  frames=255  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[2] k=5  dim=576  frames=253  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C1 train[3] k=5  dim=576  frames=278  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7698  NMI=0.8699  ARI=0.7347  0.1s
+
+=== P1L_S4_C2 train[0] k=5  dim=576  frames=267  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8240  NMI=0.7924  ARI=0.6321  0.1s
+
+=== P1L_S4_C2 train[1] k=5  dim=576  frames=257  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 train[2] k=5  dim=576  frames=279  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8925  NMI=0.8597  ARI=0.8100  0.1s
+
+=== P1L_S4_C2 train[3] k=5  dim=576  frames=258  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7016  NMI=0.8551  ARI=0.6854  0.1s
+
+=== P1L_S4_C3 train[0] k=5  dim=576  frames=180  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8333  NMI=0.8662  ARI=0.7223  0.0s
+
+=== P1L_S4_C3 train[1] k=5  dim=576  frames=158  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== P1L_S4_C3 train[2] k=5  dim=576  frames=188  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6596  NMI=0.7569  ARI=0.5614  0.0s
+
+=== P1L_S4_C3 train[3] k=5  dim=576  frames=169  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5740  NMI=0.7366  ARI=0.5280  0.0s
+
+=== P1E_S1_C1 test[0] k=5  dim=576  frames=268  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.5821  NMI=0.7085  ARI=0.4369  0.1s
+
+=== P1E_S1_C2 test[0] k=5  dim=576  frames=215  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9860  NMI=0.9680  ARI=0.9652  0.1s
+
+=== P1E_S1_C3 test[0] k=5  dim=576  frames=107  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9720  NMI=0.9357  ARI=0.9246  0.0s
+
+=== P1E_S2_C1 test[0] k=5  dim=576  frames=241  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8506  NMI=0.8881  ARI=0.7982  0.1s
+
+=== P1E_S2_C2 test[0] k=5  dim=576  frames=212  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8396  NMI=0.8633  ARI=0.7674  0.1s
+
+=== P1E_S2_C3 test[0] k=5  dim=576  frames=154  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9805  NMI=0.9524  ARI=0.9542  0.0s
+
+=== P1E_S3_C1 test[0] k=5  dim=576  frames=237  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6751  NMI=0.7552  ARI=0.6084  0.1s
+
+=== P1E_S3_C2 test[0] k=5  dim=576  frames=188  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9468  NMI=0.9103  ARI=0.8853  0.0s
+
+=== P1E_S3_C3 test[0] k=5  dim=576  frames=168  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9881  NMI=0.9667  ARI=0.9741  0.0s
+
+=== P1E_S4_C1 test[0] k=5  dim=576  frames=217  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7512  NMI=0.7969  ARI=0.6991  0.1s
+
+=== P1E_S4_C2 test[0] k=5  dim=576  frames=198  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8485  NMI=0.8584  ARI=0.7665  0.0s
+
+=== P1E_S4_C3 test[0] k=5  dim=576  frames=147  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7891  NMI=0.8661  ARI=0.7590  0.0s
+
+=== P1L_S1_C1 test[0] k=5  dim=576  frames=285  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8526  NMI=0.8674  ARI=0.7332  0.1s
+
+=== P1L_S1_C2 test[0] k=5  dim=576  frames=270  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6407  NMI=0.7270  ARI=0.4855  0.1s
+
+=== P1L_S1_C3 test[0] k=5  dim=576  frames=124  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9919  NMI=0.9784  ARI=0.9780  0.0s
+
+=== P1L_S2_C1 test[0] k=5  dim=576  frames=265  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8000  NMI=0.8749  ARI=0.7701  0.1s
+
+=== P1L_S2_C2 test[0] k=5  dim=576  frames=222  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S2_C3 test[0] k=5  dim=576  frames=179  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9832  NMI=0.9647  ARI=0.9646  0.0s
+
+=== P1L_S3_C1 test[0] k=5  dim=576  frames=241  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.8216  NMI=0.8176  ARI=0.6793  0.1s
+
+=== P1L_S3_C2 test[0] k=5  dim=576  frames=290  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.6931  NMI=0.8328  ARI=0.6482  0.1s
+
+=== P1L_S3_C3 test[0] k=5  dim=576  frames=229  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9913  NMI=0.9788  ARI=0.9843  0.1s
+
+=== P1L_S4_C1 test[0] k=5  dim=576  frames=344  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== P1L_S4_C2 test[0] k=5  dim=576  frames=266  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.7180  NMI=0.8328  ARI=0.6680  0.1s
+
+=== P1L_S4_C3 test[0] k=5  dim=576  frames=185  σ=0.0  fold=4 ===
+  Gram-NCut: k_hat=5  ACC=0.9892  NMI=0.9741  ARI=0.9749  0.0s
+
+=== inference time per method ===
+  Gram-NCut: mean=0.0672s  std=0.0325s  total=40.3s  n=600
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k5_clean_min30_trials20_knownk_scaled_cv_gram_ncut_k5_sigma0_timing.json
+
+=== mean over matrices ===
+  Gram-NCut train σ=0.0: ACC=0.8178  NMI=0.8557  ARI=0.7463  n=480
+  Gram-NCut test σ=0.0: ACC=0.8178  NMI=0.8557  ARI=0.7463  n=120
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/surveillance/split_k5_clean_min30_trials20_knownk_scaled_cv_gram_ncut_k5_sigma0.csv
+end=Sat Sep  5 19:19:28 EDT 2026
+Experiment completed!

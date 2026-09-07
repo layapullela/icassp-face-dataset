@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 880, in <module>
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 832, in main
+  File "/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/cluster_experiment.py", line 616, in write_params
+  File "/home/lpullela/miniconda3/envs/ssc_559/lib/python3.11/pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lpullela/miniconda3/envs/ssc_559/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/split_k5_sigmas_trials40_params.json'

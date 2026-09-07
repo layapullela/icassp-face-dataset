@@ -1,0 +1,638 @@
+========================================
+Job: ssc_base_ballet_k12
+Dataset: ballet
+K: 12
+known_k: True
+extra_args: (none)
+Methods: OSC TKSS BDOSC
+========================================
+host=gl3273.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sat Sep  5 00:47:30 EDT 2026
+=== Ballet Clustering Experiment ===
+k=12  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=100  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=None  append=False  no_tune=False  known_k=True  csv=ballet_cluster_knownk_scaled_results_k12_baselines.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+sequences=44  train_pool=29  test_pool=15  train_combos=24  test_combos=18
+train pool: ['seq_000003', 'seq_000035', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000033', 'seq_000012', 'seq_000002', 'seq_000023', 'seq_000020', 'seq_000022', 'seq_000028', 'seq_000042', 'seq_000011', 'seq_000004', 'seq_000039', 'seq_000017', 'seq_000031', 'seq_000021', 'seq_000029', 'seq_000009', 'seq_000036', 'seq_000043', 'seq_000018', 'seq_000001', 'seq_000025', 'seq_000026', 'seq_000041', 'seq_000027']
+test  pool: ['seq_000040', 'seq_000010', 'seq_000007', 'seq_000037', 'seq_000038', 'seq_000014', 'seq_000013', 'seq_000008', 'seq_000044', 'seq_000006', 'seq_000015', 'seq_000030', 'seq_000034', 'seq_000016', 'seq_000032']
+train 0 k=12  sequences=['seq_000001', 'seq_000003', 'seq_000012', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000026', 'seq_000033', 'seq_000035', 'seq_000036', 'seq_000039', 'seq_000042']
+train 1 k=12  sequences=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000005', 'seq_000018', 'seq_000024', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000036', 'seq_000041', 'seq_000043']
+train 2 k=12  sequences=['seq_000001', 'seq_000009', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000025', 'seq_000026', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000042']
+train 3 k=12  sequences=['seq_000001', 'seq_000002', 'seq_000004', 'seq_000012', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000029', 'seq_000035', 'seq_000036', 'seq_000041']
+train 4 k=12  sequences=['seq_000004', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000035', 'seq_000036', 'seq_000043']
+train 5 k=12  sequences=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000025', 'seq_000033', 'seq_000035', 'seq_000043']
+train 6 k=12  sequences=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000028', 'seq_000033', 'seq_000036', 'seq_000042']
+train 7 k=12  sequences=['seq_000002', 'seq_000009', 'seq_000011', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000036']
+train 8 k=12  sequences=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000018', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000043']
+train 9 k=12  sequences=['seq_000001', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000039']
+train 10 k=12  sequences=['seq_000005', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035', 'seq_000036']
+train 11 k=12  sequences=['seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000024', 'seq_000025', 'seq_000029', 'seq_000031', 'seq_000036', 'seq_000039', 'seq_000041', 'seq_000043']
+train 12 k=12  sequences=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000021', 'seq_000024', 'seq_000026', 'seq_000029', 'seq_000033', 'seq_000035', 'seq_000041', 'seq_000042', 'seq_000043']
+train 13 k=12  sequences=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000023', 'seq_000026', 'seq_000035', 'seq_000041', 'seq_000043']
+train 14 k=12  sequences=['seq_000002', 'seq_000003', 'seq_000012', 'seq_000017', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000041', 'seq_000043']
+train 15 k=12  sequences=['seq_000001', 'seq_000004', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000026', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035']
+train 16 k=12  sequences=['seq_000003', 'seq_000004', 'seq_000011', 'seq_000017', 'seq_000019', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000039', 'seq_000043']
+train 17 k=12  sequences=['seq_000003', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000039', 'seq_000041']
+train 18 k=12  sequences=['seq_000002', 'seq_000009', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000031', 'seq_000035', 'seq_000041', 'seq_000042']
+train 19 k=12  sequences=['seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000019', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000041']
+train 20 k=12  sequences=['seq_000003', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000035']
+train 21 k=12  sequences=['seq_000001', 'seq_000003', 'seq_000004', 'seq_000009', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000021', 'seq_000022', 'seq_000029', 'seq_000031', 'seq_000039']
+train 22 k=12  sequences=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000026', 'seq_000036', 'seq_000043']
+train 23 k=12  sequences=['seq_000003', 'seq_000005', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000028', 'seq_000042', 'seq_000043']
+test  0 k=12  sequences=['seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040', 'seq_000044']
+test  1 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000040', 'seq_000044']
+test  2 k=12  sequences=['seq_000006', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  3 k=12  sequences=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040']
+test  4 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+test  5 k=12  sequences=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  6 k=12  sequences=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+test  7 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000044']
+test  8 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  9 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040']
+test  10 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000044']
+test  11 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  12 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044']
+test  13 k=12  sequences=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  14 k=12  sequences=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044']
+test  15 k=12  sequences=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+test  16 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+test  17 k=12  sequences=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+
+Building train combinations
+  train[0]: frames=556  dim=900  n_kept=[53, 13, 86, 11, 15, 20, 18, 48, 43, 80, 89, 80]  seqs=['seq_000001', 'seq_000003', 'seq_000012', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000026', 'seq_000033', 'seq_000035', 'seq_000036', 'seq_000039', 'seq_000042']
+  train[1]: frames=578  dim=900  n_kept=[53, 78, 13, 32, 44, 20, 36, 94, 48, 80, 51, 29]  seqs=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000005', 'seq_000018', 'seq_000024', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000036', 'seq_000041', 'seq_000043']
+  train[2]: frames=738  dim=900  n_kept=[53, 68, 98, 55, 15, 55, 78, 18, 94, 76, 48, 80]  seqs=['seq_000001', 'seq_000009', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000025', 'seq_000026', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000042']
+  train[3]: frames=774  dim=900  n_kept=[53, 78, 84, 86, 98, 55, 15, 55, 76, 43, 80, 51]  seqs=['seq_000001', 'seq_000002', 'seq_000004', 'seq_000012', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000029', 'seq_000035', 'seq_000036', 'seq_000041']
+  train[4]: frames=634  dim=900  n_kept=[84, 68, 88, 86, 55, 11, 15, 55, 20, 43, 80, 29]  seqs=['seq_000004', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000035', 'seq_000036', 'seq_000043']
+  train[5]: frames=639  dim=900  n_kept=[53, 84, 32, 88, 98, 55, 11, 20, 78, 48, 43, 29]  seqs=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000025', 'seq_000033', 'seq_000035', 'seq_000043']
+  train[6]: frames=805  dim=900  n_kept=[53, 84, 32, 88, 98, 55, 15, 78, 94, 48, 80, 80]  seqs=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000028', 'seq_000033', 'seq_000036', 'seq_000042']
+  train[7]: frames=653  dim=900  n_kept=[78, 68, 88, 55, 11, 15, 55, 18, 94, 48, 43, 80]  seqs=['seq_000002', 'seq_000009', 'seq_000011', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000036']
+  train[8]: frames=532  dim=900  n_kept=[13, 84, 32, 44, 55, 11, 20, 36, 76, 43, 89, 29]  seqs=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000018', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000043']
+  train[9]: frames=660  dim=900  n_kept=[53, 98, 44, 92, 11, 15, 55, 18, 94, 48, 43, 89]  seqs=['seq_000001', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000039']
+  train[10]: frames=639  dim=900  n_kept=[32, 98, 55, 11, 18, 36, 94, 76, 48, 48, 43, 80]  seqs=['seq_000005', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035', 'seq_000036']
+  train[11]: frames=701  dim=900  n_kept=[32, 68, 86, 44, 20, 78, 76, 48, 80, 89, 51, 29]  seqs=['seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000024', 'seq_000025', 'seq_000029', 'seq_000031', 'seq_000036', 'seq_000039', 'seq_000041', 'seq_000043']
+  train[12]: frames=551  dim=900  n_kept=[78, 13, 84, 11, 20, 18, 76, 48, 43, 51, 80, 29]  seqs=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000021', 'seq_000024', 'seq_000026', 'seq_000029', 'seq_000033', 'seq_000035', 'seq_000041', 'seq_000042', 'seq_000043']
+  train[13]: frames=655  dim=900  n_kept=[78, 13, 84, 32, 68, 86, 98, 55, 18, 43, 51, 29]  seqs=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000023', 'seq_000026', 'seq_000035', 'seq_000041', 'seq_000043']
+  train[14]: frames=635  dim=900  n_kept=[78, 13, 86, 98, 15, 55, 18, 36, 76, 80, 51, 29]  seqs=['seq_000002', 'seq_000003', 'seq_000012', 'seq_000017', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000041', 'seq_000043']
+  train[15]: frames=758  dim=900  n_kept=[53, 84, 68, 86, 98, 44, 92, 18, 76, 48, 48, 43]  seqs=['seq_000001', 'seq_000004', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000026', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035']
+  train[16]: frames=758  dim=900  n_kept=[13, 84, 88, 98, 92, 55, 18, 36, 76, 80, 89, 29]  seqs=['seq_000003', 'seq_000004', 'seq_000011', 'seq_000017', 'seq_000019', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000039', 'seq_000043']
+  train[17]: frames=649  dim=900  n_kept=[13, 88, 98, 44, 15, 55, 18, 36, 94, 48, 89, 51]  seqs=['seq_000003', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000039', 'seq_000041']
+  train[18]: frames=546  dim=900  n_kept=[78, 68, 11, 15, 20, 78, 18, 36, 48, 43, 51, 80]  seqs=['seq_000002', 'seq_000009', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000031', 'seq_000035', 'seq_000041', 'seq_000042']
+  train[19]: frames=773  dim=900  n_kept=[84, 32, 68, 86, 98, 92, 18, 36, 76, 43, 89, 51]  seqs=['seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000019', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000041']
+  train[20]: frames=645  dim=900  n_kept=[13, 32, 88, 98, 44, 55, 18, 36, 94, 76, 48, 43]  seqs=['seq_000003', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000035']
+  train[21]: frames=687  dim=900  n_kept=[53, 13, 84, 68, 88, 98, 44, 11, 15, 76, 48, 89]  seqs=['seq_000001', 'seq_000003', 'seq_000004', 'seq_000009', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000021', 'seq_000022', 'seq_000029', 'seq_000031', 'seq_000039']
+  train[22]: frames=602  dim=900  n_kept=[13, 84, 32, 68, 86, 44, 55, 15, 78, 18, 80, 29]  seqs=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000026', 'seq_000036', 'seq_000043']
+  train[23]: frames=624  dim=900  n_kept=[13, 32, 68, 88, 86, 44, 15, 55, 20, 94, 80, 29]  seqs=['seq_000003', 'seq_000005', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000028', 'seq_000042', 'seq_000043']
+Building test combinations
+  test[0]: frames=571  dim=900  n_kept=[34, 33, 84, 51, 21, 21, 39, 36, 51, 75, 43, 83]  seqs=['seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[1]: frames=600  dim=900  n_kept=[89, 34, 84, 51, 21, 21, 39, 36, 51, 48, 43, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000040', 'seq_000044']
+  test[2]: frames=637  dim=900  n_kept=[89, 17, 84, 51, 21, 39, 36, 51, 48, 75, 43, 83]  seqs=['seq_000006', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[3]: frames=505  dim=900  n_kept=[34, 33, 17, 84, 51, 21, 21, 39, 36, 51, 75, 43]  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040']
+  test[4]: frames=567  dim=900  n_kept=[89, 34, 33, 17, 84, 51, 21, 21, 51, 48, 75, 43]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+  test[5]: frames=604  dim=900  n_kept=[89, 33, 17, 84, 51, 21, 21, 39, 48, 75, 43, 83]  seqs=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[6]: frames=572  dim=900  n_kept=[89, 33, 17, 84, 51, 21, 21, 39, 51, 48, 75, 43]  seqs=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+  test[7]: frames=547  dim=900  n_kept=[89, 34, 33, 17, 51, 21, 21, 39, 36, 48, 75, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000044']
+  test[8]: frames=624  dim=900  n_kept=[89, 34, 84, 51, 21, 21, 39, 36, 48, 75, 43, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[9]: frames=507  dim=900  n_kept=[89, 34, 33, 17, 51, 21, 21, 39, 36, 48, 75, 43]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040']
+  test[10]: frames=562  dim=900  n_kept=[89, 34, 33, 17, 51, 21, 21, 39, 51, 48, 75, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000044']
+  test[11]: frames=651  dim=900  n_kept=[89, 34, 33, 84, 51, 21, 39, 51, 48, 75, 43, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[12]: frames=613  dim=900  n_kept=[89, 34, 33, 17, 84, 51, 21, 39, 36, 51, 75, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044']
+  test[13]: frames=594  dim=900  n_kept=[34, 33, 17, 84, 51, 39, 36, 51, 48, 75, 43, 83]  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[14]: frames=545  dim=900  n_kept=[34, 33, 17, 84, 51, 21, 21, 39, 36, 51, 75, 83]  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044']
+  test[15]: frames=531  dim=900  n_kept=[34, 33, 17, 51, 21, 39, 36, 51, 48, 75, 43, 83]  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+  test[16]: frames=588  dim=900  n_kept=[89, 34, 17, 84, 51, 21, 39, 36, 51, 48, 75, 43]  seqs=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040']
+  test[17]: frames=620  dim=900  n_kept=[89, 34, 17, 84, 21, 39, 36, 51, 48, 75, 43, 83]  seqs=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044']
+clustering Y dim=900  (downsampled 30x30)
+
+Methods: ['OSC', 'TKSS', 'BDOSC']
+pooled train mats for tuning=24
+
+BDOSC: fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+
+============================================================
+--- Tuning OSC over 24 train mats  n_trials=100 (2 params) ---
+  OSC trial 0: mean ARI=0.7083  n=24  111.9s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: mean ARI=0.7066  n=24  111.2s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: mean ARI=0.7060  n=24  111.5s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: mean ARI=0.7169  n=24  111.5s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: mean ARI=0.7170  n=24  111.5s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: mean ARI=0.0028  n=24  108.2s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: mean ARI=0.0028  n=24  108.3s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: mean ARI=0.7054  n=24  111.9s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: mean ARI=0.7258  n=24  114.2s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: mean ARI=0.7251  n=24  112.1s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: mean ARI=0.7261  n=24  114.9s  lambda_1=0.001206, lambda_2=0.001369
+  OSC trial 11: mean ARI=0.7261  n=24  114.7s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: mean ARI=0.7292  n=24  114.8s  lambda_1=0.007272, lambda_2=0.001044
+  OSC trial 13: mean ARI=0.7291  n=24  114.0s  lambda_1=0.006333, lambda_2=0.005656
+  OSC trial 14: mean ARI=0.7263  n=24  114.2s  lambda_1=0.009138, lambda_2=0.01056
+  OSC trial 15: mean ARI=0.7263  n=24  114.4s  lambda_1=0.009119, lambda_2=0.006606
+  OSC trial 16: mean ARI=0.7297  n=24  114.8s  lambda_1=0.00789, lambda_2=0.005417
+  OSC trial 17: mean ARI=0.7314  n=24  113.6s  lambda_1=0.01807, lambda_2=0.01989
+  OSC trial 18: mean ARI=0.7333  n=24  113.4s  lambda_1=0.02487, lambda_2=0.02409
+  OSC trial 19: mean ARI=0.7324  n=24  113.4s  lambda_1=0.024, lambda_2=0.02928
+  OSC trial 20: mean ARI=0.6801  n=24  112.4s  lambda_1=0.6775, lambda_2=0.04065
+  OSC trial 21: mean ARI=0.7336  n=24  113.3s  lambda_1=0.026, lambda_2=0.02305
+  OSC trial 22: mean ARI=0.7151  n=24  112.9s  lambda_1=0.03146, lambda_2=0.05143
+  OSC trial 23: mean ARI=0.7322  n=24  113.9s  lambda_1=0.02235, lambda_2=0.01707
+  OSC trial 24: mean ARI=0.7258  n=24  112.5s  lambda_1=0.003426, lambda_2=0.06827
+  OSC trial 25: mean ARI=0.7158  n=24  112.4s  lambda_1=0.07204, lambda_2=0.3316
+  OSC trial 26: mean ARI=0.7286  n=24  113.6s  lambda_1=0.01983, lambda_2=0.01838
+  OSC trial 27: mean ARI=0.7003  n=24  112.9s  lambda_1=0.3694, lambda_2=0.02737
+  OSC trial 28: mean ARI=0.7151  n=24  114.2s  lambda_1=0.031, lambda_2=0.01165
+  OSC trial 29: mean ARI=0.7081  n=24  112.6s  lambda_1=0.1182, lambda_2=0.08697
+  OSC trial 30: mean ARI=0.7279  n=24  115.1s  lambda_1=0.003999, lambda_2=0.003974
+  OSC trial 31: mean ARI=0.7335  n=24  114.4s  lambda_1=0.01667, lambda_2=0.01319
+  OSC trial 32: mean ARI=0.7296  n=24  116.3s  lambda_1=0.0136, lambda_2=0.002789
+  OSC trial 33: mean ARI=0.7146  n=24  115.8s  lambda_1=0.03694, lambda_2=0.01071
+  OSC trial 34: mean ARI=0.7098  n=24  114.2s  lambda_1=0.0785, lambda_2=0.2702
+  OSC trial 35: mean ARI=0.7280  n=24  114.9s  lambda_1=0.00402, lambda_2=0.05398
+  OSC trial 36: mean ARI=0.7169  n=24  114.5s  lambda_1=0.04688, lambda_2=0.1836
+  OSC trial 37: mean ARI=0.7082  n=24  115.6s  lambda_1=0.1401, lambda_2=0.0262
+  OSC trial 38: mean ARI=0.7340  n=24  116.3s  lambda_1=0.01493, lambda_2=0.009654
+  OSC trial 39: mean ARI=0.7326  n=24  114.3s  lambda_1=0.01318, lambda_2=0.5814
+  OSC trial 40: mean ARI=0.0028  n=24  112.8s  lambda_1=4.628, lambda_2=0.009618
+  OSC trial 41: mean ARI=0.7326  n=24  117.3s  lambda_1=0.01345, lambda_2=1.272
+  OSC trial 42: mean ARI=0.7326  n=24  117.6s  lambda_1=0.01201, lambda_2=0.5678
+  OSC trial 43: mean ARI=0.7170  n=24  117.9s  lambda_1=0.05013, lambda_2=8.862
+  OSC trial 44: mean ARI=0.7260  n=24  116.1s  lambda_1=0.003096, lambda_2=0.1278
+  OSC trial 45: mean ARI=0.7296  n=24  118.4s  lambda_1=0.01251, lambda_2=0.003525
+  OSC trial 46: mean ARI=0.7280  n=24  115.8s  lambda_1=0.00549, lambda_2=1.276
+  OSC trial 47: mean ARI=0.7110  n=24  117.5s  lambda_1=0.07346, lambda_2=0.01477
+  OSC trial 48: mean ARI=0.7146  n=24  118.9s  lambda_1=0.04009, lambda_2=0.001865
+  OSC trial 49: mean ARI=0.7059  n=24  116.1s  lambda_1=0.2589, lambda_2=0.1933
+  OSC trial 50: mean ARI=0.7338  n=24  114.5s  lambda_1=0.0265, lambda_2=0.007301
+  OSC trial 51: mean ARI=0.7333  n=24  114.2s  lambda_1=0.0251, lambda_2=0.006357
+  OSC trial 52: mean ARI=0.7333  n=24  114.3s  lambda_1=0.02426, lambda_2=0.006876
+  OSC trial 53: mean ARI=0.7335  n=24  114.3s  lambda_1=0.01746, lambda_2=0.007201
+  OSC trial 54: mean ARI=0.7335  n=24  114.5s  lambda_1=0.01738, lambda_2=0.007778
+  OSC trial 55: mean ARI=0.7258  n=24  114.5s  lambda_1=0.002354, lambda_2=0.008162
+  OSC trial 56: mean ARI=0.7297  n=24  115.0s  lambda_1=0.008936, lambda_2=0.003466
+  OSC trial 57: mean ARI=0.7335  n=24  114.7s  lambda_1=0.01656, lambda_2=0.004799
+  OSC trial 58: mean ARI=0.7291  n=24  114.8s  lambda_1=0.00639, lambda_2=0.004619
+  OSC trial 59: mean ARI=0.7134  n=24  114.8s  lambda_1=0.09029, lambda_2=0.00167
+  OSC trial 60: mean ARI=0.7314  n=24  114.0s  lambda_1=0.01786, lambda_2=0.01143
+  OSC trial 61: mean ARI=0.7340  n=24  115.0s  lambda_1=0.01645, lambda_2=0.002636
+  OSC trial 62: mean ARI=0.7170  n=24  115.1s  lambda_1=0.05797, lambda_2=0.002762
+  OSC trial 63: mean ARI=0.7149  n=24  111.3s  lambda_1=0.03146, lambda_2=0.01574
+  OSC trial 64: mean ARI=0.7284  n=24  110.2s  lambda_1=0.01004, lambda_2=0.03742
+  OSC trial 65: mean ARI=0.7291  n=24  112.1s  lambda_1=0.005722, lambda_2=0.005108
+  OSC trial 66: mean ARI=0.7335  n=24  112.4s  lambda_1=0.01682, lambda_2=0.002553
+  OSC trial 67: mean ARI=0.7151  n=24  112.5s  lambda_1=0.03155, lambda_2=0.001449
+  OSC trial 68: mean ARI=0.7170  n=24  112.3s  lambda_1=0.06008, lambda_2=0.002383
+  OSC trial 69: mean ARI=0.7296  n=24  111.6s  lambda_1=0.007809, lambda_2=0.02152
+  OSC trial 70: mean ARI=0.7169  n=24  112.7s  lambda_1=0.04227, lambda_2=0.001002
+  OSC trial 71: mean ARI=0.7314  n=24  112.0s  lambda_1=0.01766, lambda_2=0.004127
+  OSC trial 72: mean ARI=0.7340  n=24  111.3s  lambda_1=0.01445, lambda_2=0.01347
+  OSC trial 73: mean ARI=0.7337  n=24  111.2s  lambda_1=0.02527, lambda_2=0.01421
+  OSC trial 74: mean ARI=0.7263  n=24  111.5s  lambda_1=0.01025, lambda_2=0.01212
+  OSC trial 75: mean ARI=0.7146  n=24  110.9s  lambda_1=0.03466, lambda_2=0.01409
+  OSC trial 76: mean ARI=0.7336  n=24  109.7s  lambda_1=0.0247, lambda_2=0.04772
+  OSC trial 77: mean ARI=0.7275  n=24  110.0s  lambda_1=0.02795, lambda_2=0.03294
+  OSC trial 78: mean ARI=0.7322  n=24  109.5s  lambda_1=0.02182, lambda_2=0.05766
+  OSC trial 79: mean ARI=0.7326  n=24  110.1s  lambda_1=0.01065, lambda_2=0.08755
+  OSC trial 80: mean ARI=0.7279  n=24  110.6s  lambda_1=0.005102, lambda_2=0.01997
+  OSC trial 81: mean ARI=0.7326  n=24  109.7s  lambda_1=0.0151, lambda_2=0.0427
+  OSC trial 82: mean ARI=0.7322  n=24  111.4s  lambda_1=0.02153, lambda_2=0.009227
+  OSC trial 83: mean ARI=0.7169  n=24  110.5s  lambda_1=0.04264, lambda_2=0.02272
+  OSC trial 84: mean ARI=0.7297  n=24  111.9s  lambda_1=0.007706, lambda_2=0.005223
+  OSC trial 85: mean ARI=0.7318  n=24  111.1s  lambda_1=0.02691, lambda_2=0.01325
+  OSC trial 86: mean ARI=0.7326  n=24  110.3s  lambda_1=0.01318, lambda_2=0.0275
+  OSC trial 87: mean ARI=0.7322  n=24  110.9s  lambda_1=0.02133, lambda_2=0.01703
+  OSC trial 88: mean ARI=0.7170  n=24  111.7s  lambda_1=0.05875, lambda_2=0.005975
+  OSC trial 89: mean ARI=0.7146  n=24  111.9s  lambda_1=0.03712, lambda_2=0.003154
+  OSC trial 90: mean ARI=0.7326  n=24  109.6s  lambda_1=0.01483, lambda_2=0.06942
+  OSC trial 91: mean ARI=0.7335  n=24  112.2s  lambda_1=0.01695, lambda_2=0.002325
+  OSC trial 92: mean ARI=0.7284  n=24  111.5s  lambda_1=0.01182, lambda_2=0.01078
+  OSC trial 93: mean ARI=0.7141  n=24  111.8s  lambda_1=0.02803, lambda_2=0.008287
+  OSC trial 94: mean ARI=0.7322  n=24  112.2s  lambda_1=0.0219, lambda_2=0.004373
+  OSC trial 95: mean ARI=0.0028  n=24  106.0s  lambda_1=1.644, lambda_2=0.04394
+  OSC trial 96: mean ARI=0.7340  n=24  111.8s  lambda_1=0.01594, lambda_2=0.006176
+  OSC trial 97: mean ARI=0.7170  n=24  112.0s  lambda_1=0.04958, lambda_2=0.00656
+  OSC trial 98: mean ARI=0.7297  n=24  111.7s  lambda_1=0.00839, lambda_2=0.008498
+  OSC trial 99: mean ARI=0.7327  n=24  110.4s  lambda_1=0.01109, lambda_2=0.03226
+  best mean ARI=0.7340  tune 11306.3s  lambda_1=0.01645, lambda_2=0.002636
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_knownk_scaled_params_k12_baselines.json
+
+============================================================
+--- Tuning TKSS over 24 train mats  n_trials=150 (3 params) ---
+  TKSS trial 0: mean ARI=0.5492  n=24  176.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5532  n=24  245.3s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5489  n=24  234.5s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5667  n=24  201.9s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5611  n=24  212.1s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5475  n=24  199.2s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5050  n=24  192.0s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5565  n=24  235.6s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5521  n=24  247.0s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.4985  n=24  204.9s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5559  n=24  130.5s  d=15, lam=0.01458, s=3
+  TKSS trial 11: mean ARI=0.5654  n=24  214.8s  d=6, lam=8.489, s=6
+  TKSS trial 12: mean ARI=0.5640  n=24  184.8s  d=5, lam=9.091, s=6
+  TKSS trial 13: mean ARI=0.5670  n=24  208.8s  d=7, lam=7.911, s=6
+  TKSS trial 14: mean ARI=0.5583  n=24  214.6s  d=8, lam=2.615, s=5
+  TKSS trial 15: mean ARI=0.5536  n=24  227.4s  d=11, lam=0.558, s=6
+  TKSS trial 16: mean ARI=0.5607  n=24  182.5s  d=4, lam=0.04751, s=5
+  TKSS trial 17: mean ARI=0.5668  n=24  207.7s  d=7, lam=3.644, s=6
+  TKSS trial 18: mean ARI=0.5798  n=24  227.3s  d=3, lam=2.116, s=5
+  TKSS trial 19: mean ARI=0.4642  n=24  245.0s  d=1, lam=0.3519, s=3
+  TKSS trial 20: mean ARI=0.5775  n=24  232.4s  d=3, lam=1.747, s=5
+  TKSS trial 21: mean ARI=0.5774  n=24  230.3s  d=3, lam=1.738, s=5
+  TKSS trial 22: mean ARI=0.5738  n=24  205.4s  d=3, lam=1.691, s=4
+  TKSS trial 23: mean ARI=0.5773  n=24  203.5s  d=3, lam=0.4895, s=5
+  TKSS trial 24: mean ARI=0.4836  n=24  248.8s  d=1, lam=0.112, s=5
+  TKSS trial 25: mean ARI=0.5625  n=24  193.7s  d=4, lam=1.418, s=3
+  TKSS trial 26: mean ARI=0.5708  n=24  202.2s  d=3, lam=0.7127, s=4
+  TKSS trial 27: mean ARI=0.5645  n=24  177.5s  d=4, lam=2.425, s=5
+  TKSS trial 28: mean ARI=0.5555  n=24  189.8s  d=2, lam=1.126, s=4
+  TKSS trial 29: mean ARI=0.5107  n=24  213.1s  d=1, lam=1.949, s=5
+  TKSS trial 30: mean ARI=0.5492  n=24  172.2s  d=5, lam=0.9455, s=2
+  TKSS trial 31: mean ARI=0.5774  n=24  203.6s  d=3, lam=0.5046, s=5
+  TKSS trial 32: mean ARI=0.5772  n=24  202.1s  d=3, lam=0.4658, s=5
+  TKSS trial 33: mean ARI=0.5559  n=24  174.2s  d=5, lam=0.2615, s=4
+  TKSS trial 34: mean ARI=0.5633  n=24  174.5s  d=2, lam=1.261, s=5
+  TKSS trial 35: mean ARI=0.5638  n=24  172.0s  d=4, lam=0.1451, s=4
+  TKSS trial 36: mean ARI=0.5644  n=24  210.9s  d=6, lam=2.974, s=5
+  TKSS trial 37: mean ARI=0.5813  n=24  200.0s  d=3, lam=0.6716, s=6
+  TKSS trial 38: mean ARI=0.5695  n=24  168.3s  d=2, lam=4.938, s=6
+  TKSS trial 39: mean ARI=0.5636  n=24  180.3s  d=5, lam=1.898, s=6
+  TKSS trial 40: mean ARI=0.5226  n=24  231.0s  d=1, lam=0.7732, s=6
+  TKSS trial 41: mean ARI=0.5775  n=24  191.9s  d=3, lam=0.3601, s=5
+  TKSS trial 42: mean ARI=0.5593  n=24  176.9s  d=4, lam=0.0706, s=4
+  TKSS trial 43: mean ARI=0.5668  n=24  172.9s  d=2, lam=0.3398, s=5
+  TKSS trial 44: mean ARI=0.5771  n=24  208.4s  d=3, lam=1.206, s=5
+  TKSS trial 45: mean ARI=0.5697  n=24  170.0s  d=2, lam=3.628, s=6
+  TKSS trial 46: mean ARI=0.5639  n=24  199.4s  d=6, lam=0.6503, s=6
+  TKSS trial 47: mean ARI=0.5657  n=24  189.1s  d=4, lam=6.129, s=4
+  TKSS trial 48: mean ARI=0.5587  n=24  166.7s  d=5, lam=0.2205, s=5
+  TKSS trial 49: mean ARI=0.5815  n=24  212.2s  d=3, lam=0.3717, s=6
+  TKSS trial 50: mean ARI=0.5624  n=24  258.6s  d=14, lam=0.3757, s=6
+  TKSS trial 51: mean ARI=0.5813  n=24  194.1s  d=3, lam=0.9307, s=6
+  TKSS trial 52: mean ARI=0.5715  n=24  165.6s  d=2, lam=0.9729, s=6
+  TKSS trial 53: mean ARI=0.5675  n=24  182.1s  d=4, lam=0.1599, s=6
+  TKSS trial 54: mean ARI=0.5814  n=24  209.2s  d=3, lam=0.4112, s=6
+  TKSS trial 55: mean ARI=0.5135  n=24  234.4s  d=1, lam=0.2823, s=6
+  TKSS trial 56: mean ARI=0.5676  n=24  176.9s  d=4, lam=0.3853, s=6
+  TKSS trial 57: mean ARI=0.5817  n=24  193.0s  d=3, lam=0.6344, s=6
+  TKSS trial 58: mean ARI=0.5716  n=24  162.4s  d=2, lam=0.6379, s=6
+  TKSS trial 59: mean ARI=0.5806  n=24  191.8s  d=3, lam=0.8454, s=6
+  TKSS trial 60: mean ARI=0.5640  n=24  170.0s  d=5, lam=0.8612, s=6
+  TKSS trial 61: mean ARI=0.5819  n=24  195.3s  d=3, lam=0.5854, s=6
+  TKSS trial 62: mean ARI=0.5667  n=24  179.0s  d=4, lam=0.6242, s=6
+  TKSS trial 63: mean ARI=0.5792  n=24  210.0s  d=3, lam=0.2031, s=6
+  TKSS trial 64: mean ARI=0.5565  n=24  197.0s  d=10, lam=0.455, s=6
+  TKSS trial 65: mean ARI=0.5221  n=24  221.9s  d=1, lam=0.7905, s=6
+  TKSS trial 66: mean ARI=0.5718  n=24  165.4s  d=2, lam=1.459, s=6
+  TKSS trial 67: mean ARI=0.5679  n=24  174.9s  d=4, lam=0.2895, s=6
+  TKSS trial 68: mean ARI=0.5818  n=24  196.8s  d=3, lam=0.5537, s=6
+  TKSS trial 69: mean ARI=0.5706  n=24  169.6s  d=2, lam=0.5447, s=6
+  TKSS trial 70: mean ARI=0.5560  n=24  177.7s  d=3, lam=0.02946, s=6
+  TKSS trial 71: mean ARI=0.5812  n=24  206.7s  d=3, lam=0.4344, s=6
+  TKSS trial 72: mean ARI=0.5819  n=24  204.3s  d=3, lam=0.4668, s=6
+  TKSS trial 73: mean ARI=0.5635  n=24  167.0s  d=5, lam=0.5928, s=6
+  TKSS trial 74: mean ARI=0.5828  n=24  227.3s  d=3, lam=0.3039, s=6
+  TKSS trial 75: mean ARI=0.4947  n=24  185.1s  d=2, lam=0.2958, s=1
+  TKSS trial 76: mean ARI=0.5673  n=24  180.8s  d=4, lam=0.1767, s=6
+  TKSS trial 77: mean ARI=0.5173  n=24  222.4s  d=1, lam=0.2355, s=6
+  TKSS trial 78: mean ARI=0.5748  n=24  198.1s  d=3, lam=0.1313, s=6
+  TKSS trial 79: mean ARI=0.5646  n=24  212.2s  d=6, lam=0.4141, s=6
+  TKSS trial 80: mean ARI=0.5664  n=24  177.2s  d=4, lam=0.5127, s=6
+  TKSS trial 81: mean ARI=0.5824  n=24  215.4s  d=3, lam=0.3216, s=6
+  TKSS trial 82: mean ARI=0.5810  n=24  201.0s  d=3, lam=1.063, s=6
+  TKSS trial 83: mean ARI=0.5725  n=24  173.7s  d=2, lam=0.3173, s=6
+  TKSS trial 84: mean ARI=0.5821  n=24  219.1s  d=3, lam=0.2599, s=6
+  TKSS trial 85: mean ARI=0.5675  n=24  171.2s  d=4, lam=0.1061, s=6
+  TKSS trial 86: mean ARI=0.5730  n=24  173.9s  d=2, lam=0.2413, s=6
+  TKSS trial 87: mean ARI=0.5792  n=24  212.5s  d=3, lam=0.2031, s=6
+  TKSS trial 88: mean ARI=0.5671  n=24  176.1s  d=4, lam=0.3294, s=5
+  TKSS trial 89: mean ARI=0.5637  n=24  171.9s  d=5, lam=0.434, s=6
+  TKSS trial 90: mean ARI=0.5819  n=24  198.1s  d=3, lam=0.5507, s=6
+  TKSS trial 91: mean ARI=0.5819  n=24  198.5s  d=3, lam=0.5168, s=6
+  TKSS trial 92: mean ARI=0.5706  n=24  173.6s  d=2, lam=0.5211, s=6
+  TKSS trial 93: mean ARI=0.5809  n=24  203.6s  d=3, lam=0.7333, s=6
+  TKSS trial 94: mean ARI=0.5828  n=24  227.0s  d=3, lam=0.2743, s=6
+  TKSS trial 95: mean ARI=0.5738  n=24  180.8s  d=2, lam=0.2502, s=6
+  TKSS trial 96: mean ARI=0.5663  n=24  180.8s  d=4, lam=0.5664, s=6
+  TKSS trial 97: mean ARI=0.5590  n=24  177.0s  d=5, lam=0.1734, s=5
+  TKSS trial 98: mean ARI=0.5197  n=24  224.3s  d=1, lam=0.3263, s=6
+  TKSS trial 99: mean ARI=0.5818  n=24  205.6s  d=3, lam=0.4707, s=6
+  TKSS trial 100: mean ARI=0.5734  n=24  176.3s  d=2, lam=0.2636, s=6
+  TKSS trial 101: mean ARI=0.5811  n=24  200.0s  d=3, lam=0.7141, s=6
+  TKSS trial 102: mean ARI=0.5813  n=24  197.5s  d=3, lam=0.4927, s=6
+  TKSS trial 103: mean ARI=0.5815  n=24  213.1s  d=3, lam=0.3782, s=6
+  TKSS trial 104: mean ARI=0.5666  n=24  177.3s  d=4, lam=0.5934, s=6
+  TKSS trial 105: mean ARI=0.5671  n=24  178.4s  d=4, lam=0.464, s=6
+  TKSS trial 106: mean ARI=0.5801  n=24  230.3s  d=3, lam=0.2109, s=6
+  TKSS trial 107: mean ARI=0.5720  n=24  174.7s  d=2, lam=0.3026, s=6
+  TKSS trial 108: mean ARI=0.5677  n=24  185.4s  d=4, lam=0.3568, s=6
+  TKSS trial 109: mean ARI=0.5647  n=24  175.8s  d=2, lam=0.6653, s=5
+  TKSS trial 110: mean ARI=0.5812  n=24  195.5s  d=3, lam=0.8755, s=6
+  TKSS trial 111: mean ARI=0.5815  n=24  214.2s  d=3, lam=0.372, s=6
+  TKSS trial 112: mean ARI=0.5819  n=24  210.1s  d=3, lam=0.4215, s=6
+  TKSS trial 113: mean ARI=0.5812  n=24  214.0s  d=3, lam=0.4283, s=6
+  TKSS trial 114: mean ARI=0.5665  n=24  180.4s  d=4, lam=0.5379, s=6
+  TKSS trial 115: mean ARI=0.5686  n=24  172.1s  d=2, lam=0.4765, s=6
+  TKSS trial 116: mean ARI=0.5831  n=24  225.6s  d=3, lam=0.2936, s=6
+  TKSS trial 117: mean ARI=0.5828  n=24  227.4s  d=3, lam=0.276, s=6
+  TKSS trial 118: mean ARI=0.5530  n=24  199.0s  d=8, lam=0.1475, s=2
+  TKSS trial 119: mean ARI=0.5677  n=24  183.1s  d=4, lam=0.2663, s=6
+  TKSS trial 120: mean ARI=0.5621  n=24  171.1s  d=2, lam=0.1903, s=5
+  TKSS trial 121: mean ARI=0.5824  n=24  216.1s  d=3, lam=0.3247, s=6
+  TKSS trial 122: mean ARI=0.5819  n=24  222.4s  d=3, lam=0.2327, s=6
+  TKSS trial 123: mean ARI=0.5754  n=24  185.7s  d=3, lam=0.1192, s=6
+  TKSS trial 124: mean ARI=0.5819  n=24  224.9s  d=3, lam=0.2329, s=6
+  TKSS trial 125: mean ARI=0.5565  n=24  239.7s  d=12, lam=0.2305, s=6
+  TKSS trial 126: mean ARI=0.5680  n=24  182.5s  d=4, lam=0.09279, s=6
+  TKSS trial 127: mean ARI=0.5724  n=24  166.3s  d=2, lam=0.1704, s=6
+  TKSS trial 128: mean ARI=0.5828  n=24  224.3s  d=3, lam=0.2761, s=6
+  TKSS trial 129: mean ARI=0.5831  n=24  221.1s  d=3, lam=0.2882, s=6
+  TKSS trial 130: mean ARI=0.5721  n=24  172.2s  d=2, lam=0.2747, s=6
+  TKSS trial 131: mean ARI=0.5801  n=24  227.9s  d=3, lam=0.2124, s=6
+  TKSS trial 132: mean ARI=0.5824  n=24  215.5s  d=3, lam=0.3288, s=6
+  TKSS trial 133: mean ARI=0.5689  n=24  184.2s  d=4, lam=0.3243, s=6
+  TKSS trial 134: mean ARI=0.5831  n=24  230.8s  d=3, lam=0.2904, s=6
+  TKSS trial 135: mean ARI=0.5829  n=24  234.7s  d=3, lam=0.3126, s=6
+  TKSS trial 136: mean ARI=0.5722  n=24  179.7s  d=2, lam=0.2935, s=6
+  TKSS trial 137: mean ARI=0.5824  n=24  214.2s  d=3, lam=0.3253, s=6
+  TKSS trial 138: mean ARI=0.5680  n=24  168.2s  d=4, lam=0.1901, s=6
+  TKSS trial 139: mean ARI=0.5828  n=24  223.8s  d=3, lam=0.2728, s=6
+  TKSS trial 140: mean ARI=0.5824  n=24  223.6s  d=3, lam=0.2692, s=6
+  TKSS trial 141: mean ARI=0.5823  n=24  226.8s  d=3, lam=0.2585, s=6
+  TKSS trial 142: mean ARI=0.5688  n=24  186.7s  d=4, lam=0.3267, s=6
+  TKSS trial 143: mean ARI=0.5833  n=24  231.7s  d=3, lam=0.284, s=6
+  TKSS trial 144: mean ARI=0.5653  n=24  243.8s  d=15, lam=0.2906, s=6
+  TKSS trial 145: mean ARI=0.5715  n=24  170.5s  d=2, lam=0.3577, s=6
+  TKSS trial 146: mean ARI=0.5829  n=24  225.6s  d=3, lam=0.3128, s=6
+  TKSS trial 147: mean ARI=0.5688  n=24  180.7s  d=4, lam=0.3266, s=6
+  TKSS trial 148: mean ARI=0.5813  n=24  210.0s  d=3, lam=0.385, s=6
+  TKSS trial 149: mean ARI=0.5270  n=24  194.0s  d=2, lam=0.2097, s=3
+  best mean ARI=0.5833  tune 29886.3s  d=3, lam=0.284, s=6
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_knownk_scaled_params_k12_baselines.json
+
+=== train[0] k=12  dim=900  frames=556  σ=clean  seqs=['seq_000001', 'seq_000003', 'seq_000012', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000026', 'seq_000033', 'seq_000035', 'seq_000036', 'seq_000039', 'seq_000042'] ===
+  OSC: k_hat=12  ACC=0.7842  NMI=0.8789  ARI=0.7195  3.1s
+  TKSS: k_hat=12  ACC=0.5953  NMI=0.7624  ARI=0.5290  3.2s
+  BDOSC: k_hat=12  ACC=0.6187  NMI=0.8347  ARI=0.6096  27.2s
+
+=== train[1] k=12  dim=900  frames=578  σ=clean  seqs=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000005', 'seq_000018', 'seq_000024', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000036', 'seq_000041', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7543  NMI=0.8784  ARI=0.7098  3.3s
+  TKSS: k_hat=12  ACC=0.6903  NMI=0.8035  ARI=0.6071  4.8s
+  BDOSC: k_hat=12  ACC=0.7630  NMI=0.8548  ARI=0.6704  28.6s
+
+=== train[2] k=12  dim=900  frames=738  σ=clean  seqs=['seq_000001', 'seq_000009', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000025', 'seq_000026', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000042'] ===
+  OSC: k_hat=12  ACC=0.7439  NMI=0.8849  ARI=0.7430  5.4s
+  TKSS: k_hat=12  ACC=0.7127  NMI=0.7896  ARI=0.6221  12.4s
+  BDOSC: k_hat=12  ACC=0.5678  NMI=0.7688  ARI=0.5083  74.4s
+
+=== train[3] k=12  dim=900  frames=774  σ=clean  seqs=['seq_000001', 'seq_000002', 'seq_000004', 'seq_000012', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000023', 'seq_000029', 'seq_000035', 'seq_000036', 'seq_000041'] ===
+  OSC: k_hat=12  ACC=0.6628  NMI=0.8542  ARI=0.6545  6.1s
+  TKSS: k_hat=12  ACC=0.6938  NMI=0.7539  ARI=0.5508  20.3s
+  BDOSC: k_hat=12  ACC=0.6382  NMI=0.7934  ARI=0.5562  91.0s
+
+=== train[4] k=12  dim=900  frames=634  σ=clean  seqs=['seq_000004', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000035', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7997  NMI=0.9066  ARI=0.7870  4.0s
+  TKSS: k_hat=12  ACC=0.7240  NMI=0.8279  ARI=0.6630  5.8s
+  BDOSC: k_hat=12  ACC=0.5773  NMI=0.7805  ARI=0.5408  39.3s
+
+=== train[5] k=12  dim=900  frames=639  σ=clean  seqs=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000025', 'seq_000033', 'seq_000035', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7966  NMI=0.8751  ARI=0.7296  4.1s
+  TKSS: k_hat=12  ACC=0.6260  NMI=0.7516  ARI=0.5325  11.4s
+  BDOSC: k_hat=12  ACC=0.6228  NMI=0.8184  ARI=0.5818  40.1s
+
+=== train[6] k=12  dim=900  frames=805  σ=clean  seqs=['seq_000001', 'seq_000004', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000028', 'seq_000033', 'seq_000036', 'seq_000042'] ===
+  OSC: k_hat=12  ACC=0.7267  NMI=0.8888  ARI=0.7225  6.6s
+  TKSS: k_hat=12  ACC=0.7205  NMI=0.8185  ARI=0.6370  8.8s
+  BDOSC: k_hat=12  ACC=0.6584  NMI=0.8184  ARI=0.6377  108.5s
+
+=== train[7] k=12  dim=900  frames=653  σ=clean  seqs=['seq_000002', 'seq_000009', 'seq_000011', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000036'] ===
+  OSC: k_hat=12  ACC=0.7473  NMI=0.9001  ARI=0.7561  4.3s
+  TKSS: k_hat=12  ACC=0.6799  NMI=0.7899  ARI=0.6110  11.8s
+  BDOSC: k_hat=12  ACC=0.6998  NMI=0.7964  ARI=0.6040  44.8s
+
+=== train[8] k=12  dim=900  frames=532  σ=clean  seqs=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000018', 'seq_000020', 'seq_000021', 'seq_000024', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.8045  NMI=0.8886  ARI=0.7814  2.9s
+  TKSS: k_hat=12  ACC=0.7744  NMI=0.8302  ARI=0.6821  11.3s
+  BDOSC: k_hat=12  ACC=0.7049  NMI=0.8249  ARI=0.6423  23.5s
+
+=== train[9] k=12  dim=900  frames=660  σ=clean  seqs=['seq_000001', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000028', 'seq_000033', 'seq_000035', 'seq_000039'] ===
+  OSC: k_hat=12  ACC=0.7076  NMI=0.8392  ARI=0.6441  4.4s
+  TKSS: k_hat=12  ACC=0.5758  NMI=0.7767  ARI=0.5538  6.7s
+  BDOSC: k_hat=12  ACC=0.7121  NMI=0.8308  ARI=0.6408  48.1s
+
+=== train[10] k=12  dim=900  frames=639  σ=clean  seqs=['seq_000005', 'seq_000017', 'seq_000020', 'seq_000021', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035', 'seq_000036'] ===
+  OSC: k_hat=12  ACC=0.7700  NMI=0.8952  ARI=0.7519  4.2s
+  TKSS: k_hat=12  ACC=0.7496  NMI=0.8120  ARI=0.6355  8.9s
+  BDOSC: k_hat=12  ACC=0.6776  NMI=0.7978  ARI=0.5847  41.3s
+
+=== train[11] k=12  dim=900  frames=701  σ=clean  seqs=['seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000024', 'seq_000025', 'seq_000029', 'seq_000031', 'seq_000036', 'seq_000039', 'seq_000041', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7760  NMI=0.8664  ARI=0.6614  4.9s
+  TKSS: k_hat=12  ACC=0.6434  NMI=0.7512  ARI=0.5348  10.3s
+  BDOSC: k_hat=12  ACC=0.5991  NMI=0.8010  ARI=0.5571  58.6s
+
+=== train[12] k=12  dim=900  frames=551  σ=clean  seqs=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000021', 'seq_000024', 'seq_000026', 'seq_000029', 'seq_000033', 'seq_000035', 'seq_000041', 'seq_000042', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.6987  NMI=0.8171  ARI=0.6206  3.1s
+  TKSS: k_hat=12  ACC=0.6443  NMI=0.7896  ARI=0.6113  7.5s
+  BDOSC: k_hat=12  ACC=0.6134  NMI=0.7507  ARI=0.5091  24.6s
+
+=== train[13] k=12  dim=900  frames=655  σ=clean  seqs=['seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000023', 'seq_000026', 'seq_000035', 'seq_000041', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7176  NMI=0.8587  ARI=0.6781  4.3s
+  TKSS: k_hat=12  ACC=0.7267  NMI=0.7758  ARI=0.6050  6.8s
+  BDOSC: k_hat=12  ACC=0.5237  NMI=0.7468  ARI=0.4811  44.6s
+
+=== train[14] k=12  dim=900  frames=635  σ=clean  seqs=['seq_000002', 'seq_000003', 'seq_000012', 'seq_000017', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000041', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7654  NMI=0.8999  ARI=0.7718  4.2s
+  TKSS: k_hat=12  ACC=0.6583  NMI=0.7457  ARI=0.5308  4.2s
+  BDOSC: k_hat=12  ACC=0.6110  NMI=0.7870  ARI=0.5392  41.8s
+
+=== train[15] k=12  dim=900  frames=758  σ=clean  seqs=['seq_000001', 'seq_000004', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000026', 'seq_000029', 'seq_000031', 'seq_000033', 'seq_000035'] ===
+  OSC: k_hat=12  ACC=0.7982  NMI=0.9171  ARI=0.7535  5.9s
+  TKSS: k_hat=12  ACC=0.6570  NMI=0.7539  ARI=0.5355  13.9s
+  BDOSC: k_hat=12  ACC=0.4644  NMI=0.7402  ARI=0.4119  82.9s
+
+=== train[16] k=12  dim=900  frames=758  σ=clean  seqs=['seq_000003', 'seq_000004', 'seq_000011', 'seq_000017', 'seq_000019', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000036', 'seq_000039', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.7480  NMI=0.8770  ARI=0.7025  6.0s
+  TKSS: k_hat=12  ACC=0.6372  NMI=0.7812  ARI=0.5617  12.0s
+  BDOSC: k_hat=12  ACC=0.6662  NMI=0.8263  ARI=0.6544  85.0s
+
+=== train[17] k=12  dim=900  frames=649  σ=clean  seqs=['seq_000003', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000031', 'seq_000039', 'seq_000041'] ===
+  OSC: k_hat=12  ACC=0.7257  NMI=0.8474  ARI=0.6569  4.5s
+  TKSS: k_hat=12  ACC=0.6579  NMI=0.7559  ARI=0.5295  13.8s
+  BDOSC: k_hat=12  ACC=0.6456  NMI=0.8465  ARI=0.6190  43.5s
+
+=== train[18] k=12  dim=900  frames=546  σ=clean  seqs=['seq_000002', 'seq_000009', 'seq_000021', 'seq_000022', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000031', 'seq_000035', 'seq_000041', 'seq_000042'] ===
+  OSC: k_hat=12  ACC=0.8919  NMI=0.9256  ARI=0.8657  3.3s
+  TKSS: k_hat=12  ACC=0.7289  NMI=0.8351  ARI=0.6945  3.3s
+  BDOSC: k_hat=12  ACC=0.7381  NMI=0.8398  ARI=0.6905  25.6s
+
+=== train[19] k=12  dim=900  frames=773  σ=clean  seqs=['seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000017', 'seq_000019', 'seq_000026', 'seq_000027', 'seq_000029', 'seq_000035', 'seq_000039', 'seq_000041'] ===
+  OSC: k_hat=12  ACC=0.7995  NMI=0.8949  ARI=0.7519  6.6s
+  TKSS: k_hat=12  ACC=0.6636  NMI=0.7383  ARI=0.5536  15.2s
+  BDOSC: k_hat=12  ACC=0.6585  NMI=0.8206  ARI=0.5739  93.7s
+
+=== train[20] k=12  dim=900  frames=645  σ=clean  seqs=['seq_000003', 'seq_000005', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000020', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000033', 'seq_000035'] ===
+  OSC: k_hat=12  ACC=0.7674  NMI=0.8903  ARI=0.7286  4.4s
+  TKSS: k_hat=12  ACC=0.6217  NMI=0.7568  ARI=0.5409  10.2s
+  BDOSC: k_hat=12  ACC=0.5519  NMI=0.7851  ARI=0.4864  42.7s
+
+=== train[21] k=12  dim=900  frames=687  σ=clean  seqs=['seq_000001', 'seq_000003', 'seq_000004', 'seq_000009', 'seq_000011', 'seq_000017', 'seq_000018', 'seq_000021', 'seq_000022', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  OSC: k_hat=12  ACC=0.7860  NMI=0.8962  ARI=0.7518  5.0s
+  TKSS: k_hat=12  ACC=0.5109  NMI=0.6851  ARI=0.4324  6.4s
+  BDOSC: k_hat=12  ACC=0.7293  NMI=0.8458  ARI=0.6679  56.0s
+
+=== train[22] k=12  dim=900  frames=602  σ=clean  seqs=['seq_000003', 'seq_000004', 'seq_000005', 'seq_000009', 'seq_000012', 'seq_000018', 'seq_000020', 'seq_000022', 'seq_000025', 'seq_000026', 'seq_000036', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.8522  NMI=0.9269  ARI=0.8413  3.9s
+  TKSS: k_hat=12  ACC=0.7176  NMI=0.7876  ARI=0.5970  11.3s
+  BDOSC: k_hat=12  ACC=0.5880  NMI=0.7716  ARI=0.5139  34.0s
+
+=== train[23] k=12  dim=900  frames=624  σ=clean  seqs=['seq_000003', 'seq_000005', 'seq_000009', 'seq_000011', 'seq_000012', 'seq_000018', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000028', 'seq_000042', 'seq_000043'] ===
+  OSC: k_hat=12  ACC=0.8333  NMI=0.9112  ARI=0.8321  4.2s
+  TKSS: k_hat=12  ACC=0.6731  NMI=0.8122  ARI=0.6484  8.2s
+  BDOSC: k_hat=12  ACC=0.6923  NMI=0.8399  ARI=0.6692  38.8s
+
+=== test[0] k=12  dim=900  frames=571  σ=clean  seqs=['seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6095  NMI=0.8105  ARI=0.4953  3.5s
+  TKSS: k_hat=12  ACC=0.6305  NMI=0.7236  ARI=0.5092  4.4s
+  BDOSC: k_hat=12  ACC=0.7461  NMI=0.8647  ARI=0.7335  27.5s
+
+=== test[1] k=12  dim=900  frames=600  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6633  NMI=0.8262  ARI=0.5732  3.9s
+  TKSS: k_hat=12  ACC=0.6367  NMI=0.7591  ARI=0.5918  6.8s
+  BDOSC: k_hat=12  ACC=0.6583  NMI=0.8133  ARI=0.6379  33.3s
+
+=== test[2] k=12  dim=900  frames=637  σ=clean  seqs=['seq_000006', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6515  NMI=0.8370  ARI=0.6247  4.4s
+  TKSS: k_hat=12  ACC=0.5981  NMI=0.6920  ARI=0.5139  6.3s
+  BDOSC: k_hat=12  ACC=0.6782  NMI=0.8201  ARI=0.6211  40.9s
+
+=== test[3] k=12  dim=900  frames=505  σ=clean  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000040'] ===
+  OSC: k_hat=12  ACC=0.7485  NMI=0.8986  ARI=0.7392  2.8s
+  TKSS: k_hat=12  ACC=0.6733  NMI=0.7461  ARI=0.5337  4.5s
+  BDOSC: k_hat=12  ACC=0.7683  NMI=0.8598  ARI=0.7206  20.3s
+
+=== test[4] k=12  dim=900  frames=567  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040'] ===
+  OSC: k_hat=12  ACC=0.6861  NMI=0.8477  ARI=0.6086  3.6s
+  TKSS: k_hat=12  ACC=0.5573  NMI=0.6808  ARI=0.4409  3.1s
+  BDOSC: k_hat=12  ACC=0.6861  NMI=0.8158  ARI=0.6320  26.7s
+
+=== test[5] k=12  dim=900  frames=604  σ=clean  seqs=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.7152  NMI=0.8560  ARI=0.6654  3.9s
+  TKSS: k_hat=12  ACC=0.5728  NMI=0.6917  ARI=0.5232  6.2s
+  BDOSC: k_hat=12  ACC=0.5795  NMI=0.7734  ARI=0.4813  34.1s
+
+=== test[6] k=12  dim=900  frames=572  σ=clean  seqs=['seq_000006', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040'] ===
+  OSC: k_hat=12  ACC=0.7308  NMI=0.8639  ARI=0.6704  3.6s
+  TKSS: k_hat=12  ACC=0.6084  NMI=0.7059  ARI=0.5330  6.9s
+  BDOSC: k_hat=12  ACC=0.7325  NMI=0.8365  ARI=0.6872  28.0s
+
+=== test[7] k=12  dim=900  frames=547  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6801  NMI=0.8414  ARI=0.6011  3.4s
+  TKSS: k_hat=12  ACC=0.6307  NMI=0.7755  ARI=0.5673  4.0s
+  BDOSC: k_hat=12  ACC=0.7660  NMI=0.8471  ARI=0.6930  24.5s
+
+=== test[8] k=12  dim=900  frames=624  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6907  NMI=0.8569  ARI=0.6407  4.1s
+  TKSS: k_hat=12  ACC=0.5913  NMI=0.7033  ARI=0.5332  9.5s
+  BDOSC: k_hat=12  ACC=0.5929  NMI=0.8193  ARI=0.5865  38.9s
+
+=== test[9] k=12  dim=900  frames=507  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000037', 'seq_000038', 'seq_000040'] ===
+  OSC: k_hat=12  ACC=0.7712  NMI=0.8657  ARI=0.6811  2.9s
+  TKSS: k_hat=12  ACC=0.5976  NMI=0.7240  ARI=0.5215  6.0s
+  BDOSC: k_hat=12  ACC=0.6252  NMI=0.7846  ARI=0.5482  20.3s
+
+=== test[10] k=12  dim=900  frames=562  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.7633  NMI=0.8670  ARI=0.6876  3.2s
+  TKSS: k_hat=12  ACC=0.5498  NMI=0.7316  ARI=0.5183  4.7s
+  BDOSC: k_hat=12  ACC=0.6619  NMI=0.8003  ARI=0.5794  27.3s
+
+=== test[11] k=12  dim=900  frames=651  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.7143  NMI=0.8714  ARI=0.6924  4.4s
+  TKSS: k_hat=12  ACC=0.6144  NMI=0.7296  ARI=0.5457  6.2s
+  BDOSC: k_hat=12  ACC=0.6406  NMI=0.8142  ARI=0.5933  52.4s
+
+=== test[12] k=12  dim=900  frames=613  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.7194  NMI=0.8632  ARI=0.6718  3.9s
+  TKSS: k_hat=12  ACC=0.6476  NMI=0.7252  ARI=0.5654  10.6s
+  BDOSC: k_hat=12  ACC=0.6623  NMI=0.8070  ARI=0.5668  39.2s
+
+=== test[13] k=12  dim=900  frames=594  σ=clean  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6633  NMI=0.8515  ARI=0.6120  3.9s
+  TKSS: k_hat=12  ACC=0.6751  NMI=0.7568  ARI=0.5654  5.6s
+  BDOSC: k_hat=12  ACC=0.7795  NMI=0.8491  ARI=0.6891  30.0s
+
+=== test[14] k=12  dim=900  frames=545  σ=clean  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000038', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.5908  NMI=0.7989  ARI=0.4700  3.1s
+  TKSS: k_hat=12  ACC=0.5468  NMI=0.6673  ARI=0.4320  6.0s
+  BDOSC: k_hat=12  ACC=0.6771  NMI=0.8016  ARI=0.5446  23.3s
+
+=== test[15] k=12  dim=900  frames=531  σ=clean  seqs=['seq_000007', 'seq_000008', 'seq_000010', 'seq_000014', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.6196  NMI=0.8317  ARI=0.5585  2.9s
+  TKSS: k_hat=12  ACC=0.6911  NMI=0.7921  ARI=0.6236  3.7s
+  BDOSC: k_hat=12  ACC=0.5951  NMI=0.7573  ARI=0.4842  21.2s
+
+=== test[16] k=12  dim=900  frames=588  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040'] ===
+  OSC: k_hat=12  ACC=0.7432  NMI=0.8641  ARI=0.6661  3.5s
+  TKSS: k_hat=12  ACC=0.6429  NMI=0.7344  ARI=0.5430  5.9s
+  BDOSC: k_hat=12  ACC=0.6667  NMI=0.7933  ARI=0.5487  29.3s
+
+=== test[17] k=12  dim=900  frames=620  σ=clean  seqs=['seq_000006', 'seq_000007', 'seq_000010', 'seq_000013', 'seq_000016', 'seq_000030', 'seq_000032', 'seq_000034', 'seq_000037', 'seq_000038', 'seq_000040', 'seq_000044'] ===
+  OSC: k_hat=12  ACC=0.7097  NMI=0.8935  ARI=0.7402  3.8s
+  TKSS: k_hat=12  ACC=0.6081  NMI=0.7114  ARI=0.5364  6.7s
+  BDOSC: k_hat=12  ACC=0.6742  NMI=0.8373  ARI=0.6408  36.7s
+
+=== mean over matrices ===
+  OSC train σ=clean: ACC=0.7691  NMI=0.8841  ARI=0.7340  n=24
+  TKSS train σ=clean: ACC=0.6701  NMI=0.7785  ARI=0.5833  n=24
+  BDOSC train σ=clean: ACC=0.6384  NMI=0.8050  ARI=0.5812  n=24
+  OSC test σ=clean: ACC=0.6928  NMI=0.8525  ARI=0.6332  n=18
+  TKSS test σ=clean: ACC=0.6151  NMI=0.7250  ARI=0.5332  n=18
+  BDOSC test σ=clean: ACC=0.6772  NMI=0.8164  ARI=0.6104  n=18
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_knownk_scaled_results_k12_baselines.csv
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_knownk_scaled_params_k12_baselines.json
+end=Sat Sep  5 12:52:31 EDT 2026
+Experiment completed!

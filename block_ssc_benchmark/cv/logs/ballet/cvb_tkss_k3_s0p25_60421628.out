@@ -1,0 +1,1191 @@
+========================================
+Job: cvb_tkss_k3_s0p25
+Method: TKSS  k: 3  sigma: 0.25  tune_pool_groups: 20
+========================================
+host=gl3182.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sun Sep  6 19:01:09 EDT 2026
+=== Ballet Clustering Experiment ===
+k=3  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=20  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=(0.25,)  append=False  no_tune=False  known_k=True  csv=ballet_cluster_sigmas_0.25_results_knownk_cv_tkss_k3_sigma0p25.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+
+Methods: ['TKSS']
+CV mode: 14 folds of size 3, each rotated as test
+  2 sequences unused (remainder dropped)
+  fold 0: ['seq_000003', 'seq_000005', 'seq_000035']
+  fold 1: ['seq_000019', 'seq_000024', 'seq_000033']
+  fold 2: ['seq_000002', 'seq_000012', 'seq_000023']
+  fold 3: ['seq_000020', 'seq_000022', 'seq_000028']
+  fold 4: ['seq_000004', 'seq_000011', 'seq_000042']
+  fold 5: ['seq_000017', 'seq_000031', 'seq_000039']
+  fold 6: ['seq_000009', 'seq_000021', 'seq_000029']
+  fold 7: ['seq_000018', 'seq_000036', 'seq_000043']
+  fold 8: ['seq_000001', 'seq_000025', 'seq_000026']
+  fold 9: ['seq_000027', 'seq_000040', 'seq_000041']
+  fold 10: ['seq_000007', 'seq_000010', 'seq_000037']
+  fold 11: ['seq_000013', 'seq_000014', 'seq_000038']
+  fold 12: ['seq_000006', 'seq_000008', 'seq_000044']
+  fold 13: ['seq_000015', 'seq_000030', 'seq_000034']
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=0  test=['seq_000003', 'seq_000005', 'seq_000035']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.6014  n=20  1.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5934  n=20  1.7s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5874  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5797  n=20  3.1s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5945  n=20  2.3s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5908  n=20  0.8s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6720  n=20  2.4s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5822  n=20  4.2s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5885  n=20  1.4s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.6740  n=20  3.0s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5862  n=20  0.7s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.7145  n=20  3.1s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.7142  n=20  3.2s  d=1, lam=0.05148, s=1
+  TKSS trial 13: mean ARI=0.7143  n=20  3.4s  d=1, lam=0.04219, s=2
+  TKSS trial 14: mean ARI=0.5971  n=20  1.0s  d=4, lam=0.03818, s=2
+  TKSS trial 15: mean ARI=0.6114  n=20  1.7s  d=3, lam=0.04997, s=3
+  TKSS trial 16: mean ARI=0.7142  n=20  3.4s  d=1, lam=0.02529, s=3
+  TKSS trial 17: mean ARI=0.5997  n=20  1.1s  d=4, lam=0.1016, s=2
+  TKSS trial 18: mean ARI=0.7214  n=20  3.4s  d=1, lam=0.1227, s=3
+  TKSS trial 19: mean ARI=0.6485  n=20  3.0s  d=3, lam=0.4124, s=3
+  TKSS trial 20: mean ARI=0.5918  n=20  0.8s  d=6, lam=0.1068, s=3
+  TKSS trial 21: mean ARI=0.7142  n=20  3.1s  d=1, lam=0.02096, s=1
+  TKSS trial 22: mean ARI=0.6104  n=20  1.7s  d=3, lam=0.07568, s=2
+  TKSS trial 23: mean ARI=0.7143  n=20  3.2s  d=1, lam=0.01012, s=1
+  TKSS trial 24: mean ARI=0.6680  n=20  2.2s  d=2, lam=0.02045, s=1
+  TKSS trial 25: mean ARI=0.5952  n=20  0.8s  d=4, lam=0.01042, s=1
+  TKSS trial 26: mean ARI=0.6880  n=20  3.3s  d=2, lam=0.3533, s=5
+  TKSS trial 27: mean ARI=0.7133  n=20  3.0s  d=1, lam=0.02656, s=1
+  TKSS trial 28: mean ARI=0.5972  n=20  1.4s  d=3, lam=0.01681, s=3
+  TKSS trial 29: mean ARI=0.6096  n=20  3.5s  d=4, lam=9.072, s=2
+    best mean ARI=0.7214  tune 68.5s  d=1, lam=0.1227, s=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold0.json
+
+=== train[1] k=3  dim=900  frames=160  σ=0.25  fold=0  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.6500  NMI=0.5407  ARI=0.2575  0.3s
+
+=== train[2] k=3  dim=900  frames=219  σ=0.25  fold=0  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.6758  NMI=0.5263  ARI=0.4993  0.6s
+
+=== train[3] k=3  dim=900  frames=164  σ=0.25  fold=0  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7500  NMI=0.7049  ARI=0.5669  0.2s
+
+=== train[4] k=3  dim=900  frames=252  σ=0.25  fold=0  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9286  NMI=0.8074  ARI=0.8086  0.3s
+
+=== train[5] k=3  dim=900  frames=235  σ=0.25  fold=0  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8723  NMI=0.7095  ARI=0.6926  0.3s
+
+=== train[6] k=3  dim=900  frames=155  σ=0.25  fold=0  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.3806  NMI=0.0726  ARI=-0.0019  0.2s
+
+=== train[7] k=3  dim=900  frames=153  σ=0.25  fold=0  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7255  NMI=0.6741  ARI=0.4825  0.1s
+
+=== train[8] k=3  dim=900  frames=149  σ=0.25  fold=0  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.6980  NMI=0.6993  ARI=0.5603  0.2s
+
+=== train[9] k=3  dim=900  frames=130  σ=0.25  fold=0  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.7692  NMI=0.5874  ARI=0.4854  0.1s
+
+=== train[10] k=3  dim=900  frames=99  σ=0.25  fold=0  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== train[11] k=3  dim=900  frames=210  σ=0.25  fold=0  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7048  NMI=0.3665  ARI=0.3224  0.2s
+
+=== train[12] k=3  dim=900  frames=205  σ=0.25  fold=0  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9659  NMI=0.8707  ARI=0.8859  0.1s
+
+=== train[13] k=3  dim=900  frames=111  σ=0.25  fold=0  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7928  NMI=0.5914  ARI=0.5060  0.1s
+
+=== test[0] k=3  dim=900  frames=88  σ=0.25  fold=0  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6250  NMI=0.3610  ARI=0.2191  0.0s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=1  test=['seq_000019', 'seq_000024', 'seq_000033']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5707  n=20  1.3s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5717  n=20  1.6s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5702  n=20  0.9s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5698  n=20  2.2s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5748  n=20  2.3s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5720  n=20  0.8s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6828  n=20  2.5s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5766  n=20  3.2s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5639  n=20  1.2s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.6720  n=20  2.6s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5672  n=20  0.5s  d=15, lam=0.01262, s=3
+  TKSS trial 11: mean ARI=0.7136  n=20  2.4s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.7148  n=20  2.6s  d=1, lam=0.01449, s=2
+  TKSS trial 13: mean ARI=0.7143  n=20  2.7s  d=1, lam=0.04074, s=2
+  TKSS trial 14: mean ARI=0.5788  n=20  0.9s  d=4, lam=0.05054, s=2
+  TKSS trial 15: mean ARI=0.5936  n=20  1.1s  d=3, lam=0.05454, s=2
+  TKSS trial 16: mean ARI=0.7118  n=20  2.5s  d=1, lam=0.03973, s=3
+  TKSS trial 17: mean ARI=0.5831  n=20  0.9s  d=4, lam=0.02855, s=3
+  TKSS trial 18: mean ARI=0.7173  n=20  2.7s  d=1, lam=0.1227, s=2
+  TKSS trial 19: mean ARI=0.6104  n=20  1.4s  d=3, lam=0.1464, s=3
+  TKSS trial 20: mean ARI=0.5753  n=20  1.0s  d=6, lam=0.4571, s=2
+  TKSS trial 21: mean ARI=0.7131  n=20  2.5s  d=1, lam=0.09316, s=2
+  TKSS trial 22: mean ARI=0.5852  n=20  0.8s  d=3, lam=0.02871, s=1
+  TKSS trial 23: mean ARI=0.7131  n=20  2.6s  d=1, lam=0.1062, s=2
+  TKSS trial 24: mean ARI=0.6734  n=20  2.3s  d=2, lam=0.02057, s=3
+  TKSS trial 25: mean ARI=0.5785  n=20  0.8s  d=4, lam=0.07111, s=1
+  TKSS trial 26: mean ARI=0.6683  n=20  2.6s  d=2, lam=0.3533, s=2
+  TKSS trial 27: mean ARI=0.7271  n=20  2.6s  d=1, lam=0.02015, s=3
+  TKSS trial 28: mean ARI=0.5956  n=20  1.1s  d=3, lam=0.0229, s=3
+  TKSS trial 29: mean ARI=0.5760  n=20  0.8s  d=4, lam=0.02002, s=4
+    best mean ARI=0.7271  tune 53.6s  d=1, lam=0.02015, s=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold1.json
+
+=== train[35] k=3  dim=900  frames=88  σ=0.25  fold=1  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6250  NMI=0.3488  ARI=0.2094  0.0s
+
+=== train[36] k=3  dim=900  frames=219  σ=0.25  fold=1  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.7900  NMI=0.5320  ARI=0.5424  0.2s
+
+=== train[37] k=3  dim=900  frames=164  σ=0.25  fold=1  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7317  NMI=0.6173  ARI=0.5512  0.1s
+
+=== train[38] k=3  dim=900  frames=252  σ=0.25  fold=1  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9286  NMI=0.8356  ARI=0.8142  0.3s
+
+=== train[39] k=3  dim=900  frames=235  σ=0.25  fold=1  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8766  NMI=0.7348  ARI=0.7103  0.3s
+
+=== train[40] k=3  dim=900  frames=155  σ=0.25  fold=1  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.3871  NMI=0.0764  ARI=0.0020  0.2s
+
+=== train[41] k=3  dim=900  frames=153  σ=0.25  fold=1  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7255  NMI=0.6741  ARI=0.4825  0.1s
+
+=== train[42] k=3  dim=900  frames=149  σ=0.25  fold=1  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7651  NMI=0.7140  ARI=0.5881  0.1s
+
+=== train[43] k=3  dim=900  frames=130  σ=0.25  fold=1  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.7769  NMI=0.5940  ARI=0.4950  0.1s
+
+=== train[44] k=3  dim=900  frames=99  σ=0.25  fold=1  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== train[45] k=3  dim=900  frames=210  σ=0.25  fold=1  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7143  NMI=0.3800  ARI=0.3387  0.2s
+
+=== train[46] k=3  dim=900  frames=205  σ=0.25  fold=1  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9707  NMI=0.8839  ARI=0.9023  0.1s
+
+=== train[47] k=3  dim=900  frames=111  σ=0.25  fold=1  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.6937  NMI=0.4282  ARI=0.3939  0.1s
+
+=== test[34] k=3  dim=900  frames=160  σ=0.25  fold=1  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.6562  NMI=0.5431  ARI=0.2610  0.3s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=2  test=['seq_000002', 'seq_000012', 'seq_000023']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5121  n=20  2.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5203  n=20  1.9s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5155  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5302  n=20  2.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5177  n=20  2.4s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5111  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5640  n=20  2.5s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5300  n=20  2.5s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5162  n=20  1.3s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5632  n=20  3.2s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5087  n=20  0.6s  d=15, lam=0.01262, s=3
+  TKSS trial 11: mean ARI=0.4900  n=20  3.2s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.4894  n=20  3.0s  d=1, lam=0.05122, s=2
+  TKSS trial 13: mean ARI=0.5323  n=20  2.0s  d=3, lam=0.2955, s=3
+  TKSS trial 14: mean ARI=0.5381  n=20  1.7s  d=3, lam=0.06854, s=5
+  TKSS trial 15: mean ARI=0.5287  n=20  1.2s  d=3, lam=0.03306, s=2
+  TKSS trial 16: mean ARI=0.5491  n=20  3.4s  d=4, lam=0.484, s=5
+  TKSS trial 17: mean ARI=0.4997  n=20  3.0s  d=1, lam=0.09033, s=3
+  TKSS trial 18: mean ARI=0.5393  n=20  2.6s  d=2, lam=0.02297, s=1
+  TKSS trial 19: mean ARI=0.5168  n=20  3.4s  d=5, lam=0.7058, s=6
+  TKSS trial 20: mean ARI=0.5219  n=20  1.7s  d=7, lam=8.827, s=2
+  TKSS trial 21: mean ARI=0.5486  n=20  3.4s  d=4, lam=0.5324, s=5
+  TKSS trial 22: mean ARI=0.5146  n=20  1.1s  d=4, lam=0.125, s=5
+  TKSS trial 23: mean ARI=0.6070  n=20  2.6s  d=2, lam=0.3912, s=4
+  TKSS trial 24: mean ARI=0.5963  n=20  2.5s  d=2, lam=1.575, s=4
+  TKSS trial 25: mean ARI=0.5943  n=20  2.6s  d=2, lam=2.985, s=4
+  TKSS trial 26: mean ARI=0.5203  n=20  3.4s  d=1, lam=1.974, s=4
+  TKSS trial 27: mean ARI=0.5428  n=20  4.0s  d=3, lam=3.011, s=4
+  TKSS trial 28: mean ARI=0.5103  n=20  2.9s  d=5, lam=1.686, s=3
+  TKSS trial 29: mean ARI=0.5196  n=20  3.3s  d=5, lam=1.129, s=4
+    best mean ARI=0.6070  tune 72.0s  d=2, lam=0.3912, s=4
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold2.json
+
+=== train[69] k=3  dim=900  frames=88  σ=0.25  fold=2  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6591  NMI=0.5314  ARI=0.4182  0.0s
+
+=== train[70] k=3  dim=900  frames=160  σ=0.25  fold=2  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7625  NMI=0.6656  ARI=0.5258  0.1s
+
+=== train[71] k=3  dim=900  frames=164  σ=0.25  fold=2  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7195  NMI=0.6688  ARI=0.5564  0.4s
+
+=== train[72] k=3  dim=900  frames=252  σ=0.25  fold=2  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9960  NMI=0.9804  ARI=0.9881  0.2s
+
+=== train[73] k=3  dim=900  frames=235  σ=0.25  fold=2  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8383  NMI=0.7179  ARI=0.6622  0.3s
+
+=== train[74] k=3  dim=900  frames=155  σ=0.25  fold=2  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.4000  NMI=0.0750  ARI=0.0001  0.3s
+
+=== train[75] k=3  dim=900  frames=153  σ=0.25  fold=2  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7582  NMI=0.5384  ARI=0.4020  0.1s
+
+=== train[76] k=3  dim=900  frames=149  σ=0.25  fold=2  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7718  NMI=0.7163  ARI=0.5932  0.1s
+
+=== train[77] k=3  dim=900  frames=130  σ=0.25  fold=2  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8462  NMI=0.7102  ARI=0.6091  0.1s
+
+=== train[78] k=3  dim=900  frames=99  σ=0.25  fold=2  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8687  NMI=0.7683  ARI=0.6953  0.0s
+
+=== train[79] k=3  dim=900  frames=210  σ=0.25  fold=2  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.8000  NMI=0.5950  ARI=0.5032  0.2s
+
+=== train[80] k=3  dim=900  frames=205  σ=0.25  fold=2  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9268  NMI=0.8389  ARI=0.8434  0.2s
+
+=== train[81] k=3  dim=900  frames=111  σ=0.25  fold=2  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.8018  NMI=0.6014  ARI=0.5257  0.1s
+
+=== test[68] k=3  dim=900  frames=219  σ=0.25  fold=2  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8630  NMI=0.7037  ARI=0.6876  0.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=3  test=['seq_000020', 'seq_000022', 'seq_000028']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5847  n=20  1.5s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5743  n=20  2.3s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5709  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5762  n=20  2.6s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5713  n=20  2.2s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5738  n=20  0.8s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6025  n=20  1.6s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5659  n=20  3.2s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5678  n=20  1.7s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5885  n=20  2.6s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5720  n=20  0.6s  d=15, lam=0.01262, s=3
+  TKSS trial 11: mean ARI=0.6299  n=20  2.2s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.6222  n=20  2.6s  d=1, lam=0.01449, s=2
+  TKSS trial 13: mean ARI=0.6265  n=20  2.6s  d=1, lam=0.04074, s=2
+  TKSS trial 14: mean ARI=0.5726  n=20  0.9s  d=4, lam=0.05054, s=2
+  TKSS trial 15: mean ARI=0.5767  n=20  1.3s  d=3, lam=0.04997, s=1
+  TKSS trial 16: mean ARI=0.6276  n=20  2.4s  d=1, lam=0.03678, s=3
+  TKSS trial 17: mean ARI=0.5743  n=20  1.0s  d=4, lam=0.02785, s=3
+  TKSS trial 18: mean ARI=0.6484  n=20  3.0s  d=1, lam=0.1227, s=3
+  TKSS trial 19: mean ARI=0.5772  n=20  1.2s  d=3, lam=0.1621, s=1
+  TKSS trial 20: mean ARI=0.5818  n=20  1.5s  d=6, lam=0.403, s=3
+  TKSS trial 21: mean ARI=0.6381  n=20  3.0s  d=1, lam=0.09316, s=3
+  TKSS trial 22: mean ARI=0.5751  n=20  1.6s  d=3, lam=0.06602, s=4
+  TKSS trial 23: mean ARI=0.6389  n=20  3.0s  d=1, lam=0.3912, s=2
+  TKSS trial 24: mean ARI=0.5939  n=20  2.0s  d=2, lam=0.112, s=3
+  TKSS trial 25: mean ARI=0.5785  n=20  1.5s  d=4, lam=0.3768, s=2
+  TKSS trial 26: mean ARI=0.5951  n=20  1.8s  d=2, lam=0.1004, s=3
+  TKSS trial 27: mean ARI=0.6315  n=20  3.3s  d=1, lam=0.4511, s=2
+  TKSS trial 28: mean ARI=0.5845  n=20  1.6s  d=3, lam=0.08954, s=5
+  TKSS trial 29: mean ARI=0.5806  n=20  1.4s  d=4, lam=0.265, s=2
+    best mean ARI=0.6484  tune 58.3s  d=1, lam=0.1227, s=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold3.json
+
+=== train[103] k=3  dim=900  frames=88  σ=0.25  fold=3  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6250  NMI=0.3488  ARI=0.2094  0.1s
+
+=== train[104] k=3  dim=900  frames=160  σ=0.25  fold=3  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7688  NMI=0.6962  ARI=0.5429  0.1s
+
+=== train[105] k=3  dim=900  frames=219  σ=0.25  fold=3  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.6941  NMI=0.5353  ARI=0.5057  0.7s
+
+=== train[106] k=3  dim=900  frames=252  σ=0.25  fold=3  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9365  NMI=0.8196  ARI=0.8286  0.3s
+
+=== train[107] k=3  dim=900  frames=235  σ=0.25  fold=3  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8553  NMI=0.6936  ARI=0.6628  0.4s
+
+=== train[108] k=3  dim=900  frames=155  σ=0.25  fold=3  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.3742  NMI=0.0706  ARI=-0.0041  0.3s
+
+=== train[109] k=3  dim=900  frames=153  σ=0.25  fold=3  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7255  NMI=0.6741  ARI=0.4825  0.2s
+
+=== train[110] k=3  dim=900  frames=149  σ=0.25  fold=3  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7718  NMI=0.7163  ARI=0.5932  0.0s
+
+=== train[111] k=3  dim=900  frames=130  σ=0.25  fold=3  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.7692  NMI=0.5949  ARI=0.4882  0.1s
+
+=== train[112] k=3  dim=900  frames=99  σ=0.25  fold=3  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== train[113] k=3  dim=900  frames=210  σ=0.25  fold=3  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7048  NMI=0.3618  ARI=0.3184  0.3s
+
+=== train[114] k=3  dim=900  frames=205  σ=0.25  fold=3  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9659  NMI=0.8707  ARI=0.8859  0.2s
+
+=== train[115] k=3  dim=900  frames=111  σ=0.25  fold=3  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7748  NMI=0.5531  ARI=0.4896  0.1s
+
+=== test[102] k=3  dim=900  frames=164  σ=0.25  fold=3  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6463  NMI=0.5026  ARI=0.3633  0.1s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=4  test=['seq_000004', 'seq_000011', 'seq_000042']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5070  n=20  1.4s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5088  n=20  1.0s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5031  n=20  0.7s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5164  n=20  1.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5117  n=20  1.3s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.4996  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5057  n=20  2.2s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5090  n=20  3.1s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5017  n=20  1.0s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5113  n=20  3.4s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.4979  n=20  0.5s  d=15, lam=0.01458, s=3
+  TKSS trial 11: mean ARI=0.5162  n=20  1.9s  d=6, lam=8.489, s=6
+  TKSS trial 12: mean ARI=0.5379  n=20  2.5s  d=5, lam=9.091, s=6
+  TKSS trial 13: mean ARI=0.5522  n=20  3.7s  d=4, lam=7.911, s=6
+  TKSS trial 14: mean ARI=0.5539  n=20  3.4s  d=4, lam=8.609, s=5
+  TKSS trial 15: mean ARI=0.5592  n=20  4.0s  d=1, lam=2.714, s=5
+  TKSS trial 16: mean ARI=0.5303  n=20  4.1s  d=1, lam=0.3243, s=5
+  TKSS trial 17: mean ARI=0.5716  n=20  3.3s  d=3, lam=2.174, s=3
+  TKSS trial 18: mean ARI=0.5258  n=20  4.0s  d=1, lam=0.5008, s=3
+  TKSS trial 19: mean ARI=0.5380  n=20  2.2s  d=3, lam=0.09426, s=3
+  TKSS trial 20: mean ARI=0.5586  n=20  3.5s  d=3, lam=2.217, s=2
+  TKSS trial 21: mean ARI=0.5586  n=20  3.5s  d=3, lam=2.328, s=2
+  TKSS trial 22: mean ARI=0.5456  n=20  4.0s  d=1, lam=2.399, s=2
+  TKSS trial 23: mean ARI=0.5593  n=20  3.3s  d=3, lam=1.323, s=2
+  TKSS trial 24: mean ARI=0.5701  n=20  3.2s  d=2, lam=0.5485, s=3
+  TKSS trial 25: mean ARI=0.5014  n=20  1.0s  d=4, lam=0.1019, s=3
+  TKSS trial 26: mean ARI=0.5057  n=20  1.0s  d=7, lam=0.5611, s=3
+  TKSS trial 27: mean ARI=0.5600  n=20  3.4s  d=3, lam=1.13, s=2
+  TKSS trial 28: mean ARI=0.4992  n=20  0.8s  d=5, lam=0.5381, s=1
+  TKSS trial 29: mean ARI=0.5644  n=20  4.0s  d=2, lam=0.9851, s=4
+    best mean ARI=0.5716  tune 73.7s  d=3, lam=2.174, s=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold4.json
+
+=== train[137] k=3  dim=900  frames=88  σ=0.25  fold=4  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6591  NMI=0.5216  ARI=0.3978  0.0s
+
+=== train[138] k=3  dim=900  frames=160  σ=0.25  fold=4  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7250  NMI=0.6178  ARI=0.5150  0.1s
+
+=== train[139] k=3  dim=900  frames=219  σ=0.25  fold=4  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.9087  NMI=0.8110  ARI=0.7730  0.1s
+
+=== train[140] k=3  dim=900  frames=164  σ=0.25  fold=4  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6768  NMI=0.6702  ARI=0.5380  0.2s
+
+=== train[141] k=3  dim=900  frames=235  σ=0.25  fold=4  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7707  ARI=0.7069  0.4s
+
+=== train[142] k=3  dim=900  frames=155  σ=0.25  fold=4  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.8258  NMI=0.7343  ARI=0.7049  0.2s
+
+=== train[143] k=3  dim=900  frames=153  σ=0.25  fold=4  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7778  NMI=0.5641  ARI=0.4429  0.1s
+
+=== train[144] k=3  dim=900  frames=149  σ=0.25  fold=4  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7450  NMI=0.6256  ARI=0.5211  0.0s
+
+=== train[145] k=3  dim=900  frames=130  σ=0.25  fold=4  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8462  NMI=0.6633  ARI=0.6066  0.1s
+
+=== train[146] k=3  dim=900  frames=99  σ=0.25  fold=4  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8788  NMI=0.7772  ARI=0.7136  0.0s
+
+=== train[147] k=3  dim=900  frames=210  σ=0.25  fold=4  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7619  NMI=0.4952  ARI=0.4357  0.8s
+
+=== train[148] k=3  dim=900  frames=205  σ=0.25  fold=4  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.8683  NMI=0.6896  ARI=0.6842  0.3s
+
+=== train[149] k=3  dim=900  frames=111  σ=0.25  fold=4  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7658  NMI=0.5695  ARI=0.4688  0.1s
+
+=== test[136] k=3  dim=900  frames=252  σ=0.25  fold=4  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9960  NMI=0.9804  ARI=0.9881  0.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=5  test=['seq_000017', 'seq_000031', 'seq_000039']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.4985  n=20  0.9s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5087  n=20  1.8s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5023  n=20  0.9s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5080  n=20  2.1s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5081  n=20  1.4s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.4980  n=20  0.6s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5180  n=20  1.6s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5217  n=20  3.5s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5043  n=20  1.7s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5366  n=20  2.9s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.4976  n=20  0.5s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.5260  n=20  3.1s  d=1, lam=0.4262, s=1
+  TKSS trial 12: mean ARI=0.5182  n=20  3.0s  d=1, lam=0.3441, s=1
+  TKSS trial 13: mean ARI=0.5057  n=20  0.9s  d=3, lam=0.05335, s=2
+  TKSS trial 14: mean ARI=0.5024  n=20  0.9s  d=4, lam=0.5416, s=1
+  TKSS trial 15: mean ARI=0.5170  n=20  2.8s  d=1, lam=0.1181, s=2
+  TKSS trial 16: mean ARI=0.5042  n=20  1.1s  d=3, lam=0.07035, s=3
+  TKSS trial 17: mean ARI=0.5219  n=20  3.0s  d=1, lam=0.6792, s=1
+  TKSS trial 18: mean ARI=0.5259  n=20  2.0s  d=4, lam=1.774, s=3
+  TKSS trial 19: mean ARI=0.5032  n=20  0.9s  d=3, lam=0.0337, s=1
+  TKSS trial 20: mean ARI=0.5057  n=20  1.2s  d=7, lam=0.5203, s=3
+  TKSS trial 21: mean ARI=0.5054  n=20  1.2s  d=5, lam=1.906, s=3
+  TKSS trial 22: mean ARI=0.5119  n=20  1.4s  d=4, lam=9.215, s=2
+  TKSS trial 23: mean ARI=0.5362  n=20  2.5s  d=2, lam=1.097, s=3
+  TKSS trial 24: mean ARI=0.5366  n=20  2.8s  d=2, lam=0.7508, s=1
+  TKSS trial 25: mean ARI=0.5286  n=20  2.2s  d=2, lam=0.7821, s=2
+  TKSS trial 26: mean ARI=0.5335  n=20  2.9s  d=2, lam=1.089, s=5
+  TKSS trial 27: mean ARI=0.5144  n=20  1.9s  d=3, lam=2.842, s=1
+  TKSS trial 28: mean ARI=0.5049  n=20  0.9s  d=5, lam=0.3302, s=3
+  TKSS trial 29: mean ARI=0.4985  n=20  0.8s  d=5, lam=1.182, s=2
+    best mean ARI=0.5366  tune 53.7s  d=2, lam=0.8313, s=1
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold5.json
+
+=== train[171] k=3  dim=900  frames=88  σ=0.25  fold=5  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6364  NMI=0.3989  ARI=0.2902  0.0s
+
+=== train[172] k=3  dim=900  frames=160  σ=0.25  fold=5  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7188  NMI=0.6158  ARI=0.5101  0.0s
+
+=== train[173] k=3  dim=900  frames=219  σ=0.25  fold=5  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8539  NMI=0.6568  ARI=0.6633  0.1s
+
+=== train[174] k=3  dim=900  frames=164  σ=0.25  fold=5  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6829  NMI=0.6921  ARI=0.5407  0.2s
+
+=== train[175] k=3  dim=900  frames=252  σ=0.25  fold=5  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== train[176] k=3  dim=900  frames=155  σ=0.25  fold=5  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.4065  NMI=0.0810  ARI=0.0077  0.2s
+
+=== train[177] k=3  dim=900  frames=153  σ=0.25  fold=5  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7908  NMI=0.5835  ARI=0.4723  0.1s
+
+=== train[178] k=3  dim=900  frames=149  σ=0.25  fold=5  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7651  NMI=0.7140  ARI=0.5881  0.1s
+
+=== train[179] k=3  dim=900  frames=130  σ=0.25  fold=5  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8308  NMI=0.6433  ARI=0.5795  0.1s
+
+=== train[180] k=3  dim=900  frames=99  σ=0.25  fold=5  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8687  NMI=0.7683  ARI=0.6953  0.0s
+
+=== train[181] k=3  dim=900  frames=210  σ=0.25  fold=5  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.8000  NMI=0.5950  ARI=0.5032  0.2s
+
+=== train[182] k=3  dim=900  frames=205  σ=0.25  fold=5  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9268  NMI=0.8389  ARI=0.8434  0.1s
+
+=== train[183] k=3  dim=900  frames=111  σ=0.25  fold=5  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7838  NMI=0.5882  ARI=0.5062  0.1s
+
+=== test[170] k=3  dim=900  frames=235  σ=0.25  fold=5  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8511  NMI=0.7310  ARI=0.6758  0.4s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=6  test=['seq_000009', 'seq_000021', 'seq_000029']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5162  n=20  0.7s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5219  n=20  1.4s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5169  n=20  0.5s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5290  n=20  2.6s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5209  n=20  1.8s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5130  n=20  0.5s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5387  n=20  1.7s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5350  n=20  3.4s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5211  n=20  0.8s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5465  n=20  2.3s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5130  n=20  0.5s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.5098  n=20  2.3s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.5167  n=20  2.3s  d=1, lam=0.05122, s=3
+  TKSS trial 13: mean ARI=0.5308  n=20  2.0s  d=3, lam=0.2955, s=3
+  TKSS trial 14: mean ARI=0.5274  n=20  1.2s  d=3, lam=0.06854, s=5
+  TKSS trial 15: mean ARI=0.5291  n=20  1.7s  d=3, lam=0.5999, s=2
+  TKSS trial 16: mean ARI=0.5171  n=20  0.6s  d=4, lam=0.04234, s=5
+  TKSS trial 17: mean ARI=0.5201  n=20  2.3s  d=1, lam=0.09033, s=3
+  TKSS trial 18: mean ARI=0.5284  n=20  1.6s  d=2, lam=0.02297, s=1
+  TKSS trial 19: mean ARI=0.5142  n=20  2.7s  d=5, lam=0.4708, s=6
+  TKSS trial 20: mean ARI=0.5150  n=20  0.6s  d=7, lam=8.827, s=2
+  TKSS trial 21: mean ARI=0.5491  n=20  4.1s  d=15, lam=3.398, s=6
+  TKSS trial 22: mean ARI=0.5491  n=20  4.1s  d=15, lam=2.369, s=6
+  TKSS trial 23: mean ARI=0.5501  n=20  4.1s  d=14, lam=2.139, s=6
+  TKSS trial 24: mean ARI=0.5491  n=20  4.1s  d=15, lam=2.185, s=6
+  TKSS trial 25: mean ARI=0.5354  n=20  3.5s  d=13, lam=2.09, s=6
+  TKSS trial 26: mean ARI=0.5259  n=20  2.8s  d=14, lam=3.615, s=5
+  TKSS trial 27: mean ARI=0.5363  n=20  3.5s  d=13, lam=9.642, s=6
+  TKSS trial 28: mean ARI=0.5310  n=20  3.1s  d=11, lam=1.41, s=6
+  TKSS trial 29: mean ARI=0.5265  n=20  2.4s  d=14, lam=1.117, s=5
+    best mean ARI=0.5501  tune 65.6s  d=14, lam=2.139, s=6
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold6.json
+
+=== train[205] k=3  dim=900  frames=88  σ=0.25  fold=6  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6705  NMI=0.5212  ARI=0.3972  0.0s
+
+=== train[206] k=3  dim=900  frames=160  σ=0.25  fold=6  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.8313  NMI=0.6823  ARI=0.6374  0.4s
+
+=== train[207] k=3  dim=900  frames=219  σ=0.25  fold=6  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8995  NMI=0.7568  ARI=0.7387  0.1s
+
+=== train[208] k=3  dim=900  frames=164  σ=0.25  fold=6  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7378  NMI=0.6542  ARI=0.5592  0.1s
+
+=== train[209] k=3  dim=900  frames=252  σ=0.25  fold=6  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.8889  NMI=0.7305  ARI=0.7063  0.8s
+
+=== train[210] k=3  dim=900  frames=235  σ=0.25  fold=6  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8596  NMI=0.6746  ARI=0.6455  0.3s
+
+=== train[211] k=3  dim=900  frames=153  σ=0.25  fold=6  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7320  NMI=0.5091  ARI=0.3536  0.2s
+
+=== train[212] k=3  dim=900  frames=149  σ=0.25  fold=6  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.8054  NMI=0.6383  ARI=0.5689  0.2s
+
+=== train[213] k=3  dim=900  frames=130  σ=0.25  fold=6  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8462  NMI=0.6844  ARI=0.6449  0.1s
+
+=== train[214] k=3  dim=900  frames=99  σ=0.25  fold=6  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8182  NMI=0.6956  ARI=0.6019  0.0s
+
+=== train[215] k=3  dim=900  frames=210  σ=0.25  fold=6  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.9000  NMI=0.7500  ARI=0.7360  0.1s
+
+=== train[216] k=3  dim=900  frames=205  σ=0.25  fold=6  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.8927  NMI=0.7317  ARI=0.7449  0.5s
+
+=== train[217] k=3  dim=900  frames=111  σ=0.25  fold=6  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.6847  NMI=0.5107  ARI=0.3541  0.1s
+
+=== test[204] k=3  dim=900  frames=155  σ=0.25  fold=6  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.8065  NMI=0.6534  ARI=0.6335  0.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=7  test=['seq_000018', 'seq_000036', 'seq_000043']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5436  n=20  1.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5380  n=20  1.9s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5394  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5309  n=20  2.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5386  n=20  1.8s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5328  n=20  0.5s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6155  n=20  2.0s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5279  n=20  2.4s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5350  n=20  1.8s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.6179  n=20  2.1s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5330  n=20  0.5s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.6312  n=20  2.3s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.6270  n=20  2.4s  d=1, lam=0.05148, s=1
+  TKSS trial 13: mean ARI=0.6266  n=20  2.3s  d=1, lam=0.04219, s=2
+  TKSS trial 14: mean ARI=0.5355  n=20  0.6s  d=4, lam=0.04265, s=1
+  TKSS trial 15: mean ARI=0.5460  n=20  0.7s  d=3, lam=0.03477, s=2
+  TKSS trial 16: mean ARI=0.6460  n=20  3.0s  d=1, lam=0.1061, s=3
+  TKSS trial 17: mean ARI=0.5396  n=20  1.4s  d=4, lam=0.2587, s=3
+  TKSS trial 18: mean ARI=0.6377  n=20  2.9s  d=1, lam=0.1227, s=3
+  TKSS trial 19: mean ARI=0.5525  n=20  1.1s  d=3, lam=0.09426, s=3
+  TKSS trial 20: mean ARI=0.5448  n=20  1.5s  d=6, lam=0.4743, s=3
+  TKSS trial 21: mean ARI=0.6460  n=20  3.0s  d=1, lam=0.1073, s=3
+  TKSS trial 22: mean ARI=0.5525  n=20  1.1s  d=3, lam=0.1098, s=3
+  TKSS trial 23: mean ARI=0.6379  n=20  2.8s  d=1, lam=0.1377, s=3
+  TKSS trial 24: mean ARI=0.6077  n=20  2.1s  d=2, lam=0.428, s=4
+  TKSS trial 25: mean ARI=0.5366  n=20  0.6s  d=4, lam=0.07292, s=3
+  TKSS trial 26: mean ARI=0.6071  n=20  2.0s  d=2, lam=0.02455, s=2
+  TKSS trial 27: mean ARI=0.6678  n=20  2.7s  d=1, lam=0.1641, s=5
+  TKSS trial 28: mean ARI=0.5440  n=20  2.0s  d=3, lam=0.3369, s=5
+  TKSS trial 29: mean ARI=0.5433  n=20  0.9s  d=4, lam=0.07134, s=5
+    best mean ARI=0.6678  tune 53.4s  d=1, lam=0.1641, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold7.json
+
+=== train[239] k=3  dim=900  frames=88  σ=0.25  fold=7  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6705  NMI=0.4848  ARI=0.3143  0.0s
+
+=== train[240] k=3  dim=900  frames=160  σ=0.25  fold=7  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7312  NMI=0.6266  ARI=0.5159  0.0s
+
+=== train[241] k=3  dim=900  frames=219  σ=0.25  fold=7  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.7078  NMI=0.5031  ARI=0.4562  0.6s
+
+=== train[242] k=3  dim=900  frames=164  σ=0.25  fold=7  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6951  NMI=0.5879  ARI=0.4779  0.2s
+
+=== train[243] k=3  dim=900  frames=252  σ=0.25  fold=7  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9286  NMI=0.7846  ARI=0.8047  0.3s
+
+=== train[244] k=3  dim=900  frames=235  σ=0.25  fold=7  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7409  ARI=0.6951  0.3s
+
+=== train[245] k=3  dim=900  frames=155  σ=0.25  fold=7  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.3935  NMI=0.0706  ARI=-0.0060  0.2s
+
+=== train[246] k=3  dim=900  frames=149  σ=0.25  fold=7  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7718  NMI=0.6867  ARI=0.5801  0.1s
+
+=== train[247] k=3  dim=900  frames=130  σ=0.25  fold=7  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.7385  NMI=0.6752  ARI=0.4934  0.2s
+
+=== train[248] k=3  dim=900  frames=99  σ=0.25  fold=7  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== train[249] k=3  dim=900  frames=210  σ=0.25  fold=7  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7048  NMI=0.3665  ARI=0.3224  0.2s
+
+=== train[250] k=3  dim=900  frames=205  σ=0.25  fold=7  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9659  NMI=0.8707  ARI=0.8859  0.1s
+
+=== train[251] k=3  dim=900  frames=111  σ=0.25  fold=7  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7748  NMI=0.5786  ARI=0.4871  0.1s
+
+=== test[238] k=3  dim=900  frames=153  σ=0.25  fold=7  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.8627  NMI=0.7513  ARI=0.6566  0.0s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=8  test=['seq_000001', 'seq_000025', 'seq_000026']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5383  n=20  2.1s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5415  n=20  2.8s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5261  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5410  n=20  3.3s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5390  n=20  2.6s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5197  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5782  n=20  2.2s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5384  n=20  3.4s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5322  n=20  1.6s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5797  n=20  2.9s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5186  n=20  0.6s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.5600  n=20  3.1s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.5616  n=20  3.1s  d=1, lam=0.05122, s=3
+  TKSS trial 13: mean ARI=0.5469  n=20  2.9s  d=3, lam=0.2955, s=3
+  TKSS trial 14: mean ARI=0.5380  n=20  2.3s  d=3, lam=0.06854, s=5
+  TKSS trial 15: mean ARI=0.5419  n=20  2.6s  d=3, lam=0.5999, s=2
+  TKSS trial 16: mean ARI=0.5254  n=20  1.1s  d=4, lam=0.04234, s=5
+  TKSS trial 17: mean ARI=0.5653  n=20  3.3s  d=1, lam=0.09033, s=3
+  TKSS trial 18: mean ARI=0.5768  n=20  2.1s  d=2, lam=0.02297, s=1
+  TKSS trial 19: mean ARI=0.5652  n=20  3.5s  d=5, lam=0.4708, s=6
+  TKSS trial 20: mean ARI=0.5304  n=20  1.4s  d=7, lam=8.827, s=2
+  TKSS trial 21: mean ARI=0.5768  n=20  2.1s  d=2, lam=0.02433, s=1
+  TKSS trial 22: mean ARI=0.5768  n=20  2.1s  d=2, lam=0.02607, s=1
+  TKSS trial 23: mean ARI=0.5233  n=20  1.0s  d=4, lam=0.01012, s=1
+  TKSS trial 24: mean ARI=0.5797  n=20  2.7s  d=2, lam=0.1244, s=2
+  TKSS trial 25: mean ARI=0.5272  n=20  1.4s  d=4, lam=0.1163, s=2
+  TKSS trial 26: mean ARI=0.5745  n=20  3.5s  d=1, lam=0.1445, s=3
+  TKSS trial 27: mean ARI=0.5481  n=20  3.7s  d=3, lam=0.4511, s=4
+  TKSS trial 28: mean ARI=0.5383  n=20  2.1s  d=5, lam=0.9403, s=2
+  TKSS trial 29: mean ARI=0.5391  n=20  2.1s  d=5, lam=1.946, s=2
+    best mean ARI=0.5797  tune 69.5s  d=2, lam=0.8313, s=1
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold8.json
+
+=== train[273] k=3  dim=900  frames=88  σ=0.25  fold=8  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6364  NMI=0.4139  ARI=0.3024  0.0s
+
+=== train[274] k=3  dim=900  frames=160  σ=0.25  fold=8  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7250  NMI=0.6206  ARI=0.5128  0.0s
+
+=== train[275] k=3  dim=900  frames=219  σ=0.25  fold=8  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8630  NMI=0.6875  ARI=0.6858  0.2s
+
+=== train[276] k=3  dim=900  frames=164  σ=0.25  fold=8  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6829  NMI=0.6921  ARI=0.5407  0.2s
+
+=== train[277] k=3  dim=900  frames=252  σ=0.25  fold=8  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9841  NMI=0.9418  ARI=0.9544  0.2s
+
+=== train[278] k=3  dim=900  frames=235  σ=0.25  fold=8  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8468  NMI=0.7278  ARI=0.6697  0.5s
+
+=== train[279] k=3  dim=900  frames=155  σ=0.25  fold=8  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.5355  NMI=0.2239  ARI=0.1034  0.2s
+
+=== train[280] k=3  dim=900  frames=153  σ=0.25  fold=8  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7712  NMI=0.5551  ARI=0.4288  0.1s
+
+=== train[281] k=3  dim=900  frames=130  σ=0.25  fold=8  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8846  NMI=0.7719  ARI=0.6857  0.1s
+
+=== train[282] k=3  dim=900  frames=99  σ=0.25  fold=8  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8485  NMI=0.7524  ARI=0.6618  0.0s
+
+=== train[283] k=3  dim=900  frames=210  σ=0.25  fold=8  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.8095  NMI=0.6044  ARI=0.5188  0.1s
+
+=== train[284] k=3  dim=900  frames=205  σ=0.25  fold=8  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9317  NMI=0.8452  ARI=0.8525  0.1s
+
+=== train[285] k=3  dim=900  frames=111  σ=0.25  fold=8  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7928  NMI=0.5944  ARI=0.5155  0.1s
+
+=== test[272] k=3  dim=900  frames=149  σ=0.25  fold=8  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7651  NMI=0.7140  ARI=0.5881  0.1s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=9  test=['seq_000027', 'seq_000040', 'seq_000041']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.6289  n=20  1.4s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.6304  n=20  2.4s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.6352  n=20  1.2s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5997  n=20  4.0s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.6143  n=20  2.6s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.6386  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6956  n=20  2.1s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.6087  n=20  4.9s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6340  n=20  2.1s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.7015  n=20  2.9s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.6386  n=20  0.8s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.6685  n=20  2.8s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.6801  n=20  2.8s  d=1, lam=0.05122, s=3
+  TKSS trial 13: mean ARI=0.6376  n=20  2.3s  d=3, lam=0.2955, s=3
+  TKSS trial 14: mean ARI=0.6453  n=20  1.8s  d=3, lam=0.06854, s=5
+  TKSS trial 15: mean ARI=0.6391  n=20  2.2s  d=3, lam=0.5999, s=2
+  TKSS trial 16: mean ARI=0.6349  n=20  1.1s  d=4, lam=0.04234, s=5
+  TKSS trial 17: mean ARI=0.6728  n=20  3.1s  d=1, lam=0.09033, s=3
+  TKSS trial 18: mean ARI=0.6879  n=20  2.0s  d=2, lam=0.02297, s=1
+  TKSS trial 19: mean ARI=0.5958  n=20  3.5s  d=5, lam=0.4708, s=6
+  TKSS trial 20: mean ARI=0.6336  n=20  1.2s  d=7, lam=8.827, s=2
+  TKSS trial 21: mean ARI=0.6879  n=20  2.0s  d=2, lam=0.02433, s=1
+  TKSS trial 22: mean ARI=0.6879  n=20  2.0s  d=2, lam=0.02607, s=1
+  TKSS trial 23: mean ARI=0.6385  n=20  0.8s  d=4, lam=0.01012, s=1
+  TKSS trial 24: mean ARI=0.6990  n=20  2.5s  d=2, lam=0.1244, s=2
+  TKSS trial 25: mean ARI=0.6367  n=20  1.0s  d=4, lam=0.1163, s=2
+  TKSS trial 26: mean ARI=0.6799  n=20  3.1s  d=1, lam=0.1445, s=3
+  TKSS trial 27: mean ARI=0.6264  n=20  2.8s  d=3, lam=0.4511, s=4
+  TKSS trial 28: mean ARI=0.6289  n=20  1.4s  d=5, lam=0.9403, s=2
+  TKSS trial 29: mean ARI=0.6275  n=20  1.7s  d=5, lam=1.946, s=2
+    best mean ARI=0.7015  tune 65.5s  d=2, lam=0.8313, s=1
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold9.json
+
+=== train[307] k=3  dim=900  frames=88  σ=0.25  fold=9  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6364  NMI=0.3989  ARI=0.2902  0.0s
+
+=== train[308] k=3  dim=900  frames=160  σ=0.25  fold=9  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7312  NMI=0.6226  ARI=0.5180  0.1s
+
+=== train[309] k=3  dim=900  frames=219  σ=0.25  fold=9  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8539  NMI=0.6568  ARI=0.6633  0.2s
+
+=== train[310] k=3  dim=900  frames=164  σ=0.25  fold=9  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6829  NMI=0.6921  ARI=0.5407  0.1s
+
+=== train[311] k=3  dim=900  frames=252  σ=0.25  fold=9  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== train[312] k=3  dim=900  frames=235  σ=0.25  fold=9  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7409  ARI=0.6951  0.2s
+
+=== train[313] k=3  dim=900  frames=155  σ=0.25  fold=9  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.5032  NMI=0.2173  ARI=0.0921  0.2s
+
+=== train[314] k=3  dim=900  frames=153  σ=0.25  fold=9  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7647  NMI=0.5466  ARI=0.4152  0.2s
+
+=== train[315] k=3  dim=900  frames=149  σ=0.25  fold=9  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7651  NMI=0.7140  ARI=0.5881  0.1s
+
+=== train[316] k=3  dim=900  frames=99  σ=0.25  fold=9  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8586  NMI=0.7601  ARI=0.6781  0.0s
+
+=== train[317] k=3  dim=900  frames=210  σ=0.25  fold=9  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7619  NMI=0.5640  ARI=0.4490  0.2s
+
+=== train[318] k=3  dim=900  frames=205  σ=0.25  fold=9  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9317  NMI=0.8452  ARI=0.8525  0.1s
+
+=== train[319] k=3  dim=900  frames=111  σ=0.25  fold=9  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.8018  NMI=0.5991  ARI=0.5167  0.1s
+
+=== test[306] k=3  dim=900  frames=130  σ=0.25  fold=9  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8923  NMI=0.7804  ARI=0.7024  0.1s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=10  test=['seq_000007', 'seq_000010', 'seq_000037']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5230  n=20  1.3s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5159  n=20  2.0s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5264  n=20  1.1s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5322  n=20  3.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5270  n=20  2.4s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5261  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5481  n=20  1.9s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5372  n=20  3.4s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5209  n=20  1.7s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5466  n=20  2.9s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5234  n=20  0.5s  d=15, lam=0.01262, s=3
+  TKSS trial 11: mean ARI=0.5539  n=20  2.5s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.5473  n=20  2.7s  d=1, lam=0.01449, s=2
+  TKSS trial 13: mean ARI=0.5335  n=20  1.5s  d=3, lam=0.03917, s=3
+  TKSS trial 14: mean ARI=0.5265  n=20  1.0s  d=4, lam=0.05169, s=5
+  TKSS trial 15: mean ARI=0.5302  n=20  2.5s  d=1, lam=0.03229, s=2
+  TKSS trial 16: mean ARI=0.5376  n=20  1.9s  d=3, lam=0.1021, s=5
+  TKSS trial 17: mean ARI=0.5507  n=20  2.6s  d=1, lam=0.0104, s=3
+  TKSS trial 18: mean ARI=0.5469  n=20  2.6s  d=1, lam=0.02644, s=1
+  TKSS trial 19: mean ARI=0.5259  n=20  0.9s  d=4, lam=0.08291, s=3
+  TKSS trial 20: mean ARI=0.5246  n=20  0.5s  d=6, lam=0.02159, s=2
+  TKSS trial 21: mean ARI=0.5500  n=20  2.1s  d=2, lam=0.01082, s=3
+  TKSS trial 22: mean ARI=0.5259  n=20  1.0s  d=3, lam=0.01056, s=3
+  TKSS trial 23: mean ARI=0.5508  n=20  2.7s  d=1, lam=0.01782, s=2
+  TKSS trial 24: mean ARI=0.5463  n=20  2.6s  d=1, lam=0.02206, s=1
+  TKSS trial 25: mean ARI=0.5238  n=20  0.8s  d=4, lam=0.05977, s=2
+  TKSS trial 26: mean ARI=0.5554  n=20  2.3s  d=2, lam=0.02014, s=1
+  TKSS trial 27: mean ARI=0.5224  n=20  1.5s  d=3, lam=0.1279, s=1
+  TKSS trial 28: mean ARI=0.5243  n=20  0.6s  d=5, lam=0.02073, s=1
+  TKSS trial 29: mean ARI=0.5625  n=20  2.3s  d=2, lam=0.04633, s=2
+    best mean ARI=0.5625  tune 55.9s  d=2, lam=0.04633, s=2
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold10.json
+
+=== train[341] k=3  dim=900  frames=88  σ=0.25  fold=10  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6477  NMI=0.4411  ARI=0.3326  0.0s
+
+=== train[342] k=3  dim=900  frames=160  σ=0.25  fold=10  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7188  NMI=0.6186  ARI=0.5080  0.0s
+
+=== train[343] k=3  dim=900  frames=219  σ=0.25  fold=10  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8584  NMI=0.6591  ARI=0.6699  0.2s
+
+=== train[344] k=3  dim=900  frames=164  σ=0.25  fold=10  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7439  NMI=0.6542  ARI=0.5380  0.1s
+
+=== train[345] k=3  dim=900  frames=252  σ=0.25  fold=10  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9960  NMI=0.9805  ARI=0.9884  0.1s
+
+=== train[346] k=3  dim=900  frames=235  σ=0.25  fold=10  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7309  ARI=0.6894  0.2s
+
+=== train[347] k=3  dim=900  frames=155  σ=0.25  fold=10  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.5484  NMI=0.2322  ARI=0.1149  0.2s
+
+=== train[348] k=3  dim=900  frames=153  σ=0.25  fold=10  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.8105  NMI=0.6171  ARI=0.5196  0.0s
+
+=== train[349] k=3  dim=900  frames=149  σ=0.25  fold=10  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7718  NMI=0.7163  ARI=0.5932  0.0s
+
+=== train[350] k=3  dim=900  frames=130  σ=0.25  fold=10  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8615  NMI=0.6819  ARI=0.6399  0.1s
+
+=== train[351] k=3  dim=900  frames=210  σ=0.25  fold=10  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.8143  NMI=0.6101  ARI=0.5268  0.2s
+
+=== train[352] k=3  dim=900  frames=205  σ=0.25  fold=10  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9317  NMI=0.8452  ARI=0.8525  0.1s
+
+=== train[353] k=3  dim=900  frames=111  σ=0.25  fold=10  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7658  NMI=0.5732  ARI=0.4789  0.0s
+
+=== test[340] k=3  dim=900  frames=99  σ=0.25  fold=10  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8485  NMI=0.7524  ARI=0.6618  0.0s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=11  test=['seq_000013', 'seq_000014', 'seq_000038']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5681  n=20  2.2s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5648  n=20  2.2s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5638  n=20  1.3s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5610  n=20  3.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5815  n=20  2.9s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5503  n=20  0.7s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6146  n=20  1.9s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5736  n=20  2.9s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5612  n=20  1.6s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.6012  n=20  2.3s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5485  n=20  0.5s  d=15, lam=0.01262, s=3
+  TKSS trial 11: mean ARI=0.6252  n=20  2.6s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.6262  n=20  3.3s  d=1, lam=0.01449, s=2
+  TKSS trial 13: mean ARI=0.6158  n=20  3.7s  d=1, lam=0.04074, s=2
+  TKSS trial 14: mean ARI=0.5573  n=20  0.8s  d=4, lam=0.03416, s=2
+  TKSS trial 15: mean ARI=0.5826  n=20  1.3s  d=3, lam=0.03294, s=1
+  TKSS trial 16: mean ARI=0.6101  n=20  3.2s  d=1, lam=0.08226, s=3
+  TKSS trial 17: mean ARI=0.5568  n=20  0.8s  d=4, lam=0.01041, s=2
+  TKSS trial 18: mean ARI=0.6183  n=20  2.7s  d=1, lam=0.02153, s=3
+  TKSS trial 19: mean ARI=0.5886  n=20  1.3s  d=3, lam=0.08291, s=1
+  TKSS trial 20: mean ARI=0.5485  n=20  0.5s  d=6, lam=0.07785, s=2
+  TKSS trial 21: mean ARI=0.6036  n=20  2.5s  d=1, lam=0.02096, s=3
+  TKSS trial 22: mean ARI=0.5861  n=20  1.2s  d=3, lam=0.02315, s=3
+  TKSS trial 23: mean ARI=0.6247  n=20  2.5s  d=1, lam=0.01782, s=1
+  TKSS trial 24: mean ARI=0.6164  n=20  2.0s  d=2, lam=0.04374, s=1
+  TKSS trial 25: mean ARI=0.5568  n=20  0.8s  d=4, lam=0.01777, s=1
+  TKSS trial 26: mean ARI=0.6147  n=20  2.1s  d=2, lam=0.05777, s=2
+  TKSS trial 27: mean ARI=0.5936  n=20  3.1s  d=1, lam=0.2452, s=1
+  TKSS trial 28: mean ARI=0.5833  n=20  1.3s  d=3, lam=0.01539, s=2
+  TKSS trial 29: mean ARI=0.5591  n=20  0.9s  d=4, lam=0.1441, s=1
+    best mean ARI=0.6262  tune 58.6s  d=1, lam=0.01449, s=2
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold11.json
+
+=== train[375] k=3  dim=900  frames=88  σ=0.25  fold=11  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6477  NMI=0.4448  ARI=0.3037  0.0s
+
+=== train[376] k=3  dim=900  frames=160  σ=0.25  fold=11  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.5687  NMI=0.5200  ARI=0.3775  0.2s
+
+=== train[377] k=3  dim=900  frames=219  σ=0.25  fold=11  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.7854  NMI=0.5106  ARI=0.5095  0.2s
+
+=== train[378] k=3  dim=900  frames=164  σ=0.25  fold=11  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7317  NMI=0.6712  ARI=0.5429  0.2s
+
+=== train[379] k=3  dim=900  frames=252  σ=0.25  fold=11  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9167  NMI=0.8197  ARI=0.7883  0.4s
+
+=== train[380] k=3  dim=900  frames=235  σ=0.25  fold=11  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7223  ARI=0.6840  0.3s
+
+=== train[381] k=3  dim=900  frames=155  σ=0.25  fold=11  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.3935  NMI=0.0774  ARI=0.0033  0.2s
+
+=== train[382] k=3  dim=900  frames=153  σ=0.25  fold=11  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7255  NMI=0.6741  ARI=0.4825  0.2s
+
+=== train[383] k=3  dim=900  frames=149  σ=0.25  fold=11  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7785  NMI=0.7187  ARI=0.5987  0.0s
+
+=== train[384] k=3  dim=900  frames=130  σ=0.25  fold=11  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.7923  NMI=0.6066  ARI=0.5154  0.1s
+
+=== train[385] k=3  dim=900  frames=99  σ=0.25  fold=11  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.0s
+
+=== train[386] k=3  dim=900  frames=205  σ=0.25  fold=11  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9610  NMI=0.8582  ARI=0.8697  0.1s
+
+=== train[387] k=3  dim=900  frames=111  σ=0.25  fold=11  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.6847  NMI=0.3985  ARI=0.3649  0.1s
+
+=== test[374] k=3  dim=900  frames=210  σ=0.25  fold=11  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7000  NMI=0.3617  ARI=0.3157  0.2s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=12  test=['seq_000006', 'seq_000008', 'seq_000044']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.6087  n=20  2.0s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.6046  n=20  2.1s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.6067  n=20  1.1s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5695  n=20  4.1s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.6045  n=20  2.5s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.6066  n=20  0.9s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.6598  n=20  2.3s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5703  n=20  3.5s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.6086  n=20  1.1s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.6759  n=20  3.0s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.6046  n=20  0.7s  d=15, lam=0.01463, s=2
+  TKSS trial 11: mean ARI=0.5952  n=20  3.0s  d=1, lam=0.01211, s=1
+  TKSS trial 12: mean ARI=0.6009  n=20  3.0s  d=1, lam=0.05122, s=3
+  TKSS trial 13: mean ARI=0.6197  n=20  2.7s  d=3, lam=0.2955, s=3
+  TKSS trial 14: mean ARI=0.6171  n=20  2.3s  d=3, lam=0.06854, s=5
+  TKSS trial 15: mean ARI=0.6203  n=20  3.0s  d=3, lam=0.5999, s=2
+  TKSS trial 16: mean ARI=0.6097  n=20  1.4s  d=4, lam=0.04234, s=5
+  TKSS trial 17: mean ARI=0.5978  n=20  3.3s  d=1, lam=0.09033, s=3
+  TKSS trial 18: mean ARI=0.6506  n=20  2.3s  d=2, lam=0.02297, s=1
+  TKSS trial 19: mean ARI=0.5818  n=20  4.0s  d=5, lam=0.4708, s=6
+  TKSS trial 20: mean ARI=0.6006  n=20  1.5s  d=7, lam=8.827, s=2
+  TKSS trial 21: mean ARI=0.6506  n=20  2.3s  d=2, lam=0.02433, s=1
+  TKSS trial 22: mean ARI=0.6506  n=20  2.3s  d=2, lam=0.02607, s=1
+  TKSS trial 23: mean ARI=0.6058  n=20  0.7s  d=4, lam=0.01012, s=1
+  TKSS trial 24: mean ARI=0.6695  n=20  2.7s  d=2, lam=0.1244, s=2
+  TKSS trial 25: mean ARI=0.6112  n=20  1.4s  d=4, lam=0.1163, s=2
+  TKSS trial 26: mean ARI=0.5958  n=20  3.4s  d=1, lam=0.1445, s=3
+  TKSS trial 27: mean ARI=0.6298  n=20  2.9s  d=3, lam=0.4511, s=4
+  TKSS trial 28: mean ARI=0.6087  n=20  2.0s  d=5, lam=0.9403, s=2
+  TKSS trial 29: mean ARI=0.6078  n=20  2.0s  d=5, lam=1.946, s=2
+    best mean ARI=0.6759  tune 69.6s  d=2, lam=0.8313, s=1
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold12.json
+
+=== train[409] k=3  dim=900  frames=88  σ=0.25  fold=12  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6250  NMI=0.3901  ARI=0.2734  0.0s
+
+=== train[410] k=3  dim=900  frames=160  σ=0.25  fold=12  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7188  NMI=0.6158  ARI=0.5101  0.0s
+
+=== train[411] k=3  dim=900  frames=219  σ=0.25  fold=12  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.8539  NMI=0.6682  ARI=0.6689  0.2s
+
+=== train[412] k=3  dim=900  frames=164  σ=0.25  fold=12  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.7561  NMI=0.7067  ARI=0.5712  0.2s
+
+=== train[413] k=3  dim=900  frames=252  σ=0.25  fold=12  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=0.9722  NMI=0.9124  ARI=0.9217  0.4s
+
+=== train[414] k=3  dim=900  frames=235  σ=0.25  fold=12  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8638  NMI=0.7409  ARI=0.6951  0.3s
+
+=== train[415] k=3  dim=900  frames=155  σ=0.25  fold=12  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.4774  NMI=0.1255  ARI=0.0559  0.2s
+
+=== train[416] k=3  dim=900  frames=153  σ=0.25  fold=12  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7582  NMI=0.5384  ARI=0.4020  0.2s
+
+=== train[417] k=3  dim=900  frames=149  σ=0.25  fold=12  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7651  NMI=0.7140  ARI=0.5881  0.1s
+
+=== train[418] k=3  dim=900  frames=130  σ=0.25  fold=12  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8462  NMI=0.6633  ARI=0.6066  0.1s
+
+=== train[419] k=3  dim=900  frames=99  σ=0.25  fold=12  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8485  NMI=0.7524  ARI=0.6618  0.0s
+
+=== train[420] k=3  dim=900  frames=210  σ=0.25  fold=12  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.7714  NMI=0.5712  ARI=0.4613  0.2s
+
+=== train[421] k=3  dim=900  frames=111  σ=0.25  fold=12  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7748  NMI=0.5786  ARI=0.4871  0.1s
+
+=== test[408] k=3  dim=900  frames=205  σ=0.25  fold=12  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.9268  NMI=0.8389  ARI=0.8434  0.1s
+  tune_pool_groups=20: sampling from 41 held-in sequences (overlap allowed) instead of the 13 fixed fold group(s)
+
+============================================================
+σ=0.25 fold=13  test=['seq_000015', 'seq_000030', 'seq_000034']  train mats=13  test mats=1  tune mats=20
+  --- tune TKSS over 20 train mats  n_trials=30 (3 params) ---
+  TKSS trial 0: mean ARI=0.5764  n=20  1.3s  d=5, lam=1, s=2
+  TKSS trial 1: mean ARI=0.5589  n=20  1.6s  d=9, lam=1.398, s=4
+  TKSS trial 2: mean ARI=0.5743  n=20  1.0s  d=9, lam=0.1866, s=4
+  TKSS trial 3: mean ARI=0.5729  n=20  2.8s  d=7, lam=4.735, s=6
+  TKSS trial 4: mean ARI=0.5675  n=20  1.9s  d=6, lam=2.372, s=4
+  TKSS trial 5: mean ARI=0.5732  n=20  0.6s  d=9, lam=5.981, s=1
+  TKSS trial 6: mean ARI=0.5520  n=20  1.8s  d=2, lam=0.0115, s=5
+  TKSS trial 7: mean ARI=0.5657  n=20  2.5s  d=12, lam=4.074, s=6
+  TKSS trial 8: mean ARI=0.5644  n=20  1.7s  d=12, lam=0.2423, s=5
+  TKSS trial 9: mean ARI=0.5544  n=20  2.5s  d=2, lam=0.8313, s=1
+  TKSS trial 10: mean ARI=0.5728  n=20  0.5s  d=15, lam=0.01465, s=2
+  TKSS trial 11: mean ARI=0.5743  n=20  1.1s  d=5, lam=0.1949, s=3
+  TKSS trial 12: mean ARI=0.5861  n=20  1.3s  d=4, lam=0.2498, s=2
+  TKSS trial 13: mean ARI=0.5845  n=20  1.5s  d=4, lam=0.5477, s=2
+  TKSS trial 14: mean ARI=0.5739  n=20  1.3s  d=3, lam=0.05562, s=2
+  TKSS trial 15: mean ARI=0.5753  n=20  3.5s  d=1, lam=0.4298, s=3
+  TKSS trial 16: mean ARI=0.5846  n=20  1.4s  d=4, lam=0.08226, s=3
+  TKSS trial 17: mean ARI=0.5746  n=20  0.7s  d=7, lam=0.04166, s=3
+  TKSS trial 18: mean ARI=0.5741  n=20  0.7s  d=4, lam=0.05714, s=1
+  TKSS trial 19: mean ARI=0.5769  n=20  3.6s  d=1, lam=0.09726, s=3
+  TKSS trial 20: mean ARI=0.5741  n=20  0.7s  d=7, lam=0.02159, s=2
+  TKSS trial 21: mean ARI=0.5844  n=20  1.6s  d=4, lam=0.4213, s=2
+  TKSS trial 22: mean ARI=0.5970  n=20  1.8s  d=3, lam=0.4685, s=3
+  TKSS trial 23: mean ARI=0.5871  n=20  1.5s  d=3, lam=0.12, s=3
+  TKSS trial 24: mean ARI=0.5544  n=20  2.8s  d=2, lam=0.135, s=4
+  TKSS trial 25: mean ARI=0.5767  n=20  1.2s  d=6, lam=0.3106, s=3
+  TKSS trial 26: mean ARI=0.5954  n=20  1.7s  d=3, lam=0.1261, s=5
+  TKSS trial 27: mean ARI=0.5787  n=20  1.3s  d=3, lam=0.03005, s=5
+  TKSS trial 28: mean ARI=0.5860  n=20  2.9s  d=1, lam=0.1121, s=5
+  TKSS trial 29: mean ARI=0.5850  n=20  2.3s  d=3, lam=0.9401, s=6
+    best mean ARI=0.5970  tune 51.3s  d=3, lam=0.4685, s=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0.25_params_knownk_cv_tkss_k3_sigma0p25_sigma0.25_fold13.json
+
+=== train[443] k=3  dim=900  frames=88  σ=0.25  fold=13  seqs=['seq_000003', 'seq_000005', 'seq_000035'] ===
+  TKSS: k_hat=3  ACC=0.6705  NMI=0.5212  ARI=0.3972  0.0s
+
+=== train[444] k=3  dim=900  frames=160  σ=0.25  fold=13  seqs=['seq_000019', 'seq_000024', 'seq_000033'] ===
+  TKSS: k_hat=3  ACC=0.7438  NMI=0.6271  ARI=0.5293  0.1s
+
+=== train[445] k=3  dim=900  frames=219  σ=0.25  fold=13  seqs=['seq_000002', 'seq_000012', 'seq_000023'] ===
+  TKSS: k_hat=3  ACC=0.9041  NMI=0.7888  ARI=0.7597  0.1s
+
+=== train[446] k=3  dim=900  frames=164  σ=0.25  fold=13  seqs=['seq_000020', 'seq_000022', 'seq_000028'] ===
+  TKSS: k_hat=3  ACC=0.6829  NMI=0.6921  ARI=0.5407  0.2s
+
+=== train[447] k=3  dim=900  frames=252  σ=0.25  fold=13  seqs=['seq_000004', 'seq_000011', 'seq_000042'] ===
+  TKSS: k_hat=3  ACC=1.0000  NMI=1.0000  ARI=1.0000  0.1s
+
+=== train[448] k=3  dim=900  frames=235  σ=0.25  fold=13  seqs=['seq_000017', 'seq_000031', 'seq_000039'] ===
+  TKSS: k_hat=3  ACC=0.8766  NMI=0.7812  ARI=0.7272  0.3s
+
+=== train[449] k=3  dim=900  frames=155  σ=0.25  fold=13  seqs=['seq_000009', 'seq_000021', 'seq_000029'] ===
+  TKSS: k_hat=3  ACC=0.8065  NMI=0.6892  ARI=0.6627  0.2s
+
+=== train[450] k=3  dim=900  frames=153  σ=0.25  fold=13  seqs=['seq_000018', 'seq_000036', 'seq_000043'] ===
+  TKSS: k_hat=3  ACC=0.7647  NMI=0.5466  ARI=0.4152  0.1s
+
+=== train[451] k=3  dim=900  frames=149  σ=0.25  fold=13  seqs=['seq_000001', 'seq_000025', 'seq_000026'] ===
+  TKSS: k_hat=3  ACC=0.7450  NMI=0.6256  ARI=0.5211  0.0s
+
+=== train[452] k=3  dim=900  frames=130  σ=0.25  fold=13  seqs=['seq_000027', 'seq_000040', 'seq_000041'] ===
+  TKSS: k_hat=3  ACC=0.8615  NMI=0.6819  ARI=0.6399  0.1s
+
+=== train[453] k=3  dim=900  frames=99  σ=0.25  fold=13  seqs=['seq_000007', 'seq_000010', 'seq_000037'] ===
+  TKSS: k_hat=3  ACC=0.8687  NMI=0.7683  ARI=0.6953  0.0s
+
+=== train[454] k=3  dim=900  frames=210  σ=0.25  fold=13  seqs=['seq_000013', 'seq_000014', 'seq_000038'] ===
+  TKSS: k_hat=3  ACC=0.9000  NMI=0.7498  ARI=0.7355  0.1s
+
+=== train[455] k=3  dim=900  frames=205  σ=0.25  fold=13  seqs=['seq_000006', 'seq_000008', 'seq_000044'] ===
+  TKSS: k_hat=3  ACC=0.8390  NMI=0.6502  ARI=0.6185  0.1s
+
+=== test[442] k=3  dim=900  frames=111  σ=0.25  fold=13  seqs=['seq_000015', 'seq_000030', 'seq_000034'] ===
+  TKSS: k_hat=3  ACC=0.7658  NMI=0.5695  ARI=0.4688  0.1s
+
+=== inference time per method ===
+  TKSS: mean=0.1604s  std=0.1358s  total=31.4s  n=196
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_tkss_k3_sigma0p25_timing.json
+
+=== mean over matrices ===
+  TKSS train σ=0.25: ACC=0.7815  NMI=0.6362  ARI=0.5616  n=182
+  TKSS test σ=0.25: ACC=0.8004  NMI=0.6602  ARI=0.5761  n=14
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0.25_results_knownk_cv_tkss_k3_sigma0p25.csv
+end=Sun Sep  6 19:16:18 EDT 2026
+Experiment completed!

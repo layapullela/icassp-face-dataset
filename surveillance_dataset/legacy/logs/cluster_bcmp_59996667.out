@@ -1,0 +1,142 @@
+host=gl3064.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Thu Sep  3 13:06:34 EDT 2026  k=12  mode=clean
+Loading P1E_S1_C1
+  Y: (576, 1103)  people=25  frames/person=[60, 61, 50, 36, 16, 14, 41, 56, 55, 49, 66, 50, 63, 38, 61, 48, 37, 58, 13, 43, 42, 15, 64, 39, 28]  min=13
+Loading P1E_S1_C2
+  Y: (576, 966)  people=25  frames/person=[46, 14, 20, 40, 50, 45, 15, 23, 39, 40, 61, 35, 47, 33, 46, 36, 41, 45, 42, 36, 33, 50, 53, 33, 43]  min=14
+Loading P1E_S1_C3
+  Y: (576, 453)  people=25  frames/person=[15, 22, 16, 16, 17, 13, 14, 19, 14, 25, 26, 12, 21, 18, 22, 19, 13, 19, 16, 15, 8, 15, 30, 20, 28]  min=8
+  warning: 2 people have fewer than 13 available frames (kept all)
+Loading P1E_S2_C1
+  Y: (576, 1081)  people=25  frames/person=[65, 47, 50, 36, 67, 59, 17, 46, 48, 40, 61, 68, 19, 32, 42, 26, 45, 58, 54, 53, 33, 17, 48, 30, 20]  min=17
+Loading P1E_S2_C2
+  Y: (576, 974)  people=25  frames/person=[49, 48, 38, 41, 53, 51, 30, 47, 17, 36, 22, 57, 43, 25, 42, 41, 39, 45, 30, 17, 40, 54, 43, 33, 33]  min=17
+Loading P1E_S2_C3
+  Y: (576, 742)  people=25  frames/person=[14, 36, 28, 32, 42, 37, 31, 33, 19, 23, 42, 36, 35, 20, 33, 29, 24, 32, 32, 29, 32, 42, 14, 27, 20]  min=14
+Loading P1E_S3_C1
+  Y: (576, 1082)  people=25  frames/person=[73, 64, 44, 52, 58, 45, 42, 43, 33, 33, 33, 55, 25, 34, 36, 48, 54, 51, 45, 41, 16, 75, 29, 38, 15]  min=15
+Loading P1E_S3_C2
+  Y: (576, 936)  people=25  frames/person=[57, 40, 21, 26, 49, 75, 34, 18, 70, 26, 18, 43, 45, 28, 37, 25, 48, 35, 34, 33, 32, 24, 57, 30, 31]  min=18
+Loading P1E_S3_C3
+  Y: (576, 789)  people=25  frames/person=[43, 36, 24, 33, 37, 18, 29, 37, 52, 18, 53, 40, 31, 22, 30, 39, 35, 20, 30, 28, 15, 58, 25, 20, 16]  min=15
+Loading P1E_S4_C1
+  Y: (576, 1178)  people=25  frames/person=[58, 16, 46, 56, 49, 80, 22, 21, 22, 35, 59, 59, 64, 41, 53, 46, 24, 85, 48, 45, 46, 50, 56, 48, 49]  min=16
+Loading P1E_S4_C2
+  Y: (576, 1037)  people=25  frames/person=[45, 13, 41, 36, 41, 65, 38, 27, 65, 30, 63, 48, 50, 35, 18, 36, 47, 36, 37, 37, 38, 50, 68, 37, 36]  min=13
+Loading P1E_S4_C3
+  Y: (576, 696)  people=25  frames/person=[28, 29, 22, 29, 24, 25, 31, 17, 33, 25, 37, 19, 28, 21, 25, 27, 25, 41, 27, 29, 26, 31, 45, 29, 23]  min=17
+Loading P1L_S1_C1
+  Y: (576, 1252)  people=25  frames/person=[20, 68, 16, 52, 60, 69, 58, 52, 64, 41, 29, 72, 58, 30, 63, 65, 65, 20, 57, 57, 58, 40, 72, 48, 18]  min=16
+Loading P1L_S1_C2
+  Y: (576, 1087)  people=25  frames/person=[60, 36, 37, 47, 66, 33, 52, 54, 24, 49, 84, 37, 58, 19, 19, 66, 56, 61, 48, 49, 16, 35, 44, 22, 15]  min=15
+Loading P1L_S1_C3
+  Y: (576, 556)  people=25  frames/person=[27, 29, 20, 26, 19, 21, 22, 12, 28, 25, 20, 25, 23, 18, 21, 23, 25, 26, 23, 16, 18, 18, 30, 18, 23]  min=12
+  warning: 1 people have fewer than 13 available frames (kept all)
+Loading P1L_S2_C1
+  Y: (576, 1348)  people=25  frames/person=[66, 68, 53, 64, 81, 18, 73, 20, 57, 65, 97, 45, 23, 13, 14, 76, 20, 75, 71, 68, 62, 73, 66, 48, 32]  min=13
+Loading P1L_S2_C2
+  Y: (576, 1058)  people=25  frames/person=[44, 49, 49, 62, 22, 48, 13, 61, 39, 30, 47, 39, 14, 17, 13, 40, 64, 80, 49, 57, 57, 76, 29, 34, 25]  min=13
+Loading P1L_S2_C3
+  Y: (576, 853)  people=25  frames/person=[40, 36, 29, 28, 35, 37, 36, 21, 47, 19, 54, 46, 34, 31, 35, 32, 35, 23, 37, 29, 36, 43, 45, 19, 26]  min=19
+Loading P1L_S3_C1
+  Y: (576, 1337)  people=25  frames/person=[64, 55, 23, 66, 63, 75, 71, 59, 70, 58, 37, 62, 28, 47, 58, 79, 51, 64, 24, 56, 30, 83, 29, 59, 26]  min=23
+Loading P1L_S3_C2
+  Y: (576, 1206)  people=25  frames/person=[41, 66, 48, 20, 63, 31, 61, 28, 72, 44, 42, 56, 45, 38, 61, 69, 68, 90, 30, 15, 58, 32, 62, 14, 52]  min=14
+Loading P1L_S3_C3
+  Y: (576, 997)  people=25  frames/person=[48, 50, 38, 38, 39, 45, 35, 19, 34, 26, 66, 39, 44, 36, 47, 18, 44, 61, 38, 31, 25, 40, 51, 44, 41]  min=18
+Loading P1L_S4_C1
+  Y: (576, 1112)  people=25  frames/person=[37, 39, 44, 69, 39, 71, 54, 35, 19, 14, 64, 29, 56, 57, 22, 52, 47, 33, 72, 49, 23, 39, 38, 52, 58]  min=14
+Loading P1L_S4_C2
+  Y: (576, 1287)  people=25  frames/person=[50, 16, 30, 54, 24, 48, 13, 71, 47, 54, 85, 72, 62, 53, 63, 71, 71, 47, 61, 22, 51, 76, 76, 20, 50]  min=13
+Loading P1L_S4_C3
+  Y: (576, 854)  people=25  frames/person=[41, 41, 23, 26, 32, 34, 21, 13, 41, 29, 54, 36, 31, 34, 28, 39, 39, 39, 38, 26, 25, 50, 41, 33, 40]  min=13
+sequences=24  people=25  k=12
+frames/person ~ Unif[30, 100]
+down_hw=24  sigmas=(0.0,)  n_trials=50  known_k=True  csv=split_k12_clean_min30_trials50_knownk_scaled_blockk12min.csv
+train 0 k=12  people=['0004', '0005', '0006', '0009', '0013', '0014', '0019', '0022', '0024', '0025', '0026', '0027']
+test    k=12  people=['0001', '0003', '0007', '0010', '0011', '0012', '0015', '0016', '0017', '0020', '0021', '0023']
+methods=['SSC-Block-TV', 'OSC', 'TKSS', 'BDOSC', 'Gram-NCut']  append=False  hetero_noise=False  no_tune=False
+σ=0.0: train mats=24  test mats=24
+min_class_frames=12: keep matrices where every person has > 12 frames
+  skip σ=0.0 train P1E_S1_C3[0]: class sizes too small for window 12  people=['0004', '0005', '0006', '0009', '0013', '0014', '0019', '0022', '0024', '0025', '0026', '0027']
+  skipped 1 σ=0.0 train matrices with a class <= 12 frames
+  skip σ=0.0 test P1E_S1_C3[0]: class sizes too small for window 12  people=['0001', '0003', '0007', '0010', '0011', '0012', '0015', '0016', '0017', '0020', '0021', '0023']
+  skip σ=0.0 test P1L_S1_C3[0]: class sizes too small for window 12  people=['0001', '0003', '0007', '0010', '0011', '0012', '0015', '0016', '0017', '0020', '0021', '0023']
+  skipped 2 σ=0.0 test matrices with a class <= 12 frames
+after min-class filter: σ=0.0 train=23 test=22
+pooled train mats for tuning=23
+
+============================================================
+BDOSC: skip tuning, fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/split_k12_clean_min30_trials50_knownk_scaled_params_blockk12min.json
+
+============================================================
+Gram-NCut: skip tuning, fixed 
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/surveillance_dataset/split_k12_clean_min30_trials50_knownk_scaled_params_blockk12min.json
+
+============================================================
+--- tune SSC-Block-TV over 23 train mats  n_trials=75 (3 params) ---
+  SSC-Block-TV trial 0: mean ARI=0.6092  n=23  55.6s  lambda_e=1, lambda_z=0.1, gamma_q=0.1
+  SSC-Block-TV trial 1: mean ARI=0.6779  n=23  55.9s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577
+  SSC-Block-TV trial 2: mean ARI=0.4451  n=23  55.9s  lambda_e=0.4312, lambda_z=0.0495, gamma_q=0.3833
+  SSC-Block-TV trial 3: mean ARI=0.5680  n=23  68.3s  lambda_e=0.2055, lambda_z=3.691, gamma_q=7.156
+  SSC-Block-TV trial 4: mean ARI=0.6803  n=23  56.1s  lambda_e=0.1414, lambda_z=1.469, gamma_q=0.1305
+  SSC-Block-TV trial 5: mean ARI=0.6863  n=23  56.0s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924
+  SSC-Block-TV trial 6: mean ARI=0.4681  n=23  56.1s  lambda_e=0.01826, lambda_z=0.001205, gamma_q=2.14
+  SSC-Block-TV trial 7: mean ARI=0.6777  n=23  56.1s  lambda_e=2.16, lambda_z=3.02, gamma_q=8.212
+  SSC-Block-TV trial 8: mean ARI=0.4685  n=23  76.6s  lambda_e=2.497, lambda_z=0.07013, gamma_q=1.325
+  SSC-Block-TV trial 9: mean ARI=0.7852  n=23  56.1s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745
+  SSC-Block-TV trial 10: mean ARI=0.7155  n=23  56.2s  lambda_e=0.01151, lambda_z=0.001661, gamma_q=0.001211
+  SSC-Block-TV trial 11: mean ARI=0.7110  n=23  56.0s  lambda_e=0.01149, lambda_z=0.001291, gamma_q=0.001066
+  SSC-Block-TV trial 12: mean ARI=0.6811  n=23  76.0s  lambda_e=0.03167, lambda_z=0.009285, gamma_q=0.008941
+  SSC-Block-TV trial 13: mean ARI=0.7760  n=23  65.8s  lambda_e=0.03944, lambda_z=0.3969, gamma_q=0.008729
+  SSC-Block-TV trial 14: mean ARI=0.7637  n=23  55.9s  lambda_e=0.05812, lambda_z=0.4581, gamma_q=0.01655
+  SSC-Block-TV trial 15: mean ARI=0.7765  n=23  41.6s  lambda_e=0.06767, lambda_z=0.2348, gamma_q=0.01265
+  SSC-Block-TV trial 16: mean ARI=0.7232  n=23  38.5s  lambda_e=0.105, lambda_z=0.126, gamma_q=0.03011
+  SSC-Block-TV trial 17: mean ARI=0.7546  n=23  38.5s  lambda_e=7.949, lambda_z=0.01834, gamma_q=0.003468
+  SSC-Block-TV trial 18: mean ARI=0.6961  n=23  38.3s  lambda_e=0.07095, lambda_z=0.2143, gamma_q=0.05515
+  SSC-Block-TV trial 19: mean ARI=0.7448  n=23  55.0s  lambda_e=0.02828, lambda_z=0.01991, gamma_q=0.005383
+  SSC-Block-TV trial 20: mean ARI=0.7454  n=23  40.5s  lambda_e=0.1931, lambda_z=1.117, gamma_q=0.02189
+  SSC-Block-TV trial 21: mean ARI=0.7851  n=23  40.6s  lambda_e=0.04202, lambda_z=0.2974, gamma_q=0.006803
+  SSC-Block-TV trial 22: mean ARI=0.7901  n=23  40.4s  lambda_e=0.0669, lambda_z=0.2777, gamma_q=0.003028
+  SSC-Block-TV trial 23: mean ARI=0.7389  n=23  40.5s  lambda_e=0.02125, lambda_z=9.821, gamma_q=0.002942
+  SSC-Block-TV trial 24: mean ARI=0.7866  n=23  40.8s  lambda_e=0.04173, lambda_z=1.507, gamma_q=0.004492
+  SSC-Block-TV trial 25: mean ARI=0.7656  n=23  40.4s  lambda_e=0.102, lambda_z=1.25, gamma_q=0.003385
+  SSC-Block-TV trial 26: mean ARI=0.7849  n=23  40.4s  lambda_e=0.01951, lambda_z=0.769, gamma_q=0.001747
+  SSC-Block-TV trial 27: mean ARI=0.7265  n=23  40.5s  lambda_e=0.0605, lambda_z=2.179, gamma_q=0.0378
+  SSC-Block-TV trial 28: mean ARI=0.7806  n=23  40.5s  lambda_e=0.2345, lambda_z=0.147, gamma_q=0.0051
+  SSC-Block-TV trial 29: mean ARI=0.7899  n=23  40.9s  lambda_e=0.0142, lambda_z=0.05288, gamma_q=0.002334
+  SSC-Block-TV trial 30: mean ARI=0.7901  n=23  40.6s  lambda_e=0.01039, lambda_z=0.04582, gamma_q=0.002079
+  SSC-Block-TV trial 31: mean ARI=0.7898  n=23  40.4s  lambda_e=0.01177, lambda_z=0.04108, gamma_q=0.00212
+  SSC-Block-TV trial 32: mean ARI=0.7898  n=23  40.5s  lambda_e=0.01033, lambda_z=0.03808, gamma_q=0.002011
+  SSC-Block-TV trial 33: mean ARI=0.7539  n=23  40.4s  lambda_e=0.01498, lambda_z=0.005998, gamma_q=0.001011
+  SSC-Block-TV trial 34: mean ARI=0.7917  n=23  40.5s  lambda_e=0.01585, lambda_z=0.03285, gamma_q=0.001996
+  SSC-Block-TV trial 35: mean ARI=0.7652  n=23  40.7s  lambda_e=0.02973, lambda_z=0.07063, gamma_q=0.01082
+  SSC-Block-TV trial 36: mean ARI=0.7927  n=23  40.5s  lambda_e=0.01459, lambda_z=0.02243, gamma_q=0.001846
+  SSC-Block-TV trial 37: mean ARI=0.6713  n=23  46.5s  lambda_e=0.3484, lambda_z=0.004653, gamma_q=0.0064
+  SSC-Block-TV trial 38: mean ARI=0.7743  n=23  40.7s  lambda_e=0.01778, lambda_z=0.01544, gamma_q=0.001289
+  SSC-Block-TV trial 39: mean ARI=0.4235  n=23  40.7s  lambda_e=0.1056, lambda_z=0.02799, gamma_q=0.1965
+  SSC-Block-TV trial 40: mean ARI=0.7213  n=23  40.8s  lambda_e=0.8573, lambda_z=0.002849, gamma_q=0.001787
+  SSC-Block-TV trial 41: mean ARI=0.7790  n=23  53.7s  lambda_e=0.01565, lambda_z=0.08793, gamma_q=0.00257
+  SSC-Block-TV trial 42: mean ARI=0.7501  n=23  59.5s  lambda_e=0.0244, lambda_z=0.01124, gamma_q=0.002572
+  SSC-Block-TV trial 43: mean ARI=0.7923  n=23  56.0s  lambda_e=0.01453, lambda_z=0.05763, gamma_q=0.001511
+  SSC-Block-TV trial 44: mean ARI=0.7818  n=23  50.1s  lambda_e=0.03806, lambda_z=0.02787, gamma_q=0.001442
+  SSC-Block-TV trial 45: mean ARI=0.7594  n=23  40.2s  lambda_e=0.01451, lambda_z=0.1097, gamma_q=0.005542
+  SSC-Block-TV trial 46: mean ARI=0.4157  n=23  40.4s  lambda_e=0.02376, lambda_z=0.05918, gamma_q=0.6863
+  SSC-Block-TV trial 47: mean ARI=0.7778  n=23  40.6s  lambda_e=0.01161, lambda_z=0.02806, gamma_q=0.003784
+  SSC-Block-TV trial 48: mean ARI=0.7841  n=23  40.1s  lambda_e=0.01004, lambda_z=0.1593, gamma_q=0.001542
+  SSC-Block-TV trial 49: mean ARI=0.6565  n=23  40.5s  lambda_e=0.04459, lambda_z=0.009502, gamma_q=0.01301
+  SSC-Block-TV trial 50: mean ARI=0.7864  n=23  40.4s  lambda_e=0.01921, lambda_z=0.609, gamma_q=0.001062
+  SSC-Block-TV trial 51: mean ARI=0.3916  n=23  40.2s  lambda_e=0.01458, lambda_z=0.05047, gamma_q=5.046
+  SSC-Block-TV trial 52: mean ARI=0.7832  n=23  40.2s  lambda_e=0.0296, lambda_z=0.08079, gamma_q=0.0026
+  SSC-Block-TV trial 53: mean ARI=0.7365  n=23  40.3s  lambda_e=0.01324, lambda_z=0.03688, gamma_q=0.008386
+  SSC-Block-TV trial 54: mean ARI=0.7459  n=23  40.4s  lambda_e=0.01892, lambda_z=0.01396, gamma_q=0.003723
+  SSC-Block-TV trial 55: mean ARI=0.7786  n=23  40.5s  lambda_e=0.05479, lambda_z=0.02452, gamma_q=0.002138
+  SSC-Block-TV trial 56: mean ARI=0.7461  n=23  40.4s  lambda_e=0.08117, lambda_z=0.00726, gamma_q=0.001454
+  SSC-Block-TV trial 57: mean ARI=0.7778  n=23  40.5s  lambda_e=0.02548, lambda_z=0.1935, gamma_q=0.00443
+  SSC-Block-TV trial 58: mean ARI=0.7871  n=23  40.7s  lambda_e=0.03581, lambda_z=0.05333, gamma_q=0.002811
+  SSC-Block-TV trial 59: mean ARI=0.7497  n=23  41.2s  lambda_e=6.706, lambda_z=0.1084, gamma_q=0.02017
+  SSC-Block-TV trial 60: mean ARI=0.7842  n=23  40.5s  lambda_e=0.05137, lambda_z=0.2711, gamma_q=0.007701
+  SSC-Block-TV trial 61: mean ARI=0.7905  n=23  41.0s  lambda_e=0.01324, lambda_z=0.03924, gamma_q=0.002135
+  SSC-Block-TV trial 62: mean ARI=0.7888  n=23  48.1s  lambda_e=0.0168, lambda_z=0.01955, gamma_q=0.001004
+  SSC-Block-TV trial 63: mean ARI=0.7912  n=23  56.4s  lambda_e=0.01187, lambda_z=0.04482, gamma_q=0.001876
+  SSC-Block-TV trial 64: mean ARI=0.7968  n=23  56.2s  lambda_e=0.01213, lambda_z=0.03461, gamma_q=0.001434

@@ -1,0 +1,647 @@
+========================================
+Job: cvb_ssc_block_tv_col21_k5_s0
+Method: SSC-Block-TV-Col21  k: 5  sigma: 0.0  tune_pool_groups: 20
+========================================
+host=gl3155.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Sun Sep  6 19:01:09 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=20  down_hw=30  full_data=False  n_frames ~ Unif[10, 100]  seed=0
+hetero_noise=False  sigmas=(0.0,)  append=False  no_tune=False  known_k=True  csv=ballet_cluster_sigmas_0_results_knownk_cv_ssc_block_tv_col21_k5_sigma0.csv
+SSC-Block-TV block_size searched in [2, 12]
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=53  dim=900
+  seq_000002: frames=78  dim=900
+  seq_000003: frames=13  dim=900
+  seq_000004: frames=84  dim=900
+  seq_000005: frames=32  dim=900
+  seq_000006: frames=89  dim=900
+  seq_000007: frames=34  dim=900
+  seq_000008: frames=33  dim=900
+  seq_000009: frames=68  dim=900
+  seq_000010: frames=17  dim=900
+  seq_000011: frames=88  dim=900
+  seq_000012: frames=86  dim=900
+  seq_000013: frames=84  dim=900
+  seq_000014: frames=51  dim=900
+  seq_000015: frames=21  dim=900
+  seq_000016: frames=21  dim=900
+  seq_000017: frames=98  dim=900
+  seq_000018: frames=44  dim=900
+  seq_000019: frames=92  dim=900
+  seq_000020: frames=55  dim=900
+  seq_000021: frames=11  dim=900
+  seq_000022: frames=15  dim=900
+  seq_000023: frames=55  dim=900
+  seq_000024: frames=20  dim=900
+  seq_000025: frames=78  dim=900
+  seq_000026: frames=18  dim=900
+  seq_000027: frames=36  dim=900
+  seq_000028: frames=94  dim=900
+  seq_000029: frames=76  dim=900
+  seq_000030: frames=39  dim=900
+  seq_000031: frames=48  dim=900
+  seq_000032: frames=36  dim=900
+  seq_000033: frames=48  dim=900
+  seq_000034: frames=51  dim=900
+  seq_000035: frames=43  dim=900
+  seq_000036: frames=80  dim=900
+  seq_000037: frames=48  dim=900
+  seq_000038: frames=75  dim=900
+  seq_000039: frames=89  dim=900
+  seq_000040: frames=43  dim=900
+  seq_000041: frames=51  dim=900
+  seq_000042: frames=80  dim=900
+  seq_000043: frames=29  dim=900
+  seq_000044: frames=83  dim=900
+
+Methods: ['SSC-Block-TV-Col21']
+CV mode: 8 folds of size 5, each rotated as test
+  4 sequences unused (remainder dropped)
+  fold 0: ['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']
+  fold 1: ['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']
+  fold 2: ['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']
+  fold 3: ['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']
+  fold 4: ['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']
+  fold 5: ['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']
+  fold 6: ['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']
+  fold 7: ['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=0  test=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7376  n=20  12.4s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6684  n=20  12.2s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.6081  n=20  12.7s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.6558  n=20  12.8s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5406  n=20  13.5s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6131  n=20  12.6s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5902  n=20  11.6s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6245  n=20  11.6s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7282  n=20  12.6s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6493  n=20  12.7s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6036  n=20  13.5s  lambda_e=1.991, lambda_z=0.001622, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7496  n=20  12.9s  lambda_e=1.391, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7401  n=20  12.1s  lambda_e=1.795, lambda_z=0.01028, gamma_q=0.0233, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7427  n=20  12.6s  lambda_e=2.455, lambda_z=0.006401, gamma_q=0.01329, block_size=4
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7351  n=20  12.9s  lambda_e=3.21, lambda_z=0.005487, gamma_q=0.007544, block_size=4
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.7345  n=20  12.9s  lambda_e=0.08313, lambda_z=0.00995, gamma_q=0.02259, block_size=5
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.6958  n=20  13.0s  lambda_e=3.186, lambda_z=0.001092, gamma_q=0.006923, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.6052  n=20  12.7s  lambda_e=0.9172, lambda_z=0.003821, gamma_q=0.3548, block_size=6
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7498  n=20  12.0s  lambda_e=0.09752, lambda_z=0.02564, gamma_q=0.02648, block_size=3
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.7421  n=20  13.1s  lambda_e=0.05128, lambda_z=0.04089, gamma_q=0.2089, block_size=3
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.7322  n=20  12.7s  lambda_e=0.09327, lambda_z=0.02051, gamma_q=0.03898, block_size=8
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7299  n=20  14.1s  lambda_e=3.52, lambda_z=0.08442, gamma_q=0.01416, block_size=3
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7639  n=20  12.9s  lambda_e=1.309, lambda_z=0.0116, gamma_q=0.003165, block_size=5
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.7415  n=20  12.3s  lambda_e=0.7846, lambda_z=0.01852, gamma_q=0.002808, block_size=6
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7351  n=20  12.2s  lambda_e=0.03603, lambda_z=0.002994, gamma_q=0.003735, block_size=5
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.6543  n=20  13.1s  lambda_e=0.1967, lambda_z=0.1078, gamma_q=0.001262, block_size=3
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.7483  n=20  12.8s  lambda_e=5.378, lambda_z=0.01812, gamma_q=0.0071, block_size=6
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7447  n=20  13.4s  lambda_e=1.063, lambda_z=0.04955, gamma_q=0.03263, block_size=2
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.6106  n=20  12.9s  lambda_e=0.1295, lambda_z=0.01122, gamma_q=0.1179, block_size=5
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.7162  n=20  12.2s  lambda_e=0.01014, lambda_z=0.09778, gamma_q=0.1345, block_size=3
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7478  n=20  12.5s  lambda_e=1.567, lambda_z=0.00262, gamma_q=0.004409, block_size=7
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7494  n=20  12.8s  lambda_e=5.265, lambda_z=0.01961, gamma_q=0.006668, block_size=6
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7442  n=20  12.8s  lambda_e=5.126, lambda_z=0.02565, gamma_q=0.002226, block_size=6
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.6678  n=20  12.7s  lambda_e=0.5926, lambda_z=0.1768, gamma_q=0.01848, block_size=8
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7345  n=20  12.7s  lambda_e=0.3007, lambda_z=0.07305, gamma_q=0.0546, block_size=5
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.7486  n=20  11.6s  lambda_e=1.216, lambda_z=0.01428, gamma_q=0.008379, block_size=7
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.7442  n=20  13.0s  lambda_e=5.135, lambda_z=0.00624, gamma_q=0.00442, block_size=4
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.7419  n=20  12.8s  lambda_e=0.5589, lambda_z=0.02689, gamma_q=0.001686, block_size=6
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.6709  n=20  12.8s  lambda_e=9.761, lambda_z=0.2124, gamma_q=0.03114, block_size=7
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.7207  n=20  12.9s  lambda_e=0.01572, lambda_z=0.05553, gamma_q=0.07794, block_size=5
+    best mean ARI=0.7639  tune 507.8s  lambda_e=1.309, lambda_z=0.0116, gamma_q=0.003165, block_size=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold0.json
+
+=== train[1] k=5  dim=900  frames=322  σ=0.0  fold=0  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7764  NMI=0.8057  ARI=0.6298  0.8s
+
+=== train[2] k=5  dim=900  frames=361  σ=0.0  fold=0  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  0.9s
+
+=== train[3] k=5  dim=900  frames=322  σ=0.0  fold=0  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5963  NMI=0.7398  ARI=0.5340  0.8s
+
+=== train[4] k=5  dim=900  frames=274  σ=0.0  fold=0  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.6s
+
+=== train[5] k=5  dim=900  frames=226  σ=0.0  fold=0  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7699  NMI=0.8002  ARI=0.7345  0.4s
+
+=== train[6] k=5  dim=900  frames=225  σ=0.0  fold=0  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8872  ARI=0.8319  0.4s
+
+=== train[7] k=5  dim=900  frames=310  σ=0.0  fold=0  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9032  NMI=0.8960  ARI=0.8654  0.7s
+
+=== test[0] k=5  dim=900  frames=200  σ=0.0  fold=0  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8500  NMI=0.8997  ARI=0.8960  0.3s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=1  test=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7235  n=20  10.4s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6448  n=20  10.7s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.6360  n=20  11.1s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.5693  n=20  11.1s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.4934  n=20  11.8s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6092  n=20  11.3s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5578  n=20  10.7s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6399  n=20  10.1s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.6863  n=20  11.0s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6274  n=20  11.1s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6047  n=20  11.8s  lambda_e=1.991, lambda_z=0.001622, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7078  n=20  11.3s  lambda_e=1.391, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.6776  n=20  11.3s  lambda_e=1.795, lambda_z=0.01028, gamma_q=0.0233, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7113  n=20  10.4s  lambda_e=1.787, lambda_z=0.06553, gamma_q=0.1913, block_size=5
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.5760  n=20  10.7s  lambda_e=0.07802, lambda_z=0.005487, gamma_q=0.2531, block_size=5
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.7491  n=20  11.4s  lambda_e=4.139, lambda_z=0.08662, gamma_q=0.2771, block_size=4
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7327  n=20  11.3s  lambda_e=3.99, lambda_z=0.1275, gamma_q=0.9596, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.6322  n=20  11.5s  lambda_e=3.973, lambda_z=0.0154, gamma_q=0.775, block_size=3
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7013  n=20  12.3s  lambda_e=4.125, lambda_z=0.1825, gamma_q=5.492, block_size=3
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.6091  n=20  10.8s  lambda_e=3.949, lambda_z=8.967, gamma_q=0.4658, block_size=7
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.6136  n=20  10.3s  lambda_e=9.866, lambda_z=0.00198, gamma_q=2.207, block_size=4
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7050  n=20  11.2s  lambda_e=1.083, lambda_z=0.1289, gamma_q=0.08447, block_size=6
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7461  n=20  11.3s  lambda_e=0.8043, lambda_z=0.09841, gamma_q=0.1694, block_size=4
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.7511  n=20  11.4s  lambda_e=3.267, lambda_z=0.474, gamma_q=0.5016, block_size=3
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7602  n=20  11.5s  lambda_e=0.7439, lambda_z=0.4436, gamma_q=0.4399, block_size=3
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.7517  n=20  11.4s  lambda_e=2.431, lambda_z=0.9301, gamma_q=0.4465, block_size=3
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.6491  n=20  10.9s  lambda_e=0.1021, lambda_z=1.367, gamma_q=2.495, block_size=2
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7466  n=20  11.0s  lambda_e=2.623, lambda_z=0.3825, gamma_q=0.4709, block_size=3
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.7579  n=20  11.4s  lambda_e=0.7652, lambda_z=0.7724, gamma_q=0.5966, block_size=3
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.6784  n=20  11.8s  lambda_e=0.6975, lambda_z=2.972, gamma_q=3.235, block_size=2
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.6001  n=20  11.2s  lambda_e=0.2467, lambda_z=0.7941, gamma_q=0.03664, block_size=6
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7781  n=20  11.5s  lambda_e=1.082, lambda_z=0.9539, gamma_q=0.5482, block_size=3
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7587  n=20  11.1s  lambda_e=1.023, lambda_z=0.8219, gamma_q=0.6431, block_size=3
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.5806  n=20  11.0s  lambda_e=0.6131, lambda_z=3.046, gamma_q=0.1189, block_size=2
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7051  n=20  11.6s  lambda_e=1.081, lambda_z=0.702, gamma_q=0.9236, block_size=3
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.6910  n=20  11.3s  lambda_e=0.3324, lambda_z=1.169, gamma_q=1.614, block_size=5
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.6665  n=20  11.8s  lambda_e=0.1404, lambda_z=0.2814, gamma_q=3.445, block_size=2
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.6182  n=20  11.4s  lambda_e=0.4672, lambda_z=5.106, gamma_q=0.6863, block_size=4
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.6670  n=20  11.1s  lambda_e=1.056, lambda_z=0.647, gamma_q=0.2875, block_size=6
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.5851  n=20  10.4s  lambda_e=0.74, lambda_z=1.887, gamma_q=0.1226, block_size=3
+    best mean ARI=0.7781  tune 446.6s  lambda_e=1.082, lambda_z=0.9539, gamma_q=0.5482, block_size=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold1.json
+
+=== train[29] k=5  dim=900  frames=200  σ=0.0  fold=1  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8350  NMI=0.8983  ARI=0.8938  0.3s
+
+=== train[30] k=5  dim=900  frames=361  σ=0.0  fold=1  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9169  NMI=0.9086  ARI=0.8875  0.9s
+
+=== train[31] k=5  dim=900  frames=322  σ=0.0  fold=1  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5870  NMI=0.7389  ARI=0.5303  0.7s
+
+=== train[32] k=5  dim=900  frames=274  σ=0.0  fold=1  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6168  NMI=0.7580  ARI=0.5660  0.5s
+
+=== train[33] k=5  dim=900  frames=226  σ=0.0  fold=1  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8363  NMI=0.8706  ARI=0.7826  0.4s
+
+=== train[34] k=5  dim=900  frames=225  σ=0.0  fold=1  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9289  NMI=0.8905  ARI=0.8080  0.4s
+
+=== train[35] k=5  dim=900  frames=310  σ=0.0  fold=1  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8387  NMI=0.7941  ARI=0.7515  0.7s
+
+=== test[28] k=5  dim=900  frames=322  σ=0.0  fold=1  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7671  NMI=0.8365  ARI=0.7376  0.8s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=2  test=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7359  n=20  10.3s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6728  n=20  10.2s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.6285  n=20  10.1s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.5817  n=20  10.2s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5034  n=20  10.8s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.5789  n=20  9.5s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5129  n=20  9.1s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6154  n=20  10.1s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7094  n=20  10.2s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6029  n=20  10.2s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6622  n=20  10.7s  lambda_e=1.991, lambda_z=0.001622, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7554  n=20  10.3s  lambda_e=1.391, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7394  n=20  10.1s  lambda_e=1.795, lambda_z=0.01028, gamma_q=0.0233, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7398  n=20  9.3s  lambda_e=2.455, lambda_z=0.006401, gamma_q=0.01329, block_size=4
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7486  n=20  10.3s  lambda_e=3.21, lambda_z=0.005487, gamma_q=0.007544, block_size=4
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.7359  n=20  10.3s  lambda_e=0.09713, lambda_z=0.001275, gamma_q=0.004342, block_size=5
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7464  n=20  10.3s  lambda_e=4.642, lambda_z=0.006415, gamma_q=0.006923, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.7499  n=20  10.2s  lambda_e=1.041, lambda_z=0.01959, gamma_q=0.02047, block_size=6
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.5991  n=20  10.2s  lambda_e=1.025, lambda_z=0.0256, gamma_q=0.2343, block_size=7
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.7214  n=20  10.1s  lambda_e=0.09139, lambda_z=0.08106, gamma_q=0.02584, block_size=6
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.4795  n=20  9.1s  lambda_e=1.049, lambda_z=0.01674, gamma_q=0.1828, block_size=9
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.6144  n=20  10.1s  lambda_e=4.049, lambda_z=0.003157, gamma_q=0.02218, block_size=5
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7680  n=20  10.2s  lambda_e=3.26, lambda_z=0.003684, gamma_q=0.002383, block_size=6
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.7925  n=20  10.3s  lambda_e=0.7846, lambda_z=0.01852, gamma_q=0.002428, block_size=6
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7709  n=20  10.3s  lambda_e=0.6519, lambda_z=0.00289, gamma_q=0.002649, block_size=6
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.7723  n=20  10.2s  lambda_e=0.4856, lambda_z=0.002727, gamma_q=0.001936, block_size=8
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.7715  n=20  10.1s  lambda_e=0.5966, lambda_z=0.001904, gamma_q=0.001052, block_size=8
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7603  n=20  9.1s  lambda_e=0.2154, lambda_z=0.001026, gamma_q=0.001228, block_size=8
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.7830  n=20  9.8s  lambda_e=0.1043, lambda_z=0.01076, gamma_q=0.001042, block_size=8
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.7881  n=20  10.2s  lambda_e=0.06077, lambda_z=0.01325, gamma_q=0.005151, block_size=9
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7126  n=20  10.2s  lambda_e=0.05089, lambda_z=0.07152, gamma_q=0.005159, block_size=9
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7878  n=20  10.2s  lambda_e=0.05035, lambda_z=0.01397, gamma_q=0.002179, block_size=9
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7849  n=20  10.2s  lambda_e=0.04112, lambda_z=0.01248, gamma_q=0.003378, block_size=9
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.7837  n=20  10.2s  lambda_e=0.02817, lambda_z=0.01216, gamma_q=0.003524, block_size=10
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.6523  n=20  9.2s  lambda_e=0.04626, lambda_z=0.1128, gamma_q=0.007491, block_size=9
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.7617  n=20  9.5s  lambda_e=0.01163, lambda_z=0.02543, gamma_q=0.04298, block_size=11
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.7136  n=20  10.1s  lambda_e=0.04941, lambda_z=0.05194, gamma_q=0.001887, block_size=12
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.7881  n=20  10.2s  lambda_e=0.02212, lambda_z=0.01436, gamma_q=0.005012, block_size=9
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.6748  n=20  10.3s  lambda_e=0.01685, lambda_z=0.151, gamma_q=0.00949, block_size=7
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.7844  n=20  10.1s  lambda_e=0.1402, lambda_z=0.007287, gamma_q=0.00175, block_size=11
+    best mean ARI=0.7925  tune 402.2s  lambda_e=0.7846, lambda_z=0.01852, gamma_q=0.002428, block_size=6
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold2.json
+
+=== train[57] k=5  dim=900  frames=200  σ=0.0  fold=2  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.3s
+
+=== train[58] k=5  dim=900  frames=322  σ=0.0  fold=2  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7702  NMI=0.7955  ARI=0.6243  0.8s
+
+=== train[59] k=5  dim=900  frames=322  σ=0.0  fold=2  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5994  NMI=0.7402  ARI=0.5354  0.8s
+
+=== train[60] k=5  dim=900  frames=274  σ=0.0  fold=2  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.6s
+
+=== train[61] k=5  dim=900  frames=226  σ=0.0  fold=2  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.8018  ARI=0.7361  0.4s
+
+=== train[62] k=5  dim=900  frames=225  σ=0.0  fold=2  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8905  ARI=0.8092  0.4s
+
+=== train[63] k=5  dim=900  frames=310  σ=0.0  fold=2  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8161  NMI=0.8712  ARI=0.7974  0.7s
+
+=== test[56] k=5  dim=900  frames=361  σ=0.0  fold=2  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  0.9s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=3  test=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7431  n=20  11.8s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.7270  n=20  10.9s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.6874  n=20  11.9s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.5781  n=20  12.0s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5594  n=20  12.8s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.5627  n=20  11.9s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5944  n=20  11.7s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6736  n=20  10.8s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7349  n=20  11.9s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6767  n=20  12.0s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6287  n=20  12.6s  lambda_e=1.991, lambda_z=0.001622, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7365  n=20  12.1s  lambda_e=1.391, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7322  n=20  12.0s  lambda_e=1.795, lambda_z=0.01028, gamma_q=0.0233, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7114  n=20  11.0s  lambda_e=1.787, lambda_z=0.06553, gamma_q=0.1913, block_size=5
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7629  n=20  12.0s  lambda_e=0.06356, lambda_z=0.00659, gamma_q=0.009252, block_size=5
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.7389  n=20  12.2s  lambda_e=0.05124, lambda_z=0.004483, gamma_q=0.006206, block_size=4
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.6053  n=20  12.1s  lambda_e=0.07095, lambda_z=0.001124, gamma_q=0.06353, block_size=6
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.6071  n=20  12.4s  lambda_e=0.09426, lambda_z=0.01232, gamma_q=0.3523, block_size=3
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7575  n=20  11.9s  lambda_e=0.02874, lambda_z=0.1349, gamma_q=0.02141, block_size=8
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.6637  n=20  10.9s  lambda_e=0.03244, lambda_z=0.004347, gamma_q=0.02584, block_size=8
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.7641  n=20  11.8s  lambda_e=0.01041, lambda_z=0.01591, gamma_q=0.004194, block_size=9
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7731  n=20  12.0s  lambda_e=0.01056, lambda_z=0.01766, gamma_q=0.003666, block_size=9
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7635  n=20  11.9s  lambda_e=0.01002, lambda_z=0.01796, gamma_q=0.003892, block_size=9
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.7530  n=20  12.0s  lambda_e=0.01102, lambda_z=0.02201, gamma_q=0.001901, block_size=9
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7540  n=20  12.0s  lambda_e=0.01539, lambda_z=0.0215, gamma_q=0.003858, block_size=9
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.7434  n=20  10.9s  lambda_e=0.01762, lambda_z=0.002501, gamma_q=0.00433, block_size=9
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.7514  n=20  11.6s  lambda_e=0.03682, lambda_z=0.01406, gamma_q=0.001063, block_size=10
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7440  n=20  12.0s  lambda_e=0.01003, lambda_z=0.007263, gamma_q=0.002877, block_size=7
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.7540  n=20  11.9s  lambda_e=0.01961, lambda_z=0.002781, gamma_q=0.009029, block_size=12
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.7384  n=20  11.9s  lambda_e=0.1217, lambda_z=0.08624, gamma_q=0.002283, block_size=11
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7444  n=20  11.9s  lambda_e=0.03553, lambda_z=0.02178, gamma_q=0.005961, block_size=9
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7539  n=20  11.2s  lambda_e=0.05191, lambda_z=0.005415, gamma_q=0.008297, block_size=6
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7588  n=20  11.6s  lambda_e=0.01532, lambda_z=0.008412, gamma_q=0.03127, block_size=8
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.7620  n=20  12.1s  lambda_e=0.02425, lambda_z=0.0184, gamma_q=0.01383, block_size=6
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7300  n=20  12.0s  lambda_e=0.05788, lambda_z=0.002814, gamma_q=0.005997, block_size=10
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.7539  n=20  12.0s  lambda_e=0.132, lambda_z=0.03156, gamma_q=0.001915, block_size=7
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.7452  n=20  11.9s  lambda_e=0.01356, lambda_z=0.06322, gamma_q=0.001435, block_size=11
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.6188  n=20  11.2s  lambda_e=0.01968, lambda_z=0.006327, gamma_q=0.04684, block_size=9
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.7457  n=20  11.5s  lambda_e=0.01019, lambda_z=0.1797, gamma_q=0.003098, block_size=7
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.7605  n=20  12.0s  lambda_e=0.6834, lambda_z=0.01254, gamma_q=0.0151, block_size=10
+    best mean ARI=0.7731  tune 472.5s  lambda_e=0.01056, lambda_z=0.01766, gamma_q=0.003666, block_size=9
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold3.json
+
+=== train[85] k=5  dim=900  frames=200  σ=0.0  fold=3  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.3s
+
+=== train[86] k=5  dim=900  frames=322  σ=0.0  fold=3  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7640  NMI=0.7841  ARI=0.6148  0.8s
+
+=== train[87] k=5  dim=900  frames=361  σ=0.0  fold=3  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  0.9s
+
+=== train[88] k=5  dim=900  frames=274  σ=0.0  fold=3  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.6s
+
+=== train[89] k=5  dim=900  frames=226  σ=0.0  fold=3  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.8018  ARI=0.7361  0.4s
+
+=== train[90] k=5  dim=900  frames=225  σ=0.0  fold=3  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8998  ARI=0.8384  0.4s
+
+=== train[91] k=5  dim=900  frames=310  σ=0.0  fold=3  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8161  NMI=0.8712  ARI=0.7974  0.7s
+
+=== test[84] k=5  dim=900  frames=322  σ=0.0  fold=3  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5963  NMI=0.7398  ARI=0.5339  0.8s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=4  test=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.6859  n=20  11.2s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6525  n=20  11.1s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.5802  n=20  10.9s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.6508  n=20  10.2s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5350  n=20  11.0s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6168  n=20  10.9s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5705  n=20  10.9s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6018  n=20  10.9s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7037  n=20  10.9s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6045  n=20  10.8s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6218  n=20  10.5s  lambda_e=0.0543, lambda_z=0.001491, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7139  n=20  11.0s  lambda_e=1.685, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7177  n=20  11.2s  lambda_e=2.028, lambda_z=0.01277, gamma_q=0.01048, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7287  n=20  11.2s  lambda_e=2.256, lambda_z=0.006401, gamma_q=0.01173, block_size=4
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7388  n=20  11.2s  lambda_e=2.415, lambda_z=0.003894, gamma_q=0.01167, block_size=4
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.6546  n=20  11.2s  lambda_e=3.182, lambda_z=0.003257, gamma_q=0.02304, block_size=4
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7184  n=20  10.5s  lambda_e=4.67, lambda_z=0.007485, gamma_q=0.00626, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.5602  n=20  10.6s  lambda_e=0.9172, lambda_z=0.001269, gamma_q=0.3548, block_size=3
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7044  n=20  11.1s  lambda_e=0.1012, lambda_z=0.00804, gamma_q=0.03195, block_size=6
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.7343  n=20  11.4s  lambda_e=3.69, lambda_z=0.004193, gamma_q=0.003443, block_size=3
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.7182  n=20  11.6s  lambda_e=4.513, lambda_z=0.003061, gamma_q=0.003064, block_size=2
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7361  n=20  11.4s  lambda_e=1.99, lambda_z=0.01727, gamma_q=0.006026, block_size=3
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7320  n=20  11.2s  lambda_e=1.038, lambda_z=0.01824, gamma_q=0.001034, block_size=3
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.7244  n=20  10.3s  lambda_e=4.08, lambda_z=0.002924, gamma_q=0.005143, block_size=3
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7351  n=20  11.0s  lambda_e=1.393, lambda_z=0.02079, gamma_q=0.002787, block_size=5
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.6796  n=20  11.2s  lambda_e=0.7026, lambda_z=0.08855, gamma_q=0.03143, block_size=6
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.7305  n=20  11.2s  lambda_e=1.731, lambda_z=0.01589, gamma_q=0.006391, block_size=5
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7406  n=20  11.1s  lambda_e=1.225, lambda_z=0.01902, gamma_q=0.002068, block_size=6
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.6487  n=20  11.0s  lambda_e=2.522, lambda_z=0.09301, gamma_q=0.001813, block_size=8
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.6948  n=20  10.5s  lambda_e=0.7657, lambda_z=0.05904, gamma_q=0.1597, block_size=6
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7462  n=20  10.3s  lambda_e=6.094, lambda_z=0.01034, gamma_q=0.02303, block_size=7
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7226  n=20  11.0s  lambda_e=6.491, lambda_z=0.02649, gamma_q=0.02251, block_size=8
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.6869  n=20  11.1s  lambda_e=1.171, lambda_z=0.009029, gamma_q=0.04995, block_size=7
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.7225  n=20  11.1s  lambda_e=2.852, lambda_z=0.001841, gamma_q=0.007357, block_size=7
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7415  n=20  11.0s  lambda_e=5.466, lambda_z=0.005043, gamma_q=0.01755, block_size=9
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.5947  n=20  11.0s  lambda_e=6.775, lambda_z=0.004847, gamma_q=0.1006, block_size=9
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.6457  n=20  10.0s  lambda_e=5.518, lambda_z=0.002176, gamma_q=0.01997, block_size=9
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.6974  n=20  10.5s  lambda_e=7.464, lambda_z=0.01021, gamma_q=0.05047, block_size=9
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.5950  n=20  11.1s  lambda_e=9.784, lambda_z=0.005035, gamma_q=0.3932, block_size=6
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.6924  n=20  11.1s  lambda_e=0.4255, lambda_z=0.1686, gamma_q=0.1384, block_size=7
+    best mean ARI=0.7462  tune 437.7s  lambda_e=6.094, lambda_z=0.01034, gamma_q=0.02303, block_size=7
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold4.json
+
+=== train[113] k=5  dim=900  frames=200  σ=0.0  fold=4  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8350  NMI=0.8983  ARI=0.8938  0.3s
+
+=== train[114] k=5  dim=900  frames=322  σ=0.0  fold=4  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7671  NMI=0.8428  ARI=0.7422  0.8s
+
+=== train[115] k=5  dim=900  frames=361  σ=0.0  fold=4  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9141  NMI=0.9224  ARI=0.8952  0.9s
+
+=== train[116] k=5  dim=900  frames=322  σ=0.0  fold=4  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5932  NMI=0.7280  ARI=0.5252  0.8s
+
+=== train[117] k=5  dim=900  frames=226  σ=0.0  fold=4  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.8018  ARI=0.7361  0.4s
+
+=== train[118] k=5  dim=900  frames=225  σ=0.0  fold=4  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8905  ARI=0.8092  0.4s
+
+=== train[119] k=5  dim=900  frames=310  σ=0.0  fold=4  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9032  NMI=0.9056  ARI=0.8696  0.7s
+
+=== test[112] k=5  dim=900  frames=274  σ=0.0  fold=4  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6131  NMI=0.7582  ARI=0.5660  0.6s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=5  test=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.6966  n=20  12.5s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6225  n=20  12.4s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.5795  n=20  11.1s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.6104  n=20  12.1s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5640  n=20  13.1s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6449  n=20  12.3s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5591  n=20  12.3s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6029  n=20  12.2s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7160  n=20  11.2s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.5978  n=20  12.2s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6853  n=20  13.1s  lambda_e=0.0543, lambda_z=0.001491, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7224  n=20  12.6s  lambda_e=1.685, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7006  n=20  12.6s  lambda_e=2.028, lambda_z=0.01277, gamma_q=0.01048, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7514  n=20  12.1s  lambda_e=2.367, lambda_z=0.00699, gamma_q=0.01396, block_size=9
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7340  n=20  11.4s  lambda_e=2.479, lambda_z=0.003894, gamma_q=0.01481, block_size=5
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.6405  n=20  12.3s  lambda_e=3.223, lambda_z=0.003257, gamma_q=0.02619, block_size=8
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7118  n=20  12.7s  lambda_e=4.716, lambda_z=0.007871, gamma_q=0.006942, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.5518  n=20  12.3s  lambda_e=0.9172, lambda_z=0.001269, gamma_q=0.3548, block_size=9
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7024  n=20  12.5s  lambda_e=3.379, lambda_z=0.007565, gamma_q=0.02881, block_size=6
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.7064  n=20  12.4s  lambda_e=1.365, lambda_z=0.004193, gamma_q=0.003865, block_size=3
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.6216  n=20  11.3s  lambda_e=4.151, lambda_z=0.01733, gamma_q=0.1828, block_size=6
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7000  n=20  12.4s  lambda_e=1.781, lambda_z=0.03133, gamma_q=0.02209, block_size=5
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7069  n=20  12.6s  lambda_e=0.7414, lambda_z=0.003313, gamma_q=0.01554, block_size=4
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.6834  n=20  12.5s  lambda_e=1.994, lambda_z=0.07381, gamma_q=0.00342, block_size=6
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7345  n=20  12.3s  lambda_e=2.437, lambda_z=0.01584, gamma_q=0.0416, block_size=8
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.6950  n=20  12.1s  lambda_e=5.611, lambda_z=0.01014, gamma_q=0.03166, block_size=9
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.5768  n=20  11.2s  lambda_e=2.834, lambda_z=0.002082, gamma_q=0.1235, block_size=8
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7442  n=20  12.3s  lambda_e=0.07541, lambda_z=0.01757, gamma_q=0.04311, block_size=9
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.5788  n=20  12.4s  lambda_e=0.0524, lambda_z=0.01498, gamma_q=0.5259, block_size=9
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.7111  n=20  12.3s  lambda_e=0.09854, lambda_z=0.09079, gamma_q=0.05298, block_size=10
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.6425  n=20  12.4s  lambda_e=0.1125, lambda_z=0.01986, gamma_q=0.1255, block_size=7
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7299  n=20  12.0s  lambda_e=1.089, lambda_z=0.005415, gamma_q=0.006668, block_size=9
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.5777  n=20  11.3s  lambda_e=0.012, lambda_z=0.002327, gamma_q=0.04546, block_size=8
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.5241  n=20  12.3s  lambda_e=0.4885, lambda_z=0.005997, gamma_q=0.08965, block_size=11
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7226  n=20  12.3s  lambda_e=6.063, lambda_z=0.02567, gamma_q=0.006782, block_size=12
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.7024  n=20  12.4s  lambda_e=0.7009, lambda_z=0.06151, gamma_q=0.03891, block_size=7
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.7405  n=20  12.3s  lambda_e=0.2885, lambda_z=0.008248, gamma_q=0.0197, block_size=10
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.7289  n=20  11.9s  lambda_e=0.2634, lambda_z=0.151, gamma_q=0.2062, block_size=10
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.6094  n=20  12.4s  lambda_e=0.03516, lambda_z=0.008606, gamma_q=0.05657, block_size=11
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.5724  n=20  12.3s  lambda_e=0.1333, lambda_z=0.02514, gamma_q=0.8828, block_size=9
+    best mean ARI=0.7514  tune 488.7s  lambda_e=2.367, lambda_z=0.00699, gamma_q=0.01396, block_size=9
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold5.json
+
+=== train[141] k=5  dim=900  frames=200  σ=0.0  fold=5  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.3s
+
+=== train[142] k=5  dim=900  frames=322  σ=0.0  fold=5  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7578  NMI=0.8367  ARI=0.7315  0.7s
+
+=== train[143] k=5  dim=900  frames=361  σ=0.0  fold=5  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9224  NMI=0.9263  ARI=0.9022  0.9s
+
+=== train[144] k=5  dim=900  frames=322  σ=0.0  fold=5  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5932  NMI=0.7396  ARI=0.5329  0.7s
+
+=== train[145] k=5  dim=900  frames=274  σ=0.0  fold=5  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6715  NMI=0.8324  ARI=0.6263  0.6s
+
+=== train[146] k=5  dim=900  frames=225  σ=0.0  fold=5  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9289  NMI=0.8905  ARI=0.8080  0.4s
+
+=== train[147] k=5  dim=900  frames=310  σ=0.0  fold=5  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.9032  NMI=0.9056  ARI=0.8696  0.7s
+
+=== test[140] k=5  dim=900  frames=226  σ=0.0  fold=5  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.8002  ARI=0.7344  0.4s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=6  test=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7823  n=20  12.3s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6830  n=20  12.1s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.5795  n=20  12.1s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.6893  n=20  11.3s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5070  n=20  12.3s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6060  n=20  12.0s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5707  n=20  12.1s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6130  n=20  12.0s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7420  n=20  12.0s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.5911  n=20  11.2s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6849  n=20  12.3s  lambda_e=1.991, lambda_z=0.001622, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.7835  n=20  12.2s  lambda_e=1.391, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7741  n=20  12.3s  lambda_e=1.795, lambda_z=0.01028, gamma_q=0.0233, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7609  n=20  12.3s  lambda_e=1.787, lambda_z=0.06553, gamma_q=0.1913, block_size=5
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7824  n=20  12.2s  lambda_e=0.06356, lambda_z=0.00659, gamma_q=0.009252, block_size=5
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.7789  n=20  11.5s  lambda_e=0.05124, lambda_z=0.004607, gamma_q=0.007061, block_size=4
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7772  n=20  11.9s  lambda_e=0.07095, lambda_z=0.01322, gamma_q=0.02026, block_size=6
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.7623  n=20  12.6s  lambda_e=0.09426, lambda_z=0.001351, gamma_q=0.003898, block_size=3
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7061  n=20  12.1s  lambda_e=0.0275, lambda_z=0.004941, gamma_q=0.02648, block_size=8
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.8056  n=20  12.2s  lambda_e=4.383, lambda_z=0.02025, gamma_q=0.00763, block_size=5
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.7810  n=20  12.2s  lambda_e=4.781, lambda_z=0.02669, gamma_q=0.003064, block_size=6
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.8059  n=20  11.6s  lambda_e=3.409, lambda_z=0.0133, gamma_q=0.01009, block_size=4
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.8104  n=20  11.9s  lambda_e=3.727, lambda_z=0.02228, gamma_q=0.007157, block_size=4
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.8130  n=20  12.5s  lambda_e=3.626, lambda_z=0.01736, gamma_q=0.001133, block_size=3
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7950  n=20  12.5s  lambda_e=3.156, lambda_z=0.002739, gamma_q=0.001194, block_size=3
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.6578  n=20  12.6s  lambda_e=0.768, lambda_z=0.1139, gamma_q=0.002968, block_size=3
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.8127  n=20  12.5s  lambda_e=3.155, lambda_z=0.01368, gamma_q=0.001098, block_size=4
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7929  n=20  12.5s  lambda_e=5.732, lambda_z=0.002969, gamma_q=0.001232, block_size=2
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.8029  n=20  12.5s  lambda_e=2.749, lambda_z=0.009231, gamma_q=0.005163, block_size=3
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.6624  n=20  12.4s  lambda_e=0.9499, lambda_z=0.0987, gamma_q=0.002319, block_size=4
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7978  n=20  12.2s  lambda_e=6.507, lambda_z=0.01896, gamma_q=0.001095, block_size=6
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7564  n=20  12.4s  lambda_e=3.291, lambda_z=0.01429, gamma_q=0.03634, block_size=4
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7069  n=20  12.3s  lambda_e=2.486, lambda_z=0.06378, gamma_q=0.002077, block_size=4
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.8101  n=20  11.3s  lambda_e=1.364, lambda_z=0.006182, gamma_q=0.006022, block_size=3
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7758  n=20  12.3s  lambda_e=1.229, lambda_z=0.003068, gamma_q=0.005519, block_size=3
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.8021  n=20  12.9s  lambda_e=0.5795, lambda_z=0.007363, gamma_q=0.001916, block_size=2
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.8071  n=20  12.5s  lambda_e=0.831, lambda_z=0.03183, gamma_q=0.01488, block_size=3
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.6778  n=20  12.8s  lambda_e=7.747, lambda_z=0.004535, gamma_q=0.1054, block_size=2
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.5974  n=20  12.0s  lambda_e=4.461, lambda_z=0.1955, gamma_q=0.001805, block_size=5
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.7845  n=20  11.0s  lambda_e=1.464, lambda_z=0.0219, gamma_q=0.00455, block_size=7
+    best mean ARI=0.8130  tune 485.7s  lambda_e=3.626, lambda_z=0.01736, gamma_q=0.001133, block_size=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold6.json
+
+=== train[169] k=5  dim=900  frames=200  σ=0.0  fold=6  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8450  NMI=0.8991  ARI=0.8950  0.3s
+
+=== train[170] k=5  dim=900  frames=322  σ=0.0  fold=6  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7702  NMI=0.7955  ARI=0.6243  0.7s
+
+=== train[171] k=5  dim=900  frames=361  σ=0.0  fold=6  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8532  NMI=0.9055  ARI=0.8545  1.0s
+
+=== train[172] k=5  dim=900  frames=322  σ=0.0  fold=6  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6025  NMI=0.7406  ARI=0.5369  0.8s
+
+=== train[173] k=5  dim=900  frames=274  σ=0.0  fold=6  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6752  NMI=0.8325  ARI=0.6269  0.6s
+
+=== train[174] k=5  dim=900  frames=226  σ=0.0  fold=6  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.8018  ARI=0.7361  0.4s
+
+=== train[175] k=5  dim=900  frames=310  σ=0.0  fold=6  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8226  NMI=0.8824  ARI=0.8048  0.7s
+
+=== test[168] k=5  dim=900  frames=225  σ=0.0  fold=6  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8905  ARI=0.8092  0.4s
+  tune_pool_groups=20: sampling from 39 held-in sequences (overlap allowed) instead of the 7 fixed fold group(s)
+
+============================================================
+σ=0.0 fold=7  test=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044']  train mats=7  test mats=1  tune mats=20
+  --- tune SSC-Block-TV-Col21 over 20 train mats  n_trials=40 (4 params) ---
+  SSC-Block-TV-Col21 trial 0: mean ARI=0.7576  n=20  11.9s  lambda_e=1, lambda_z=0.1, gamma_q=0.1, block_size=5
+  SSC-Block-TV-Col21 trial 1: mean ARI=0.6775  n=20  11.7s  lambda_e=0.443, lambda_z=0.7257, gamma_q=0.2577, block_size=7
+  SSC-Block-TV-Col21 trial 2: mean ARI=0.6407  n=20  12.5s  lambda_e=0.1866, lambda_z=0.3833, gamma_q=0.05628, block_size=11
+  SSC-Block-TV-Col21 trial 3: mean ARI=0.5815  n=20  11.7s  lambda_e=7.78, lambda_z=0.03418, gamma_q=1.469, block_size=7
+  SSC-Block-TV-Col21 trial 4: mean ARI=0.5494  n=20  12.2s  lambda_e=0.506, lambda_z=5.039, gamma_q=0.001924, block_size=2
+  SSC-Block-TV-Col21 trial 5: mean ARI=0.6202  n=20  10.7s  lambda_e=0.0115, lambda_z=2.14, gamma_q=1.296, block_size=11
+  SSC-Block-TV-Col21 trial 6: mean ARI=0.5803  n=20  11.6s  lambda_e=8.627, lambda_z=1.573, gamma_q=0.07013, block_size=10
+  SSC-Block-TV-Col21 trial 7: mean ARI=0.6993  n=20  11.6s  lambda_e=0.02264, lambda_z=0.3628, gamma_q=0.003745, block_size=12
+  SSC-Block-TV-Col21 trial 8: mean ARI=0.7626  n=20  11.7s  lambda_e=0.3677, lambda_z=0.04557, gamma_q=0.01143, block_size=10
+  SSC-Block-TV-Col21 trial 9: mean ARI=0.6588  n=20  11.7s  lambda_e=0.2336, lambda_z=0.1878, gamma_q=0.001189, block_size=8
+  SSC-Block-TV-Col21 trial 10: mean ARI=0.6342  n=20  12.5s  lambda_e=0.0543, lambda_z=0.001491, gamma_q=6.473, block_size=2
+  SSC-Block-TV-Col21 trial 11: mean ARI=0.8031  n=20  10.9s  lambda_e=1.685, lambda_z=0.04005, gamma_q=0.01389, block_size=5
+  SSC-Block-TV-Col21 trial 12: mean ARI=0.7780  n=20  11.6s  lambda_e=2.028, lambda_z=0.01277, gamma_q=0.01048, block_size=4
+  SSC-Block-TV-Col21 trial 13: mean ARI=0.7826  n=20  12.0s  lambda_e=2.256, lambda_z=0.006401, gamma_q=0.01173, block_size=4
+  SSC-Block-TV-Col21 trial 14: mean ARI=0.7912  n=20  12.0s  lambda_e=2.415, lambda_z=0.003894, gamma_q=0.01481, block_size=4
+  SSC-Block-TV-Col21 trial 15: mean ARI=0.5933  n=20  12.0s  lambda_e=3.182, lambda_z=0.001269, gamma_q=0.0261, block_size=5
+  SSC-Block-TV-Col21 trial 16: mean ARI=0.7785  n=20  12.0s  lambda_e=1.166, lambda_z=0.006359, gamma_q=0.006923, block_size=4
+  SSC-Block-TV-Col21 trial 17: mean ARI=0.5570  n=20  11.0s  lambda_e=4.019, lambda_z=0.003808, gamma_q=0.3548, block_size=6
+  SSC-Block-TV-Col21 trial 18: mean ARI=0.7853  n=20  11.5s  lambda_e=0.1012, lambda_z=0.02222, gamma_q=0.02881, block_size=3
+  SSC-Block-TV-Col21 trial 19: mean ARI=0.7362  n=20  11.7s  lambda_e=1.084, lambda_z=0.09164, gamma_q=0.003865, block_size=8
+  SSC-Block-TV-Col21 trial 20: mean ARI=0.5566  n=20  11.9s  lambda_e=5.241, lambda_z=0.003322, gamma_q=0.1828, block_size=6
+  SSC-Block-TV-Col21 trial 21: mean ARI=0.7830  n=20  12.2s  lambda_e=0.08996, lambda_z=0.02001, gamma_q=0.02999, block_size=3
+  SSC-Block-TV-Col21 trial 22: mean ARI=0.7828  n=20  12.1s  lambda_e=0.06322, lambda_z=0.0173, gamma_q=0.02635, block_size=3
+  SSC-Block-TV-Col21 trial 23: mean ARI=0.8080  n=20  12.2s  lambda_e=0.1132, lambda_z=0.05127, gamma_q=0.02467, block_size=3
+  SSC-Block-TV-Col21 trial 24: mean ARI=0.7418  n=20  10.9s  lambda_e=0.03016, lambda_z=0.07751, gamma_q=0.003915, block_size=5
+  SSC-Block-TV-Col21 trial 25: mean ARI=0.7626  n=20  12.5s  lambda_e=0.7227, lambda_z=0.009618, gamma_q=0.01688, block_size=2
+  SSC-Block-TV-Col21 trial 26: mean ARI=0.5654  n=20  12.0s  lambda_e=0.2171, lambda_z=0.00226, gamma_q=0.05681, block_size=4
+  SSC-Block-TV-Col21 trial 27: mean ARI=0.7532  n=20  11.9s  lambda_e=2.134, lambda_z=0.04955, gamma_q=0.005679, block_size=6
+  SSC-Block-TV-Col21 trial 28: mean ARI=0.7776  n=20  12.1s  lambda_e=0.1403, lambda_z=0.1746, gamma_q=0.5237, block_size=3
+  SSC-Block-TV-Col21 trial 29: mean ARI=0.7715  n=20  11.6s  lambda_e=1.292, lambda_z=0.1326, gamma_q=0.1597, block_size=5
+  SSC-Block-TV-Col21 trial 30: mean ARI=0.7599  n=20  10.9s  lambda_e=0.5993, lambda_z=0.03308, gamma_q=0.002011, block_size=5
+  SSC-Block-TV-Col21 trial 31: mean ARI=0.7867  n=20  12.1s  lambda_e=0.1022, lambda_z=0.02846, gamma_q=0.03798, block_size=3
+  SSC-Block-TV-Col21 trial 32: mean ARI=0.7795  n=20  12.1s  lambda_e=0.3064, lambda_z=0.06079, gamma_q=0.1044, block_size=3
+  SSC-Block-TV-Col21 trial 33: mean ARI=0.7061  n=20  12.0s  lambda_e=0.02935, lambda_z=0.007909, gamma_q=0.0416, block_size=4
+  SSC-Block-TV-Col21 trial 34: mean ARI=0.7217  n=20  12.4s  lambda_e=0.0515, lambda_z=0.4816, gamma_q=0.01715, block_size=2
+  SSC-Block-TV-Col21 trial 35: mean ARI=0.7481  n=20  11.6s  lambda_e=0.7518, lambda_z=0.02797, gamma_q=0.09639, block_size=7
+  SSC-Block-TV-Col21 trial 36: mean ARI=0.7831  n=20  10.7s  lambda_e=6.151, lambda_z=0.003971, gamma_q=0.006823, block_size=5
+  SSC-Block-TV-Col21 trial 37: mean ARI=0.7793  n=20  12.1s  lambda_e=0.01441, lambda_z=0.01436, gamma_q=0.04989, block_size=3
+  SSC-Block-TV-Col21 trial 38: mean ARI=0.7236  n=20  12.4s  lambda_e=0.1505, lambda_z=0.2717, gamma_q=0.01833, block_size=2
+  SSC-Block-TV-Col21 trial 39: mean ARI=0.6323  n=20  12.0s  lambda_e=1.624, lambda_z=0.9135, gamma_q=0.08444, block_size=4
+    best mean ARI=0.8080  tune 472.3s  lambda_e=0.1132, lambda_z=0.05127, gamma_q=0.02467, block_size=3
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/params/ballet/ballet_cluster_sigmas_0_params_knownk_cv_ssc_block_tv_col21_k5_sigma0_sigma0_fold7.json
+
+=== train[197] k=5  dim=900  frames=200  σ=0.0  fold=7  seqs=['seq_000003', 'seq_000005', 'seq_000019', 'seq_000024', 'seq_000035'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7500  NMI=0.8492  ARI=0.6773  0.3s
+
+=== train[198] k=5  dim=900  frames=322  σ=0.0  fold=7  seqs=['seq_000002', 'seq_000012', 'seq_000020', 'seq_000023', 'seq_000033'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7671  NMI=0.7915  ARI=0.6199  0.8s
+
+=== train[199] k=5  dim=900  frames=361  σ=0.0  fold=7  seqs=['seq_000004', 'seq_000011', 'seq_000022', 'seq_000028', 'seq_000042'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8504  NMI=0.9053  ARI=0.8540  0.9s
+
+=== train[200] k=5  dim=900  frames=322  σ=0.0  fold=7  seqs=['seq_000017', 'seq_000021', 'seq_000029', 'seq_000031', 'seq_000039'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.5901  NMI=0.7392  ARI=0.5314  0.8s
+
+=== train[201] k=5  dim=900  frames=274  σ=0.0  fold=7  seqs=['seq_000001', 'seq_000009', 'seq_000018', 'seq_000036', 'seq_000043'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.6788  NMI=0.8328  ARI=0.6277  0.6s
+
+=== train[202] k=5  dim=900  frames=226  σ=0.0  fold=7  seqs=['seq_000025', 'seq_000026', 'seq_000027', 'seq_000040', 'seq_000041'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.7743  NMI=0.7686  ARI=0.6509  0.4s
+
+=== train[203] k=5  dim=900  frames=225  σ=0.0  fold=7  seqs=['seq_000007', 'seq_000010', 'seq_000014', 'seq_000037', 'seq_000038'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8622  NMI=0.8872  ARI=0.8319  0.4s
+
+=== test[196] k=5  dim=900  frames=310  σ=0.0  fold=7  seqs=['seq_000006', 'seq_000008', 'seq_000013', 'seq_000015', 'seq_000044'] ===
+  SSC-Block-TV-Col21: k_hat=5  ACC=0.8226  NMI=0.7988  ARI=0.7171  0.7s
+
+=== inference time per method ===
+  SSC-Block-TV-Col21: mean=0.6081s  std=0.1959s  total=38.9s  n=64
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0_results_knownk_cv_ssc_block_tv_col21_k5_sigma0_timing.json
+
+=== mean over matrices ===
+  SSC-Block-TV-Col21 train σ=0.0: ACC=0.7790  NMI=0.8411  ARI=0.7314  n=56
+  SSC-Block-TV-Col21 test σ=0.0: ACC=0.7674  NMI=0.8286  ARI=0.7311  n=8
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/block_ssc_benchmark/cv/results/ballet/ballet_cluster_sigmas_0_results_knownk_cv_ssc_block_tv_col21_k5_sigma0.csv
+end=Sun Sep  6 20:03:49 EDT 2026
+Experiment completed!

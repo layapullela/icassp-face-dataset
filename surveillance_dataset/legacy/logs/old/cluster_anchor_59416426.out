@@ -1,0 +1,89 @@
+host=gl3179.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Mon Aug 31 20:41:10 EDT 2026
+Loading P1E_S1_C1
+  Y: (9216, 872)  people=25  frames/person=[53, 42, 36, 23, 25, 12, 13, 10, 18, 49, 43, 50, 35, 38, 59, 47, 42, 37, 38, 43, 24, 51, 44, 10, 30]
+Loading P1E_S1_C2
+  Y: (9216, 702)  people=25  frames/person=[46, 38, 11, 40, 47, 45, 18, 14, 39, 11, 37, 14, 25, 33, 31, 30, 11, 10, 16, 10, 33, 36, 43, 23, 41]
+Loading P1E_S1_C3
+  Y: (9216, 450)  people=25  frames/person=[15, 22, 16, 16, 17, 13, 14, 19, 14, 25, 26, 12, 21, 18, 22, 16, 13, 19, 16, 15, 8, 15, 30, 20, 28]
+Loading P1E_S2_C1
+  Y: (9216, 823)  people=25  frames/person=[55, 13, 50, 37, 28, 44, 39, 22, 26, 46, 40, 35, 27, 32, 29, 26, 45, 23, 21, 46, 41, 12, 14, 29, 43]
+Loading P1E_S2_C2
+  Y: (9216, 815)  people=25  frames/person=[30, 48, 26, 22, 50, 51, 14, 12, 44, 27, 39, 17, 43, 25, 42, 41, 39, 21, 41, 12, 39, 30, 49, 20, 33]
+Loading P1E_S2_C3
+  Y: (9216, 704)  people=25  frames/person=[14, 36, 28, 32, 25, 37, 31, 36, 20, 23, 42, 12, 28, 20, 15, 33, 32, 32, 32, 29, 32, 34, 38, 19, 24]
+Loading P1E_S3_C1
+  Y: (9216, 884)  people=25  frames/person=[12, 31, 47, 41, 27, 60, 40, 43, 10, 33, 52, 48, 30, 34, 31, 36, 21, 50, 13, 31, 24, 47, 48, 38, 37]
+Loading P1E_S3_C2
+  Y: (9216, 852)  people=25  frames/person=[57, 19, 15, 16, 47, 59, 34, 44, 59, 26, 10, 16, 45, 14, 37, 43, 48, 28, 17, 33, 42, 28, 55, 29, 31]
+Loading P1E_S3_C3
+  Y: (9216, 724)  people=25  frames/person=[21, 34, 24, 21, 37, 47, 17, 37, 55, 18, 31, 37, 31, 22, 17, 39, 35, 12, 30, 28, 19, 41, 35, 11, 25]
+Loading P1E_S4_C1
+  Y: (9216, 826)  people=25  frames/person=[46, 25, 10, 14, 48, 17, 36, 55, 57, 23, 13, 35, 52, 41, 13, 43, 27, 21, 31, 45, 48, 17, 38, 48, 23]
+Loading P1E_S4_C2
+  Y: (9216, 791)  people=25  frames/person=[23, 22, 20, 46, 21, 21, 16, 16, 49, 24, 50, 39, 50, 35, 43, 36, 13, 38, 33, 24, 33, 31, 35, 37, 36]
+Loading P1E_S4_C3
+  Y: (9216, 620)  people=25  frames/person=[28, 29, 22, 29, 24, 14, 31, 21, 33, 11, 37, 19, 17, 21, 25, 12, 25, 41, 12, 29, 26, 31, 31, 29, 23]
+Loading P1L_S1_C1
+  Y: (9216, 741)  people=25  frames/person=[15, 10, 15, 28, 15, 14, 23, 43, 36, 23, 58, 45, 42, 49, 50, 16, 11, 54, 30, 13, 34, 29, 31, 31, 26]
+Loading P1L_S1_C2
+  Y: (9216, 887)  people=25  frames/person=[34, 35, 37, 45, 49, 10, 25, 54, 23, 36, 54, 42, 54, 18, 36, 42, 27, 39, 48, 47, 26, 13, 19, 23, 51]
+Loading P1L_S1_C3
+  Y: (9216, 534)  people=25  frames/person=[23, 29, 20, 26, 19, 25, 22, 12, 28, 25, 20, 25, 23, 18, 21, 17, 15, 26, 12, 21, 18, 18, 30, 18, 23]
+Loading P1L_S2_C1
+  Y: (9216, 949)  people=25  frames/person=[56, 39, 38, 46, 39, 48, 19, 49, 36, 48, 36, 25, 14, 36, 60, 11, 39, 32, 10, 37, 49, 47, 59, 36, 40]
+Loading P1L_S2_C2
+  Y: (9216, 917)  people=25  frames/person=[59, 26, 49, 19, 28, 44, 39, 19, 43, 39, 56, 40, 55, 52, 14, 13, 35, 35, 38, 47, 26, 19, 44, 29, 49]
+Loading P1L_S2_C3
+  Y: (9216, 660)  people=25  frames/person=[13, 36, 29, 23, 14, 26, 30, 36, 50, 21, 34, 40, 34, 16, 35, 32, 35, 24, 16, 29, 13, 16, 13, 19, 26]
+Loading P1L_S3_C1
+  Y: (9216, 775)  people=25  frames/person=[44, 42, 45, 35, 12, 18, 23, 44, 28, 26, 15, 46, 11, 33, 47, 35, 45, 50, 21, 14, 12, 39, 23, 20, 47]
+Loading P1L_S3_C2
+  Y: (9216, 1027)  people=25  frames/person=[51, 58, 34, 36, 60, 35, 19, 23, 59, 12, 50, 43, 34, 52, 51, 32, 40, 48, 43, 34, 56, 55, 13, 37, 52]
+Loading P1L_S3_C3
+  Y: (9216, 797)  people=25  frames/person=[14, 29, 35, 26, 39, 45, 28, 49, 15, 26, 10, 31, 10, 36, 47, 14, 46, 46, 25, 31, 34, 50, 45, 26, 40]
+Loading P1L_S4_C1
+  Y: (9216, 833)  people=25  frames/person=[50, 46, 21, 31, 28, 45, 31, 31, 37, 39, 15, 57, 30, 18, 10, 32, 47, 25, 53, 20, 17, 29, 45, 25, 51]
+Loading P1L_S4_C2
+  Y: (9216, 895)  people=25  frames/person=[11, 60, 12, 53, 10, 31, 25, 59, 43, 56, 31, 35, 35, 48, 35, 56, 19, 34, 22, 54, 17, 45, 56, 24, 24]
+Loading P1L_S4_C3
+  Y: (9216, 704)  people=25  frames/person=[41, 40, 23, 26, 14, 23, 22, 32, 13, 29, 34, 10, 31, 34, 31, 25, 39, 39, 16, 24, 25, 25, 41, 27, 40]
+sequences=24  people=25  k=5
+sigmas=(0.0, 0.25, 0.5, 0.75)  n_trials=40
+anchor-noise: first 1 frame(s)/person σ=0  rest σ=0.9  csv=split_k5_anchor_trials40.csv
+train 0 k=5  people=['0006', '0013', '0014', '0022', '0027']
+train 1 k=5  people=['0004', '0009', '0019', '0025', '0026']
+train 2 k=5  people=['0001', '0005', '0011', '0023', '0024']
+train 3 k=5  people=['0007', '0010', '0015', '0016', '0021']
+test    k=5  people=['0003', '0012', '0017', '0018', '0020']
+methods=['SSC-TV-L21', 'OSC', 'BDOSC', 'TKSS']  append=False  lda=False  hetero_noise=False  anchor_noise=True  no_tune=False
+anchor-noise: first 1 frame(s)/person σ=0  rest σ=0.9  anchor frames=600/18782 (3.2%)
+σ=anchor_s0.9_n1: train mats=96  test mats=24
+pooled train mats for tuning=96
+
+============================================================
+BDOSC: skip tuning, fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+  wrote /nfs/turbo/umms-minjilab/lpullela/surveillance_dataset/split_k5_anchor_trials40_params.json
+
+============================================================
+--- tune SSC-TV-L21 over 96 train mats ---
+  SSC-TV-L21 trial 0: mean ARI=0.7425  n=96  166.8s  lambda_e=1, lambda_z=0.1, gamma=0.1
+  SSC-TV-L21 trial 1: mean ARI=0.7497  n=96  114.3s  lambda_e=0.443, lambda_z=0.7257, gamma=0.2577
+  SSC-TV-L21 trial 2: mean ARI=0.0023  n=96  166.0s  lambda_e=0.4312, lambda_z=0.0495, gamma=0.3833
+  SSC-TV-L21 trial 3: mean ARI=0.7405  n=96  166.2s  lambda_e=0.2055, lambda_z=3.691, gamma=7.156
+  SSC-TV-L21 trial 4: mean ARI=0.5973  n=96  166.9s  lambda_e=0.1414, lambda_z=1.469, gamma=0.1305
+  SSC-TV-L21 trial 5: mean ARI=0.6701  n=96  165.9s  lambda_e=0.506, lambda_z=5.039, gamma=0.001924
+  SSC-TV-L21 trial 6: mean ARI=0.0027  n=96  166.5s  lambda_e=0.01826, lambda_z=0.001205, gamma=2.14
+  SSC-TV-L21 trial 7: mean ARI=0.7377  n=96  166.7s  lambda_e=2.16, lambda_z=3.02, gamma=8.212
+  SSC-TV-L21 trial 8: mean ARI=0.0026  n=96  166.5s  lambda_e=2.497, lambda_z=0.07013, gamma=1.325
+  SSC-TV-L21 trial 9: mean ARI=0.5963  n=96  166.4s  lambda_e=0.02264, lambda_z=0.3628, gamma=0.003745
+  SSC-TV-L21 trial 10: mean ARI=0.0026  n=96  166.4s  lambda_e=6.638, lambda_z=0.003209, gamma=0.01543
+  SSC-TV-L21 trial 11: mean ARI=0.7489  n=96  166.5s  lambda_e=0.8987, lambda_z=0.2059, gamma=0.06357
+  SSC-TV-L21 trial 12: mean ARI=0.5862  n=96  166.7s  lambda_e=0.07689, lambda_z=0.4083, gamma=0.02622
+  SSC-TV-L21 trial 13: mean ARI=0.0017  n=96  167.5s  lambda_e=0.9885, lambda_z=0.01209, gamma=0.07147
+  SSC-TV-L21 trial 14: mean ARI=0.7508  n=96  166.2s  lambda_e=9.946, lambda_z=0.6202, gamma=0.3713
+  SSC-TV-L21 trial 15: mean ARI=0.7464  n=96  166.3s  lambda_e=9.274, lambda_z=0.9323, gamma=0.6565
+  SSC-TV-L21 trial 16: mean ARI=0.0017  n=96  166.3s  lambda_e=0.04552, lambda_z=0.02215, gamma=0.2902
+  SSC-TV-L21 trial 17: mean ARI=0.6946  n=96  166.3s  lambda_e=3.448, lambda_z=0.9742, gamma=1.209
+  SSC-TV-L21 trial 18: mean ARI=0.6745  n=96  166.4s  lambda_e=4.942, lambda_z=7.072, gamma=0.01698
+  SSC-TV-L21 trial 19: mean ARI=0.6884  n=96  166.4s  lambda_e=0.01113, lambda_z=0.1947, gamma=0.2454
+  SSC-TV-L21 trial 20: mean ARI=0.7242  n=96  167.6s  lambda_e=0.3488, lambda_z=1.738, gamma=2.415

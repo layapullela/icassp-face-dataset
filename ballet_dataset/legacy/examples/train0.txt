@@ -1,0 +1,7 @@
+Ballet train[0] clustering example (seed=0, known-k job ballet_ssck_59789995)
+Y shape: 900 x 399  (rows=30x30 pixels, cols=frames)
+seqs: ['seq_000002', 'seq_000011', 'seq_000017', 'seq_000023', 'seq_000036']
+n_kept: [78, 88, 98, 55, 80]
+values: Y in [0,1] (pixels/255); Y_colnorm is column-normalized (what SSC/OSC see)
+keys in train0.npz: Y, Y_colnorm, labels, n_kept, seqs, seed, down_hw
+load: d=np.load('examples/train0.npz'); Y=d['Y']

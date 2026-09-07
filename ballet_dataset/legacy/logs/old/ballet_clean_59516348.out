@@ -1,0 +1,79 @@
+host=gl3348.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Tue Sep  1 21:33:31 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_frames ~ Unif[10, 60]  seed=0
+hetero_noise=False  sigmas=None  append=False  no_tune=False  csv=ballet_cluster_results.csv
+
+Loaded 5 sequences:
+  seq_000001: 53 frames
+  seq_000002: 14 frames
+  seq_000003: 48 frames
+  seq_000004: 17 frames
+  seq_000005: 48 frames
+Total frames: 180
+Image dimension: 90601
+
+Methods: ['OSC', 'TKSS', 'SSC-TV-L21', 'BDOSC']
+
+BDOSC: fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+
+============================================================
+--- Tuning OSC over 1 matrices ---
+  OSC trial 0: ARI=0.4766  ACC=0.6556  NMI=0.6386  61.2s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: ARI=0.4766  ACC=0.6556  NMI=0.6386  59.7s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: ARI=0.4766  ACC=0.6556  NMI=0.6386  59.2s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: ARI=0.4766  ACC=0.6556  NMI=0.6386  58.9s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: ARI=0.4766  ACC=0.6556  NMI=0.6386  59.1s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: ARI=-0.0054  ACC=0.2722  NMI=0.0342  61.9s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: ARI=-0.0054  ACC=0.2722  NMI=0.0342  62.1s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: ARI=0.4766  ACC=0.6556  NMI=0.6386  59.2s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: ARI=0.4766  ACC=0.6556  NMI=0.6386  61.3s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: ARI=0.4766  ACC=0.6556  NMI=0.6386  60.1s  lambda_1=0.001205, lambda_2=2.14
+  best mean ARI=0.4766  tune 602.8s  lambda_1=0.1, lambda_2=0.1
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_params.json
+
+============================================================
+--- Tuning TKSS over 1 matrices ---
+  TKSS trial 0: ARI=0.6004  ACC=0.7889  NMI=0.7046  11.4s  d=5, lam=1, s=2
+  TKSS trial 1: ARI=0.6024  ACC=0.7833  NMI=0.7110  5.1s  d=9, lam=1.398, s=4
+  TKSS trial 2: ARI=0.5914  ACC=0.7778  NMI=0.7048  6.0s  d=9, lam=0.1866, s=4
+  TKSS trial 3: ARI=0.6415  ACC=0.7944  NMI=0.7311  25.4s  d=7, lam=4.735, s=6
+  TKSS trial 4: ARI=0.7936  ACC=0.8889  NMI=0.8139  33.9s  d=6, lam=2.372, s=4
+  TKSS trial 5: ARI=0.5696  ACC=0.7667  NMI=0.6917  6.9s  d=9, lam=5.981, s=1
+  TKSS trial 6: ARI=0.5162  ACC=0.7278  NMI=0.6309  12.5s  d=2, lam=0.0115, s=5
+  TKSS trial 7: ARI=0.6327  ACC=0.8000  NMI=0.7287  8.7s  d=12, lam=4.074, s=6
+  TKSS trial 8: ARI=0.6019  ACC=0.7833  NMI=0.7102  8.5s  d=12, lam=0.2423, s=5
+  TKSS trial 9: ARI=0.5066  ACC=0.7056  NMI=0.6080  20.4s  d=2, lam=0.8313, s=1
+  best mean ARI=0.7936  tune 138.9s  d=6, lam=2.372, s=4
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_params.json
+
+============================================================
+--- Tuning SSC-TV-L21 over 1 matrices ---
+  SSC-TV-L21 trial 0: ARI=0.4832  ACC=0.6500  NMI=0.6430  31.6s  lambda_e=1, lambda_z=0.1, gamma_p=0.1, gamma_q=0.1
+  SSC-TV-L21 trial 1: ARI=0.4755  ACC=0.6500  NMI=0.6380  24.8s  lambda_e=0.443, lambda_z=0.7257, gamma_p=0.2577, gamma_q=0.1512
+  SSC-TV-L21 trial 2: ARI=0.5862  ACC=0.7667  NMI=0.7076  29.4s  lambda_e=0.1866, lambda_z=0.3833, gamma_p=0.05628, gamma_q=3.691
+  SSC-TV-L21 trial 3: ARI=0.4403  ACC=0.5722  NMI=0.6109  28.6s  lambda_e=7.78, lambda_z=0.03418, gamma_p=1.469, gamma_q=0.1305
+  SSC-TV-L21 trial 4: ARI=0.3787  ACC=0.5444  NMI=0.5781  29.3s  lambda_e=0.506, lambda_z=5.039, gamma_p=0.001924, gamma_q=0.002231
+  SSC-TV-L21 trial 5: ARI=0.5686  ACC=0.7056  NMI=0.6887  28.8s  lambda_e=0.0115, lambda_z=2.14, gamma_p=1.296, gamma_q=3.02
+  SSC-TV-L21 trial 6: ARI=0.4755  ACC=0.6500  NMI=0.6380  28.9s  lambda_e=8.627, lambda_z=1.573, gamma_p=0.07013, gamma_q=1.325
+  SSC-TV-L21 trial 7: ARI=0.5335  ACC=0.7278  NMI=0.6745  29.3s  lambda_e=0.02264, lambda_z=0.3628, gamma_p=0.003745, gamma_q=6.007
+  SSC-TV-L21 trial 8: ARI=0.5725  ACC=0.7611  NMI=0.6993  28.7s  lambda_e=0.3677, lambda_z=0.04557, gamma_p=0.01143, gamma_q=1.25
+  SSC-TV-L21 trial 9: ARI=0.4755  ACC=0.6500  NMI=0.6380  29.3s  lambda_e=0.2336, lambda_z=0.1878, gamma_p=0.001189, gamma_q=0.2955
+  best mean ARI=0.5862  tune 288.5s  lambda_e=0.1866, lambda_z=0.3833, gamma_p=0.05628, gamma_q=3.691
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_params.json
+
+============================================================
+=== eval σ=clean  dim=90601  frames=180 ===
+  OSC: ACC=0.6556  NMI=0.6386  ARI=0.4766  58.8s
+  TKSS: ACC=0.8889  NMI=0.8139  ARI=0.7936  29.8s
+  SSC-TV-L21: ACC=0.7667  NMI=0.7076  ARI=0.5862  29.2s
+  BDOSC: ACC=0.6111  NMI=0.6183  ARI=0.3962  11.3s
+
+=== mean over matrices ===
+  OSC σ=clean: ACC=0.6556  NMI=0.6386  ARI=0.4766  n=1
+  TKSS σ=clean: ACC=0.8889  NMI=0.8139  ARI=0.7936  n=1
+  SSC-TV-L21 σ=clean: ACC=0.7667  NMI=0.7076  ARI=0.5862  n=1
+  BDOSC σ=clean: ACC=0.6111  NMI=0.6183  ARI=0.3962  n=1
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_results.csv
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_params.json
+end=Tue Sep  1 21:52:54 EDT 2026

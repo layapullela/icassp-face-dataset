@@ -1,0 +1,214 @@
+host=gl3027.arc-ts.umich.edu  python=/home/lpullela/miniconda3/envs/ssc_559/bin/python  start=Wed Sep  2 08:33:27 EDT 2026
+=== Ballet Clustering Experiment ===
+k=5  n_test=15  n_train_combos=24  n_test_combos=18  n_trials=40  pca_dim=256  full_data=True  n_frames ~ Unif[10, 60]  seed=0
+hetero_noise=True  sigmas=None  append=False  no_tune=False  csv=ballet_cluster_hetero_results.csv
+full-data: 44 sequences in one matrix  k=44
+sequences=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000006', 'seq_000007', 'seq_000008', 'seq_000009', 'seq_000010', 'seq_000011', 'seq_000012', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000030', 'seq_000031', 'seq_000032', 'seq_000033', 'seq_000034', 'seq_000035', 'seq_000036', 'seq_000037', 'seq_000038', 'seq_000039', 'seq_000040', 'seq_000041', 'seq_000042', 'seq_000043', 'seq_000044']
+
+Loading 44 sequences once (reused across combinations)
+  seq_000001: frames=34  dim=90601
+  seq_000002: frames=28  dim=90601
+  seq_000003: frames=52  dim=90601
+  seq_000004: frames=18  dim=90601
+  seq_000005: frames=17  dim=90601
+  seq_000006: frames=56  dim=90601
+  seq_000007: frames=19  dim=90601
+  seq_000008: frames=47  dim=90601
+  seq_000009: frames=16  dim=90601
+  seq_000010: frames=33  dim=90601
+  seq_000011: frames=54  dim=90601
+  seq_000012: frames=58  dim=90601
+  seq_000013: frames=11  dim=90601
+  seq_000014: frames=37  dim=90601
+  seq_000015: frames=28  dim=90601
+  seq_000016: frames=41  dim=90601
+  seq_000017: frames=45  dim=90601
+  seq_000018: frames=58  dim=90601
+  seq_000019: frames=22  dim=90601
+  seq_000020: frames=51  dim=90601
+  seq_000021: frames=43  dim=90601
+  seq_000022: frames=57  dim=90601
+  seq_000023: frames=22  dim=90601
+  seq_000024: frames=20  dim=90601
+  seq_000025: frames=48  dim=90601
+  seq_000026: frames=58  dim=90601
+  seq_000027: frames=28  dim=90601
+  seq_000028: frames=29  dim=90601
+  seq_000029: frames=33  dim=90601
+  seq_000030: frames=22  dim=90601
+  seq_000031: frames=44  dim=90601
+  seq_000032: frames=38  dim=90601
+  seq_000033: frames=32  dim=90601
+  seq_000034: frames=37  dim=90601
+  seq_000035: frames=47  dim=90601
+  seq_000036: frames=59  dim=90601
+  seq_000037: frames=35  dim=90601
+  seq_000038: frames=47  dim=90601
+  seq_000039: frames=38  dim=90601
+  seq_000040: frames=58  dim=90601
+  seq_000041: frames=21  dim=90601
+  seq_000042: frames=22  dim=90601
+  seq_000043: frames=20  dim=90601
+  seq_000044: frames=31  dim=90601
+
+Building train combinations
+  train[0]: frames=1614  dim=90601  n_kept=[34, 28, 52, 18, 17, 56, 19, 47, 16, 33, 54, 58, 11, 37, 28, 41, 45, 58, 22, 51, 43, 57, 22, 20, 48, 58, 28, 29, 33, 22, 44, 38, 32, 37, 47, 59, 35, 47, 38, 58, 21, 22, 20, 31]  seqs=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000006', 'seq_000007', 'seq_000008', 'seq_000009', 'seq_000010', 'seq_000011', 'seq_000012', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000030', 'seq_000031', 'seq_000032', 'seq_000033', 'seq_000034', 'seq_000035', 'seq_000036', 'seq_000037', 'seq_000038', 'seq_000039', 'seq_000040', 'seq_000041', 'seq_000042', 'seq_000043', 'seq_000044']
+Building test combinations
+train[0] hetero noise over 1614 frames:  σ ~ Unif[0, 1]  mean=0.509  std=0.290  min=0.000  max=1.000  q25=0.260  q50=0.518  q75=0.765
+clustering Y dim=256  (requested pca_dim=256)
+
+Methods: ['OSC', 'TKSS', 'SSC-TV-L21', 'BDOSC']
+pooled train mats for tuning=1
+
+BDOSC: fixed lambda_1=0.2, lambda_2=1, gamma_1=0.01, p=1.1, max_iter=50
+
+============================================================
+--- Tuning OSC over 1 train mats ---
+  OSC trial 0: ARI=0.3606  ACC=0.4164  NMI=0.7871  35.3s  lambda_1=0.1, lambda_2=0.1
+  OSC trial 1: ARI=0.3569  ACC=0.4151  NMI=0.7856  34.9s  lambda_1=0.1568, lambda_2=0.7257
+  OSC trial 2: ARI=0.3108  ACC=0.3959  NMI=0.7591  35.1s  lambda_1=0.2577, lambda_2=0.1512
+  OSC trial 3: ARI=0.3789  ACC=0.4312  NMI=0.8000  34.9s  lambda_1=0.0495, lambda_2=0.3833
+  OSC trial 4: ARI=0.3768  ACC=0.4257  NMI=0.7975  34.8s  lambda_1=0.05628, lambda_2=3.691
+  OSC trial 5: ARI=0.0016  ACC=0.0378  NMI=0.0639  34.1s  lambda_1=7.156, lambda_2=0.03418
+  OSC trial 6: ARI=0.0016  ACC=0.0378  NMI=0.0639  34.0s  lambda_1=1.469, lambda_2=0.1305
+  OSC trial 7: ARI=0.3729  ACC=0.4325  NMI=0.7915  35.7s  lambda_1=0.1871, lambda_2=5.039
+  OSC trial 8: ARI=0.3971  ACC=0.4461  NMI=0.8053  35.9s  lambda_1=0.001924, lambda_2=0.002231
+  OSC trial 9: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.3s  lambda_1=0.001205, lambda_2=2.14
+  OSC trial 10: ARI=0.3971  ACC=0.4461  NMI=0.8053  36.5s  lambda_1=0.001206, lambda_2=0.001659
+  OSC trial 11: ARI=0.3971  ACC=0.4461  NMI=0.8053  36.7s  lambda_1=0.001211, lambda_2=0.001203
+  OSC trial 12: ARI=0.3971  ACC=0.4461  NMI=0.8053  36.8s  lambda_1=0.007272, lambda_2=0.01293
+  OSC trial 13: ARI=0.3971  ACC=0.4461  NMI=0.8053  37.0s  lambda_1=0.00784, lambda_2=0.01192
+  OSC trial 14: ARI=0.4027  ACC=0.4480  NMI=0.8076  35.6s  lambda_1=0.004685, lambda_2=1.369
+  OSC trial 15: ARI=0.4027  ACC=0.4480  NMI=0.8076  36.4s  lambda_1=0.007684, lambda_2=1.363
+  OSC trial 16: ARI=0.4027  ACC=0.4480  NMI=0.8076  35.8s  lambda_1=0.003799, lambda_2=8.19
+  OSC trial 17: ARI=0.4025  ACC=0.4461  NMI=0.8075  35.7s  lambda_1=0.01291, lambda_2=0.8612
+  OSC trial 18: ARI=0.4074  ACC=0.4473  NMI=0.8101  35.5s  lambda_1=0.02259, lambda_2=2.33
+  OSC trial 19: ARI=0.4074  ACC=0.4473  NMI=0.8101  35.7s  lambda_1=0.023, lambda_2=2.761
+  OSC trial 20: ARI=0.2831  ACC=0.3947  NMI=0.7492  35.6s  lambda_1=0.8267, lambda_2=0.3244
+  OSC trial 21: ARI=0.4074  ACC=0.4473  NMI=0.8101  36.0s  lambda_1=0.02281, lambda_2=2.521
+  OSC trial 22: ARI=0.4078  ACC=0.4473  NMI=0.8102  35.9s  lambda_1=0.03146, lambda_2=7.492
+  OSC trial 23: ARI=0.3814  ACC=0.4455  NMI=0.7652  35.8s  lambda_1=0.4738, lambda_2=8.394
+  OSC trial 24: ARI=0.4078  ACC=0.4473  NMI=0.8102  35.7s  lambda_1=0.02628, lambda_2=9.903
+  OSC trial 25: ARI=0.3762  ACC=0.4257  NMI=0.7963  35.7s  lambda_1=0.07483, lambda_2=9.604
+  OSC trial 26: ARI=0.4166  ACC=0.4436  NMI=0.8121  35.7s  lambda_1=0.002538, lambda_2=4.719
+  OSC trial 27: ARI=0.4166  ACC=0.4436  NMI=0.8121  35.6s  lambda_1=0.002622, lambda_2=4.254
+  OSC trial 28: ARI=0.4166  ACC=0.4436  NMI=0.8121  35.4s  lambda_1=0.002493, lambda_2=1.277
+  OSC trial 29: ARI=0.4166  ACC=0.4436  NMI=0.8121  35.5s  lambda_1=0.002947, lambda_2=0.4991
+  OSC trial 30: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.5s  lambda_1=0.001016, lambda_2=4.199
+  OSC trial 31: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.9s  lambda_1=0.001001, lambda_2=3.278
+  OSC trial 32: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.9s  lambda_1=0.001016, lambda_2=2.306
+  OSC trial 33: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.1s  lambda_1=0.001011, lambda_2=0.8556
+  OSC trial 34: ARI=0.4167  ACC=0.4442  NMI=0.8121  35.7s  lambda_1=0.001581, lambda_2=1.906
+  OSC trial 35: ARI=0.4029  ACC=0.4486  NMI=0.8076  35.9s  lambda_1=0.001011, lambda_2=0.2388
+  OSC trial 36: ARI=0.4027  ACC=0.4480  NMI=0.8076  35.5s  lambda_1=0.004685, lambda_2=1.573
+  OSC trial 37: ARI=0.4166  ACC=0.4436  NMI=0.8121  35.6s  lambda_1=0.001776, lambda_2=0.7874
+  OSC trial 38: ARI=0.4027  ACC=0.4480  NMI=0.8076  35.5s  lambda_1=0.005523, lambda_2=0.5174
+  OSC trial 39: ARI=0.4025  ACC=0.4461  NMI=0.8074  36.2s  lambda_1=0.01276, lambda_2=0.08021
+  best mean ARI=0.4167  tune 1425.2s  lambda_1=0.001205, lambda_2=2.14
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_hetero_params.json
+
+============================================================
+--- Tuning TKSS over 1 train mats ---
+  TKSS trial 0: ARI=0.5461  ACC=0.6437  NMI=0.8104  20.1s  d=5, lam=1, s=2
+  TKSS trial 1: ARI=0.6202  ACC=0.7125  NMI=0.8576  12.8s  d=9, lam=1.398, s=4
+  TKSS trial 2: ARI=0.6192  ACC=0.7107  NMI=0.8564  18.4s  d=9, lam=0.1866, s=4
+  TKSS trial 3: ARI=0.6091  ACC=0.7057  NMI=0.8541  36.7s  d=7, lam=4.735, s=6
+  TKSS trial 4: ARI=0.5980  ACC=0.6871  NMI=0.8467  21.1s  d=6, lam=2.372, s=4
+  TKSS trial 5: ARI=0.6201  ACC=0.7150  NMI=0.8544  11.2s  d=9, lam=5.981, s=1
+  TKSS trial 6: ARI=0.2480  ACC=0.3910  NMI=0.5572  16.4s  d=2, lam=0.0115, s=5
+  TKSS trial 7: ARI=0.6349  ACC=0.7156  NMI=0.8649  15.5s  d=12, lam=4.074, s=6
+  TKSS trial 8: ARI=0.6530  ACC=0.7274  NMI=0.8717  6.9s  d=12, lam=0.2423, s=5
+  TKSS trial 9: ARI=0.2531  ACC=0.3934  NMI=0.6001  24.2s  d=2, lam=0.8313, s=1
+  TKSS trial 10: ARI=0.6276  ACC=0.7169  NMI=0.8576  7.1s  d=15, lam=0.03996, s=3
+  TKSS trial 11: ARI=0.6501  ACC=0.7255  NMI=0.8705  8.4s  d=14, lam=0.2126, s=6
+  TKSS trial 12: ARI=0.6520  ACC=0.7274  NMI=0.8712  5.7s  d=15, lam=0.2119, s=5
+  TKSS trial 13: ARI=0.6530  ACC=0.7274  NMI=0.8717  6.9s  d=12, lam=0.254, s=5
+  TKSS trial 14: ARI=0.6363  ACC=0.7218  NMI=0.8632  8.5s  d=12, lam=0.06854, s=5
+  TKSS trial 15: ARI=0.6304  ACC=0.7181  NMI=0.8614  8.5s  d=11, lam=0.4718, s=3
+  TKSS trial 16: ARI=0.6400  ACC=0.7237  NMI=0.8652  7.3s  d=13, lam=0.07803, s=5
+  TKSS trial 17: ARI=0.6298  ACC=0.7181  NMI=0.8612  11.3s  d=11, lam=0.4286, s=3
+  TKSS trial 18: ARI=0.5891  ACC=0.6921  NMI=0.8298  8.6s  d=10, lam=0.02153, s=4
+  TKSS trial 19: ARI=0.6449  ACC=0.7280  NMI=0.8672  7.1s  d=13, lam=0.09488, s=5
+  TKSS trial 20: ARI=0.6362  ACC=0.7162  NMI=0.8637  13.3s  d=8, lam=0.3995, s=6
+  TKSS trial 21: ARI=0.6513  ACC=0.7268  NMI=0.8712  5.8s  d=15, lam=0.182, s=5
+  TKSS trial 22: ARI=0.6538  ACC=0.7286  NMI=0.8717  7.2s  d=14, lam=0.2535, s=5
+  TKSS trial 23: ARI=0.6329  ACC=0.7218  NMI=0.8614  8.6s  d=13, lam=0.1193, s=4
+  TKSS trial 24: ARI=0.6447  ACC=0.7206  NMI=0.8679  10.0s  d=11, lam=0.3754, s=6
+  TKSS trial 25: ARI=0.6335  ACC=0.7212  NMI=0.8614  7.2s  d=14, lam=0.03683, s=5
+  TKSS trial 26: ARI=0.6422  ACC=0.7230  NMI=0.8665  7.0s  d=12, lam=0.7256, s=4
+  TKSS trial 27: ARI=0.6528  ACC=0.7280  NMI=0.8714  7.3s  d=14, lam=0.2726, s=5
+  TKSS trial 28: ARI=0.6406  ACC=0.7200  NMI=0.8664  16.9s  d=10, lam=1.691, s=6
+  TKSS trial 29: ARI=0.4652  ACC=0.5793  NMI=0.7547  12.7s  d=4, lam=0.1244, s=3
+  TKSS trial 30: ARI=0.6208  ACC=0.7131  NMI=0.8522  6.9s  d=13, lam=0.05177, s=2
+  TKSS trial 31: ARI=0.6461  ACC=0.7249  NMI=0.8685  11.0s  d=14, lam=0.6389, s=5
+  TKSS trial 32: ARI=0.6528  ACC=0.7280  NMI=0.8714  6.8s  d=14, lam=0.2708, s=5
+  TKSS trial 33: ARI=0.6350  ACC=0.7206  NMI=0.8638  16.8s  d=12, lam=0.2848, s=4
+  TKSS trial 34: ARI=0.6316  ACC=0.7138  NMI=0.8618  14.8s  d=10, lam=0.1389, s=5
+  TKSS trial 35: ARI=0.6327  ACC=0.7113  NMI=0.8665  12.9s  d=15, lam=1.475, s=6
+  TKSS trial 36: ARI=0.6436  ACC=0.7230  NMI=0.8674  8.3s  d=13, lam=0.5523, s=4
+  TKSS trial 37: ARI=0.6099  ACC=0.7020  NMI=0.8545  11.0s  d=8, lam=0.3006, s=5
+  TKSS trial 38: ARI=0.6372  ACC=0.7206  NMI=0.8651  9.6s  d=11, lam=1.094, s=4
+  TKSS trial 39: ARI=0.6329  ACC=0.7107  NMI=0.8651  15.9s  d=14, lam=2.391, s=6
+  best mean ARI=0.6538  tune 473.1s  d=14, lam=0.2535, s=5
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_hetero_params.json
+
+============================================================
+--- Tuning SSC-TV-L21 over 1 train mats ---
+  SSC-TV-L21 trial 0: ARI=0.4041  ACC=0.4833  NMI=0.8227  40.2s  lambda_e=1, lambda_z=0.1, gamma_p=0.1, gamma_q=0.1
+  SSC-TV-L21 trial 1: ARI=0.3667  ACC=0.4597  NMI=0.8043  39.6s  lambda_e=0.443, lambda_z=0.7257, gamma_p=0.2577, gamma_q=0.1512
+  SSC-TV-L21 trial 2: ARI=0.5485  ACC=0.6041  NMI=0.8305  40.4s  lambda_e=0.1866, lambda_z=0.3833, gamma_p=0.05628, gamma_q=3.691
+  SSC-TV-L21 trial 3: ARI=0.2746  ACC=0.3550  NMI=0.7318  41.1s  lambda_e=7.78, lambda_z=0.03418, gamma_p=1.469, gamma_q=0.1305
+  SSC-TV-L21 trial 4: ARI=0.3720  ACC=0.4238  NMI=0.7878  39.7s  lambda_e=0.506, lambda_z=5.039, gamma_p=0.001924, gamma_q=0.002231
+  SSC-TV-L21 trial 5: ARI=0.0595  ACC=0.1103  NMI=0.4032  39.1s  lambda_e=0.0115, lambda_z=2.14, gamma_p=1.296, gamma_q=3.02
+  SSC-TV-L21 trial 6: ARI=0.6063  ACC=0.6871  NMI=0.8573  40.2s  lambda_e=8.627, lambda_z=1.573, gamma_p=0.07013, gamma_q=1.325
+  SSC-TV-L21 trial 7: ARI=0.6380  ACC=0.6803  NMI=0.8559  39.5s  lambda_e=0.02264, lambda_z=0.3628, gamma_p=0.003745, gamma_q=6.007
+  SSC-TV-L21 trial 8: ARI=0.5053  ACC=0.5452  NMI=0.8157  40.1s  lambda_e=0.3677, lambda_z=0.04557, gamma_p=0.01143, gamma_q=1.25
+  SSC-TV-L21 trial 9: ARI=0.6085  ACC=0.6642  NMI=0.8584  39.2s  lambda_e=0.2336, lambda_z=0.1878, gamma_p=0.001189, gamma_q=0.2955
+  SSC-TV-L21 trial 10: ARI=0.3153  ACC=0.3296  NMI=0.7298  40.1s  lambda_e=0.01151, lambda_z=0.001661, gamma_p=6.473, gamma_q=0.001203
+  SSC-TV-L21 trial 11: ARI=0.3555  ACC=0.4349  NMI=0.7872  40.0s  lambda_e=0.05789, lambda_z=0.1589, gamma_p=0.001276, gamma_q=0.03299
+  SSC-TV-L21 trial 12: ARI=0.2908  ACC=0.3773  NMI=0.7301  39.3s  lambda_e=0.05043, lambda_z=0.00593, gamma_p=0.007104, gamma_q=8.721
+  SSC-TV-L21 trial 13: ARI=0.3765  ACC=0.4331  NMI=0.7662  39.3s  lambda_e=0.05628, lambda_z=0.01302, gamma_p=0.006352, gamma_q=0.5569
+  SSC-TV-L21 trial 14: ARI=0.3527  ACC=0.4263  NMI=0.7849  39.6s  lambda_e=0.1181, lambda_z=0.1905, gamma_p=0.00297, gamma_q=0.01281
+  SSC-TV-L21 trial 15: ARI=0.6159  ACC=0.6617  NMI=0.8621  39.3s  lambda_e=1.72, lambda_z=7.364, gamma_p=0.02311, gamma_q=0.4948
+  SSC-TV-L21 trial 16: ARI=0.5998  ACC=0.6834  NMI=0.8528  40.0s  lambda_e=2.183, lambda_z=7.072, gamma_p=0.02235, gamma_q=8.394
+  SSC-TV-L21 trial 17: ARI=0.6096  ACC=0.6679  NMI=0.8611  38.9s  lambda_e=2.547, lambda_z=9.92, gamma_p=0.02476, gamma_q=0.6168
+  SSC-TV-L21 trial 18: ARI=0.3740  ACC=0.4554  NMI=0.8028  39.8s  lambda_e=2.078, lambda_z=1.463, gamma_p=0.2343, gamma_q=0.02737
+  SSC-TV-L21 trial 19: ARI=0.6495  ACC=0.6914  NMI=0.8595  38.8s  lambda_e=0.02437, lambda_z=0.5222, gamma_p=0.003479, gamma_q=2.431
+  SSC-TV-L21 trial 20: ARI=0.6455  ACC=0.6859  NMI=0.8584  39.1s  lambda_e=0.0248, lambda_z=0.6406, gamma_p=0.003419, gamma_q=3.348
+  SSC-TV-L21 trial 21: ARI=0.6475  ACC=0.6877  NMI=0.8590  39.2s  lambda_e=0.02425, lambda_z=0.562, gamma_p=0.003843, gamma_q=2.81
+  SSC-TV-L21 trial 22: ARI=0.6479  ACC=0.6902  NMI=0.8592  39.3s  lambda_e=0.02805, lambda_z=0.6144, gamma_p=0.003985, gamma_q=1.916
+  SSC-TV-L21 trial 23: ARI=0.6361  ACC=0.6722  NMI=0.8553  39.0s  lambda_e=0.02526, lambda_z=0.8769, gamma_p=0.009779, gamma_q=1.627
+  SSC-TV-L21 trial 24: ARI=0.5894  ACC=0.6611  NMI=0.8483  40.1s  lambda_e=0.09536, lambda_z=3.103, gamma_p=0.004266, gamma_q=2.093
+  SSC-TV-L21 trial 25: ARI=0.5239  ACC=0.5663  NMI=0.8176  38.3s  lambda_e=0.03591, lambda_z=0.06394, gamma_p=0.01147, gamma_q=0.9519
+  SSC-TV-L21 trial 26: ARI=0.6353  ACC=0.6772  NMI=0.8552  39.7s  lambda_e=0.01594, lambda_z=0.3607, gamma_p=0.001065, gamma_q=4.827
+  SSC-TV-L21 trial 27: ARI=0.6192  ACC=0.6611  NMI=0.8670  39.5s  lambda_e=0.0903, lambda_z=1.389, gamma_p=0.002659, gamma_q=0.2903
+  SSC-TV-L21 trial 28: ARI=0.5658  ACC=0.6196  NMI=0.8349  38.9s  lambda_e=0.04296, lambda_z=0.3922, gamma_p=0.03374, gamma_q=2.707
+  SSC-TV-L21 trial 29: ARI=0.5394  ACC=0.5743  NMI=0.8243  38.8s  lambda_e=0.01838, lambda_z=0.09314, gamma_p=0.01358, gamma_q=1.05
+  SSC-TV-L21 trial 30: ARI=0.6082  ACC=0.6617  NMI=0.8620  39.4s  lambda_e=0.03367, lambda_z=2.712, gamma_p=0.005355, gamma_q=0.3658
+  SSC-TV-L21 trial 31: ARI=0.6439  ACC=0.6865  NMI=0.8582  39.3s  lambda_e=0.02731, lambda_z=0.7836, gamma_p=0.002287, gamma_q=4.024
+  SSC-TV-L21 trial 32: ARI=0.6231  ACC=0.6611  NMI=0.8513  39.9s  lambda_e=0.01532, lambda_z=0.62, gamma_p=0.001992, gamma_q=1.974
+  SSC-TV-L21 trial 33: ARI=0.6550  ACC=0.6983  NMI=0.8614  39.5s  lambda_e=0.07263, lambda_z=0.6446, gamma_p=0.004294, gamma_q=5.453
+  SSC-TV-L21 trial 34: ARI=0.6035  ACC=0.6425  NMI=0.8445  39.5s  lambda_e=0.07391, lambda_z=0.2057, gamma_p=0.006526, gamma_q=9.154
+  SSC-TV-L21 trial 35: ARI=0.6269  ACC=0.6914  NMI=0.8530  39.5s  lambda_e=0.1407, lambda_z=0.9634, gamma_p=0.001889, gamma_q=5.58
+  SSC-TV-L21 trial 36: ARI=0.5500  ACC=0.5675  NMI=0.8340  39.9s  lambda_e=0.01089, lambda_z=0.4417, gamma_p=0.03997, gamma_q=0.812
+  SSC-TV-L21 trial 37: ARI=0.5423  ACC=0.5793  NMI=0.8253  39.2s  lambda_e=0.2388, lambda_z=0.1218, gamma_p=0.01559, gamma_q=2.445
+  SSC-TV-L21 trial 38: ARI=0.6308  ACC=0.6704  NMI=0.8537  39.5s  lambda_e=0.03516, lambda_z=3.712, gamma_p=0.007108, gamma_q=4.907
+  SSC-TV-L21 trial 39: ARI=0.4274  ACC=0.4665  NMI=0.8122  40.2s  lambda_e=0.0761, lambda_z=0.0283, gamma_p=0.08444, gamma_q=0.2145
+  best mean ARI=0.6550  tune 1582.4s  lambda_e=0.07263, lambda_z=0.6446, gamma_p=0.004294, gamma_q=5.453
+  wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_hetero_params.json
+
+=== train[0] k=44  dim=256  frames=1614  σ=mixed  seqs=['seq_000001', 'seq_000002', 'seq_000003', 'seq_000004', 'seq_000005', 'seq_000006', 'seq_000007', 'seq_000008', 'seq_000009', 'seq_000010', 'seq_000011', 'seq_000012', 'seq_000013', 'seq_000014', 'seq_000015', 'seq_000016', 'seq_000017', 'seq_000018', 'seq_000019', 'seq_000020', 'seq_000021', 'seq_000022', 'seq_000023', 'seq_000024', 'seq_000025', 'seq_000026', 'seq_000027', 'seq_000028', 'seq_000029', 'seq_000030', 'seq_000031', 'seq_000032', 'seq_000033', 'seq_000034', 'seq_000035', 'seq_000036', 'seq_000037', 'seq_000038', 'seq_000039', 'seq_000040', 'seq_000041', 'seq_000042', 'seq_000043', 'seq_000044'] ===
+  OSC: ACC=0.4442  NMI=0.8121  ARI=0.4167  34.5s
+  TKSS: ACC=0.7286  NMI=0.8717  ARI=0.6538  7.2s
+  SSC-TV-L21: ACC=0.6983  NMI=0.8614  ARI=0.6550  38.6s
+  BDOSC: ACC=0.4957  NMI=0.8269  ARI=0.4763  1507.0s
+
+=== mean over matrices ===
+  OSC train σ=mixed: ACC=0.4442  NMI=0.8121  ARI=0.4167  n=1
+  TKSS train σ=mixed: ACC=0.7286  NMI=0.8717  ARI=0.6538  n=1
+  SSC-TV-L21 train σ=mixed: ACC=0.6983  NMI=0.8614  ARI=0.6550  n=1
+  BDOSC train σ=mixed: ACC=0.4957  NMI=0.8269  ARI=0.4763  n=1
+
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_hetero_results.csv
+wrote /nfs/turbo/umms-minjilab/lpullela/icassp_ssc_tv2/ballet_dataset/ballet_cluster_hetero_params.json
+end=Wed Sep  2 09:58:20 EDT 2026
