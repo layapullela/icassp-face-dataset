@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Inference outputs are reproducible from hyperparameters.csv, so they are not
+# tracked -- EXCEPT results/reference_metrics.csv, which is the reported
+# reference the figures and verification read.
+results/*.csv
+!results/reference_metrics.csv

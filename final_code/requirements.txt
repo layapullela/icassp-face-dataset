@@ -1,0 +1,10 @@
+# Versions this package was validated against (conda env `ssc_559`, Python 3.11).
+# Nothing here is exotic; the pins record what produced the reported numbers
+# rather than a hard floor. Note there is NO optuna: the superseded TPE tuning
+# path is not part of this package (grid search is deterministic and was the
+# procedure actually used).
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0     # only for tkss.py's randomized_svd
+pillow==12.3.0          # frame decoding + bilinear downsampling
+matplotlib==3.11.1      # figures only
